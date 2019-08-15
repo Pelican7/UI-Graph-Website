@@ -1,0 +1,227 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Canvas Controllers</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="828d88a0-bf53-47a4-b1fc-884b090f5004" /><meta name="Description" content="A Canvas Controller is a view controller based upon Unity's UI Canvashttps://docs.unity3d.com/Manual/UICanvas.html component. It manages a T:Pelican7.UIGraph.CanvasView – a view contained in a UI.Canvas – and stores this view in a Prefab asset." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">UI Graph Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/da67a984-ce1f-4eba-b408-db4260a8bfa1.htm" title="UI Graph Documentation" tocid="roottoc">UI Graph Documentation</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/d6f9deb2-0be1-4787-9188-01d81be916a9.htm" title="Manual" tocid="d6f9deb2-0be1-4787-9188-01d81be916a9">Manual</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/0bc1dca5-7599-497f-880e-63c622949fef.htm" title="View Controllers" tocid="0bc1dca5-7599-497f-880e-63c622949fef">View Controllers</a></div><div class="toclevel1" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/828d88a0-bf53-47a4-b1fc-884b090f5004.htm" title="UI Canvas Workflow" tocid="92c646d1-92fb-49f4-b6fb-62bf3d146e8c">UI Canvas Workflow</a></div><div class="toclevel2 current" data-toclevel="2"><a data-tochassubtree="false" href="../html/828d88a0-bf53-47a4-b1fc-884b090f5004.htm" title="Canvas Controllers" tocid="828d88a0-bf53-47a4-b1fc-884b090f5004">Canvas Controllers</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/414263c0-36be-4764-8375-ad85e171b182.htm" title="Standard Containers" tocid="414263c0-36be-4764-8375-ad85e171b182">Standard Containers</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="../icons/Help.png" /></td><td class="titleColumn"><h1>Canvas Controllers</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>Contents</p><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#Introduction">Introduction</a></li><li class="outlineSectionEntry"><a href="#Creation">Creation</a></li><li class="outlineSectionEntry"><a href="#CanvasView">Canvas View</a></li><li class="outlineSectionEntry"><a href="#Scripting">Scripting</a></li><li class="outlineSectionEntry"><a href="#ViewBindings">View Bindings</a></li><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#ViewReferences">View References</a></li><li class="outlineSectionEntry"><a href="#ViewCallbacks">View Callbacks</a></li><li class="outlineSectionEntry"><a href="#OnBoundToOwnerEvent">On Bound To Owner Event</a></li></ul><li class="outlineSectionEntry"><a href="#CanvasWindow">Canvas Window</a></li><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#Setup">Setup</a></li><li class="outlineSectionEntry"><a href="#Configure">Configure</a></li><li class="outlineSectionEntry"><a href="#Dismissal">Dismissal</a></li></ul><li class="outlineSectionEntry"><a href="#TransitionAnimation">Transition Animation</a></li><ul class="autoOutline"><li class="outlineSectionEntry"><a href="#CustomTransitionAnimations">Custom Transition Animations</a></li></ul><li class="outlineSectionEntry"><a href="#seeAlsoSection">See Also</a></li></ul></div><div class="collapsibleAreaRegion" id="Introduction"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Introduction</span></div><div id="ID0RBSection" class="collapsibleSection"><p>
+          A Canvas Controller is a view controller based upon Unity's
+          <a href="https://docs.unity3d.com/Manual/UICanvas.html" target="_blank">UI Canvas</a>
+          component. It manages a <a href="d2f3cdd2-4c91-65ea-c664-a3cadc516b88.htm">CanvasView</a> – a view contained in a <span class="code">UI.Canvas</span> – and stores this view in a <span class="code">Prefab</span> asset. When working with Unity's <strong>UI Canvas</strong> system, all view controllers are derived from the <a href="e9cf61cd-8454-cb7f-44a3-2efa024cafac.htm">CanvasController</a> class.
+        </p></div><div class="collapsibleAreaRegion" id="Creation"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Creation</span></div><div id="ID1RBSection" class="collapsibleSection"><p>To create a new canvas controller, open Unity's <span class="input">Create</span> menu - by either right-clicking in the <span class="input">Project</span> window or selecting <span class="input">Assets</span> in the menu bar - and select <span class="input">Create/UI Graph/UI Canvas/Canvas Controller</span>. Enter a name and a directory for your new canvas controller when prompted.
+        </p><p>
+          A canvas controller consists of a script with a corresponding <span class="code">Scriptable Object</span> instance, as well as its Canvas View contained within a <span class="code">Prefab</span> asset. These three assets will now exist at the specified location.
+        </p><div class="mediaNear"><img alt="Canvas Controller Asset Structure" src="../media/Canvas Controller Asset Structure.PNG" /><div class="caption">Canvas Controller asset structure.</div></div></div><div class="collapsibleAreaRegion" id="CanvasView"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Canvas View</span></div><div id="ID2RBSection" class="collapsibleSection"><p>
+          A canvas controller manages a <a href="d2f3cdd2-4c91-65ea-c664-a3cadc516b88.htm">CanvasView</a>, which is stored in a <span class="code">Prefab</span> asset named <em>#NameOfCanvasController - View</em>. To edit the canvas controller's view, open the canvas view prefab to enter Prefab Mode.
+        </p><p>
+          Your screen's UI content is placed inside this prefab. See below for an example of a simple screen from the Assassin demo.
+        </p><div class="mediaNear"><img alt="Canvas Controller View" src="../media/Canvas Controller View.PNG" /><div class="caption">The AlertCanvasController from the Assassin demo.</div></div><p>
+          The root game object contains the <span class="code">CanvasView</span> component, as well as <span class="code">Canvas</span>, <span class="code">Canvas Group</span>, and <span class="code">Graphic Raycaster</span> components. The <span class="code">CanvasView</span>, <span class="code">Canvas</span>, and <span class="code">Canvas Group</span> components are required and should not be removed. The <span class="code">Graphic Raycaster</span> may be removed or disabled if no input is required on the view.
+        </p><p>
+          The <span class="code">Canvas</span> component has a default <span class="code">Render Mode</span> of <span class="code">Screen Space - Overlay</span>. However, this is not the render mode that will be used at runtime and can be ignored.
+        </p><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+            When a canvas controller is presented, its view is contained within a parent <a href="ad0e49bb-c072-816f-d16d-7824e3d14cb6.htm">CanvasWindow</a>, making it a sub-canvas. It is this window that provides the root canvas and as such it is the window's canvas whom will provide the render mode. See <a href="#CanvasWindow">Canvas Window</a> for more detail.
+          </p></td></tr></table></div><p>
+          By default, a Canvas View prefab is a
+          <a href="https://docs.unity3d.com/Manual/PrefabVariants.html" target="_blank">Prefab Variant</a>
+          of the <strong>Canvas View (Standard)</strong> prefab. The base prefab that UI Graph will use when creating canvas controllers can be changed in the package settings. This allows you to modify the default view of newly created canvas controllers. See (TODO LINK) for details.
+        </p><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+            The <em>Canvas View Owner Bindings</em> object in the prefab is for <a href="#ViewBindings">View Bindings</a>, which are covered below. UI content shouldn't be added underneath this object.
+          </p></td></tr></table></div></div><div class="collapsibleAreaRegion" id="Scripting"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Scripting</span></div><div id="ID4RBSection" class="collapsibleSection"><p>
+          The canvas controller's script file is where you can perform any custom scripting and logic related to your view controller.
+        </p><p>
+          The <a href="e9cf61cd-8454-cb7f-44a3-2efa024cafac.htm">CanvasController</a> class offers various override-able methods that allow you to perform actions when certain view life-cycle events happen.
+        </p><p>
+          For example, the <a href="8e5b78e4-faf5-b4b0-90cd-6d39ae5caa38.htm">ViewDidLoad<span id="LSTD56CE602_0"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTD56CE602_0?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> method can be overridden to perform any additional setup after the view controller has instantiated its view. The Friends List canvas controller in the Assassin Demo overrides the <span class="code">ViewDidLoad</span> method to layout its list of friends.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID3EAEAEAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID3EAEAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID3EAEAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID3EAEAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> FriendsListCanvasController : CanvasController
+{
+    [ViewReference] <span class="highlight-keyword">public</span> ListView listView;
+
+    <span class="highlight-keyword">protected</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> ViewDidLoad()
+    {
+        <span class="highlight-keyword">base</span>.ViewDidLoad();
+        listView.DataSource = <span class="highlight-keyword">this</span>;
+        listView.ReloadData();
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID3EAEAEAAA");</script><p>
+          As a canvas controller is a <span class="code">Scriptable Object</span>, any public instance variables will be exposed in the asset's inspector. This can be used to hold references to other assets. For example, the Friends List canvas controller in the Assassin Demo holds a reference to a data model object containing friends.
+        </p><div class="mediaNear"><img alt="Canvas Controller Inspector" src="../media/Canvas Controller Asset Reference.png" /><div class="caption">Canvas Controller Asset Reference</div></div><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+            References to view objects – objects within the canvas view prefab – can be made using a <a href="#ViewReferences">View Reference</a>. Similarly, calling a method on the canvas controller from the view, such as from a <span class="code">UI.Button</span>, can be achieved using a <a href="#ViewCallbacks">View Callback</a>.
+          </p></td></tr></table></div><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Tip" /> Tip</th></tr><tr><td><p>
+            Attach UI components, scripts, and behaviours to the Game Objects in the prefab, just as you normally would with Unity UI. This helps to keep the canvas controller lightweight and focused upon its primary responsibility of managing its view. When required, use <a href="#ViewBindings">View Bindings</a> to communicate between the canvas controller and the objects in its view.
+          </p></td></tr></table></div></div><div class="collapsibleAreaRegion" id="ViewBindings"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID5RB')" onkeypress="SectionExpandCollapse_CheckKey('ID5RB', event)" tabindex="0"><img id="ID5RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />View Bindings</span></div><div id="ID5RBSection" class="collapsibleSection"><p>
+          UI Graph offers a view bindings system for communicating between a canvas controller script and the objects in its view. This allows your canvas controller script to reference components within its view prefab, as well as to call methods declared in your canvas controller script from components in the view. These two systems are called <a href="#ViewReferences">View References</a> and <a href="#ViewCallbacks">View Callbacks</a> respectively.
+        </p><p>
+          When a canvas controller instantiates its view prefab, the view is bound to its owning canvas controller. This binding process binds the view references and callbacks to the canvas controller whom loaded it – its owner. This occurs before the canvas controller's <a href="8e5b78e4-faf5-b4b0-90cd-6d39ae5caa38.htm">ViewDidLoad<span id="LSTD56CE602_1"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTD56CE602_1?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> method is invoked, making it safe to use view references in <a href="8e5b78e4-faf5-b4b0-90cd-6d39ae5caa38.htm">ViewDidLoad<span id="LSTD56CE602_2"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTD56CE602_2?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.
+        </p><h4 class="subHeading" id="ViewReferences">View References</h4><div class="subsection"><p>
+              A view reference allows your canvas controller to reference a component within its view using a simple field. This is useful if you want to, for example, configure a component in <a href="8e5b78e4-faf5-b4b0-90cd-6d39ae5caa38.htm">ViewDidLoad<span id="LSTD56CE602_3"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTD56CE602_3?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a> or perhaps restart an animation in <a href="916f7639-ca41-5be9-7d66-61abc5435323.htm">ViewDidAppear<span id="LSTD56CE602_4"></span><script type="text/javascript">AddLanguageSpecificTextSet("LSTD56CE602_4?cs=()|vb=|cpp=()|nu=()|fs=()");</script></a>.
+            </p><p>
+              To create a view reference, declare a field on your canvas controller and decorate it with the <span class="code">[ViewReference]</span> attribute.
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID3EADACADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID3EADACADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID3EADACADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID3EADACADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> FriendsListCanvasController : CanvasController
+{
+    [ViewReference]
+    <span class="highlight-keyword">public</span> TextMeshProUGUI label;
+
+    <span class="highlight-keyword">protected</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> ViewDidLoad()
+    {
+        <span class="highlight-keyword">base</span>.ViewDidLoad();
+
+        <span class="highlight-comment">// Set the label's text to the canvas controller's title.</span>
+        label.text = title;
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID3EADACADAAA");</script><p>
+              This field will now be exposed by the view's <em>Canvas View Owner Bindings</em> component. Open the canvas controller's view prefab and select the <em>Canvas View Owner Bindings</em> game object to see the exposed field in the inspector. The relevant label in your view can now be dragged onto the exposed field, just as all Unity references are made.
+            </p><div class="mediaNear"><img alt="View Reference" src="../media/View Reference.png" /><div class="caption">An Exposed View Reference</div></div><p>
+              This field will now be populated with the value set in the inspector upon instantiation.
+            </p></div><h4 class="subHeading" id="ViewCallbacks">View Callbacks</h4><div class="subsection"><p>
+              A view callback allows you to invoke a method declared in your canvas controller script from a component in the view. This is used when you want to call a method on your canvas controller from, for example, a button press.
+            </p><p>
+              To expose a method in you canvas controller to its view, decorate it with the <span class="code">[ViewCallback]</span> attribute.
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID3EAEABADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID3EAEABADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID3EAEABADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID3EAEABADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> FriendsListCanvasController : CanvasController
+{
+    [ViewCallback]
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> RefreshList()
+    {
+        <span class="highlight-comment">// ...</span>
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID3EAEABADAAA");</script><p>
+              A view callback object for the exposed method will now be added to the view, located underneath the <em>Canvas View Owner Bindings</em> object. Open the canvas controller's view prefab, locate the <em>Canvas View Owner Bindings</em> game object, and view its child objects to see the view callback.
+            </p><p>
+              A view callback is invoked by calling its <span class="code">Invoke()</span> method. For example, to invoke the above <span class="code">RefreshList()</span> view callback from a button's <strong>On Click</strong> event, drag the view callback onto the <strong>On Click</strong> event's target object and select <span class="code">Invoke()</span> from the <span class="code">CanvasViewCallback…</span> script.
+            </p><div class="mediaNear"><img alt="View Callback" src="../media/View Callback.png" /><div class="caption">Invoking A View Callback From A Button</div></div><p>
+              This method will now be invoked when the button is pressed.
+            </p></div><h4 class="subHeading" id="OnBoundToOwnerEvent">On Bound To Owner Event</h4><div class="subsection"><p>
+              The <em>Canvas View Owner Bindings</em> component includes an <strong>On Bound To Owner</strong> event. This event is invoked when the view is bound to its owning canvas controller, as detailed above.
+            </p><p>
+              This event can also be used to configure any view components upon load. For example, the following component configures a label's text with the canvas controller's title. The <span class="code">ConfigureWithCanvasController</span> method can be added to the <strong>On Bound To Owner</strong> event in the inspector and the label will be configured upon load.
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID3EABAAADAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID3EABAAADAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID3EABAAADAAA');return false;" title="Copy">Copy</a></div></div><div id="ID3EABAAADAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> ApplyCanvasControllerTitleToLabel : MonoBehaviour
+{
+    <span class="highlight-keyword">public</span> TextMeshProUGUI label;
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">void</span> ConfigureWithCanvasController(CanvasController canvasController)
+    {
+        label.text = canvasController.title;
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID3EABAAADAAA");</script><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+                The above functionality could have been achieved with a <a href="#ViewReferences">View Reference</a> in the canvas controller to the label. It's a matter of personal preference how you choose to structure your code here. Using this event where appropriate can help to keep the canvas controller lightweight and focused upon its primary responsibility of managing its view (and not all the UI components within it).
+              </p></td></tr></table></div></div></div><div class="collapsibleAreaRegion" id="CanvasWindow"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Canvas Window</span></div><div id="ID6RBSection" class="collapsibleSection"><p>
+          Canvas controllers are presented within a <a href="ad0e49bb-c072-816f-d16d-7824e3d14cb6.htm">CanvasWindow</a>. A canvas window contains a single user-interface flow. When a canvas controller is presented, its view will be instantiated and added to the window. Inversely, when it is dismissed it will be removed from the window and destroyed. A canvas window exists in the scene you wish to present it in.
+        </p><h4 class="subHeading" id="Setup">Setup</h4><div class="subsection"><p>
+              The recommended way to create user-interface flows is using <a href="824e6fef-eac9-4214-a9a1-6401321acde2.htm">Graphs</a>. To create a new canvas window when using graphs, select <em>"Add Graph To Current Scene"</em> from the graph's dropdown menu. This will automatically create a new <a href="ad0e49bb-c072-816f-d16d-7824e3d14cb6.htm">CanvasWindow</a> in the current scene along with a <a href="8a559ce1-8b7d-a0c1-e527-502107009d0a.htm">CanvasGraphPresenter</a> configured with the current graph.
+            </p><p>
+              However, you may also use the <strong>View Controller</strong> system directly without using graphs. In this case, you must configure the window yourself. Firstly, create a new canvas window in the current scene by selecting <em>GameObject/UI/Canvas Window (UI Graph)</em> from the menu. To configure the window, create a script to set its root view controller and present it.
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID3EACACACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID3EACACACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID3EACACACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID3EACACACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> Pelican7.UIGraph;
+<span class="highlight-keyword">using</span> UnityEngine;
+
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> ConfigureWindow : MonoBehaviour
+{
+    <span class="highlight-comment">// A reference to the window, configured in the inspector.</span>
+    <span class="highlight-keyword">public</span> CanvasWindow window;
+
+    <span class="highlight-comment">// A reference to the initial canvas controller of our user-interface, configured in the inspector.</span>
+    <span class="highlight-keyword">public</span> CanvasController mainMenuCanvasController;
+
+    <span class="highlight-keyword">private</span> <span class="highlight-keyword">void</span> Awake()
+    {
+        <span class="highlight-comment">// Instantiate the initial canvas controller.</span>
+        CanvasController rootCanvasController = Instantiate(mainMenuCanvasController);
+
+        <span class="highlight-comment">// Set the window's root view controller to our instantiated canvas controller.</span>
+        window.RootViewController = rootCanvasController;
+
+        <span class="highlight-comment">// Presenting the window presents its root view controller.</span>
+        window.Present();
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID3EACACACAAA");</script><p>
+              Here we present the window in the <span class="code">Awake</span> method with no animation. This ensures the view is on-screen immediately. When our <span class="code">mainMenuCanvasController</span> subsequently performs a transition, such as <span class="code">Present</span>, it's view will be instantiated and added to the window.
+            </p><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+                The template prefab that UI Graph will use when creating a new canvas window can be changed in the package settings. See (TODO LINK) for details.
+              </p></td></tr></table></div></div><h4 class="subHeading" id="Configure">Configure</h4><div class="subsection"><p>
+              All subsequently presented <a href="d2f3cdd2-4c91-65ea-c664-a3cadc516b88.htm">CanvasView</a>s will be embedded within this parent <a href="ad0e49bb-c072-816f-d16d-7824e3d14cb6.htm">CanvasWindow</a>. As such, their <span class="code">Canvas</span> components will inherit the canvas window's properties. Two particular properties of note here are:
+            </p><ul><li><p><strong>Render Mode</strong> – Changing the render mode of the window's canvas will affect all subsequently presented canvas views. For example, to create a World Space user-interface, change the canvas' <strong>Render Mode</strong> to <strong>World Space</strong> and replace the camera with the scene's main camera. See the World-Space Scene from the Assassin Demo for an example of this.
+                </p></li><li><p><strong>Canvas Scaler</strong> – The default canvas window includes a <span class="code">Canvas Scaler</span> component, which can be used to control your interface's scaling and resizing.
+                </p></li></ul><p>
+              Additionally, the canvas window includes the camera that renders the user-interface, so any camera properties can also be changed here.
+            </p></div><h4 class="subHeading" id="Dismissal">Dismissal</h4><div class="subsection"><p>
+              A window can be dismissed using its <span class="nolink">[M:Pelican7.UIGraph.ViewController`12.Dismiss(bool, System.Action)]</span> method. This will dismiss the window's root view controller (which dismisses all of its presented view controllers) and destroy the window itself upon completion. This can be useful when using multiple windows, such as in a scene transition.
+            </p></div></div><div class="collapsibleAreaRegion" id="TransitionAnimation"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Transition Animation</span></div><div id="ID7RBSection" class="collapsibleSection"><p>
+          The recommended way to animate transitions between canvas controllers is to use the <a href="a787bdae-cc7e-4621-b0c6-5275cb28b10b.htm">Transition Sequence Animator</a>. This allows you to create animation sequences without coding, as well as to script your own animations for use with the system. See the <a href="a787bdae-cc7e-4621-b0c6-5275cb28b10b.htm">Transition Sequence Animator</a> section for more detail.
+        </p><h4 class="subHeading" id="CustomTransitionAnimations">Custom Transition Animations</h4><div class="subsection"><p>
+              Alternatively, you are not required to use the <a href="a787bdae-cc7e-4621-b0c6-5275cb28b10b.htm">Transition Sequence Animator</a> system and may script your own transition animations yourself. To do this, you are required to create two components:
+            </p><ol><li><p>
+                  An animator, which will execute the animation.
+                </p></li><li><p>
+                  An animator provider, which will provide the animator to UI Graph.
+                </p></li></ol><p>
+              You then set your view controller's <span class="code">transitionAnimatorProvider</span> to your animator provider, which will supply your animator to <strong>UI Graph</strong> when a transition is performed. Separating the responsibilities in this way allows the provider to return different animators depending upon the transition being performed.
+            </p><p>
+              To do this, firstly create subclasses of the <a href="f78ca8c2-8874-f165-cd58-2f0da92a7814.htm">CanvasControllerTransitionAnimator</a> and <a href="7386097d-a63a-f629-0b11-d45452fb29c9.htm">CanvasControllerTransitionAnimatorProvider</a> classes. These classes derive from <span class="code">ScriptableObject</span> and implement the required interfaces as abstract override-able methods. Using <span class="code">ScriptableObject</span> assets will allow you to use the Unity Inspector to edit their properties, as well as to easily drop it onto the view controller's <span class="code">transitionAnimatorProvider</span> field (although it is not required).
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID3EAHAAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID3EAHAAABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID3EAHAAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID3EAHAAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[CreateAssetMenu]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyAnimator : CanvasControllerTransitionAnimator
+{
+
+}
+
+[CreateAssetMenu]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyAnimatorProvider : CanvasControllerTransitionAnimatorProvider
+{
+
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID3EAHAAABAAA");</script><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+                Including <span class="code">[CreateAssetMenu]</span> allows you to create an instance of your animators/provider in the Unity menu.
+              </p></td></tr></table></div><p>
+              Next, implement your transition animation in the animator class. For example, a simple scale animation could look something like this:
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID3EAEAAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID3EAEAAABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID3EAEAAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID3EAEAAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[CreateAssetMenu]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyAnimator : CanvasControllerTransitionAnimator
+{
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">float</span> duration;
+    <span class="highlight-keyword">public</span> ViewControllerTransitionTimeUpdateMode updateMode;
+
+    <span class="highlight-keyword">private</span> Transform targetTransform;
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">float</span> TransitionDuration(CanvasControllerTransitionContext context)
+    {
+        <span class="highlight-comment">// Return duration set in the inspector.</span>
+        <span class="highlight-keyword">return</span> duration;
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> ViewControllerTransitionTimeUpdateMode TransitionTimeUpdateMode(CanvasControllerTransitionContext context)
+    {
+        <span class="highlight-comment">// Return update mode set in the inspector.</span>
+        <span class="highlight-keyword">return</span> updateMode;
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> ConfigureTransitionAnimation(CanvasControllerTransitionContext context)
+    {
+        <span class="highlight-comment">// Configure your animation.</span>
+
+        <span class="highlight-comment">// Set our target transform as the ToViewController's view.</span>
+        targetTransform = context.ToViewController.View.transform;
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> UpdateTransitionAnimation(CanvasControllerTransitionContext context, <span class="highlight-keyword">float</span> progress01)
+    {
+        <span class="highlight-comment">// Perform your animation with progress01.</span>
+
+        <span class="highlight-comment">// Scale from zero to one.</span>
+        targetTransform.localScale = Vector3.LerpUnclamped(Vector3.zero, Vector3.one, progress01);
+    }
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> <span class="highlight-keyword">void</span> OnTransitionFinished(CanvasControllerTransitionContext context, <span class="highlight-keyword">bool</span> completed)
+    {
+        <span class="highlight-keyword">base</span>.OnTransitionFinished(context, completed);
+
+        <span class="highlight-comment">// An opportunity to do any clean up necessary. For example:</span>
+        <span class="highlight-comment">// - Destroy any views instantiated by the animator.</span>
+        <span class="highlight-comment">// - Reset any state changed by the animator if completed == false.</span>
+        <span class="highlight-comment">// etc.</span>
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID3EAEAAABAAA");</script><p>
+              Now we want to provide this animator in our transition provider.
+            </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID3EACAAABAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID3EACAAABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID3EACAAABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID3EACAAABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve">[CreateAssetMenu]
+<span class="highlight-keyword">public</span> <span class="highlight-keyword">class</span> MyAnimatorProvider : CanvasControllerTransitionAnimatorProvider
+{
+    <span class="highlight-keyword">public</span> CanvasControllerTransitionAnimator animator;
+
+    <span class="highlight-keyword">public</span> <span class="highlight-keyword">override</span> IViewControllerTransitionAnimator&lt;CanvasControllerTransitionContext&gt; AnimatorForTransition(CanvasControllerTransitionContext context)
+    {
+        <span class="highlight-keyword">return</span> animator;
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID3EACAAABAAA");</script><p>
+              Finally, create an instance of each using the Unity Create menu, configure their properties, and drop the provider onto the relevant view controller's <span class="code">transitionAnimatorProvider</span> field. When this view controller performs a transition, it will now use the custom provider and animator.
+            </p><div class="alert"><table><tr><th><img src="../icons/AlertNote.png" alt="Note" /> Note</th></tr><tr><td><p>
+                When a view controller is presented, it is the presented view controller that provides the animator. Similarly, when a view controller is dismissed it is the view controller being dismissed which provides the animator. For containment transitions, animators are provided by the view controller performing the transition – the container itself.
+              </p></td></tr></table></div></div></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID8RB')" onkeypress="SectionExpandCollapse_CheckKey('ID8RB', event)" tabindex="0"><img id="ID8RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID8RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="e9cf61cd-8454-cb7f-44a3-2efa024cafac.htm">CanvasController</a></div><h4 class="subHeading">Other Resources</h4><div class="seeAlsoStyle"><a href="0bc1dca5-7599-497f-880e-63c622949fef.htm">View Controllers</a></div><div class="seeAlsoStyle"><a href="414263c0-36be-4764-8375-ad85e171b182.htm">Standard Containers</a></div></div></div></div><div id="pageFooter" class="pageFooter"><p>© 2019 Pelican 7 LTD. All rights reserved.</p></div></body></html>
