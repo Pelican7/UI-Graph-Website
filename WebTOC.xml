@@ -2,100 +2,104 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Home" Url="html/da67a984-ce1f-4eba-b408-db4260a8bfa1.htm" />
-  <HelpTOCNode Id="59e099a6-fe21-4739-927b-f3732aa1712b" Title="Manual" Url="html/d6f9deb2-0be1-4787-9188-01d81be916a9.htm">
-    <HelpTOCNode Id="4310d291-fa02-435b-8150-1a38a41fe249" Title="View Controllers" Url="html/0bc1dca5-7599-497f-880e-63c622949fef.htm">
-      <HelpTOCNode Id="3f983baf-5d8d-45c4-8ed4-0e64ab1a47b7" Title="UI Canvas Workflow">
+  <HelpTOCNode Id="c1ea0ad3-1342-4cf8-8422-47220021238b" Title="Manual" Url="html/d6f9deb2-0be1-4787-9188-01d81be916a9.htm">
+    <HelpTOCNode Id="f97ec357-3d71-40b6-a45a-5bcdce2795ce" Title="View Controllers" Url="html/0bc1dca5-7599-497f-880e-63c622949fef.htm">
+      <HelpTOCNode Id="c00f1376-a798-43b7-abec-c4cc5a55770f" Title="UI Canvas Workflow">
         <HelpTOCNode Title="Canvas Controllers" Url="html/828d88a0-bf53-47a4-b1fc-884b090f5004.htm" />
-        <HelpTOCNode Id="2c7d6c31-5f55-43d2-a61e-c0f274325016" Title="Standard Containers" Url="html/414263c0-36be-4764-8375-ad85e171b182.htm">
+        <HelpTOCNode Id="98ee92f9-6c41-4879-9700-dce2622b4926" Title="Standard Containers" Url="html/414263c0-36be-4764-8375-ad85e171b182.htm">
           <HelpTOCNode Title="Tab Bar Canvas Controller" Url="html/f37d9045-7720-41dc-87fd-a33317d40bbd.htm" />
           <HelpTOCNode Title="Stack Canvas Controller" Url="html/91131bc6-d69c-4c83-90cc-c1dc2f62edc0.htm" />
           <HelpTOCNode Title="Navigation Canvas Controller" Url="html/e4bf81cc-8336-4118-9dd7-eb2eb4b7e362.htm" />
           <HelpTOCNode Title="Split Canvas Controller" Url="html/847bf95c-bbab-4a98-9ad1-aadbdde0549c.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="0b3db740-5873-4652-a213-0d481e378094" Title="UIElements Workflow">
+      <HelpTOCNode Id="891726f0-973a-4015-8299-5490256a8309" Title="UIElements Workflow">
         <HelpTOCNode Title="Elements Controllers" Url="html/f3679cb4-8fa7-47d0-9a49-3d03bf331351.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Title="Graphs" Url="html/824e6fef-eac9-4214-a9a1-6401321acde2.htm" />
+    <HelpTOCNode Id="7c80424d-ab33-4e01-9798-9e87da800d9f" Title="Graphs" Url="html/824e6fef-eac9-4214-a9a1-6401321acde2.htm">
+      <HelpTOCNode Id="95a141fe-3d22-4435-ac0f-137a226b9391" Title="UI Canvas">
+        <HelpTOCNode Title="Custom Graphable View Components" Url="html/52555bb8-a232-4eea-9657-8213c344150a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
     <HelpTOCNode Title="Transition Sequence Animator" Url="html/a787bdae-cc7e-4621-b0c6-5275cb28b10b.htm" />
-    <HelpTOCNode Id="1635d7d7-ad66-44be-b81e-c3e8440b7f29" Title="Guides">
+    <HelpTOCNode Id="2bc88464-ca35-4b2d-a8be-f2ea830016ea" Title="Guides">
       <HelpTOCNode Title="Quick Start" Url="html/f3a32709-3893-456c-bacb-eefc866ae301.htm" />
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="c28bcafc-9910-4e1d-a94b-d6aa01136a94" Title="Scripting Reference" Url="html/4ddf272a-ef49-424f-8a0c-af385fad6d3e.htm">
-    <HelpTOCNode Id="f903bb19-f009-414a-83e5-00225c1f392c" Title="Pelican7.UIGraph" Url="html/0d1268e7-b978-3141-21e6-28ba1eb58ff8.htm">
-      <HelpTOCNode Id="841300ec-6338-43b1-9127-cc87e0771972" Title="BringToFrontCanvasControllerTransitionAnimation Class" Url="html/0e0416b8-d26c-87d6-35f0-6a89b6f0a311.htm">
+  <HelpTOCNode Id="2a3a976b-0a24-4f65-8905-8ccf7432a9bf" Title="Scripting Reference" Url="html/4ddf272a-ef49-424f-8a0c-af385fad6d3e.htm">
+    <HelpTOCNode Id="c5f234e6-52fd-419d-be64-463041b84d69" Title="Pelican7.UIGraph" Url="html/0d1268e7-b978-3141-21e6-28ba1eb58ff8.htm">
+      <HelpTOCNode Id="407816f2-2e2b-430d-bc0e-92f4e31c7484" Title="BringToFrontCanvasControllerTransitionAnimation Class" Url="html/0e0416b8-d26c-87d6-35f0-6a89b6f0a311.htm">
         <HelpTOCNode Title="BringToFrontCanvasControllerTransitionAnimation Properties" Url="html/2467fadd-d275-d760-f7d3-326faad1ca29.htm" />
         <HelpTOCNode Title="BringToFrontCanvasControllerTransitionAnimation Methods" Url="html/2c755ef5-d32f-d976-6719-78b159aa825a.htm" />
         <HelpTOCNode Title="BringToFrontCanvasControllerTransitionAnimation Fields" Url="html/4cbeea48-d77e-1ad3-2e74-e36afaeeb78c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="67ac3be5-1064-41c4-b9a4-e159d78fc3b4" Title="CanvasController Class" Url="html/e9cf61cd-8454-cb7f-44a3-2efa024cafac.htm">
+      <HelpTOCNode Id="6a988547-61d7-4cba-8205-6584309cfc99" Title="CanvasController Class" Url="html/e9cf61cd-8454-cb7f-44a3-2efa024cafac.htm">
         <HelpTOCNode Title="CanvasController Properties" Url="html/56d16481-3b76-64a3-9bbf-04c9d662c433.htm" />
         <HelpTOCNode Title="CanvasController Methods" Url="html/d527dd85-a589-ee93-e280-612c5e9bb6d1.htm" />
-        <HelpTOCNode Id="ed74d7b6-b76e-48fc-85f5-20f88f0382d6" Title="CanvasController Fields" Url="html/ad801875-8bba-dfd3-8f12-92bf0fa35dba.htm">
+        <HelpTOCNode Id="ad522688-10fb-4f1a-be9a-cdc3784b3f7c" Title="CanvasController Fields" Url="html/ad801875-8bba-dfd3-8f12-92bf0fa35dba.htm">
           <HelpTOCNode Title="DismissTransition Field" Url="html/94cc1d89-a51d-f152-c106-35efbea20284.htm" />
           <HelpTOCNode Title="PresentTransition Field" Url="html/0df99df6-7da8-e895-f47b-394912715529.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="7c08a653-97c8-4edf-923b-fbb20d375b0d" Title="CanvasControllerInvokeTransitionData Class" Url="html/31254748-25e7-2100-7c79-31ae71384319.htm">
+      <HelpTOCNode Id="ff441094-976d-4c9a-8687-d2fe092c21f9" Title="CanvasControllerInvokeTransitionData Class" Url="html/31254748-25e7-2100-7c79-31ae71384319.htm">
         <HelpTOCNode Title="CanvasControllerInvokeTransitionData Methods" Url="html/cac4dabc-f7a1-774a-b328-6cd675c49e66.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e34ac8ed-eda0-4cc2-b7d4-8ad86ba25383" Title="CanvasControllerSequenceProvider Class" Url="html/dec49301-4f9f-0d37-31cb-8822a264872d.htm">
+      <HelpTOCNode Id="57edbf85-7a67-412b-89a5-606fc685c521" Title="CanvasControllerSequenceProvider Class" Url="html/dec49301-4f9f-0d37-31cb-8822a264872d.htm">
         <HelpTOCNode Title="CanvasControllerSequenceProvider Properties" Url="html/2ac96d38-bd00-4762-c8c8-f2d616fb239c.htm" />
         <HelpTOCNode Title="CanvasControllerSequenceProvider Methods" Url="html/ab0acb6d-58c1-b3d7-be85-4d4d7489b123.htm" />
-        <HelpTOCNode Id="50dc80cd-8198-4bc5-bf41-21649b66f911" Title="CanvasControllerSequenceProvider Fields" Url="html/5017c640-5abd-3924-fd20-29ec99c33727.htm">
+        <HelpTOCNode Id="437b2bb6-8aa3-41ad-8409-40b17c71d187" Title="CanvasControllerSequenceProvider Fields" Url="html/5017c640-5abd-3924-fd20-29ec99c33727.htm">
           <HelpTOCNode Title="animators Field" Url="html/6076a668-92c2-3a1b-82e6-7a4f6764ac19.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="4fd68002-2f9d-45de-b0a5-2b904fb7520e" Title="CanvasControllerSequenceProviderAnimatorData Class" Url="html/0c86573b-3c8b-19f6-7c07-b2303129f3c5.htm">
+      <HelpTOCNode Id="aa10b4dc-a938-4f99-9cc3-cbdff4613e44" Title="CanvasControllerSequenceProviderAnimatorData Class" Url="html/0c86573b-3c8b-19f6-7c07-b2303129f3c5.htm">
         <HelpTOCNode Title="CanvasControllerSequenceProviderAnimatorData Methods" Url="html/38c7688c-a626-263b-d748-aa1d53d3ef63.htm" />
-        <HelpTOCNode Id="ad5b78ac-bc6e-4bcf-bfb9-ab049edb7cde" Title="CanvasControllerSequenceProviderAnimatorData Fields" Url="html/eee0be54-d529-2827-5ae2-80ff5e92a8df.htm">
+        <HelpTOCNode Id="3aa200b8-ef9a-4ede-9bb8-66c72f2e1a7b" Title="CanvasControllerSequenceProviderAnimatorData Fields" Url="html/eee0be54-d529-2827-5ae2-80ff5e92a8df.htm">
           <HelpTOCNode Title="animator Field" Url="html/b4602597-1506-a047-24e5-224716bc624a.htm" />
           <HelpTOCNode Title="interactiveAnimator Field" Url="html/a91d1230-17ac-64ef-5e83-e70a862f1789.htm" />
           <HelpTOCNode Title="transitionGuid Field" Url="html/baafd936-fc55-b457-fccd-69643b306224.htm" />
           <HelpTOCNode Title="useAlternateAnimatorForInteractiveTransition Field" Url="html/e78933ac-a731-7049-70eb-69a653669a31.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="c0af5719-b089-4c0d-9681-5541786b3180" Title="CanvasControllerTransition Class" Url="html/1e4cf03a-6219-faf9-3a13-d8c1fea2b43b.htm">
+      <HelpTOCNode Id="430065e1-081b-4cce-8ad8-d1dc9af68f10" Title="CanvasControllerTransition Class" Url="html/1e4cf03a-6219-faf9-3a13-d8c1fea2b43b.htm">
         <HelpTOCNode Title="CanvasControllerTransition Properties" Url="html/41b3e6bd-dfe3-f4bb-0ec3-de8ae05f7612.htm" />
         <HelpTOCNode Title="CanvasControllerTransition Methods" Url="html/45a09d4a-1730-8737-8c88-2806a91a9e0b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e9388365-9e4d-46ef-87b3-b44d93b355e4" Title="CanvasControllerTransitionAnimator Class" Url="html/f78ca8c2-8874-f165-cd58-2f0da92a7814.htm">
+      <HelpTOCNode Id="07e01184-a6ce-471e-96e4-c7dfd2cabb71" Title="CanvasControllerTransitionAnimator Class" Url="html/f78ca8c2-8874-f165-cd58-2f0da92a7814.htm">
         <HelpTOCNode Title="CanvasControllerTransitionAnimator Properties" Url="html/247b702b-4974-8950-0123-45d97db39883.htm" />
         <HelpTOCNode Title="CanvasControllerTransitionAnimator Methods" Url="html/4d6ca7c7-23b3-de60-3f82-e5df663a77ac.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="0ee5e069-cc9a-47a3-88a5-a7000c962c45" Title="CanvasControllerTransitionAnimatorProvider Class" Url="html/7386097d-a63a-f629-0b11-d45452fb29c9.htm">
+      <HelpTOCNode Id="c84a6e93-8e69-443e-87df-6277820e8a14" Title="CanvasControllerTransitionAnimatorProvider Class" Url="html/7386097d-a63a-f629-0b11-d45452fb29c9.htm">
         <HelpTOCNode Title="CanvasControllerTransitionAnimatorProvider Properties" Url="html/7108ba2f-1eaa-88b6-4a96-9c1b7aabd61f.htm" />
         <HelpTOCNode Title="CanvasControllerTransitionAnimatorProvider Methods" Url="html/ab83ddff-c960-e776-4101-27a556388725.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ec701938-4641-4704-92fc-6bd4e473a3cd" Title="CanvasControllerTransitionContext Class" Url="html/61be7f8b-f248-40a5-39ce-ff343fb79b52.htm">
+      <HelpTOCNode Id="5eacba4e-759b-4e5e-a958-34f74f0b95c5" Title="CanvasControllerTransitionContext Class" Url="html/61be7f8b-f248-40a5-39ce-ff343fb79b52.htm">
         <HelpTOCNode Title="CanvasControllerTransitionContext Properties" Url="html/f478e473-f83b-7569-3a1e-f748a826d50b.htm" />
         <HelpTOCNode Title="CanvasControllerTransitionContext Methods" Url="html/c318d705-5b18-c63e-6fde-5b58ca5be33e.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a73fbb0f-2335-4442-a5e2-f8e2f4b78f5d" Title="CanvasControllerTransitionSequenceAnimation Class" Url="html/893397bc-6bfd-bbaf-83d3-53017eaeb146.htm">
+      <HelpTOCNode Id="a5082f14-b11c-48f7-af48-042d1794047c" Title="CanvasControllerTransitionSequenceAnimation Class" Url="html/893397bc-6bfd-bbaf-83d3-53017eaeb146.htm">
         <HelpTOCNode Title="CanvasControllerTransitionSequenceAnimation Properties" Url="html/14bf91ac-87cb-bd15-5fbd-bbea0794e3c3.htm" />
         <HelpTOCNode Title="CanvasControllerTransitionSequenceAnimation Methods" Url="html/f07a1d3f-0cda-5f7a-2d49-4433f0bd2c2e.htm" />
         <HelpTOCNode Title="CanvasControllerTransitionSequenceAnimation Fields" Url="html/e9a8741a-0ed9-7cd9-7fdc-a82816686876.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="462f460f-fad0-457f-a229-213de35fb0f0" Title="CanvasControllerTransitionSequenceAnimator Class" Url="html/d5008550-1d46-ae2c-583c-c1e07986bbfe.htm">
+      <HelpTOCNode Id="fc183a13-39ec-457f-bb99-c24e91831953" Title="CanvasControllerTransitionSequenceAnimator Class" Url="html/d5008550-1d46-ae2c-583c-c1e07986bbfe.htm">
         <HelpTOCNode Title="CanvasControllerTransitionSequenceAnimator Properties" Url="html/f1aba182-590f-5d11-ac4a-7327da3c29e6.htm" />
         <HelpTOCNode Title="CanvasControllerTransitionSequenceAnimator Methods" Url="html/416b515a-dd9e-911e-df9a-d101e5eb3745.htm" />
         <HelpTOCNode Title="CanvasControllerTransitionSequenceAnimator Fields" Url="html/69a0f9d3-6c91-8e96-d562-cd04fcd8db24.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="72d1a816-7e94-4691-b322-fcaa2bc29438" Title="CanvasControllerTransitionSequenceRegion Class" Url="html/3a0d1c5d-71b6-0e8a-b201-72375cb0d039.htm">
+      <HelpTOCNode Id="b285f59b-7e91-4870-a70b-d4c7acbc39e3" Title="CanvasControllerTransitionSequenceRegion Class" Url="html/3a0d1c5d-71b6-0e8a-b201-72375cb0d039.htm">
         <HelpTOCNode Title="CanvasControllerTransitionSequenceRegion Methods" Url="html/eab568b3-473a-9755-dd3e-bb7b30a516e0.htm" />
         <HelpTOCNode Title="CanvasControllerTransitionSequenceRegion Fields" Url="html/a59a5230-836a-28d7-6902-d5c8ab554c54.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="7cac34f7-b373-4593-bffd-12029b63f79f" Title="CanvasGraph Class" Url="html/440d6050-686c-e47a-2ee6-8484f9f7ace7.htm">
+      <HelpTOCNode Id="a71a68a3-5e64-4791-bf61-43a71e2dfe72" Title="CanvasGraph Class" Url="html/440d6050-686c-e47a-2ee6-8484f9f7ace7.htm">
         <HelpTOCNode Title="CanvasGraph Methods" Url="html/4b0cf9b7-2fdf-52df-a33e-ed0a194f1331.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="3dd02eb6-a529-4338-9396-a521a3604f3e" Title="CanvasGraphPresenter Class" Url="html/8a559ce1-8b7d-a0c1-e527-502107009d0a.htm">
+      <HelpTOCNode Id="d404c07e-5194-4f55-b05c-dcfbf627e895" Title="CanvasGraphPresenter Class" Url="html/8a559ce1-8b7d-a0c1-e527-502107009d0a.htm">
         <HelpTOCNode Title="CanvasGraphPresenter Properties" Url="html/e954f143-8e68-973f-0a23-4b860891be2b.htm" />
-        <HelpTOCNode Id="51b4150b-8735-4a74-b158-b91eb218f341" Title="CanvasGraphPresenter Methods" Url="html/adf8ec08-6d88-caad-53ab-b4f3c009263b.htm">
+        <HelpTOCNode Id="0aa24818-ed70-47bb-90ac-5ad43470d536" Title="CanvasGraphPresenter Methods" Url="html/adf8ec08-6d88-caad-53ab-b4f3c009263b.htm">
           <HelpTOCNode Title="PresentGraphInWindow Method " Url="html/dac88f91-9901-c5c9-62fd-32a4680a691f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="44cbe1cb-0f99-483f-920f-fdff086b915c" Title="CanvasGraphPresenter Fields" Url="html/a125592c-3b35-50ac-27d0-8893477d546a.htm">
+        <HelpTOCNode Id="7f23908f-3ee4-482a-aa89-2b02cf6c286d" Title="CanvasGraphPresenter Fields" Url="html/a125592c-3b35-50ac-27d0-8893477d546a.htm">
           <HelpTOCNode Title="graphResource Field" Url="html/ebdc00ce-57c2-a569-6410-5467e86c488c.htm" />
           <HelpTOCNode Title="OnGraphPresented Field" Url="html/c87f40f5-6839-d025-6d3c-e43baad64e33.htm" />
           <HelpTOCNode Title="presentAnimated Field" Url="html/3e35e040-8a54-7411-9a52-bcb32704fba2.htm" />
@@ -103,76 +107,76 @@
           <HelpTOCNode Title="window Field" Url="html/71fe29a6-7b65-7540-0b50-05d3fcaff07c.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="626e6dd0-fee5-45ad-964b-6e2ce1685e62" Title="CanvasGraphPresenter.CanvasGraphPresentationEvent Class" Url="html/9beebad4-e6e0-335c-dab9-112411578dbb.htm">
+      <HelpTOCNode Id="ae48f866-e9f8-42d3-a88f-78f7a657c6fa" Title="CanvasGraphPresenter.CanvasGraphPresentationEvent Class" Url="html/9beebad4-e6e0-335c-dab9-112411578dbb.htm">
         <HelpTOCNode Title="CanvasGraphPresentationEvent Methods" Url="html/4725f74b-ee7f-7a65-a6f4-d1791ab0e2c0.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="a2ba6252-cbea-47ed-8a70-97fb2d61795b" Title="CanvasNavigationBarBackButton Class" Url="html/a0b165dc-a7a0-15cf-3450-fdd75ed628d8.htm">
+      <HelpTOCNode Id="d8465259-f30f-4d48-8671-18e9357837fb" Title="CanvasNavigationBarBackButton Class" Url="html/a0b165dc-a7a0-15cf-3450-fdd75ed628d8.htm">
         <HelpTOCNode Title="CanvasNavigationBarBackButton Properties" Url="html/9be467a7-b9dc-ae1b-bc9d-1f4687017b8a.htm" />
-        <HelpTOCNode Id="e0c95360-286b-4070-8df7-c344a6dc66b3" Title="CanvasNavigationBarBackButton Methods" Url="html/fbdd35cb-4112-1345-a24f-b7aa3c9b074c.htm">
+        <HelpTOCNode Id="777a842c-ad6d-4407-a79f-b1c32cbe75a0" Title="CanvasNavigationBarBackButton Methods" Url="html/fbdd35cb-4112-1345-a24f-b7aa3c9b074c.htm">
           <HelpTOCNode Title="Configure Method " Url="html/be40bdc6-4795-a505-3c97-1746122ed749.htm" />
           <HelpTOCNode Title="PopViewController Method " Url="html/c957c317-d899-1137-0a1f-451b5ccf468f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="233cf2e1-865f-4852-b133-192bddf98823" Title="CanvasNavigationBarBackButton Fields" Url="html/37be98fd-35ee-5aed-3f54-f7666e1f5466.htm">
+        <HelpTOCNode Id="44834779-4b6b-4ef6-b0ed-81fdce58759f" Title="CanvasNavigationBarBackButton Fields" Url="html/37be98fd-35ee-5aed-3f54-f7666e1f5466.htm">
           <HelpTOCNode Title="alphaTransitionCurve Field" Url="html/bb3ef546-afe1-c40b-6067-f84db7d033e0.htm" />
           <HelpTOCNode Title="button Field" Url="html/de271546-154f-0eae-1c73-c1e7299c7869.htm" />
           <HelpTOCNode Title="icon Field" Url="html/7ca46e14-a0bd-418f-d37e-729b4e5b29be.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="15893948-aa7d-427e-88f6-0955d1f35eca" Title="CanvasNavigationBarTitleLabel Class" Url="html/5769c5ed-39ee-b043-864e-193dc1d0144b.htm">
+      <HelpTOCNode Id="5b531508-dd99-4079-9338-a5ea4dae3d20" Title="CanvasNavigationBarTitleLabel Class" Url="html/5769c5ed-39ee-b043-864e-193dc1d0144b.htm">
         <HelpTOCNode Title="CanvasNavigationBarTitleLabel Properties" Url="html/a21b1f36-f432-7775-5f6d-e38e07ec1ebf.htm" />
         <HelpTOCNode Title="CanvasNavigationBarTitleLabel Methods" Url="html/8c77bcd2-f497-71f7-8c61-d65a81779e98.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="acdaa802-c82f-4465-a58e-35bc99ed74c5" Title="CanvasNavigationTransitionNotifier Class" Url="html/6f0b7897-23c2-5cbe-d3dd-3bfa55cec164.htm">
+      <HelpTOCNode Id="9403a384-4e10-409f-8c3a-54d6f6e2d402" Title="CanvasNavigationTransitionNotifier Class" Url="html/6f0b7897-23c2-5cbe-d3dd-3bfa55cec164.htm">
         <HelpTOCNode Title="CanvasNavigationTransitionNotifier Properties" Url="html/4a4b7eb7-61a8-4a30-2200-ccccc61bf73e.htm" />
         <HelpTOCNode Title="CanvasNavigationTransitionNotifier Methods" Url="html/2454fb14-ef79-8171-6eef-0987ff68eac8.htm" />
-        <HelpTOCNode Id="f2af3e4a-a318-48ca-b546-a4b56e5dc14f" Title="CanvasNavigationTransitionNotifier Fields" Url="html/e7060a7a-7ac4-77d3-1edc-bae58bb0f322.htm">
+        <HelpTOCNode Id="e889afa0-38fe-4176-88ad-917844823503" Title="CanvasNavigationTransitionNotifier Fields" Url="html/e7060a7a-7ac4-77d3-1edc-bae58bb0f322.htm">
           <HelpTOCNode Title="OnNavigationControllerDidPerformChildTransition Field" Url="html/e39a051a-0fe1-5f03-e331-7de8a8269747.htm" />
           <HelpTOCNode Title="OnNavigationControllerWillPerformChildTransition Field" Url="html/2fadd409-f8c0-334c-2a34-823bdef6034e.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="0a08fc75-c922-4b39-83cb-ea0dc0722fb0" Title="CanvasNavigationTransitionNotifier.CanvasNavigationControllerDidPerformTransitionEvent Class" Url="html/4fed00f7-1a56-0960-4a68-574347f41dc0.htm">
+      <HelpTOCNode Id="2b02da7f-e782-438b-8cac-e378c521aefb" Title="CanvasNavigationTransitionNotifier.CanvasNavigationControllerDidPerformTransitionEvent Class" Url="html/4fed00f7-1a56-0960-4a68-574347f41dc0.htm">
         <HelpTOCNode Title="CanvasNavigationControllerDidPerformTransitionEvent Methods" Url="html/1da5a2be-3857-3d17-8c52-03591c0f9521.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="eea79b0b-f765-47f5-a9f1-a684ae519ff5" Title="CanvasNavigationTransitionNotifier.CanvasNavigationControllerWillPerformTransitionEvent Class" Url="html/e780c75d-79dc-3faf-cc75-192fdadf7130.htm">
+      <HelpTOCNode Id="63b47315-c1e5-4861-bb9b-f6c7219559ab" Title="CanvasNavigationTransitionNotifier.CanvasNavigationControllerWillPerformTransitionEvent Class" Url="html/e780c75d-79dc-3faf-cc75-192fdadf7130.htm">
         <HelpTOCNode Title="CanvasNavigationControllerWillPerformTransitionEvent Methods" Url="html/cb51219b-24d4-734f-2a99-ba364d860a5e.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="818e253f-4eea-4891-ad07-7ea661aa10b3" Title="CanvasTabBar Class" Url="html/f26dc47a-ba1e-947c-1de0-3517f792e222.htm">
+      <HelpTOCNode Id="b9470d5f-9f20-4bed-93dc-c3e2b054b838" Title="CanvasTabBar Class" Url="html/f26dc47a-ba1e-947c-1de0-3517f792e222.htm">
         <HelpTOCNode Title="CanvasTabBar Properties" Url="html/275b88f3-c212-6ae6-8f1b-a8c5185df53d.htm" />
-        <HelpTOCNode Id="85684885-e98c-4963-89e7-b37975f4bd0a" Title="CanvasTabBar Methods" Url="html/455c15a9-fadb-b5a0-648d-909041ceb781.htm">
+        <HelpTOCNode Id="074721a9-8604-4c49-a4e0-8d23dc9b5936" Title="CanvasTabBar Methods" Url="html/455c15a9-fadb-b5a0-648d-909041ceb781.htm">
           <HelpTOCNode Title="BindToTabBarItemClicked Method " Url="html/9d16cb2a-5118-989f-adac-d38aac8eeb0b.htm" />
           <HelpTOCNode Title="LoadTabBarItemsForTabBarController Method " Url="html/447404bf-6c26-f1cd-243a-3f614954c7db.htm" />
           <HelpTOCNode Title="ReloadTabBarItemsForTabBarController Method " Url="html/9debeffd-1b36-6f48-3306-8c1dc5bdb0c8.htm" />
           <HelpTOCNode Title="SelectTabBarItemAtIndex Method " Url="html/90c1bdc6-f686-c13e-6376-dca3914c7bd8.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a11b3c59-1cb8-4f2f-9524-3101315580b4" Title="CanvasTabBar Fields" Url="html/73db09c5-d8f2-4dac-f3cb-b918d4ca4a24.htm">
+        <HelpTOCNode Id="9a6e8eee-1ce2-4877-bd98-7e2011a7a57d" Title="CanvasTabBar Fields" Url="html/73db09c5-d8f2-4dac-f3cb-b918d4ca4a24.htm">
           <HelpTOCNode Title="tabBarItems Field" Url="html/63d56631-dde5-7786-75e5-4e14d5e335dd.htm" />
           <HelpTOCNode Title="tabBarItemsContainer Field" Url="html/fbacd607-e854-042d-4efb-8b616fd246f0.htm" />
           <HelpTOCNode Title="tabBarItemTemplate Field" Url="html/c274d27a-04ed-e33c-6570-f85ec5e05b80.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="14db5ba5-f099-4ad6-95a8-b700da0294e6" Title="CanvasTabBarItem Class" Url="html/cfdec661-9da3-b86d-ca54-69d12d1e91d4.htm">
+      <HelpTOCNode Id="619f2239-75bc-4e34-8706-3a905c1bb685" Title="CanvasTabBarItem Class" Url="html/cfdec661-9da3-b86d-ca54-69d12d1e91d4.htm">
         <HelpTOCNode Title="CanvasTabBarItem Properties" Url="html/2da52d91-cedc-92d3-d2e2-30effdcb11c1.htm" />
-        <HelpTOCNode Id="8cda1d79-66b4-4ed6-a47e-7b285705a2e5" Title="CanvasTabBarItem Methods" Url="html/5275be46-d3ab-38b1-4d8f-dd6218d16778.htm">
+        <HelpTOCNode Id="32f1787c-c2d3-4732-80cc-09773b8670fd" Title="CanvasTabBarItem Methods" Url="html/5275be46-d3ab-38b1-4d8f-dd6218d16778.htm">
           <HelpTOCNode Title="BindToClick Method " Url="html/b8fb3df6-7047-ea8d-22a6-91173adfd3cc.htm" />
           <HelpTOCNode Title="ConfigureForTabBarWithViewControllerAtIndex Method " Url="html/8a90c3ea-373c-452d-51d9-172db7b12360.htm" />
           <HelpTOCNode Title="InvokeOnClicked Method " Url="html/751810ee-c163-a183-b42e-1d70ff18b976.htm" />
           <HelpTOCNode Title="SetSelected Method " Url="html/4d7a34c5-c589-a6ce-8371-2626a74f5864.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="cd3df2ef-dba8-49c5-b784-6ba46e04575b" Title="CanvasTabBarItem Fields" Url="html/5b2afd74-018e-228c-891e-e6f06d5cb839.htm">
+        <HelpTOCNode Id="a702fd67-7a5e-4da8-9989-39999762fd64" Title="CanvasTabBarItem Fields" Url="html/5b2afd74-018e-228c-891e-e6f06d5cb839.htm">
           <HelpTOCNode Title="index Field" Url="html/9596e6d0-4eb8-c208-4225-0c75458b7875.htm" />
           <HelpTOCNode Title="OnConfiguredForTabBarWithViewController Field" Url="html/db709264-bf21-3201-5363-78481f11fc6a.htm" />
           <HelpTOCNode Title="OnDeselected Field" Url="html/222ef8c1-41c8-1cb2-01b6-6414ee312fb2.htm" />
           <HelpTOCNode Title="OnSelected Field" Url="html/cec2fcd7-63ca-21fd-8097-70b6527e377f.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="8b8ff513-1968-4074-8197-1ffa2a9ecd1b" Title="CanvasTabBarItem.CanvasTabBarItemConfigurationEvent Class" Url="html/6841e654-7a0d-e41f-e7c7-9b497630e2a0.htm">
+      <HelpTOCNode Id="e66b92d3-33b5-472c-a8f6-82f30cd081c4" Title="CanvasTabBarItem.CanvasTabBarItemConfigurationEvent Class" Url="html/6841e654-7a0d-e41f-e7c7-9b497630e2a0.htm">
         <HelpTOCNode Title="CanvasTabBarItemConfigurationEvent Methods" Url="html/170f57aa-7866-6399-6800-30e2a292158a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c0b792dc-74ee-4e43-80d1-a43d2f7b2c04" Title="CanvasTabBarItem.CanvasTabBarItemEvent Class" Url="html/4a878d80-0006-e313-0a4c-e7cd0744069b.htm">
+      <HelpTOCNode Id="f382c678-2fec-46ba-a939-4fb74eb499a3" Title="CanvasTabBarItem.CanvasTabBarItemEvent Class" Url="html/4a878d80-0006-e313-0a4c-e7cd0744069b.htm">
         <HelpTOCNode Title="CanvasTabBarItemEvent Methods" Url="html/13113ff9-9f8a-a4a7-ee47-3345c2c1afd7.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="f71e0e9e-f272-4eaf-9957-90cc8e794285" Title="CanvasView Class" Url="html/d2f3cdd2-4c91-65ea-c664-a3cadc516b88.htm">
-        <HelpTOCNode Id="389d41e2-b54d-4864-aa2c-6faa7e3c6bb7" Title="CanvasView Properties" Url="html/d543a183-2494-6160-5bc0-600d4a3f2f5f.htm">
+      <HelpTOCNode Id="87db8463-506b-490c-95a8-55443a46d8bc" Title="CanvasView Class" Url="html/d2f3cdd2-4c91-65ea-c664-a3cadc516b88.htm">
+        <HelpTOCNode Id="0135e9d5-031e-4ded-a218-ef142c5adb72" Title="CanvasView Properties" Url="html/d543a183-2494-6160-5bc0-600d4a3f2f5f.htm">
           <HelpTOCNode Title="Alpha Property " Url="html/ff55994b-7e67-4de6-ca0f-a530ed8b4fbd.htm" />
           <HelpTOCNode Title="Canvas Property " Url="html/a22b644c-3feb-7e64-4f43-3d96251f6e45.htm" />
           <HelpTOCNode Title="CanvasGroup Property " Url="html/cd762978-36fe-1478-f774-6893617219ba.htm" />
@@ -183,7 +187,7 @@
           <HelpTOCNode Title="Visible Property " Url="html/dd079fff-7555-4b09-36cd-82645d2c2d37.htm" />
           <HelpTOCNode Title="Window Property " Url="html/42f100a5-1ed8-1f83-0822-ec70cde2c369.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="b8ae989b-59b1-423b-af76-e9a44040af2c" Title="CanvasView Methods" Url="html/36aee1ff-9565-3eac-fc3b-ce2956532a34.htm">
+        <HelpTOCNode Id="aecc42e0-390c-47a5-b4b7-ee033d27871a" Title="CanvasView Methods" Url="html/36aee1ff-9565-3eac-fc3b-ce2956532a34.htm">
           <HelpTOCNode Title="Add Method " Url="html/33b8175c-9cd7-ca84-09a2-8e5c957dfe1b.htm" />
           <HelpTOCNode Title="BringToFront Method " Url="html/5299500e-c2b0-9df4-fbbd-c5a86bbac8f2.htm" />
           <HelpTOCNode Title="FitToParent Method " Url="html/899f2e0d-6636-6411-c0e5-6888856a35cd.htm" />
@@ -191,216 +195,216 @@
           <HelpTOCNode Title="Unload Method " Url="html/f309d04a-cf27-cfab-505b-a1af7abad78c.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="0546f1ed-99ce-4d73-8dc0-4fa64905fb1b" Title="CanvasViewCallback Class" Url="html/db9c63de-f93a-dde8-e678-91b33aa98c91.htm">
-        <HelpTOCNode Id="401af9cc-5528-4f30-b740-90b2f5921222" Title="CanvasViewCallback Properties" Url="html/8fbcac85-7b14-265b-ffc1-19d58e68c179.htm">
+      <HelpTOCNode Id="6d5eeaae-afed-4601-b1a7-60028ac0e8cf" Title="CanvasViewCallback Class" Url="html/db9c63de-f93a-dde8-e678-91b33aa98c91.htm">
+        <HelpTOCNode Id="f0304143-2cb9-4dd8-adc7-96534be4d8a0" Title="CanvasViewCallback Properties" Url="html/8fbcac85-7b14-265b-ffc1-19d58e68c179.htm">
           <HelpTOCNode Title="DisplayName Property " Url="html/75fe0abd-0954-5cc4-094d-06637c00f747.htm" />
           <HelpTOCNode Title="Identifier Property " Url="html/c7313f6d-27ea-02ae-7e7c-a87f0694e7af.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="432b3b10-6b4e-4b0b-9428-69c999695f98" Title="CanvasViewCallback Methods" Url="html/0e8b0fa1-3858-0c54-dc9a-8e654b119a27.htm">
+        <HelpTOCNode Id="b7abfe96-65e1-4597-a415-c5259eadf21b" Title="CanvasViewCallback Methods" Url="html/0e8b0fa1-3858-0c54-dc9a-8e654b119a27.htm">
           <HelpTOCNode Title="InvokeOnTarget Method " Url="html/ae32370d-50f2-7d01-2d02-bf701cebafd6.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="71aea691-9a3f-4328-8550-a138e89594bb" Title="CanvasViewCallbackBool Class" Url="html/a4137765-0dba-f767-8a3f-a339416d281d.htm">
+      <HelpTOCNode Id="a11a28c3-3a63-4ed8-8414-fc7b8941edac" Title="CanvasViewCallbackBool Class" Url="html/a4137765-0dba-f767-8a3f-a339416d281d.htm">
         <HelpTOCNode Title="CanvasViewCallbackBool Properties" Url="html/5798583e-c117-db71-5289-54603cf2dbfc.htm" />
         <HelpTOCNode Title="CanvasViewCallbackBool Methods" Url="html/4de6ea98-b221-4151-673a-2ff5b84db119.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2c1a92f7-5fe1-4a43-a9e6-013d4e4e78db" Title="CanvasViewCallbackFloat Class" Url="html/1ae497c8-4a61-b03e-6f58-53173aaf9471.htm">
+      <HelpTOCNode Id="74fb041a-fc08-4cfd-b05a-27abd36457b5" Title="CanvasViewCallbackFloat Class" Url="html/1ae497c8-4a61-b03e-6f58-53173aaf9471.htm">
         <HelpTOCNode Title="CanvasViewCallbackFloat Properties" Url="html/ac4b6cd2-f6af-2a41-0571-e4a1d064d41c.htm" />
         <HelpTOCNode Title="CanvasViewCallbackFloat Methods" Url="html/f05d17d2-6e36-bd54-65d2-a123923d722b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="315a7975-4c58-4120-b0a4-93a7bcb35e04" Title="CanvasViewCallbackInt Class" Url="html/ff43e1cf-8162-f9e8-f486-f2d26b502b16.htm">
+      <HelpTOCNode Id="4801ee7f-a9e6-429f-8185-1dda33d40e63" Title="CanvasViewCallbackInt Class" Url="html/ff43e1cf-8162-f9e8-f486-f2d26b502b16.htm">
         <HelpTOCNode Title="CanvasViewCallbackInt Properties" Url="html/9ec9e5aa-d304-e085-8436-5084f076aed7.htm" />
         <HelpTOCNode Title="CanvasViewCallbackInt Methods" Url="html/0b1d74f6-5b33-3113-64b8-d995e650f4ab.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="5d0a3683-e2df-404b-81dc-890425ebf011" Title="CanvasViewCallbackMultipleParameters Class" Url="html/8f234d9a-67c8-b0ae-b836-307fb6c41710.htm">
+      <HelpTOCNode Id="35520646-1e45-4fab-a623-f5aa78bc6eb7" Title="CanvasViewCallbackMultipleParameters Class" Url="html/8f234d9a-67c8-b0ae-b836-307fb6c41710.htm">
         <HelpTOCNode Title="CanvasViewCallbackMultipleParameters Properties" Url="html/2569e910-ef02-b739-9112-e9d5ec43f7ea.htm" />
         <HelpTOCNode Title="CanvasViewCallbackMultipleParameters Methods" Url="html/dcab875a-4970-e1e2-f4c4-4cc59e6e8af8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="8325bddb-7d7d-4645-9d72-0d5738bb87d9" Title="CanvasViewCallbackNoParameters Class" Url="html/7cac7121-181b-05ea-2d40-b0214a356cab.htm">
+      <HelpTOCNode Id="55a753ae-987e-4f85-b51e-e21d4ae99639" Title="CanvasViewCallbackNoParameters Class" Url="html/7cac7121-181b-05ea-2d40-b0214a356cab.htm">
         <HelpTOCNode Title="CanvasViewCallbackNoParameters Properties" Url="html/3f2dd557-3b1b-5a74-6747-6e1dfa6d2938.htm" />
         <HelpTOCNode Title="CanvasViewCallbackNoParameters Methods" Url="html/fdbe49c0-dc0f-c423-7fc6-e05e16d10e01.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b798bb1d-64fe-4221-80aa-2f58e629dcd8" Title="CanvasViewCallbackString Class" Url="html/e6c9aede-9416-bd55-a946-b8ef7fdd504d.htm">
+      <HelpTOCNode Id="5b4156b3-4a43-40f8-8655-f14ad3d44870" Title="CanvasViewCallbackString Class" Url="html/e6c9aede-9416-bd55-a946-b8ef7fdd504d.htm">
         <HelpTOCNode Title="CanvasViewCallbackString Properties" Url="html/bdcac11f-ad39-d61f-513d-8c456a70d177.htm" />
         <HelpTOCNode Title="CanvasViewCallbackString Methods" Url="html/7236c929-c35c-55d3-bac0-aae825ad3038.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="91333814-4d1d-4621-8869-29b85b501a3e" Title="CanvasViewCallbackSystemObject Class" Url="html/8e6182a0-58e1-09ba-0b2f-d1d7cf5d20e2.htm">
+      <HelpTOCNode Id="7fded309-dbe3-4680-a302-718ae1964ea9" Title="CanvasViewCallbackSystemObject Class" Url="html/8e6182a0-58e1-09ba-0b2f-d1d7cf5d20e2.htm">
         <HelpTOCNode Title="CanvasViewCallbackSystemObject Properties" Url="html/b30af751-911e-e3d9-a40c-e385903c4eb7.htm" />
         <HelpTOCNode Title="CanvasViewCallbackSystemObject Methods" Url="html/ffdc2d18-4307-4777-68e5-521d66b5815d.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b13eb989-5c1e-4e99-bc42-4c5ba4fb3cde" Title="CanvasViewCallbackUnityObject Class" Url="html/5fa3636a-e62c-2739-9c57-6795056f3970.htm">
+      <HelpTOCNode Id="1730f4b3-a9ff-4db5-abff-e6f44d3f55f4" Title="CanvasViewCallbackUnityObject Class" Url="html/5fa3636a-e62c-2739-9c57-6795056f3970.htm">
         <HelpTOCNode Title="CanvasViewCallbackUnityObject Properties" Url="html/88384020-6296-964b-a429-55d3c8837c1f.htm" />
         <HelpTOCNode Title="CanvasViewCallbackUnityObject Methods" Url="html/d39cb840-cfad-3fe6-9a36-881da5fe8776.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fccd8489-baa7-4230-bb4e-d9a8ffa37560" Title="CanvasViewCallbackWithParameter(T) Class" Url="html/be867a40-9f9f-0d14-b7a2-0c7c1be0c10c.htm">
+      <HelpTOCNode Id="6d3b1a24-c1a0-4568-8023-3ad22a19c2d6" Title="CanvasViewCallbackWithParameter(T) Class" Url="html/be867a40-9f9f-0d14-b7a2-0c7c1be0c10c.htm">
         <HelpTOCNode Title="CanvasViewCallbackWithParameter(T) Properties" Url="html/4e4de681-5439-09a3-dbb7-33f3d387b856.htm" />
         <HelpTOCNode Title="CanvasViewCallbackWithParameter(T) Methods" Url="html/45b2b5f0-44e6-d501-edad-d7b0ad2f2a51.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="49e3cffe-522b-4846-9a8f-97d7b7c63933" Title="CanvasViewExtensions Class" Url="html/24902c88-e345-e232-1882-a0c65b5a2cc1.htm">
-        <HelpTOCNode Id="cf13a001-7dbf-458b-adc5-cad5348c1260" Title="CanvasViewExtensions Methods" Url="html/18bbf915-356b-c0fc-47d3-77a766d1bb50.htm">
+      <HelpTOCNode Id="afbb36c0-9ab2-49b0-83c1-54276e5ddce2" Title="CanvasViewExtensions Class" Url="html/24902c88-e345-e232-1882-a0c65b5a2cc1.htm">
+        <HelpTOCNode Id="af071a7c-1ccd-446d-b274-edf7e2a35737" Title="CanvasViewExtensions Methods" Url="html/18bbf915-356b-c0fc-47d3-77a766d1bb50.htm">
           <HelpTOCNode Title="ScreenPositionToLocalPosition Method " Url="html/7fc8acd0-9345-2c8c-47b0-9558cf572073.htm" />
           <HelpTOCNode Title="ScreenPositionToNormalizedLocalPosition Method " Url="html/c3e350c9-cf80-b3d4-14c6-f55f64540f24.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="2cdcaecd-dc35-4e6e-a37a-61c30f16a68a" Title="CanvasViewOwnerBindings Class" Url="html/845cfc28-f4ff-6067-b79e-2d8015b72526.htm">
+      <HelpTOCNode Id="93a75b12-98d4-462e-afc2-6d93d45cb5be" Title="CanvasViewOwnerBindings Class" Url="html/845cfc28-f4ff-6067-b79e-2d8015b72526.htm">
         <HelpTOCNode Title="CanvasViewOwnerBindings Properties" Url="html/eba04c7f-6e48-ca59-7035-b5e4a05c954d.htm" />
-        <HelpTOCNode Id="6853a6d4-6481-4ed3-8e3e-4cc59e169e42" Title="CanvasViewOwnerBindings Methods" Url="html/f4e97dc7-3eeb-ff1a-6028-66fe944306bc.htm">
+        <HelpTOCNode Id="c35620fc-dd3a-4662-90b1-d9b3ac0fc8c8" Title="CanvasViewOwnerBindings Methods" Url="html/f4e97dc7-3eeb-ff1a-6028-66fe944306bc.htm">
           <HelpTOCNode Title="CallbackWithIdentifier Method " Url="html/33787187-3ccf-6c3e-9c5b-730d2f9b5794.htm" />
           <HelpTOCNode Title="ReferenceWithIdentifier Method " Url="html/a93e38be-1ced-b97e-1a03-25756db0641e.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="1525f2cf-fc24-47bb-aaf4-7d56807873a4" Title="CanvasViewOwnerBindings Fields" Url="html/5035831d-14b9-c3d0-b257-aee186bc5388.htm">
+        <HelpTOCNode Id="1c87acaa-2ce7-49cb-8a2d-949f6e6b2129" Title="CanvasViewOwnerBindings Fields" Url="html/5035831d-14b9-c3d0-b257-aee186bc5388.htm">
           <HelpTOCNode Title="OnBoundToOwner Field" Url="html/210f1722-a6f9-1fae-1406-77bdcae795a8.htm" />
           <HelpTOCNode Title="viewCallbacks Field" Url="html/fac4de27-71d1-4bf1-faae-f0f6c5160bd8.htm" />
           <HelpTOCNode Title="viewReferences Field" Url="html/5ba73037-dbf3-e885-0d5e-b4c23f8194dd.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="3f0b6531-5b7c-4074-9285-7e1feedb3e8b" Title="CanvasViewReference Class" Url="html/9bef26fb-3c8d-4b1e-4209-64e18d5b5bd7.htm">
-        <HelpTOCNode Id="0aaaa271-0093-4d7b-8061-bf5ffa4481c8" Title="CanvasViewReference Properties" Url="html/7e59a1e5-b661-ac1b-1e5d-dfd1f7e952b9.htm">
+      <HelpTOCNode Id="0e8cf183-e378-45fd-a335-106e603f3c12" Title="CanvasViewReference Class" Url="html/9bef26fb-3c8d-4b1e-4209-64e18d5b5bd7.htm">
+        <HelpTOCNode Id="641b6383-5fcb-4275-a2a5-d988952d1be7" Title="CanvasViewReference Properties" Url="html/7e59a1e5-b661-ac1b-1e5d-dfd1f7e952b9.htm">
           <HelpTOCNode Title="HasObjectReference Property " Url="html/f4d88fcd-cca1-7c96-cf70-c5394d6095c5.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="CanvasViewReference Methods" Url="html/3b8dbcf6-5f85-79ae-b9c3-eb92717369a8.htm" />
-        <HelpTOCNode Id="bbbb47a2-61b4-47e6-a160-aef68259132a" Title="CanvasViewReference Fields" Url="html/2eb0ce5f-e96e-9f67-1bfb-52f8ab149834.htm">
+        <HelpTOCNode Id="9019d3c7-530f-448f-86dd-930f5a193f4c" Title="CanvasViewReference Fields" Url="html/2eb0ce5f-e96e-9f67-1bfb-52f8ab149834.htm">
           <HelpTOCNode Title="objectReference Field" Url="html/bae8eacc-e39b-8949-9d6c-089c4f012282.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="a5dff8bf-8ecc-4827-a28a-30c000f59165" Title="CanvasWindow Class" Url="html/ad0e49bb-c072-816f-d16d-7824e3d14cb6.htm">
-        <HelpTOCNode Id="bbba45e4-b639-4f99-b6df-c4a9f55cea0e" Title="CanvasWindow Properties" Url="html/f678d4c7-10ef-15cb-cd01-960b863e90b7.htm">
+      <HelpTOCNode Id="114771a3-ca47-412f-a425-356d8918e51e" Title="CanvasWindow Class" Url="html/ad0e49bb-c072-816f-d16d-7824e3d14cb6.htm">
+        <HelpTOCNode Id="0ca1bc71-0989-4af3-a762-a64c0267522d" Title="CanvasWindow Properties" Url="html/f678d4c7-10ef-15cb-cd01-960b863e90b7.htm">
           <HelpTOCNode Title="Depth Property " Url="html/a414b357-c416-0a2a-75af-23714f72a6af.htm" />
           <HelpTOCNode Title="RootViewController Property " Url="html/89f46dd3-660e-dfbd-f102-862dd2f0a40f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="768c42cc-150a-4896-a99a-11116605bcb0" Title="CanvasWindow Methods" Url="html/98afe7e8-90e9-a01d-adf9-5a18b7cdebc5.htm">
+        <HelpTOCNode Id="9cec1378-679a-43d5-af85-aef142825206" Title="CanvasWindow Methods" Url="html/98afe7e8-90e9-a01d-adf9-5a18b7cdebc5.htm">
           <HelpTOCNode Title="Dismiss Method " Url="html/9ef31f1b-6f55-ae59-ebbc-5740e671a96a.htm" />
           <HelpTOCNode Title="Present Method " Url="html/96d83e27-4b0c-f5b8-03d1-848caeea4781.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="62a99776-79cd-411b-8aa7-9bf5ecb21762" Title="CanvasWindow Fields" Url="html/e346c6cb-0e13-1ee0-7913-30a1d1463773.htm">
+        <HelpTOCNode Id="b4e40625-5cf9-410e-8491-2831a595f2cf" Title="CanvasWindow Fields" Url="html/e346c6cb-0e13-1ee0-7913-30a1d1463773.htm">
           <HelpTOCNode Title="camera Field" Url="html/9d938c6a-e44a-be8a-2cf0-c98d3f8e6d1e.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="1307869f-e728-4d43-80a3-52a955fcc68a" Title="ContainerCanvasControllerSequenceProvider Class" Url="html/c0c3e621-5b22-4065-f067-184bce0cf447.htm">
+      <HelpTOCNode Id="950efa08-db92-4d16-a165-a84e28530f76" Title="ContainerCanvasControllerSequenceProvider Class" Url="html/c0c3e621-5b22-4065-f067-184bce0cf447.htm">
         <HelpTOCNode Title="ContainerCanvasControllerSequenceProvider Properties" Url="html/0f1a3566-0a21-9554-1968-7a8bfaf5625f.htm" />
         <HelpTOCNode Title="ContainerCanvasControllerSequenceProvider Methods" Url="html/9cc6a953-f7fc-f2d6-2a3b-4072e1099f0f.htm" />
-        <HelpTOCNode Id="2c84b62a-0d5d-4f0b-af94-15d9bd034043" Title="ContainerCanvasControllerSequenceProvider Fields" Url="html/dd27a27c-dbbd-7b24-70bb-bfecbf1761da.htm">
+        <HelpTOCNode Id="80c47dfe-ffda-46e5-b89b-08aba9e5a29a" Title="ContainerCanvasControllerSequenceProvider Fields" Url="html/dd27a27c-dbbd-7b24-70bb-bfecbf1761da.htm">
           <HelpTOCNode Title="fallbackProvider Field" Url="html/912f5032-043e-5194-ab45-3e5fd252ef43.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="41b9a06d-986f-4574-a80b-0cbacca0228b" Title="ContainerElementsControllerSequenceProvider Class" Url="html/c879561e-193c-ec97-0e09-5215f5413ecd.htm">
+      <HelpTOCNode Id="fd6dcd56-450d-4694-92a0-fabe252126a7" Title="ContainerElementsControllerSequenceProvider Class" Url="html/c879561e-193c-ec97-0e09-5215f5413ecd.htm">
         <HelpTOCNode Title="ContainerElementsControllerSequenceProvider Properties" Url="html/d8c7c3b3-04a9-2aa8-752b-f253206fe100.htm" />
         <HelpTOCNode Title="ContainerElementsControllerSequenceProvider Methods" Url="html/6f63a370-8552-2c60-6fa5-ec11bd4aacf0.htm" />
-        <HelpTOCNode Id="d45960a7-7f93-4034-8a0c-fcbb15bc6d9a" Title="ContainerElementsControllerSequenceProvider Fields" Url="html/8e21bb1f-8992-00f8-df01-d554cf16c4eb.htm">
+        <HelpTOCNode Id="896166f0-f5d3-4946-a250-de65c10729bd" Title="ContainerElementsControllerSequenceProvider Fields" Url="html/8e21bb1f-8992-00f8-df01-d554cf16c4eb.htm">
           <HelpTOCNode Title="fallbackProvider Field" Url="html/94bb1f98-f351-164c-0ee4-f43a97e38db4.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="39f6b10d-db70-4cad-939e-9a1fae0a6621" Title="ElementsController Class" Url="html/142107e8-6830-f389-5f4b-4a8350f4e995.htm">
+      <HelpTOCNode Id="d7a55783-f718-49cd-a0b7-10f420a3c74c" Title="ElementsController Class" Url="html/142107e8-6830-f389-5f4b-4a8350f4e995.htm">
         <HelpTOCNode Title="ElementsController Properties" Url="html/c83d23cf-11aa-3ff8-4f7c-2bf7cd937c15.htm" />
         <HelpTOCNode Title="ElementsController Methods" Url="html/8871adf8-6af2-7f45-60d2-15d45de93f95.htm" />
-        <HelpTOCNode Id="bee37d52-90b3-4bc7-850d-d3ace153c862" Title="ElementsController Fields" Url="html/1f47a0db-77a6-aacd-9e45-91acc2c547fc.htm">
+        <HelpTOCNode Id="b26b4065-88f5-4b4a-9b76-f0aac4dffd57" Title="ElementsController Fields" Url="html/1f47a0db-77a6-aacd-9e45-91acc2c547fc.htm">
           <HelpTOCNode Title="DismissTransition Field" Url="html/6f8a10db-684a-5ab8-fa56-024eff24a116.htm" />
           <HelpTOCNode Title="PresentTransition Field" Url="html/5f2fbe12-80a5-89c0-7b85-5c0e74ef1071.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="c0b9409f-4073-4f8f-8d7b-84266aba39bd" Title="ElementsControllerInvokeTransitionData Class" Url="html/ea8aa0f9-e441-387e-bf50-09ccd00a4f9e.htm">
+      <HelpTOCNode Id="cb8be781-560a-4c70-9e7a-85780ebab10f" Title="ElementsControllerInvokeTransitionData Class" Url="html/ea8aa0f9-e441-387e-bf50-09ccd00a4f9e.htm">
         <HelpTOCNode Title="ElementsControllerInvokeTransitionData Methods" Url="html/6f77bd37-5a47-182d-a09f-b33c0b0d81f9.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="55dcdeaa-7483-46ac-b949-602759c0f26f" Title="ElementsControllerSequenceProvider Class" Url="html/303a102e-c514-7c30-25d7-7d673a8819e4.htm">
+      <HelpTOCNode Id="0a62bc2f-0cc7-4f84-bc18-b880dc85549c" Title="ElementsControllerSequenceProvider Class" Url="html/303a102e-c514-7c30-25d7-7d673a8819e4.htm">
         <HelpTOCNode Title="ElementsControllerSequenceProvider Properties" Url="html/b078c3c6-eaa2-ed95-80f3-4a215c807d88.htm" />
         <HelpTOCNode Title="ElementsControllerSequenceProvider Methods" Url="html/60ff156c-a2e3-8c2b-0752-b00915129f22.htm" />
-        <HelpTOCNode Id="de295e59-2ac0-4c02-823d-c3783f358c09" Title="ElementsControllerSequenceProvider Fields" Url="html/96bddf20-ef16-08d1-bc05-f30260d3da68.htm">
+        <HelpTOCNode Id="ef670e9b-e9f9-4c2e-916d-be3762f919f9" Title="ElementsControllerSequenceProvider Fields" Url="html/96bddf20-ef16-08d1-bc05-f30260d3da68.htm">
           <HelpTOCNode Title="animators Field" Url="html/38238539-7a8b-027b-5e3e-dea4bdb69d4f.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="169b8005-8e15-4673-a200-1b5667fac070" Title="ElementsControllerSequenceProviderAnimatorData Class" Url="html/6ea1e0a6-e58a-c9a2-df44-4138a1306049.htm">
+      <HelpTOCNode Id="7d2371d4-7c2d-42e6-b02e-12066093386d" Title="ElementsControllerSequenceProviderAnimatorData Class" Url="html/6ea1e0a6-e58a-c9a2-df44-4138a1306049.htm">
         <HelpTOCNode Title="ElementsControllerSequenceProviderAnimatorData Methods" Url="html/6c796b91-b091-ddb7-1e8f-ac3036078e8c.htm" />
-        <HelpTOCNode Id="29448df3-a666-4d97-9a8d-69ee278945b3" Title="ElementsControllerSequenceProviderAnimatorData Fields" Url="html/ab2ad8eb-04fa-5d72-79ac-3fc5534c455f.htm">
+        <HelpTOCNode Id="d863d8da-7c18-4c2d-b836-426e0fd7f4ef" Title="ElementsControllerSequenceProviderAnimatorData Fields" Url="html/ab2ad8eb-04fa-5d72-79ac-3fc5534c455f.htm">
           <HelpTOCNode Title="animator Field" Url="html/5fed5be7-fab1-8d5f-9e1d-b847f2dbbbe0.htm" />
           <HelpTOCNode Title="interactiveAnimator Field" Url="html/50e0f73a-350a-5559-b19f-b9dbfd348414.htm" />
           <HelpTOCNode Title="transitionGuid Field" Url="html/e874a63e-d063-40b3-0ac8-c05e7530dac0.htm" />
           <HelpTOCNode Title="useAlternateAnimatorForInteractiveTransition Field" Url="html/35b43460-0a76-e515-1890-8c15ab93724f.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="390df6c1-4c25-41c1-b3f8-57c618cf4493" Title="ElementsControllerTransition Class" Url="html/1d60df38-65d1-4b61-3658-38e3e0c9780f.htm">
+      <HelpTOCNode Id="194f173d-a55c-4be1-a04a-7b9518b00698" Title="ElementsControllerTransition Class" Url="html/1d60df38-65d1-4b61-3658-38e3e0c9780f.htm">
         <HelpTOCNode Title="ElementsControllerTransition Properties" Url="html/7795de38-c4b5-7600-4261-770de91739b7.htm" />
         <HelpTOCNode Title="ElementsControllerTransition Methods" Url="html/3ab7c7fd-d922-fcf6-98e6-8e3cb17f21be.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="6cfc4fb9-eb03-421e-9f82-200feca319af" Title="ElementsControllerTransitionContext Class" Url="html/de6120bd-c0c2-8120-e7bd-8c22d3e45cae.htm">
+      <HelpTOCNode Id="69089e3c-7ea7-4ecb-83f6-e98a140d12d4" Title="ElementsControllerTransitionContext Class" Url="html/de6120bd-c0c2-8120-e7bd-8c22d3e45cae.htm">
         <HelpTOCNode Title="ElementsControllerTransitionContext Properties" Url="html/725bb6aa-7df3-8f4f-4904-406e3c2e72ee.htm" />
         <HelpTOCNode Title="ElementsControllerTransitionContext Methods" Url="html/7086477d-fbad-8262-2d9c-7c2c9fc49c22.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b5e62208-b28d-4b6e-9a89-67769573c44f" Title="ElementsControllerTransitionSequenceAnimation Class" Url="html/837f0e8c-1455-36d2-c8f6-e9b1d400aaa5.htm">
+      <HelpTOCNode Id="51108ddd-f62c-4f09-a5b0-88ef88044ef8" Title="ElementsControllerTransitionSequenceAnimation Class" Url="html/837f0e8c-1455-36d2-c8f6-e9b1d400aaa5.htm">
         <HelpTOCNode Title="ElementsControllerTransitionSequenceAnimation Properties" Url="html/28e03b2f-4964-e7ae-2e4b-ec0d413cf4ce.htm" />
         <HelpTOCNode Title="ElementsControllerTransitionSequenceAnimation Methods" Url="html/f04602bc-6cea-03b8-67f0-728c170e3d35.htm" />
         <HelpTOCNode Title="ElementsControllerTransitionSequenceAnimation Fields" Url="html/d2e4eb70-b31d-7778-abb4-0ed7476f0527.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="8e990a49-e0b3-4404-a3b9-8faa71e6897d" Title="ElementsControllerTransitionSequenceAnimator Class" Url="html/23a72308-eca7-e857-0e4f-7d6201807f71.htm">
+      <HelpTOCNode Id="63548058-d4f4-4c5e-9dd7-5d6e43b52034" Title="ElementsControllerTransitionSequenceAnimator Class" Url="html/23a72308-eca7-e857-0e4f-7d6201807f71.htm">
         <HelpTOCNode Title="ElementsControllerTransitionSequenceAnimator Properties" Url="html/5708e1b3-cce2-4443-2473-5f750986c19d.htm" />
         <HelpTOCNode Title="ElementsControllerTransitionSequenceAnimator Methods" Url="html/8513c61b-ddd5-d5fc-c530-4e31d02be9b2.htm" />
         <HelpTOCNode Title="ElementsControllerTransitionSequenceAnimator Fields" Url="html/b2b5a4a9-2ad9-2583-2b38-01ff76f565a8.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="59df9754-5e0e-4517-8893-4f25bdc70639" Title="ElementsControllerTransitionSequenceRegion Class" Url="html/604e6ba6-99c5-e495-3af4-d9cec5ef5248.htm">
+      <HelpTOCNode Id="a42626ee-60ed-4892-84d0-403bd83e74d6" Title="ElementsControllerTransitionSequenceRegion Class" Url="html/604e6ba6-99c5-e495-3af4-d9cec5ef5248.htm">
         <HelpTOCNode Title="ElementsControllerTransitionSequenceRegion Methods" Url="html/0b77b83a-c811-7328-947b-293415246f10.htm" />
         <HelpTOCNode Title="ElementsControllerTransitionSequenceRegion Fields" Url="html/122846a8-c59d-726d-2263-1904e51a595c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="cc6d26f5-428a-4411-a73a-7e9d1cfb372b" Title="ElementsGraph Class" Url="html/235579bc-ef2d-be9e-da75-779541a61d46.htm">
+      <HelpTOCNode Id="c1bc53b0-924a-478a-b332-190ee8811c6b" Title="ElementsGraph Class" Url="html/235579bc-ef2d-be9e-da75-779541a61d46.htm">
         <HelpTOCNode Title="ElementsGraph Methods" Url="html/9ff51b1d-a4cd-1b7e-faf3-e9395388cf27.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="51c73bb7-8e36-43c7-84f2-72d18e6f08ad" Title="FadeCanvasControllerSequenceAnimation Class" Url="html/bba261bf-289b-765c-0c52-53d79d982dde.htm">
+      <HelpTOCNode Id="dd80a53b-9e18-4111-8e26-7ba90402c74a" Title="FadeCanvasControllerSequenceAnimation Class" Url="html/bba261bf-289b-765c-0c52-53d79d982dde.htm">
         <HelpTOCNode Title="FadeCanvasControllerSequenceAnimation Properties" Url="html/c75b4045-4a15-e612-c262-2f740241898c.htm" />
         <HelpTOCNode Title="FadeCanvasControllerSequenceAnimation Methods" Url="html/9c4edcc5-c93b-227b-6714-8d2ff0e4e1bc.htm" />
-        <HelpTOCNode Id="4c204b35-2dbf-4d68-a64c-d0b99542d9f8" Title="FadeCanvasControllerSequenceAnimation Fields" Url="html/ea151456-0c7c-a0d7-06f0-41e71705eb8b.htm">
+        <HelpTOCNode Id="a2e6fa26-0e40-4dfa-a553-ed60f3f40f4e" Title="FadeCanvasControllerSequenceAnimation Fields" Url="html/ea151456-0c7c-a0d7-06f0-41e71705eb8b.htm">
           <HelpTOCNode Title="offScreenAlpha Field" Url="html/07301b44-1adc-095b-dd11-6a27fc3ebb9e.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="6a25880f-a385-4552-a2b9-b15fcaf54408" Title="Graph(T) Class" Url="html/f3277139-8ca1-1031-b951-a163382e7c9a.htm">
-        <HelpTOCNode Id="e285af08-d545-4a42-88aa-008306b0a05c" Title="Graph(T) Methods" Url="html/6b7f945d-a7f5-6ca2-8b0a-b48b29e434fa.htm">
-          <HelpTOCNode Id="c13d399f-a75a-4c0b-9114-18757fc03f4a" Title="InstantiateInitialViewController Method " Url="html/1bf4a9a8-e9da-4a2e-7090-ef235dcce71a.htm">
+      <HelpTOCNode Id="b1a2c9bf-77a1-48d9-bedd-86c116b4e2ed" Title="Graph(T) Class" Url="html/f3277139-8ca1-1031-b951-a163382e7c9a.htm">
+        <HelpTOCNode Id="37885db4-2636-4182-ad5e-aba0e2c989cd" Title="Graph(T) Methods" Url="html/6b7f945d-a7f5-6ca2-8b0a-b48b29e434fa.htm">
+          <HelpTOCNode Id="e5701a0c-33e6-495d-95ce-74e683b5a236" Title="InstantiateInitialViewController Method " Url="html/1bf4a9a8-e9da-4a2e-7090-ef235dcce71a.htm">
             <HelpTOCNode Title="InstantiateInitialViewController Method " Url="html/a79ff7a7-d221-c293-d93d-bf919944a48a.htm" />
             <HelpTOCNode Title="InstantiateInitialViewController(TViewController) Method " Url="html/2b95b685-4b73-5b01-6058-ef9921d0f63b.htm" />
           </HelpTOCNode>
-          <HelpTOCNode Id="87fd9c1b-cf02-4f95-96a2-67765a4ef49b" Title="InstantiateViewControllerWithIdentifier Method " Url="html/92a5276f-4c6b-7061-c37a-cfe9b283c64c.htm">
+          <HelpTOCNode Id="bf9cd4df-1122-4634-8ec8-a9c80e320e32" Title="InstantiateViewControllerWithIdentifier Method " Url="html/92a5276f-4c6b-7061-c37a-cfe9b283c64c.htm">
             <HelpTOCNode Title="InstantiateViewControllerWithIdentifier Method (String)" Url="html/b20805eb-cb7d-0494-d875-1efa16b31891.htm" />
             <HelpTOCNode Title="InstantiateViewControllerWithIdentifier(TViewController) Method (String)" Url="html/75ef641c-631b-4e17-0026-52a1dff87f19.htm" />
           </HelpTOCNode>
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="fd294f0f-7346-4bc5-a895-aa3bebdbca61" Title="GraphableButtonComponent Class" Url="html/4e16539a-79c4-ea7c-de4a-917eaa35d3e8.htm">
+      <HelpTOCNode Id="aa38278e-41f1-436a-994f-a163b7f92568" Title="GraphableButtonComponent Class" Url="html/4e16539a-79c4-ea7c-de4a-917eaa35d3e8.htm">
         <HelpTOCNode Title="GraphableButtonComponent Properties" Url="html/2eb4f908-b5d9-6af2-246a-1f8c1910788b.htm" />
         <HelpTOCNode Title="GraphableButtonComponent Methods" Url="html/ca179bd4-c16c-8e98-b5d9-2b1cb8930993.htm" />
         <HelpTOCNode Title="GraphableButtonComponent Fields" Url="html/a24b8b8d-a6d2-1d70-9c79-addea2909319.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="60e87b2f-6bae-4d47-822e-d89321495145" Title="GraphableEmbedComponent Class" Url="html/2cd187e2-1371-b99b-56f2-80f282734b9e.htm">
+      <HelpTOCNode Id="9ca5ac29-1bc9-4930-b531-5bced102978b" Title="GraphableEmbedComponent Class" Url="html/2cd187e2-1371-b99b-56f2-80f282734b9e.htm">
         <HelpTOCNode Title="GraphableEmbedComponent Properties" Url="html/2b515a36-b3fa-9b3f-5a08-2b5538b9925f.htm" />
         <HelpTOCNode Title="GraphableEmbedComponent Methods" Url="html/8d27fa67-54c8-d25e-531d-3749fd52d3b0.htm" />
-        <HelpTOCNode Id="8b133264-f74d-4b7a-bdb5-8b460eda2086" Title="GraphableEmbedComponent Fields" Url="html/2b0bfdd4-4b6e-d148-c462-e81139565e49.htm">
+        <HelpTOCNode Id="0d1609a6-3b86-43b1-9d59-01d60fb877d3" Title="GraphableEmbedComponent Fields" Url="html/2b0bfdd4-4b6e-d148-c462-e81139565e49.htm">
           <HelpTOCNode Title="container Field" Url="html/6b7abdf2-810b-8e80-1655-19060fdc556e.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="f8fcf578-2a18-4048-9a47-d9bd9717aa77" Title="GraphableField Class" Url="html/e27cf4fe-ec8a-5ea2-6fd8-d7de4b0bcd0b.htm">
-        <HelpTOCNode Id="3ba72961-a987-4ceb-97c1-5684d6fcbb09" Title="GraphableField Properties" Url="html/1a880650-f223-9a2f-467b-882b38c5bbcf.htm">
+      <HelpTOCNode Id="ba1944dc-8d1a-47ee-94a5-7e237e9185c0" Title="GraphableField Class" Url="html/e27cf4fe-ec8a-5ea2-6fd8-d7de4b0bcd0b.htm">
+        <HelpTOCNode Id="53b9c092-b618-46e2-8f1b-4de77dcc705c" Title="GraphableField Properties" Url="html/1a880650-f223-9a2f-467b-882b38c5bbcf.htm">
           <HelpTOCNode Title="AllowsMultiple Property " Url="html/f7d4264f-5e23-9b94-1a99-916011155e45.htm" />
           <HelpTOCNode Title="FieldName Property " Url="html/f1b4a70d-64bc-2142-4d80-8a8295f1c4f8.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="GraphableField Methods" Url="html/12515fff-d0c0-70c3-498f-2406afc3ea63.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="96710bf6-cae8-48ba-8744-0194ffa4ca2a" Title="GraphableToggleComponent Class" Url="html/d8cbbac9-4f54-a3bb-9de7-400f5b5b41e6.htm">
+      <HelpTOCNode Id="2587076e-ed5c-49e1-a605-f02830b920b0" Title="GraphableToggleComponent Class" Url="html/d8cbbac9-4f54-a3bb-9de7-400f5b5b41e6.htm">
         <HelpTOCNode Title="GraphableToggleComponent Properties" Url="html/e5fb2f75-17e4-b5c7-738e-9a6d53ab6f69.htm" />
         <HelpTOCNode Title="GraphableToggleComponent Methods" Url="html/15436444-3694-70a0-1618-08a1fce9120f.htm" />
         <HelpTOCNode Title="GraphableToggleComponent Fields" Url="html/490f9938-147e-9ffe-357f-754834032556.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="bf07df89-7db7-4373-8f35-a93a038d6547" Title="GraphableTransitionViewComponent(T) Class" Url="html/d2023c1e-ea82-7924-20dc-3955d3a9fa36.htm">
+      <HelpTOCNode Id="eb05e13b-eaf5-46bf-9157-eabe8d39b356" Title="GraphableTransitionViewComponent(T) Class" Url="html/d2023c1e-ea82-7924-20dc-3955d3a9fa36.htm">
         <HelpTOCNode Title="GraphableTransitionViewComponent(T) Properties" Url="html/3c51b564-5c37-7a07-3ec5-5f40405ece0b.htm" />
-        <HelpTOCNode Id="5288f1e5-8504-4133-abcf-ed214105202d" Title="GraphableTransitionViewComponent(T) Methods" Url="html/6e2680d3-b702-0ff4-d542-15c7d66ed10c.htm">
+        <HelpTOCNode Id="503497e7-3600-4b97-a4f9-55f989403583" Title="GraphableTransitionViewComponent(T) Methods" Url="html/6e2680d3-b702-0ff4-d542-15c7d66ed10c.htm">
           <HelpTOCNode Title="Activate Method " Url="html/f4a8c256-6c53-df3e-59ea-fcf67ce05755.htm" />
           <HelpTOCNode Title="BindToTarget Method " Url="html/48a97225-1a5f-c5fe-2eb8-4aa024c35b29.htm" />
           <HelpTOCNode Title="Reset Method " Url="html/423a3e92-2552-3677-67e1-b01a598fd103.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="e8c47f95-a91a-4120-852e-a5e01888bc7c" Title="GraphableTransitionViewComponent(T) Fields" Url="html/9039b7d7-4009-cda9-4b6e-9a060757fc18.htm">
+        <HelpTOCNode Id="e6f08da5-bffb-4832-9746-9602941ec464" Title="GraphableTransitionViewComponent(T) Fields" Url="html/9039b7d7-4009-cda9-4b6e-9a060757fc18.htm">
           <HelpTOCNode Title="triggers Field" Url="html/470f5bfc-2532-2e87-2287-686901a64a9e.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="2b122206-8fb6-456a-a7f8-1a5982c910d0" Title="GraphableTransitionViewObjectTrigger Class" Url="html/f27f5464-f824-aae8-867c-e1a0b9adfc1f.htm">
+      <HelpTOCNode Id="f5c7e736-0277-4fd4-9016-6a349edaa653" Title="GraphableTransitionViewObjectTrigger Class" Url="html/f27f5464-f824-aae8-867c-e1a0b9adfc1f.htm">
         <HelpTOCNode Title="GraphableTransitionViewObjectTrigger Methods" Url="html/620e5e96-cd11-5766-49e2-27cff8aa2de9.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2f7edb2b-8984-4c5d-99e0-42c6347a62a4" Title="GraphTransition(T) Class" Url="html/6bfd0769-7fb8-821e-aabe-e4fb7fa2fe87.htm">
-        <HelpTOCNode Id="ce402c34-38bc-4a93-8a77-01482a077f18" Title="GraphTransition(T) Properties" Url="html/de84aba6-d2d1-c87b-c2bf-84b384a7f70e.htm">
+      <HelpTOCNode Id="1633dd95-3c24-43cb-bc48-1608e6f246f5" Title="GraphTransition(T) Class" Url="html/6bfd0769-7fb8-821e-aabe-e4fb7fa2fe87.htm">
+        <HelpTOCNode Id="e25ba5f4-71fb-459e-ae2d-366b8bc2aa8f" Title="GraphTransition(T) Properties" Url="html/de84aba6-d2d1-c87b-c2bf-84b384a7f70e.htm">
           <HelpTOCNode Title="Animated Property " Url="html/6b10e4f8-ab42-1a58-1614-1ae0608c34ca.htm" />
           <HelpTOCNode Title="FromViewController Property " Url="html/fc3e3f86-5352-c8e5-1a09-dc13278a531b.htm" />
           <HelpTOCNode Title="Interactive Property " Url="html/6d238fda-4e2b-4277-f82c-7a934665fcb0.htm" />
@@ -412,21 +416,21 @@
         <HelpTOCNode Title="GraphTransition(T) Methods" Url="html/9950d6e0-961c-ab0a-b4d6-8c7d6f5c0097.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="IGraphable Interface" Url="html/d1278ff3-6724-41fb-b354-53e18fab9a89.htm" />
-      <HelpTOCNode Id="bfe27e02-75e3-432b-a7d3-dd5d3c358320" Title="IGraphableFieldProvider Interface" Url="html/41adbcc1-40de-2aa2-ecff-0e2511346782.htm">
-        <HelpTOCNode Id="d9724731-d6c9-41eb-add5-747e482dedd4" Title="IGraphableFieldProvider Properties" Url="html/b9a747d8-8ab3-17c9-2662-e1128d99daf8.htm">
+      <HelpTOCNode Id="828bb065-4a74-49cf-88f6-5a46c20df7c2" Title="IGraphableFieldProvider Interface" Url="html/41adbcc1-40de-2aa2-ecff-0e2511346782.htm">
+        <HelpTOCNode Id="133d7997-3aeb-49d5-9a11-4601b60276be" Title="IGraphableFieldProvider Properties" Url="html/b9a747d8-8ab3-17c9-2662-e1128d99daf8.htm">
           <HelpTOCNode Title="GraphableFields Property " Url="html/78967b28-b82e-591d-e9fd-a8e026db02d9.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="57d3c176-93b5-437e-bc6a-98fe27c408f6" Title="IGraphableFieldProvider Methods" Url="html/cb0ce439-bfb2-3e45-b485-bcc7f1b194e3.htm">
+        <HelpTOCNode Id="b8398dbf-3cef-49d0-9353-b191b99087e6" Title="IGraphableFieldProvider Methods" Url="html/cb0ce439-bfb2-3e45-b485-bcc7f1b194e3.htm">
           <HelpTOCNode Title="SetGraphableFieldValue Method " Url="html/aaeab9fb-c0e9-2c45-6a18-8aba3f2caac2.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="8371a42d-b821-4c25-b237-ca12560f5cc5" Title="ITabBarCanvasControllerItemProvider Interface" Url="html/85c26bd7-cd81-0101-1f4e-b50beabadf61.htm">
-        <HelpTOCNode Id="f7cf10df-378e-48f6-a576-a38ea457e5c0" Title="ITabBarCanvasControllerItemProvider Methods" Url="html/cda5faee-096a-6cf0-2f78-8570c00dde1a.htm">
+      <HelpTOCNode Id="3d13becd-11d8-4f19-ada9-99eddbb08580" Title="ITabBarCanvasControllerItemProvider Interface" Url="html/85c26bd7-cd81-0101-1f4e-b50beabadf61.htm">
+        <HelpTOCNode Id="e7ff80ab-23bd-4111-a83b-54387b4fd04c" Title="ITabBarCanvasControllerItemProvider Methods" Url="html/cda5faee-096a-6cf0-2f78-8570c00dde1a.htm">
           <HelpTOCNode Title="TabBarItemForViewControllerAtIndex Method " Url="html/b796b82b-b3c2-7aaa-19b4-dea8ef29120a.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="8052293d-a756-4433-afc3-f17d51603147" Title="IViewControllerTransitionDrivable(TContext) Interface" Url="html/4fe518ef-cff0-f820-5b9e-527f0ce32872.htm">
-        <HelpTOCNode Id="56540ad3-c697-4861-8424-c3a5566a0694" Title="IViewControllerTransitionDrivable(TContext) Properties" Url="html/bc878cba-a9ad-3515-42c8-91f92127847d.htm">
+      <HelpTOCNode Id="cc4c5a97-4cfe-4f44-9196-e3993473ff64" Title="IViewControllerTransitionDrivable(TContext) Interface" Url="html/4fe518ef-cff0-f820-5b9e-527f0ce32872.htm">
+        <HelpTOCNode Id="42f3192f-3660-4878-b504-040ff0d7fadf" Title="IViewControllerTransitionDrivable(TContext) Properties" Url="html/bc878cba-a9ad-3515-42c8-91f92127847d.htm">
           <HelpTOCNode Title="CompletionCurve Property " Url="html/4b531fd2-3323-0717-d572-b18e92eebc02.htm" />
           <HelpTOCNode Title="Context Property " Url="html/15617e4c-2535-e450-a9c4-3c451948e32a.htm" />
           <HelpTOCNode Title="Direction Property " Url="html/9484ed9c-34b7-b725-7df3-16fa68d5369b.htm" />
@@ -434,27 +438,27 @@
           <HelpTOCNode Title="Progress01 Property " Url="html/8967497a-872f-cc6d-f86e-e68c80f470fe.htm" />
           <HelpTOCNode Title="TimeUpdateMode Property " Url="html/93d1cab5-daa0-d32e-75cf-4c0bcc4d0b94.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="61d73969-0b9c-498c-924f-acf36435b8fa" Title="IViewControllerTransitionDrivable(TContext) Methods" Url="html/2a130484-104a-85f5-7fd3-3c823ebaa086.htm">
+        <HelpTOCNode Id="a2891174-fd5e-470a-89b5-cfdbb09cee7d" Title="IViewControllerTransitionDrivable(TContext) Methods" Url="html/2a130484-104a-85f5-7fd3-3c823ebaa086.htm">
           <HelpTOCNode Title="CancelTransition Method " Url="html/986672b4-5e9e-9625-fa30-ab2ba8a7d7f8.htm" />
           <HelpTOCNode Title="CompleteTransition Method " Url="html/b44b7fec-fbd7-c5f6-fceb-a508075cd52c.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="5021a428-7029-48ad-95c2-a9cf259ebd24" Title="IViewControllerTransitionProgressProvider(TContext) Interface" Url="html/b363fe16-ddfb-e56d-0f48-381d16e9887c.htm">
-        <HelpTOCNode Id="122c5a07-62cb-4047-be9d-38c9adc85c48" Title="IViewControllerTransitionProgressProvider(TContext) Methods" Url="html/186d31ea-b76e-bfc8-059a-e02fe523bc44.htm">
+      <HelpTOCNode Id="4c98cb18-0480-4866-975b-d2ce7b25535c" Title="IViewControllerTransitionProgressProvider(TContext) Interface" Url="html/b363fe16-ddfb-e56d-0f48-381d16e9887c.htm">
+        <HelpTOCNode Id="8ed571cb-7821-4a5e-960f-9a5b21160bc5" Title="IViewControllerTransitionProgressProvider(TContext) Methods" Url="html/186d31ea-b76e-bfc8-059a-e02fe523bc44.htm">
           <HelpTOCNode Title="CancelProgressUpdatesToDrivable Method " Url="html/73133134-9ab9-e71b-7349-957fb2193173.htm" />
           <HelpTOCNode Title="ProvideProgressToDrivable Method " Url="html/af477cb8-3557-5d4b-ba63-08e7bf1fc5ee.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="04c11cce-734e-42e6-8349-404079a96072" Title="LocallyUniqueGuidMonoBehaviour Class" Url="html/c7761c78-a3b9-ae2f-c2f0-71de5f9495a7.htm">
-        <HelpTOCNode Id="5e845304-2962-4569-affb-dabcab3e2552" Title="LocallyUniqueGuidMonoBehaviour Properties" Url="html/840c104b-717a-e80d-c838-ede9144539cc.htm">
+      <HelpTOCNode Id="e0bc3b13-90b3-4e9a-ba6d-54c9aa456198" Title="LocallyUniqueGuidMonoBehaviour Class" Url="html/c7761c78-a3b9-ae2f-c2f0-71de5f9495a7.htm">
+        <HelpTOCNode Id="9c92c9f6-b3ea-4af5-a5f7-5a4fb55838cc" Title="LocallyUniqueGuidMonoBehaviour Properties" Url="html/840c104b-717a-e80d-c838-ede9144539cc.htm">
           <HelpTOCNode Title="Guid Property " Url="html/db47c76a-20c2-d95b-f228-2151a1a59155.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="LocallyUniqueGuidMonoBehaviour Methods" Url="html/3be310fe-9d43-1aca-dcde-ed7fe457e7af.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="ecbd4292-1100-4347-9c69-af9ad2a30987" Title="NavigationCanvasController Class" Url="html/9defded8-84b9-51f0-1b5b-4f5f10508fba.htm">
+      <HelpTOCNode Id="2f2fc191-2bc5-4f35-9fe9-34c68a498b19" Title="NavigationCanvasController Class" Url="html/9defded8-84b9-51f0-1b5b-4f5f10508fba.htm">
         <HelpTOCNode Title="NavigationCanvasController Properties" Url="html/ea5d6c80-918c-8d4e-5065-284a1279f1f4.htm" />
         <HelpTOCNode Title="NavigationCanvasController Methods" Url="html/59c3bce9-1fbc-8c49-c72e-cf6aefc7391c.htm" />
-        <HelpTOCNode Id="4fd8463c-fa85-4a59-bd03-7d91a704c2b7" Title="NavigationCanvasController Fields" Url="html/8c0bb4a1-e566-8af6-7c88-bac577591865.htm">
+        <HelpTOCNode Id="da5c4fc8-b93c-41ba-b2c8-d4d493f3923d" Title="NavigationCanvasController Fields" Url="html/8c0bb4a1-e566-8af6-7c88-bac577591865.htm">
           <HelpTOCNode Title="PopToRootTransition Field" Url="html/efe34926-4c57-c7f2-34c9-a052e602ff19.htm" />
           <HelpTOCNode Title="PopToTransition Field" Url="html/0050a91c-012b-12be-339b-5fbe5b64e791.htm" />
           <HelpTOCNode Title="PopTransition Field" Url="html/d56a1f13-91b1-6653-bce8-cd31334c6ad3.htm" />
@@ -462,62 +466,62 @@
           <HelpTOCNode Title="SetRootTransition Field" Url="html/b02316f9-11f1-5b74-df8d-f3a36126937f.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="d8724158-0529-41dd-8f7f-888a087b86df" Title="RectTransformExtensions Class" Url="html/8f794ebe-29ea-b18c-97cd-96aa9c584fbb.htm">
-        <HelpTOCNode Id="ead5e345-09da-4795-9035-c88e5d318c2d" Title="RectTransformExtensions Methods" Url="html/7ec49a74-dce2-5bb1-23f6-850db69af370.htm">
+      <HelpTOCNode Id="5a38e30c-d969-4e2b-915f-d2d0babab2bc" Title="RectTransformExtensions Class" Url="html/8f794ebe-29ea-b18c-97cd-96aa9c584fbb.htm">
+        <HelpTOCNode Id="34462c08-b9bd-4246-ad55-799c61a5ba29" Title="RectTransformExtensions Methods" Url="html/7ec49a74-dce2-5bb1-23f6-850db69af370.htm">
           <HelpTOCNode Title="Add Method " Url="html/1bba53f3-b5ab-3660-14b6-79b865199b46.htm" />
           <HelpTOCNode Title="FillParent Method " Url="html/8acbeb48-e554-4965-fc81-abbd7df40cf5.htm" />
           <HelpTOCNode Title="LerpUnclamped Method " Url="html/733c48fd-392f-ce88-b63c-90ef850ae98c.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="e1f9fce0-eba8-40db-b51d-77383b41298b" Title="RotateCanvasControllerTransitionAnimation Class" Url="html/c63b2710-111e-af61-e472-86155e94d122.htm">
+      <HelpTOCNode Id="2e188af8-7a94-451b-b11a-39a90df390f0" Title="RotateCanvasControllerTransitionAnimation Class" Url="html/c63b2710-111e-af61-e472-86155e94d122.htm">
         <HelpTOCNode Title="RotateCanvasControllerTransitionAnimation Properties" Url="html/7b74597c-0109-5c30-bbc8-7dc3555a0706.htm" />
         <HelpTOCNode Title="RotateCanvasControllerTransitionAnimation Methods" Url="html/9668e4ad-0421-b312-45b5-06d2c947be87.htm" />
-        <HelpTOCNode Id="76e438d1-60e9-4f32-89ad-182b8044cfcb" Title="RotateCanvasControllerTransitionAnimation Fields" Url="html/faaf48c2-b2ca-b104-a115-8cfe162416cc.htm">
+        <HelpTOCNode Id="caf37ce4-412e-408f-9e15-54bad73ee852" Title="RotateCanvasControllerTransitionAnimation Fields" Url="html/faaf48c2-b2ca-b104-a115-8cfe162416cc.htm">
           <HelpTOCNode Title="endRotationEulerAngles Field" Url="html/fd0063f8-f332-df54-6f71-69a067eebd60.htm" />
           <HelpTOCNode Title="startRotationEulerAngles Field" Url="html/7b0695f9-83e9-45d9-5862-230103f2ac07.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="44a04082-93ec-427e-82fe-f79aaab684cc" Title="ScaleCanvasControllerTransitionAnimation Class" Url="html/5527d1eb-0d35-3125-84cf-5b9f1f0d0723.htm">
+      <HelpTOCNode Id="e342deac-2361-47f0-b3c9-d6c5fe4f2cfb" Title="ScaleCanvasControllerTransitionAnimation Class" Url="html/5527d1eb-0d35-3125-84cf-5b9f1f0d0723.htm">
         <HelpTOCNode Title="ScaleCanvasControllerTransitionAnimation Properties" Url="html/3f45c978-cdac-105d-eeec-59bb92674b2d.htm" />
         <HelpTOCNode Title="ScaleCanvasControllerTransitionAnimation Methods" Url="html/ace2b2dc-9c19-3221-0d1d-15a7ce434bf6.htm" />
-        <HelpTOCNode Id="fff260eb-4b1d-4ee1-b531-d04c64d63a30" Title="ScaleCanvasControllerTransitionAnimation Fields" Url="html/eb8ec117-1121-44b5-9e00-5cc8ce5a21e3.htm">
+        <HelpTOCNode Id="1a80d55e-08c4-4f9f-92da-d8b6c30f572a" Title="ScaleCanvasControllerTransitionAnimation Fields" Url="html/eb8ec117-1121-44b5-9e00-5cc8ce5a21e3.htm">
           <HelpTOCNode Title="offScreenScale Field" Url="html/54deacdb-12fd-952f-d832-8da03aa5b5e3.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="0c71a6b9-eea7-40e1-ae4a-f32c8317a04b" Title="SceneTransitionCanvasController Class" Url="html/55f5bcac-0075-5d59-6070-fb9408b23d96.htm">
+      <HelpTOCNode Id="8b35d315-1679-4585-9514-c4894a3bfa7b" Title="SceneTransitionCanvasController Class" Url="html/55f5bcac-0075-5d59-6070-fb9408b23d96.htm">
         <HelpTOCNode Title="SceneTransitionCanvasController Properties" Url="html/02bac1f3-24d1-2dd0-96db-5f262b84ead8.htm" />
-        <HelpTOCNode Id="2b8c033d-b3ea-4470-bb1d-3f621a12990b" Title="SceneTransitionCanvasController Methods" Url="html/5e89e030-03c3-4cf1-e8d1-d7e064481f80.htm">
+        <HelpTOCNode Id="d0046c91-2790-4025-a7ab-d57cde649269" Title="SceneTransitionCanvasController Methods" Url="html/5e89e030-03c3-4cf1-e8d1-d7e064481f80.htm">
           <HelpTOCNode Title="Initialize Method " Url="html/c7a346e2-e981-d95f-c573-3e547f11f938.htm" />
           <HelpTOCNode Title="PrepareLoadedScene Method " Url="html/1ea88e3d-3b6c-adb6-1150-569506d68ac3.htm" />
           <HelpTOCNode Title="PrepareSceneForUnload Method " Url="html/a4807682-3325-90fb-b1d7-247a4d137a7d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="c8ab4a4e-134c-429d-8bd5-a8a5ff144882" Title="SceneTransitionCanvasController Fields" Url="html/60ecb3a8-17aa-40f7-f321-cbb461685d1b.htm">
+        <HelpTOCNode Id="3d1edaeb-f88d-4ec7-a77d-8d9a883df406" Title="SceneTransitionCanvasController Fields" Url="html/60ecb3a8-17aa-40f7-f321-cbb461685d1b.htm">
           <HelpTOCNode Title="animateWindowDismissal Field" Url="html/dfb2927e-23cc-9c88-b27f-5f9b0f2bb4f5.htm" />
           <HelpTOCNode Title="sceneNameToLoad Field" Url="html/f508906f-b428-9133-2d17-c118235b6049.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="5d7c867a-87f7-4a21-ad5b-25245458b1cd" Title="SetVisibilityCanvasControllerTransitionAnimation Class" Url="html/87142c19-2671-381a-5eb2-1035324eb8b0.htm">
+      <HelpTOCNode Id="34e3d11e-3478-4774-9189-e85734ee014c" Title="SetVisibilityCanvasControllerTransitionAnimation Class" Url="html/87142c19-2671-381a-5eb2-1035324eb8b0.htm">
         <HelpTOCNode Title="SetVisibilityCanvasControllerTransitionAnimation Properties" Url="html/01e85b51-b843-91dc-7aa2-a8f0f5f57bbd.htm" />
         <HelpTOCNode Title="SetVisibilityCanvasControllerTransitionAnimation Methods" Url="html/c743df42-42cd-7ae6-66a2-02c21d49f696.htm" />
-        <HelpTOCNode Id="e25ea9c8-1594-4f2e-bf7d-23d248f03cf9" Title="SetVisibilityCanvasControllerTransitionAnimation Fields" Url="html/c6d38a6d-fc89-2d7d-182f-3367798df2fd.htm">
+        <HelpTOCNode Id="ff23cbde-54ef-4bed-bbaf-e6309a71ec54" Title="SetVisibilityCanvasControllerTransitionAnimation Fields" Url="html/c6d38a6d-fc89-2d7d-182f-3367798df2fd.htm">
           <HelpTOCNode Title="visible Field" Url="html/c0e3d724-488d-9b66-b653-da719d22611a.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="864cd19e-f750-42ee-b215-e2a75ccd4e43" Title="SlideCanvasControllerTransitionAnimation Class" Url="html/0ce06cef-2423-2a70-1d64-cb8266fed822.htm">
+      <HelpTOCNode Id="fbf3e02d-f54c-4c4c-a598-ea10386f9cf9" Title="SlideCanvasControllerTransitionAnimation Class" Url="html/0ce06cef-2423-2a70-1d64-cb8266fed822.htm">
         <HelpTOCNode Title="SlideCanvasControllerTransitionAnimation Properties" Url="html/e83c0f64-98b1-6e14-ed26-c4d8ef5e641d.htm" />
         <HelpTOCNode Title="SlideCanvasControllerTransitionAnimation Methods" Url="html/3dc06718-a74a-bbd1-b53c-dee58a17060c.htm" />
-        <HelpTOCNode Id="3e55e91a-cf4e-49a5-bad1-72682ff97e8e" Title="SlideCanvasControllerTransitionAnimation Fields" Url="html/95ebb67b-e1ae-7297-6e19-094f0fc1d162.htm">
+        <HelpTOCNode Id="412f869f-ff10-4e83-9c94-e9c949c652bb" Title="SlideCanvasControllerTransitionAnimation Fields" Url="html/95ebb67b-e1ae-7297-6e19-094f0fc1d162.htm">
           <HelpTOCNode Title="offScreenAngularDirection Field" Url="html/6bcd78ed-e256-ff87-0642-71d1e290d259.htm" />
           <HelpTOCNode Title="offScreenScalar Field" Url="html/48c707c1-42bb-0e51-cebc-d9129892c0ee.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="c15268b5-8945-4fff-8e02-3aba87578318" Title="SplitCanvasController Class" Url="html/5e8348b1-eb2e-2d65-e47e-6d694ff5dbb5.htm">
-        <HelpTOCNode Id="63d73d3a-71d9-494b-a8be-54c9719ec675" Title="SplitCanvasController Properties" Url="html/662b3188-0497-9f52-c563-e2dd40afaa24.htm">
+      <HelpTOCNode Id="47432549-728f-4566-9e54-dab6da8383ce" Title="SplitCanvasController Class" Url="html/5e8348b1-eb2e-2d65-e47e-6d694ff5dbb5.htm">
+        <HelpTOCNode Id="1120f3ef-25b2-4f0f-88be-b2aad1b64441" Title="SplitCanvasController Properties" Url="html/662b3188-0497-9f52-c563-e2dd40afaa24.htm">
           <HelpTOCNode Title="MainViewController Property " Url="html/e64c02ae-b719-a79c-4f71-6466aa0dc0e0.htm" />
           <HelpTOCNode Title="SecondaryViewController Property " Url="html/e8450ca5-1289-30f9-7437-426455805972.htm" />
           <HelpTOCNode Title="SecondaryViewControllerIsVisible Property " Url="html/f2b4f52a-47b7-8b9a-396f-b1e1ba8f5911.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="f5aeb4fd-b084-44ff-83cc-b2f72e0a3a34" Title="SplitCanvasController Methods" Url="html/b02a2d8d-ad2f-db8a-f0a5-aad8523f1673.htm">
+        <HelpTOCNode Id="5b804790-59c5-41cc-b9ec-d647dbf3ca6b" Title="SplitCanvasController Methods" Url="html/b02a2d8d-ad2f-db8a-f0a5-aad8523f1673.htm">
           <HelpTOCNode Title="CanSetMainViewController Method " Url="html/dba070fe-da78-f2c1-7c2b-47606732837a.htm" />
           <HelpTOCNode Title="CanSetSecondaryViewController Method " Url="html/537099ba-2248-55d2-96c1-74ee8d47db60.htm" />
           <HelpTOCNode Title="CanToggleSecondaryViewControllerVisibility Method " Url="html/79c972e8-eda2-2a30-7c7a-e7719ffe8947.htm" />
@@ -527,13 +531,13 @@
           <HelpTOCNode Title="SetSecondaryViewController Method " Url="html/31d8a313-fef6-7917-4670-301781b41022.htm" />
           <HelpTOCNode Title="ShowSecondaryViewController Method " Url="html/74733237-3e0c-f90f-41e1-4ecfce917a1a.htm" />
           <HelpTOCNode Title="ShowSecondaryViewControllerInteractively Method " Url="html/dd870f59-0660-bf73-5618-e1eaec429d66.htm" />
-          <HelpTOCNode Id="0285b03a-23fa-4932-a9b4-f109afb17cbf" Title="ToggleSecondaryViewControllerVisibility Method " Url="html/0a5335ba-28a8-1c4f-dcd6-72eee9a5cde8.htm">
+          <HelpTOCNode Id="48e5971d-a7dc-4bca-b557-e46bf637e023" Title="ToggleSecondaryViewControllerVisibility Method " Url="html/0a5335ba-28a8-1c4f-dcd6-72eee9a5cde8.htm">
             <HelpTOCNode Title="ToggleSecondaryViewControllerVisibility Method (Boolean)" Url="html/6211357a-c7ac-30b3-0879-ca72a5f4139e.htm" />
             <HelpTOCNode Title="ToggleSecondaryViewControllerVisibility Method (Boolean, Action)" Url="html/adc002b1-c2ea-08f4-0b05-34e5da2f78b1.htm" />
           </HelpTOCNode>
           <HelpTOCNode Title="ToggleSecondaryViewControllerVisibilityInteractively Method " Url="html/bd1c1944-aa05-e9a2-a8d9-6e10cf279f33.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="d79f8a6e-0952-4f74-9bf4-f0943b302dc3" Title="SplitCanvasController Fields" Url="html/8da7ccd6-ae93-e2f1-88dc-3d6d6aca2757.htm">
+        <HelpTOCNode Id="e694cf74-52ee-4874-92a4-31ea82c95b04" Title="SplitCanvasController Fields" Url="html/8da7ccd6-ae93-e2f1-88dc-3d6d6aca2757.htm">
           <HelpTOCNode Title="allowTransitionsToBeInterrupted Field" Url="html/79d251bd-07a3-2ef6-8bf0-135201b7d547.htm" />
           <HelpTOCNode Title="hideSecondaryOnSetMain Field" Url="html/d724b7ac-f340-a2f9-6139-0fa6b58fa2d9.htm" />
           <HelpTOCNode Title="HideSecondaryViewControllerTransition Field" Url="html/3dbe98b2-482d-1b42-e266-2bc892f7fabc.htm" />
@@ -546,36 +550,36 @@
           <HelpTOCNode Title="splitPositioning Field" Url="html/9e60c776-80d0-323e-b817-d657a663d884.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="8a9ebd22-e44b-4954-9b49-3d1c776131fe" Title="SplitCanvasPositioning Class" Url="html/47e2b460-1437-9baf-a7f5-ef4ac3efd252.htm">
+      <HelpTOCNode Id="c051c9d8-88ae-42f8-8dfd-360ac7a0ce3d" Title="SplitCanvasPositioning Class" Url="html/47e2b460-1437-9baf-a7f5-ef4ac3efd252.htm">
         <HelpTOCNode Title="SplitCanvasPositioning Properties" Url="html/ef7f0be2-236d-f7dd-1436-488f8dba37fd.htm" />
-        <HelpTOCNode Id="7f0b8183-0ed0-4602-8b4b-60051aecb134" Title="SplitCanvasPositioning Methods" Url="html/5c311558-fbb4-bf13-506c-0fc09f4ee6bc.htm">
+        <HelpTOCNode Id="28b4bbb2-98d4-43d3-b900-3c73440ae400" Title="SplitCanvasPositioning Methods" Url="html/5c311558-fbb4-bf13-506c-0fc09f4ee6bc.htm">
           <HelpTOCNode Title="UpdateSplit Method " Url="html/350f70c1-9771-6253-6485-9be21df57f88.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="d273027e-bad2-453e-8e31-7f2a9d570662" Title="SplitCanvasPositioning Fields" Url="html/84e177cb-7955-2267-de26-d40805253a40.htm">
+        <HelpTOCNode Id="1035f6e7-cbf7-49d7-9339-49485f9124c7" Title="SplitCanvasPositioning Fields" Url="html/84e177cb-7955-2267-de26-d40805253a40.htm">
           <HelpTOCNode Title="secondaryHiddenLayout Field" Url="html/66219a09-9e71-407f-fb36-6ebda0519299.htm" />
           <HelpTOCNode Title="secondaryVisibleLayout Field" Url="html/96cd721d-3d70-18e9-fe28-180a890569cb.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="d9782dbc-ab66-4c5b-9585-c4440710db62" Title="SplitCanvasPositioning.Layout Class" Url="html/69aba5f0-94d1-a93e-f783-6e0c67efc444.htm">
+      <HelpTOCNode Id="8fc6b8dc-942b-4862-af25-5a66d85337bb" Title="SplitCanvasPositioning.Layout Class" Url="html/69aba5f0-94d1-a93e-f783-6e0c67efc444.htm">
         <HelpTOCNode Title="Layout Methods" Url="html/a6e1ad71-128d-9bb6-11eb-d1d7e3d5d76b.htm" />
-        <HelpTOCNode Id="46269ca7-280a-4ab8-826b-09e7b5a35a51" Title="Layout Fields" Url="html/638cbaf6-cf7f-775f-9b42-53e561077c52.htm">
+        <HelpTOCNode Id="a7478e73-fc0b-4999-bae5-8c6aa13474cb" Title="Layout Fields" Url="html/638cbaf6-cf7f-775f-9b42-53e561077c52.htm">
           <HelpTOCNode Title="mainViewPosition Field" Url="html/e09e11c4-a43f-7c98-90be-662c5a7d7f86.htm" />
           <HelpTOCNode Title="secondaryViewPosition Field" Url="html/7c8f4511-3d18-a644-4d18-0b892dc47a26.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="9b79c36e-69a3-473d-9f67-780092be724e" Title="SplitCanvasPositioningTransitionAnimation Class" Url="html/6c16753b-c59c-7bf5-d941-8a9fe7bce54b.htm">
+      <HelpTOCNode Id="9ce7f5ae-3ea3-48b7-8848-0fcf49bf3de5" Title="SplitCanvasPositioningTransitionAnimation Class" Url="html/6c16753b-c59c-7bf5-d941-8a9fe7bce54b.htm">
         <HelpTOCNode Title="SplitCanvasPositioningTransitionAnimation Properties" Url="html/27df5996-c19d-4765-7f7c-bcfb1653cff6.htm" />
         <HelpTOCNode Title="SplitCanvasPositioningTransitionAnimation Methods" Url="html/870ce471-9941-e553-5e7e-a4516e3b8788.htm" />
         <HelpTOCNode Title="SplitCanvasPositioningTransitionAnimation Fields" Url="html/6ebc21fb-19a0-8407-1dbe-c26d625501c4.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="aea8db3b-2717-4961-8884-583e7d41e02e" Title="StackCanvasController Class" Url="html/f784b62d-9f1a-f81f-da8b-cf2c1510df42.htm">
-        <HelpTOCNode Id="223c4d0e-c4be-4017-92ae-a88419a24a0c" Title="StackCanvasController Properties" Url="html/702fbc98-8f56-084b-a604-52a89c1f6508.htm">
+      <HelpTOCNode Id="635e4ad2-c2ab-4aa7-ae16-c7299daebde1" Title="StackCanvasController Class" Url="html/f784b62d-9f1a-f81f-da8b-cf2c1510df42.htm">
+        <HelpTOCNode Id="d7a2d713-4191-42c1-be28-f8f7ae7c37ab" Title="StackCanvasController Properties" Url="html/702fbc98-8f56-084b-a604-52a89c1f6508.htm">
           <HelpTOCNode Title="LowestAllowedStackCount Property " Url="html/cc9cf4bf-db8d-7035-d0e5-c68acf022085.htm" />
           <HelpTOCNode Title="RootViewController Property " Url="html/1d8f4676-2a24-2090-9935-066bf50dd8a0.htm" />
           <HelpTOCNode Title="TopViewController Property " Url="html/d09accfc-da0a-e9cd-c66b-48ca8037666f.htm" />
           <HelpTOCNode Title="ViewControllers Property " Url="html/8f84e027-b868-5c89-d936-615659be1f9d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="c5e6dbea-b20b-4ece-875f-2ce4a0e8b00c" Title="StackCanvasController Methods" Url="html/3984b405-f87d-2116-167f-55d8ada0c5a1.htm">
+        <HelpTOCNode Id="7d7626be-d70a-4e02-a9db-51ecf1a32f94" Title="StackCanvasController Methods" Url="html/3984b405-f87d-2116-167f-55d8ada0c5a1.htm">
           <HelpTOCNode Title="CanPopToViewController Method " Url="html/0bd73d21-0591-9233-2cea-a92857378494.htm" />
           <HelpTOCNode Title="CanPopViewController Method " Url="html/e87c5a7f-a56f-27c8-697c-e7c32ccaa100.htm" />
           <HelpTOCNode Title="CanPushViewController Method " Url="html/ebb07a92-916b-7612-1de7-6a5a39798747.htm" />
@@ -592,7 +596,7 @@
           <HelpTOCNode Title="PushInteractively Method " Url="html/d532b578-75b6-b3e6-61b8-e3dd0b862dda.htm" />
           <HelpTOCNode Title="SetRoot Method " Url="html/42d33a8d-c572-7806-dc1f-7e2478cc4c07.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="a5ae4b48-fb56-45ee-a8f9-6c7401bec2fe" Title="StackCanvasController Fields" Url="html/bace8cfc-051a-eed3-a758-9cf4cf183bf8.htm">
+        <HelpTOCNode Id="dba33b5b-e63a-4643-8d9d-7e122235fad6" Title="StackCanvasController Fields" Url="html/bace8cfc-051a-eed3-a758-9cf4cf183bf8.htm">
           <HelpTOCNode Title="allowsRootViewControllerToBePopped Field" Url="html/4d0e81ed-a1c4-4724-9ce2-df3047754a0c.htm" />
           <HelpTOCNode Title="PopAllTransition Field" Url="html/ad03e6fe-bbb1-53c6-d484-2c08e7b7db22.htm" />
           <HelpTOCNode Title="PopToRootTransition Field" Url="html/0e0acee2-fda0-765e-8411-c24a8edaf376.htm" />
@@ -603,13 +607,13 @@
           <HelpTOCNode Title="viewControllersContainer Field" Url="html/7d507c2f-8fab-3a2b-6234-f27b783e1077.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="2384ab0e-e734-4e12-85a0-9558e6558725" Title="TabBarCanvasController Class" Url="html/07381161-0f92-62ad-dac0-870e4fe24869.htm">
-        <HelpTOCNode Id="7f6342de-0387-43b2-9a6b-115e2e1808ae" Title="TabBarCanvasController Properties" Url="html/5d0b8d1f-7974-bed2-6c68-8bfd78e62516.htm">
+      <HelpTOCNode Id="f6584de0-4684-4847-a70b-dae8b3337686" Title="TabBarCanvasController Class" Url="html/07381161-0f92-62ad-dac0-870e4fe24869.htm">
+        <HelpTOCNode Id="d7e85fe1-10f1-425b-87ac-5916b214b44f" Title="TabBarCanvasController Properties" Url="html/5d0b8d1f-7974-bed2-6c68-8bfd78e62516.htm">
           <HelpTOCNode Title="SelectedIndex Property " Url="html/38486d00-3a77-e749-7ddd-fe99686a598b.htm" />
           <HelpTOCNode Title="SelectedViewController Property " Url="html/6eb13aeb-54c4-99c8-d179-44ba3fbc2a93.htm" />
           <HelpTOCNode Title="ViewControllers Property " Url="html/b2751529-fed2-349c-bfca-b14a5573778d.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="17837c54-aa62-40cf-83c2-5aa553c2fa3d" Title="TabBarCanvasController Methods" Url="html/1d201d91-326f-e1e8-f488-3fdf3f62985d.htm">
+        <HelpTOCNode Id="4ee31df4-287b-4896-9222-562679630f42" Title="TabBarCanvasController Methods" Url="html/1d201d91-326f-e1e8-f488-3fdf3f62985d.htm">
           <HelpTOCNode Title="CanSelectIndex Method " Url="html/39b12e90-29a4-fd6a-8a4e-a11f3fcb41e7.htm" />
           <HelpTOCNode Title="CanSelectViewController Method " Url="html/8a7bae42-336a-2dc9-d303-7389c415d56c.htm" />
           <HelpTOCNode Title="CanSetViewControllers Method " Url="html/0aeb993a-dd76-f8e7-6b4e-31ad87121ef8.htm" />
@@ -617,7 +621,7 @@
           <HelpTOCNode Title="SetSelectedViewController Method " Url="html/e457e31c-4de5-784b-00fb-1fc5e42379d7.htm" />
           <HelpTOCNode Title="SetViewControllers Method " Url="html/e26e09c6-3666-5f4d-e49a-a85773fc6717.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="185d0874-96d2-45e0-9be4-369824224aa0" Title="TabBarCanvasController Fields" Url="html/9d1923f1-c57f-bb87-7876-2f9a8d68d95f.htm">
+        <HelpTOCNode Id="fb578529-0cad-4766-a35f-c29c06e47aee" Title="TabBarCanvasController Fields" Url="html/9d1923f1-c57f-bb87-7876-2f9a8d68d95f.htm">
           <HelpTOCNode Title="animateTransitionOnTabBarItemSelection Field" Url="html/04501e89-a70b-b78a-0bc3-3dc59cdec106.htm" />
           <HelpTOCNode Title="blockSelectionWhilstInTransition Field" Url="html/38ce0b3b-9071-a7a0-28b1-1f3e17eb5a99.htm" />
           <HelpTOCNode Title="itemProvider Field" Url="html/10b88607-782d-aebf-1400-1220a81a3fb9.htm" />
@@ -628,23 +632,23 @@
           <HelpTOCNode Title="viewControllersContainer Field" Url="html/05dcae0b-29e7-25be-fb74-06a6ef8bedf4.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="ce951d87-f6b3-4ac9-9e70-43504ad02c14" Title="TabBarCanvasController.SetSelectedIndexInvokeTransitionData Class" Url="html/c0f61315-a92e-2fca-f776-661cce1cdf9a.htm">
+      <HelpTOCNode Id="912daf96-d312-4424-a076-798ef4238d1a" Title="TabBarCanvasController.SetSelectedIndexInvokeTransitionData Class" Url="html/c0f61315-a92e-2fca-f776-661cce1cdf9a.htm">
         <HelpTOCNode Title="SetSelectedIndexInvokeTransitionData Methods" Url="html/a1c0280c-f3f6-b7e7-8949-d396e2e9783c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2ff80d17-cb26-4cfd-b7df-3bff1ef635ea" Title="TabBarCanvasController.SetViewControllersInvokeTransitionData Class" Url="html/7bb8e667-3373-048a-d920-6f6b05262ec0.htm">
+      <HelpTOCNode Id="2cb08c65-7b7b-4125-aaf9-c2706791cf87" Title="TabBarCanvasController.SetViewControllersInvokeTransitionData Class" Url="html/7bb8e667-3373-048a-d920-6f6b05262ec0.htm">
         <HelpTOCNode Title="SetViewControllersInvokeTransitionData Methods" Url="html/6f319085-5065-b8a7-e50a-1eb0a333ac46.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="63a5ffb4-e723-4bca-94db-49fbe7bdb6f0" Title="TransitionSequenceAnimation(TViewController, TContext) Class" Url="html/f5d82a3a-31cc-b3bb-bd29-528777b8be47.htm">
-        <HelpTOCNode Id="f0c14235-5ff0-4de8-8675-57e1f86a0ce9" Title="TransitionSequenceAnimation(TViewController, TContext) Properties" Url="html/f86896eb-38fc-cae2-e1d6-32ea73fd6033.htm">
+      <HelpTOCNode Id="3adcd437-ee43-4861-9b7f-a6a7bf26c2a7" Title="TransitionSequenceAnimation(TViewController, TContext) Class" Url="html/f5d82a3a-31cc-b3bb-bd29-528777b8be47.htm">
+        <HelpTOCNode Id="b01a1435-1c20-41e8-aae6-06083a43be82" Title="TransitionSequenceAnimation(TViewController, TContext) Properties" Url="html/f86896eb-38fc-cae2-e1d6-32ea73fd6033.htm">
           <HelpTOCNode Title="EasedProgress01 Property " Url="html/959ea3ff-5bdf-07c7-3761-a85cca1c8ec4.htm" />
           <HelpTOCNode Title="TargetViewController Property " Url="html/2cd24550-0e3c-9123-575f-5cc18d62b045.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="798d6c26-8a1b-4c7a-9fe2-7672b304ed71" Title="TransitionSequenceAnimation(TViewController, TContext) Methods" Url="html/d2f2a7f4-1f7e-ea82-46d1-cf1f1b48c95f.htm">
+        <HelpTOCNode Id="deedd937-f1af-45a1-8b4d-c494dc108d62" Title="TransitionSequenceAnimation(TViewController, TContext) Methods" Url="html/d2f2a7f4-1f7e-ea82-46d1-cf1f1b48c95f.htm">
           <HelpTOCNode Title="InitializeAnimationWithContext Method " Url="html/315fb85e-0169-53a9-a299-c9fe9ad21eba.htm" />
           <HelpTOCNode Title="OnTransitionFinished Method " Url="html/b648f718-e120-1031-4bd8-e89503ae5626.htm" />
           <HelpTOCNode Title="UpdateProgress Method " Url="html/fb1844d2-5f28-0383-b88d-fa970a322d74.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="62b2d320-4ecf-4efa-afae-9493c752417d" Title="TransitionSequenceAnimation(TViewController, TContext) Fields" Url="html/6d017a12-c789-8382-58e2-5875d0c1e435.htm">
+        <HelpTOCNode Id="30068a6f-d1ba-4638-a66c-c79e709a6238" Title="TransitionSequenceAnimation(TViewController, TContext) Fields" Url="html/6d017a12-c789-8382-58e2-5875d0c1e435.htm">
           <HelpTOCNode Title="curve Field" Url="html/c7af75e4-f4e5-6958-deef-11cfa6b63c75.htm" />
           <HelpTOCNode Title="initializeWithZeroProgress Field" Url="html/fedd9576-175d-6843-a893-7963f3cc00f2.htm" />
           <HelpTOCNode Title="transitionDirection Field" Url="html/415dab1d-0c72-c911-339f-6221e8084a39.htm" />
@@ -653,28 +657,28 @@
       </HelpTOCNode>
       <HelpTOCNode Title="TransitionSequenceAnimation(TViewController, TContext).Direction Enumeration" Url="html/9143ab50-cd34-7849-f2f1-504e6b9f0303.htm" />
       <HelpTOCNode Title="TransitionSequenceAnimation(TViewController, TContext).ViewControllerIdentifier Enumeration" Url="html/3a0ce133-26f1-feaf-2888-9096da1d8e1c.htm" />
-      <HelpTOCNode Id="1c9cbf91-8fb1-4ff1-8f16-e15d94391ead" Title="TransitionSequenceAnimator(TRegion, TContext) Class" Url="html/0f409449-0ddc-6a9e-b48c-38045a458714.htm">
+      <HelpTOCNode Id="2fd205fa-a586-4204-af65-ed97232ebd88" Title="TransitionSequenceAnimator(TRegion, TContext) Class" Url="html/0f409449-0ddc-6a9e-b48c-38045a458714.htm">
         <HelpTOCNode Title="TransitionSequenceAnimator(TRegion, TContext) Properties" Url="html/61114316-bb24-638c-1469-620ed2d93964.htm" />
         <HelpTOCNode Title="TransitionSequenceAnimator(TRegion, TContext) Methods" Url="html/d2ddcb57-c58c-188b-89f2-a9a071012d87.htm" />
-        <HelpTOCNode Id="a650b389-5788-439d-bc96-d4149d19cbea" Title="TransitionSequenceAnimator(TRegion, TContext) Fields" Url="html/3ca7fe19-0b58-b308-18fe-c94e885e6dde.htm">
+        <HelpTOCNode Id="4bad4a62-2b28-4035-aa23-1e3f06d19b3b" Title="TransitionSequenceAnimator(TRegion, TContext) Fields" Url="html/3ca7fe19-0b58-b308-18fe-c94e885e6dde.htm">
           <HelpTOCNode Title="duration Field" Url="html/f12f2f7c-de08-8a02-21c1-7f7fc9824c26.htm" />
           <HelpTOCNode Title="regions Field" Url="html/ed545aa7-11fe-6318-14ca-405668fceac6.htm" />
           <HelpTOCNode Title="timeUpdateMode Field" Url="html/32d6143a-c9e9-d246-e38c-6532de76fd29.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="5aff5f81-31af-444f-b342-19e923c6ef2d" Title="TransitionSequenceRegion(TAnimation, TContext) Class" Url="html/4ce8dac8-1f29-37fd-543d-9d07e2b62ba6.htm">
+      <HelpTOCNode Id="b2762d82-a96d-42b4-989b-a86c2387c075" Title="TransitionSequenceRegion(TAnimation, TContext) Class" Url="html/4ce8dac8-1f29-37fd-543d-9d07e2b62ba6.htm">
         <HelpTOCNode Title="TransitionSequenceRegion(TAnimation, TContext) Methods" Url="html/a0863331-9289-1ecc-797f-5550bd35678a.htm" />
-        <HelpTOCNode Id="fe56bf50-5708-4974-9049-e674749117db" Title="TransitionSequenceRegion(TAnimation, TContext) Fields" Url="html/c562b4f7-76fe-2e24-8c55-dc0e43921422.htm">
+        <HelpTOCNode Id="dbd05c3a-ad56-4ca0-bed8-831d8eb34385" Title="TransitionSequenceRegion(TAnimation, TContext) Fields" Url="html/c562b4f7-76fe-2e24-8c55-dc0e43921422.htm">
           <HelpTOCNode Title="endTime01 Field" Url="html/08fe5c4b-9be7-43c6-cd08-478440a2447a.htm" />
           <HelpTOCNode Title="startTime01 Field" Url="html/31331222-7320-977a-c682-fa9d20ee01ee.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="80850458-f070-41f3-b9a7-288f85573008" Title="ViewCallbackAttribute Class" Url="html/5dc67710-28a0-5e32-0cbf-68fc8c33202c.htm">
+      <HelpTOCNode Id="cf3e0e82-8c95-4330-8066-d06a2998a2c1" Title="ViewCallbackAttribute Class" Url="html/5dc67710-28a0-5e32-0cbf-68fc8c33202c.htm">
         <HelpTOCNode Title="ViewCallbackAttribute Properties" Url="html/d4f687fe-6787-2fe3-7027-1c3592e91d01.htm" />
         <HelpTOCNode Title="ViewCallbackAttribute Methods" Url="html/9f9fd313-3091-405e-1c2a-bc1c2a1f5afb.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="553cf7f1-e35b-4bc3-9309-c27ee945ec81" Title="ViewController(TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph) Class" Url="html/623ec087-118f-4c8a-8b3b-c5861d0d2036.htm">
-        <HelpTOCNode Id="0906cb73-ccdc-4c3d-a90a-a3759746427c" Title="ViewController(TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph) Properties" Url="html/6db34d35-54ca-f9f6-f6b7-4780d5a5d195.htm">
+      <HelpTOCNode Id="b9b74ca0-8750-42ab-8a84-5d78b61192de" Title="ViewController(TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph) Class" Url="html/623ec087-118f-4c8a-8b3b-c5861d0d2036.htm">
+        <HelpTOCNode Id="50d0a45b-e1d5-49c1-a606-42e53019ad87" Title="ViewController(TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph) Properties" Url="html/6db34d35-54ca-f9f6-f6b7-4780d5a5d195.htm">
           <HelpTOCNode Title="IsPerformingTransitionBetweenChildren Property " Url="html/7f7997af-4cbc-5374-39dd-2873d322736a.htm" />
           <HelpTOCNode Title="Parent Property " Url="html/2be44b55-fa21-b661-1637-b08b94b41089.htm" />
           <HelpTOCNode Title="PresentedViewController Property " Url="html/9f4c9836-ce98-f7eb-97e0-6462ce2dd828.htm" />
@@ -684,7 +688,7 @@
           <HelpTOCNode Title="View Property " Url="html/8b71bad3-6d04-453c-8934-f71de3bf313f.htm" />
           <HelpTOCNode Title="ViewIsLoaded Property " Url="html/da69a379-0ddb-7d10-d32e-20e83beb1606.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="232a5e71-b471-4680-ab3a-f290282c0d29" Title="ViewController(TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph) Methods" Url="html/a1d1633d-7f16-4063-677b-6b065bc15793.htm">
+        <HelpTOCNode Id="00bd2504-db8b-4015-9697-a2fd47bec3a2" Title="ViewController(TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph) Methods" Url="html/a1d1633d-7f16-4063-677b-6b065bc15793.htm">
           <HelpTOCNode Title="AddChild Method " Url="html/4cf803bf-019f-0392-ad0c-cdf3c020832b.htm" />
           <HelpTOCNode Title="CanDismissViewController Method " Url="html/e17cb6ed-3434-3f11-3a80-b66687e20f2d.htm" />
           <HelpTOCNode Title="CanPresentViewController Method " Url="html/cfb655fd-cbf8-1671-5646-2b04d7e028e0.htm" />
@@ -695,7 +699,7 @@
           <HelpTOCNode Title="FirstAncestorOfType(T) Method " Url="html/75848291-930a-2cd7-9816-d9179dd4d9a3.htm" />
           <HelpTOCNode Title="GraphableTransitionIdentifiers Method " Url="html/19cad937-2d71-df2d-ce6a-37f32ed267b6.htm" />
           <HelpTOCNode Title="ImplementsTransition Method " Url="html/139ac688-a830-bd9b-062c-a8c7804bb358.htm" />
-          <HelpTOCNode Id="1792d1f0-a231-490e-88e4-ca65a2f19438" Title="InvokeTransition Method " Url="html/1a085b8c-a20c-6488-d457-692d36fbb851.htm">
+          <HelpTOCNode Id="787e5657-4d01-4e45-a8da-be1f69cae976" Title="InvokeTransition Method " Url="html/1a085b8c-a20c-6488-d457-692d36fbb851.htm">
             <HelpTOCNode Title="InvokeTransition Method (ViewControllerTransitionIdentifier, TTransitionData, Action)" Url="html/003f3a0a-5288-4abd-4a47-62e4f4685b1d.htm" />
             <HelpTOCNode Title="InvokeTransition Method (ViewControllerTransitionIdentifier, TViewController, Boolean, Action)" Url="html/810314f4-550f-c1c8-b396-4bd7cd0ec1cf.htm" />
           </HelpTOCNode>
@@ -719,7 +723,7 @@
           <HelpTOCNode Title="ViewWillDisappear Method " Url="html/f3c63491-0bac-0011-caa2-74b20829da45.htm" />
           <HelpTOCNode Title="WillPerformChildTransition Method " Url="html/ca92ed80-e614-8788-be6b-f6a52ec1a95f.htm" />
         </HelpTOCNode>
-        <HelpTOCNode Id="5d53401e-44c9-4a7a-b4b6-449a7ff99b0e" Title="ViewController(TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph) Fields" Url="html/d15825b5-5b7c-c809-9f97-a30b03443b65.htm">
+        <HelpTOCNode Id="676b14aa-1228-4bf5-8597-2b96ce51480c" Title="ViewController(TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph) Fields" Url="html/d15825b5-5b7c-c809-9f97-a30b03443b65.htm">
           <HelpTOCNode Title="graph Field" Url="html/8ed91ebc-8f63-6d82-0d08-57ee4542b95c.htm" />
           <HelpTOCNode Title="interactiveTransitionProgressProvider Field" Url="html/a0a11fbd-6e9c-c8f5-7e9e-e3a8caf5a672.htm" />
           <HelpTOCNode Title="OnDidPerformChildTransition Field" Url="html/9877beb9-591e-d8d0-a55a-8d96d78ed3ad.htm" />
@@ -729,19 +733,19 @@
           <HelpTOCNode Title="transitionAnimatorProvider Field" Url="html/ae2df197-dde2-a7a9-7a2b-b008f25f37df.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
-      <HelpTOCNode Id="83938323-c8f1-4972-a7b3-e5fda64b89d8" Title="ViewControllerInvokeTransitionData(TViewController) Class" Url="html/af997234-d8de-561a-ac76-f669b130bd70.htm">
+      <HelpTOCNode Id="c0f2f4fd-28e6-4838-9d3d-7de0a948a72e" Title="ViewControllerInvokeTransitionData(TViewController) Class" Url="html/af997234-d8de-561a-ac76-f669b130bd70.htm">
         <HelpTOCNode Title="ViewControllerInvokeTransitionData(TViewController) Methods" Url="html/e69457ca-0eae-2432-b95a-0679bf5d16dd.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="547a3bd9-5b91-44ca-9bf6-4c61cf5ad389" Title="ViewControllerTransition(TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider) Class" Url="html/4c4051a3-204e-a758-1d6a-6a4a1fcd3da1.htm">
-        <HelpTOCNode Id="4d38f434-961a-4fb7-9bb5-6da9c34dfe34" Title="ViewControllerTransition(TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider) Properties" Url="html/3060a8e4-f568-129c-2dfe-dd4b42164609.htm">
+      <HelpTOCNode Id="88f2ddf6-0f81-4a87-9543-fafff157d8da" Title="ViewControllerTransition(TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider) Class" Url="html/4c4051a3-204e-a758-1d6a-6a4a1fcd3da1.htm">
+        <HelpTOCNode Id="23e77a45-7157-438e-b20f-712276ec2ea4" Title="ViewControllerTransition(TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider) Properties" Url="html/3060a8e4-f568-129c-2dfe-dd4b42164609.htm">
           <HelpTOCNode Title="Animator Property " Url="html/360ca5f2-2f97-641e-7586-c41cb880b189.htm" />
           <HelpTOCNode Title="Context Property " Url="html/1aed82cc-e673-35c2-9f28-47c392e0dbc1.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="ViewControllerTransition(TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider) Methods" Url="html/50d61d38-f696-668a-3dc2-1637882247e5.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="ViewControllerTransitionAnimationDriverDirection Enumeration" Url="html/27776f68-dae4-5184-33e9-2aba4645f735.htm" />
-      <HelpTOCNode Id="1319ff60-2826-4884-9c32-ec369e3c188f" Title="ViewControllerTransitionContext(TViewController) Class" Url="html/4245cfac-5d46-0d37-0f04-cb7b19594f12.htm">
-        <HelpTOCNode Id="d6c27ba8-9982-4224-9ee7-4053b85cbbdc" Title="ViewControllerTransitionContext(TViewController) Properties" Url="html/4d1f46d3-7c7e-cd9e-4990-4349e5ad502e.htm">
+      <HelpTOCNode Id="af02ab0a-8e4b-4bfc-b2a3-a710d750a3e3" Title="ViewControllerTransitionContext(TViewController) Class" Url="html/4245cfac-5d46-0d37-0f04-cb7b19594f12.htm">
+        <HelpTOCNode Id="2790a07a-83f1-4e2f-8ee9-cda496cb277a" Title="ViewControllerTransitionContext(TViewController) Properties" Url="html/4d1f46d3-7c7e-cd9e-4990-4349e5ad502e.htm">
           <HelpTOCNode Title="Animated Property " Url="html/c5192594-2190-afab-63b2-cfaf70a446e3.htm" />
           <HelpTOCNode Title="FromViewController Property " Url="html/c95c47ac-5f0d-9aa4-a1dc-518b63c0a069.htm" />
           <HelpTOCNode Title="Identifier Property " Url="html/e136fe43-5a9f-de2f-b4bc-bc9af2073c57.htm" />
@@ -752,9 +756,9 @@
         </HelpTOCNode>
         <HelpTOCNode Title="ViewControllerTransitionContext(TViewController) Methods" Url="html/e5ed95e6-0ea3-a100-c922-37fe49ec4492.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="e3ba8cf9-893f-4e26-9ff4-e11bc44bd415" Title="ViewControllerTransitionIdentifier Class" Url="html/39ad1b5e-343f-4d64-1b61-ea2de6b3c849.htm">
+      <HelpTOCNode Id="8d8208c2-3835-4d24-bb8d-627aab6f82e2" Title="ViewControllerTransitionIdentifier Class" Url="html/39ad1b5e-343f-4d64-1b61-ea2de6b3c849.htm">
         <HelpTOCNode Title="ViewControllerTransitionIdentifier Constructor " Url="html/8ea7545c-e7f8-4fdf-9dfd-3185b1900a5b.htm" />
-        <HelpTOCNode Id="318a0af6-9c41-4775-8170-919e2f948ce4" Title="ViewControllerTransitionIdentifier Properties" Url="html/5139263c-40cc-5d7a-9d19-6565c76f0c6c.htm">
+        <HelpTOCNode Id="880b59b4-aa61-4823-9543-1b6767c57974" Title="ViewControllerTransitionIdentifier Properties" Url="html/5139263c-40cc-5d7a-9d19-6565c76f0c6c.htm">
           <HelpTOCNode Title="DisplayName Property " Url="html/589845be-2444-ff1f-1326-91830aabd511.htm" />
           <HelpTOCNode Title="Guid Property " Url="html/ce5e60df-9056-18e2-d77d-c8b1bd91661a.htm" />
           <HelpTOCNode Title="Type Property " Url="html/42024e6f-74a9-9c73-d399-eee3bce20bdd.htm" />
@@ -763,19 +767,19 @@
       </HelpTOCNode>
       <HelpTOCNode Title="ViewControllerTransitionIdentifier.TransitionType Enumeration" Url="html/bf3f382a-4d2c-1e9c-6f01-f81ba4bad2ee.htm" />
       <HelpTOCNode Title="ViewControllerTransitionTimeUpdateMode Enumeration" Url="html/7c0f3f8d-d32d-a47d-d12b-97d595b2699f.htm" />
-      <HelpTOCNode Id="5c7de4c9-7e6e-45cf-8b20-7f349941c5c2" Title="ViewReference Class" Url="html/1330eeac-c351-5d37-aa22-3f0b2aed65dd.htm">
-        <HelpTOCNode Id="a4f80174-5c9c-40a9-8439-a482e3ba3208" Title="ViewReference Properties" Url="html/4cef1097-1e12-3f37-c85a-808e344316f1.htm">
+      <HelpTOCNode Id="2e7b9f1a-b3cb-45a0-86f4-666c646087f1" Title="ViewReference Class" Url="html/1330eeac-c351-5d37-aa22-3f0b2aed65dd.htm">
+        <HelpTOCNode Id="c13be478-47e4-41de-ac73-0815e87f6915" Title="ViewReference Properties" Url="html/4cef1097-1e12-3f37-c85a-808e344316f1.htm">
           <HelpTOCNode Title="Identifier Property " Url="html/2511c843-4360-d43d-7544-c0d1f924f3a7.htm" />
         </HelpTOCNode>
         <HelpTOCNode Title="ViewReference Methods" Url="html/f327a3f9-7691-0aac-bb34-4ea70630d66a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="c5785096-a2cb-4556-97dd-1251032f84a1" Title="ViewReferenceAttribute Class" Url="html/406eff07-38a4-b6e3-32cc-22addbb7572b.htm">
+      <HelpTOCNode Id="444dcb49-dcf4-4130-8183-afb94f27ebe6" Title="ViewReferenceAttribute Class" Url="html/406eff07-38a4-b6e3-32cc-22addbb7572b.htm">
         <HelpTOCNode Title="ViewReferenceAttribute Properties" Url="html/e329221a-4b44-df8b-3c5c-70c4e8a7024e.htm" />
         <HelpTOCNode Title="ViewReferenceAttribute Methods" Url="html/e7e81c75-a197-c6ec-937b-0093361a7f77.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="b2e8dc28-ba93-4ae9-b380-281ea061de30" Title="Version History" Url="html/33923122-111b-47c7-b3c7-e76cd5b0882c.htm">
+  <HelpTOCNode Id="1475baf3-c6a6-419e-8aec-22c399adfdd5" Title="Version History" Url="html/33923122-111b-47c7-b3c7-e76cd5b0882c.htm">
     <HelpTOCNode Title="Version 2.0.0" Url="html/1acbcdbd-e95b-42f2-9937-5ef3b42e3c98.htm" />
     <HelpTOCNode Title="Version 1.1.4" Url="html/82693039-a1da-4423-af8a-03bc6be68587.htm" />
     <HelpTOCNode Title="Version 1.1.3" Url="html/ba5e7b08-2a99-47fc-8668-7f3360911850.htm" />
