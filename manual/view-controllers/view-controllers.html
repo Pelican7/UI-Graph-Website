@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>View Controllers </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="View Controllers ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="view-controllers">
+<h1 id="view-controllers">View Controllers</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>A view controller manages a single view of content in your user-interface. This view can be a whole screen or a smaller section of a screen. A view controller manages the life-cycle of its view and is responsible for instantiating and destroying its view as required, such as upon presentation or dismissal.</p>
+<p>View controllers can perform transitions to, from, and between other view controllers, allowing you to easily build a complete user-interface flow. These transitions can be animated using the <a class="xref" href="../transition-sequence-animator/transition-sequence-animator.html">Transition Sequence Animator</a> or with custom scripts.</p>
+<p>A view controller and its view are architecturally similar to the Controller and View components of the Model-View-Controller paradigm (<a href="https://en.wikipedia.org/wiki/Model&#8211;view&#8211;controller">Wikipedia</a>). </p>
+<h2 id="structure">Structure</h2>
+<p>There are two concrete base types of view controller &#8211; <a class="xref" href="../../api/Pelican7.UIGraph.CanvasController.html">Canvas Controller</a> and <a class="xref" href="../../api/Pelican7.UIGraph.ElementsController.html">Elements Controller</a>. The Canvas Controller manages a view built with Unity&#39;s <a href="https://docs.unity3d.com/Manual/UICanvas.html">UI Canvas</a> workflow. The Elements Controller manages a view built with Unity&#39;s <a href="https://docs.unity3d.com/Manual/UIElements.html">UIElements</a> workflow. Creating a view controller yields a subclass of one of these concrete base types, depending on the workflow you are using. </p>
+<p>A view controller consists of a script with a corresponding <strong>Scriptable Object</strong> instance, as well as a separate <strong>View</strong> resource. In the <em>UI Canvas workflow</em>, this View is a <strong>Prefab</strong>. </p>
+<p><img src="../../images/manual/view-controllers/canvas-controllers/canvas-controller-asset-structure.PNG" alt="">
+<em>Canvas Controller asset structure.</em></p>
+<p>In the <em>UI Elements workflow</em>, the View is a pair of <strong>Uxml</strong>/<strong>Uss</strong> files.</p>
+<p><img src="../../images/manual/view-controllers/elements-controllers/elements-controller-asset-structure.PNG" alt="">
+<em>Elements Controller asset structure.</em></p>
+<div class="NOTE"><h5>Note</h5><p>The <em>UIElements workflow</em> and <a class="xref" href="../../api/Pelican7.UIGraph.ElementsController.html">Elements Controller</a> are currently for internal use only. Only the <em>UI Canvas workflow</em> is currently supported.</p>
+</div>
+<h2 id="container-view-controllers">Container View Controllers</h2>
+<p>View controllers can contain, or embed, child view controllers. This allows for complex user-interfaces to be constructed consisting of many nested view controllers. Additionally, view controllers may offer their own <a class="xref" href="view-controllers.html#containment-transitions">containment transitions</a> enabling them to perform transitions between their children. A view controller that offers its own containment transitions is a Container View Controller. Four standard Container View Controllers are provided &#8211; <strong>Tab Bar</strong>, <strong>Stack</strong>, <strong>Navigation</strong>, and <strong>Split</strong> &#8211; which are heavily customizable. A wealth of user-interfaces can be created using combinations of the standard container view controllers. </p>
+<p><img src="../../images/manual/view-controllers/container-view-controllers.png" alt="">
+<em>A user-interface containing several of the standard Container View Controllers as well as child view controller nesting.</em></p>
+<h2 id="view-controller-transitions">View Controller Transitions</h2>
+<p>View controllers can perform transitions to, from, and between other view controllers, allowing you to build complete user-interface flows. </p>
+<h3 id="present--dismiss">Present &amp; Dismiss</h3>
+<p>All view controllers can present and dismiss other view controllers. When a view controller is presented, its view is instantiated, added to the window, and animated on-screen if necessary. Inversely, when a view controller is dismissed, its view is animated off-screen if necessary, removed from the window, and destroyed. The <strong>Present</strong> and <strong>Dismiss</strong> transitions are used for presenting full screen content over the current screen. </p>
+<p>The recommended way to present and dismiss view controllers is to use a <a class="xref" href="../graphs/graphs.html">Graph</a>. This allows you to create a flow graph of your user-interface in which you build the presentation flow.</p>
+<p>Alternatively, you may use the View Controller system directly at any time by calling the <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Present_">Present</a> and <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Dismiss_">Dismiss</a> methods directly. To present a view controller you must first instantiate an instance of it. </p>
+<pre><code class="lang-csharp">public class FriendsListCanvasController : CanvasController
+{
+    // A reference to the view controller to be presented.
+    public CanvasController yourViewControllerTemplate;
+
+    public void PresentFriendProfile()
+    {
+        // Instantiate the view controller and present it.
+        CanvasController yourViewController = Instantiate(yourViewControllerTemplate);
+        Present(yourViewController);
+    }
+}
+</code></pre><p>To dismiss a view controller, simply call <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Dismiss_">Dismiss</a> on the view controller whom you wish to dismiss. Alternatively, you may call<a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Dismiss_">Dismiss</a> on a view controller further down in the presentation stack. Doing so will dismiss to the receiving view controller, destroying all intermediary view controllers, and animating the top-most view controller in the stack.</p>
+<h3 id="containment-transitions">Containment Transitions</h3>
+<p><a class="xref" href="view-controllers.html#container-view-controllers">Container View Controllers</a> may offer their own containment transitions. These are transitions between their children. Like <a class="xref" href="view-controllers.html#present--dismiss">Present &amp; Dismiss</a>, containment transitions handle instantiating, animating, and destroying the relevant view controllers. However, unlike <a class="xref" href="view-controllers.html#present--dismiss">Present &amp; Dismiss</a>, containment transitions do not affect the presentation stack. This is because they are entirely contained within their parent view controller. For example, a Tab Bar view controller offers a <a class="xref" href="../../api/Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_SetSelectedIndexTransition">SetSelectedIndex transition</a> for switching its currently visible content view controller. This can be invoked via its <a class="xref" href="../../api/Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_SetSelectedIndex_">SetSelectedIndex</a> method. The tab bar&#39;s content view controller is contained, or embedded, within the tab bar view controller&#39;s view itself. </p>
+<p>When graphing, a container view controller&#39;s transitions will be offered where appropriate to any connection made involving its descendants, allowing you to select them. </p>
+<p>Alternatively, any view controller may invoke a containment transition in a parent view controller by either calling the relevant method directly or by using the <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_">InvokeTransition</a> method. The <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_">InvokeTransition</a> method will ripple up a view controller&#39;s parent hierarchy, searching for a parent that can perform the transition. </p>
+<pre><code class="lang-csharp">public void ShowSplitSecondaryViewController()
+{
+    // Invoking a split view controller&#39;s &#39;Show Secondary View Controller&#39; transition from a child.
+    InvokeTransition(SplitCanvasController.ShowSecondaryViewControllerTransition);
+}
+</code></pre><h3 id="transition-animation">Transition Animation</h3>
+<p>Transitions between view controllers can be animated. The recommended way to animate transitions is to use the <a class="xref" href="../transition-sequence-animator/transition-sequence-animator.html">Transition Sequence Animator</a>. This allows you to create animation sequences without coding, as well as to script your own animations for use with the system. See the <a class="xref" href="../transition-sequence-animator/transition-sequence-animator.html">Transition Sequence Animator</a> section for more detail. </p>
+<p>Alternatively, you are not required to use the <a class="xref" href="../transition-sequence-animator/transition-sequence-animator.html">Transition Sequence Animator</a> system and may script your own transition animations. See the workflow-specific guide for more details. </p>
+<ul>
+<li><a class="xref" href="ui-canvas/canvas-controllers.html#transition-animation">Canvas Controllers</a> (UI Canvas Workflow)</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ViewControllerTransitionContext&lt;TViewController&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ViewControllerTransitionContext&lt;TViewController&gt;
+   ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1">
+  
+  
+  <h1 id="Pelican7_UIGraph_ViewControllerTransitionContext_1" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1" class="text-break">Class ViewControllerTransitionContext&lt;TViewController&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>The view controller transition context provides detailed information about a view controller transition, such as the view controllers involved.
+<p>
+You will never use an instance of this class directly. Instead you will be given a concrete subclass, <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionContext.html">CanvasControllerTransitionContext</a> or <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionContext.html">ElementsControllerTransitionContext</a>, depending upon the workflow you are using.
+</p></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ViewControllerTransitionContext&lt;TViewController&gt;</span></div>
+      <div class="level2"><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionContext.html">CanvasControllerTransitionContext</a></div>
+      <div class="level2"><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionContext.html">ElementsControllerTransitionContext</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Pelican7.UIGraph.ITransitionContext.html">ITransitionContext</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IAppearable.html">IAppearable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pelican7.UIGraph.html">Pelican7.UIGraph</a></h6>
+  <h6><strong>Assembly</strong>: UI Graph API Documentation Project.dll</h6>
+  <h5 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ViewControllerTransitionContext&lt;TViewController&gt; : ITransitionContext, IAppearable where TViewController : ITransitionContextViewController</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TViewController</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1__ctor_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.#ctor*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1__ctor_Pelican7_UIGraph_ViewControllerTransitionIdentifier__0__0__0_System_Boolean_System_Boolean_System_Collections_Generic_Stack__0__" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.#ctor(Pelican7.UIGraph.ViewControllerTransitionIdentifier,`0,`0,`0,System.Boolean,System.Boolean,System.Collections.Generic.Stack{`0})">ViewControllerTransitionContext(ViewControllerTransitionIdentifier, TViewController, TViewController, TViewController, Boolean, Boolean, Stack&lt;TViewController&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewControllerTransitionContext(ViewControllerTransitionIdentifier identifier, TViewController toViewController, TViewController fromViewController, TViewController ownerViewController, bool animated, bool interactive, Stack&lt;TViewController&gt; intermediaryViewControllers = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td><span class="parametername">identifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TViewController</span></td>
+        <td><span class="parametername">toViewController</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TViewController</span></td>
+        <td><span class="parametername">fromViewController</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TViewController</span></td>
+        <td><span class="parametername">ownerViewController</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">animated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">interactive</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Stack</span>&lt;TViewController&gt;</td>
+        <td><span class="parametername">intermediaryViewControllers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Animated_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Animated*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Animated" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Animated">Animated</h4>
+  <div class="markdown level1 summary"><p>Is the transition animated?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Animated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_FromViewController_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.FromViewController*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_FromViewController" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.FromViewController">FromViewController</h4>
+  <div class="markdown level1 summary"><p>The view controller being transition from. In a Present transition, this is the view controller whom initiated the presentation. In an Dismiss transition, this is the view controller being dismissed. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TViewController FromViewController { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TViewController</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Identifier_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Identifier*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Identifier" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Identifier">Identifier</h4>
+  <div class="markdown level1 summary"><p>The transition&apos;s identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewControllerTransitionIdentifier Identifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Interactive_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Interactive*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Interactive" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Interactive">Interactive</h4>
+  <div class="markdown level1 summary"><p>Is the transition interactive?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Interactive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_IntermediaryViewControllers_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.IntermediaryViewControllers*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_IntermediaryViewControllers" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.IntermediaryViewControllers">IntermediaryViewControllers</h4>
+  <div class="markdown level1 summary"><p>Any intermediary view controllers associated with the transition. For example, intermediary view controllers are present when dismissing back to a view controller lower in the stack than the current view controller&apos;s presenter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stack&lt;TViewController&gt; IntermediaryViewControllers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Stack</span>&lt;TViewController&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_OwnerViewController_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.OwnerViewController*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_OwnerViewController" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.OwnerViewController">OwnerViewController</h4>
+  <div class="markdown level1 summary"><p>The view controller whom owns the transition. For containment transitions, the owner is the parent whom is performing the transition. In Present and Dismiss transitions, the owner is the view controller being presented or dismissed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TViewController OwnerViewController { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TViewController</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_ToViewController_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.ToViewController*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_ToViewController" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.ToViewController">ToViewController</h4>
+  <div class="markdown level1 summary"><p>The view controller being transitioned to. In a Present transition, this is the view controller being presented. In an Dismiss transition, this is the view controller whom is being dismissed to. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TViewController ToViewController { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TViewController</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_IAppearable_BeginAppearanceTransition_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#IAppearable#BeginAppearanceTransition*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_IAppearable_BeginAppearanceTransition_System_Boolean_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#IAppearable#BeginAppearanceTransition(System.Boolean)">IAppearable.BeginAppearanceTransition(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IAppearable.BeginAppearanceTransition(bool isAppearing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isAppearing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_IAppearable_EndAppearanceTransition_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#IAppearable#EndAppearanceTransition*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_IAppearable_EndAppearanceTransition" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#IAppearable#EndAppearanceTransition">IAppearable.EndAppearanceTransition()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IAppearable.EndAppearanceTransition()</code></pre>
+  </div>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_ITransitionContext_Animated_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#ITransitionContext#Animated*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_ITransitionContext_Animated" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#ITransitionContext#Animated">ITransitionContext.Animated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ITransitionContext.Animated { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_ITransitionContext_HideRelevantViewControllerIfNecessary_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#ITransitionContext#HideRelevantViewControllerIfNecessary*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_ITransitionContext_HideRelevantViewControllerIfNecessary_System_Boolean_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#ITransitionContext#HideRelevantViewControllerIfNecessary(System.Boolean)">ITransitionContext.HideRelevantViewControllerIfNecessary(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ITransitionContext.HideRelevantViewControllerIfNecessary(bool completed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">completed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_ITransitionContext_Interactive_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#ITransitionContext#Interactive*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_ITransitionContext_Interactive" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#ITransitionContext#Interactive">ITransitionContext.Interactive</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ITransitionContext.Interactive { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_ITransitionContext_ShowToViewController_" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#ITransitionContext#ShowToViewController*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionContext_1_Pelican7_UIGraph_ITransitionContext_ShowToViewController" data-uid="Pelican7.UIGraph.ViewControllerTransitionContext`1.Pelican7#UIGraph#ITransitionContext#ShowToViewController">ITransitionContext.ShowToViewController()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ITransitionContext.ShowToViewController()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.ITransitionContext.html">ITransitionContext</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IAppearable.html">IAppearable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

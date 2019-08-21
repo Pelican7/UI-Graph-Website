@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ElementsController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ElementsController
+   ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pelican7.UIGraph.ElementsController">
+  
+  
+  <h1 id="Pelican7_UIGraph_ElementsController" data-uid="Pelican7.UIGraph.ElementsController" class="text-break">Class ElementsController
+  </h1>
+  <div class="markdown level0 summary"><p>
+The Elements Controller class is the base view controller type for working with Unity&apos;s UIElements workflow. It manages a view built with Unity&apos;s UIElements system and stores this view in a pair of Uxml/Uss files.
+</p>
+<p>
+The UIElements workflow and Elements Controller are currently for internal use only.
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
+    <div class="level3"><a class="xref" href="Pelican7.UIGraph.ViewController-12.html">ViewController</a>&lt;<a class="xref" href="Pelican7.UIGraph.ElementsController.html">ElementsController</a>, <a class="xref" href="Pelican7.UIGraph.ElementsView.html">ElementsView</a>, <a class="xref" href="Pelican7.UIGraph.ElementsWindow.html">ElementsWindow</a>, <a class="xref" href="Pelican7.UIGraph.ElementsViewResource.html">ElementsViewResource</a>, <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransition.html">ElementsControllerTransition</a>, <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionContext.html">ElementsControllerTransitionContext</a>, <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionAnimatorProvider.html">ElementsControllerTransitionAnimatorProvider</a>, <a class="xref" href="Pelican7.UIGraph.IElementsControllerTransitionProgressProvider.html">IElementsControllerTransitionProgressProvider</a>, <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionAnimationDriver.html">ElementsControllerTransitionAnimationDriver</a>, <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionProgressProvider.html">ElementsControllerTransitionProgressProvider</a>, <a class="xref" href="Pelican7.UIGraph.ElementsControllerInvokeTransitionData.html">ElementsControllerInvokeTransitionData</a>, <a class="xref" href="Pelican7.UIGraph.ElementsGraph.html">ElementsGraph</a>&gt;</div>
+    <div class="level4"><span class="xref">ElementsController</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Pelican7.UIGraph.IAppearable.html">IAppearable</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.ITransitionContextViewController.html">ITransitionContextViewController</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionViewObjectContainer.html">IGraphableTransitionViewObjectContainer</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionInvoker.html">IGraphableTransitionInvoker</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IGraphableEmbedContainer.html">IGraphableEmbedContainer</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IGraphable.html">IGraphable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_title">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.title</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_opaque">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.opaque</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_transitionAnimatorProvider">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.transitionAnimatorProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_interactiveTransitionProgressProvider">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.interactiveTransitionProgressProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnWillPerformChildTransition">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.OnWillPerformChildTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnDidPerformChildTransition">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.OnDidPerformChildTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_View">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.View</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewIsLoaded">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ViewIsLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentedViewController">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PresentedViewController</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentingViewController">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PresentingViewController</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentedViewControllerStack">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PresentedViewControllerStack</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentTransitionIdentifier">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PresentTransitionIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_DismissTransitionIdentifier">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.DismissTransitionIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Parent">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_RootAncestor">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.RootAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_IsPerformingTransitionBetweenChildren">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IsPerformingTransitionBetweenChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_AddChild__0_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.AddChild(ElementsController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_RemoveFromParent">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.RemoveFromParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__10_System_Action_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.InvokeTransition(ViewControllerTransitionIdentifier, ElementsControllerInvokeTransitionData, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__0_System_Boolean_System_Action_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.InvokeTransition(ViewControllerTransitionIdentifier, ElementsController, Boolean, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransitionInteractively_Pelican7_UIGraph_ViewControllerTransitionIdentifier__0_System_Action_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.InvokeTransitionInteractively(ViewControllerTransitionIdentifier, ElementsController, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ReceiverForTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ReceiverForTransition(ViewControllerTransitionIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Present__0_System_Boolean_System_Action_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.Present(ElementsController, Boolean, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentInteractively__0_System_Action_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PresentInteractively(ElementsController, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Dismiss_System_Boolean_System_Action_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.Dismiss(Boolean, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_DismissInteractively_System_Action_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.DismissInteractively(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Destroy">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_CanPresentViewController__0_Pelican7_UIGraph_Error__">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.CanPresentViewController(ElementsController, Error)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_CanDismissViewController_Pelican7_UIGraph_Error__">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.CanDismissViewController(Error)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidLoad">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ViewDidLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewWillAppear">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ViewWillAppear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidAppear">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ViewDidAppear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewWillDisappear">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ViewWillDisappear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidDisappear">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ViewDidDisappear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_LoadView">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.LoadView()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Awake">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnEnable">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnDisable">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnDestroy">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ImplementsTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ImplementsTransition(ViewControllerTransitionIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformInvokedTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__10_System_Action_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PerformInvokedTransition(ViewControllerTransitionIdentifier, ElementsControllerInvokeTransitionData, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformChildTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__0__0_System_Boolean_System_Boolean_System_Collections_Generic_Stack__0__UnityEngine_Events_UnityAction__4__UnityEngine_Events_UnityAction__4_System_Boolean__UnityEngine_Events_UnityAction__4_System_Boolean__">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PerformChildTransition(ViewControllerTransitionIdentifier, ElementsController, ElementsController, Boolean, Boolean, Stack&lt;ElementsController&gt;, UnityAction&lt;ElementsControllerTransition&gt;, UnityAction&lt;ElementsControllerTransition, Boolean&gt;, UnityAction&lt;ElementsControllerTransition, Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_WillPerformChildTransition__4_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.WillPerformChildTransition(ElementsControllerTransition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_DidPerformChildTransition__4_System_Boolean_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.DidPerformChildTransition(ElementsControllerTransition, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_TryGetAnyChildTransition__4__">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.TryGetAnyChildTransition(ElementsControllerTransition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_TryGetChildTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__4__">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.TryGetChildTransition(ViewControllerTransitionIdentifier, ElementsControllerTransition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_FirstAncestorOfType__1">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.FirstAncestorOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IAppearable_BeginAppearanceTransition_System_Boolean_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IAppearable.BeginAppearanceTransition(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IAppearable_EndAppearanceTransition">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IAppearable.EndAppearanceTransition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_AsAppearable">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.AsAppearable</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_ITransitionContextViewController_Opaque">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ITransitionContextViewController.Opaque</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_ITransitionContextViewController_SetViewVisible_System_Boolean_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ITransitionContextViewController.SetViewVisible(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_graph">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.graph</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphable_SetGraph_System_Object_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IGraphable.SetGraph(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphable_InstantiateFromResource_Pelican7_UIGraph_IGraphable_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IGraphable.InstantiateFromResource(IGraphable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphable_GraphableTransitionIdentifiers">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IGraphable.GraphableTransitionIdentifiers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphable_PerformGraphableTransition_Pelican7_UIGraph_GraphableTransition_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IGraphable.PerformGraphableTransition(GraphableTransition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_GraphableTransitionIdentifiers">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.GraphableTransitionIdentifiers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ShouldPerformGraphTransition_Pelican7_UIGraph_GraphTransition__0__Pelican7_UIGraph_Error__">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.ShouldPerformGraphTransition(GraphTransition&lt;ElementsController&gt;, Error)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_Pelican7_UIGraph_GraphTransition__0__">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PrepareForGraphTransition(GraphTransition&lt;ElementsController&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableTransitionViewObjectContainer_GraphableTransitionViewObjects">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IGraphableTransitionViewObjectContainer.GraphableTransitionViewObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableTransitionViewObjectContainer_BindGraphableTransitionViewObjectActivationListener_Pelican7_UIGraph_IGraphableTransitionViewObjectListener_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IGraphableTransitionViewObjectContainer.BindGraphableTransitionViewObjectActivationListener(IGraphableTransitionViewObjectListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_BindActivationListenerToViewObjects_Pelican7_UIGraph_IGraphableTransitionViewObjectListener_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.BindActivationListenerToViewObjects(IGraphableTransitionViewObjectListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformGraphTransitionWithIdentifier_System_String_System_Object_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PerformGraphTransitionWithIdentifier(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableTransitionInvoker_BindGraphableTransitionInvokable_Pelican7_UIGraph_IGraphableTransitionInvokable_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IGraphableTransitionInvoker.BindGraphableTransitionInvokable(IGraphableTransitionInvokable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableEmbedContainer_GraphableEmbedViewObjects">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IGraphableEmbedContainer.GraphableEmbedViewObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableEmbedContainer_EmbedGraphables_System_Collections_Generic_List_Pelican7_UIGraph_GraphableEmbedData__">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.IGraphableEmbedContainer.EmbedGraphables(List&lt;GraphableEmbedData&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_FindGraphableEmbedViewObjectsInView">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.FindGraphableEmbedViewObjectsInView()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphEmbed__0_">ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;.PrepareForGraphEmbed(ElementsController)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.SetDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pelican7.UIGraph.html">Pelican7.UIGraph</a></h6>
+  <h6><strong>Assembly</strong>: UI Graph API Documentation Project.dll</h6>
+  <h5 id="Pelican7_UIGraph_ElementsController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ElementsController : ViewController&lt;ElementsController, ElementsView, ElementsWindow, ElementsViewResource, ElementsControllerTransition, ElementsControllerTransitionContext, ElementsControllerTransitionAnimatorProvider, IElementsControllerTransitionProgressProvider, ElementsControllerTransitionAnimationDriver, ElementsControllerTransitionProgressProvider, ElementsControllerInvokeTransitionData, ElementsGraph&gt;, IViewControllerAppearance, IAppearable, ITransitionContextViewController, IGraphableTransitionViewObjectContainer, IGraphableTransitionInvoker, IGraphableEmbedContainer, IGraphable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Pelican7_UIGraph_ElementsController_DismissTransition" data-uid="Pelican7.UIGraph.ElementsController.DismissTransition">DismissTransition</h4>
+  <div class="markdown level1 summary"><p>The transition identifier for the Elements Controller&apos;s Dismiss transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ViewControllerTransitionIdentifier DismissTransition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_ElementsController_PresentTransition" data-uid="Pelican7.UIGraph.ElementsController.PresentTransition">PresentTransition</h4>
+  <div class="markdown level1 summary"><p>The transition identifier for the Elements Controller&apos;s Present transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ViewControllerTransitionIdentifier PresentTransition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ElementsController_DismissTransitionIdentifier_" data-uid="Pelican7.UIGraph.ElementsController.DismissTransitionIdentifier*"></a>
+  <h4 id="Pelican7_UIGraph_ElementsController_DismissTransitionIdentifier" data-uid="Pelican7.UIGraph.ElementsController.DismissTransitionIdentifier">DismissTransitionIdentifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed ViewControllerTransitionIdentifier DismissTransitionIdentifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Pelican7.UIGraph.ViewController&lt;Pelican7.UIGraph.ElementsController, Pelican7.UIGraph.ElementsView, Pelican7.UIGraph.ElementsWindow, Pelican7.UIGraph.ElementsViewResource, Pelican7.UIGraph.ElementsControllerTransition, Pelican7.UIGraph.ElementsControllerTransitionContext, Pelican7.UIGraph.ElementsControllerTransitionAnimatorProvider, Pelican7.UIGraph.IElementsControllerTransitionProgressProvider, Pelican7.UIGraph.ElementsControllerTransitionAnimationDriver, Pelican7.UIGraph.ElementsControllerTransitionProgressProvider, Pelican7.UIGraph.ElementsControllerInvokeTransitionData, Pelican7.UIGraph.ElementsGraph&gt;.DismissTransitionIdentifier</span></div>
+  
+  
+  <a id="Pelican7_UIGraph_ElementsController_PresentTransitionIdentifier_" data-uid="Pelican7.UIGraph.ElementsController.PresentTransitionIdentifier*"></a>
+  <h4 id="Pelican7_UIGraph_ElementsController_PresentTransitionIdentifier" data-uid="Pelican7.UIGraph.ElementsController.PresentTransitionIdentifier">PresentTransitionIdentifier</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed ViewControllerTransitionIdentifier PresentTransitionIdentifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Pelican7.UIGraph.ViewController&lt;Pelican7.UIGraph.ElementsController, Pelican7.UIGraph.ElementsView, Pelican7.UIGraph.ElementsWindow, Pelican7.UIGraph.ElementsViewResource, Pelican7.UIGraph.ElementsControllerTransition, Pelican7.UIGraph.ElementsControllerTransitionContext, Pelican7.UIGraph.ElementsControllerTransitionAnimatorProvider, Pelican7.UIGraph.IElementsControllerTransitionProgressProvider, Pelican7.UIGraph.ElementsControllerTransitionAnimationDriver, Pelican7.UIGraph.ElementsControllerTransitionProgressProvider, Pelican7.UIGraph.ElementsControllerInvokeTransitionData, Pelican7.UIGraph.ElementsGraph&gt;.PresentTransitionIdentifier</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ElementsController_BindActivationListenerToViewObjects_" data-uid="Pelican7.UIGraph.ElementsController.BindActivationListenerToViewObjects*"></a>
+  <h4 id="Pelican7_UIGraph_ElementsController_BindActivationListenerToViewObjects_Pelican7_UIGraph_IGraphableTransitionViewObjectListener_" data-uid="Pelican7.UIGraph.ElementsController.BindActivationListenerToViewObjects(Pelican7.UIGraph.IGraphableTransitionViewObjectListener)">BindActivationListenerToViewObjects(IGraphableTransitionViewObjectListener)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed void BindActivationListenerToViewObjects(IGraphableTransitionViewObjectListener viewObjectActivationListener)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionViewObjectListener.html">IGraphableTransitionViewObjectListener</a></td>
+        <td><span class="parametername">viewObjectActivationListener</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Pelican7.UIGraph.ViewController&lt;Pelican7.UIGraph.ElementsController, Pelican7.UIGraph.ElementsView, Pelican7.UIGraph.ElementsWindow, Pelican7.UIGraph.ElementsViewResource, Pelican7.UIGraph.ElementsControllerTransition, Pelican7.UIGraph.ElementsControllerTransitionContext, Pelican7.UIGraph.ElementsControllerTransitionAnimatorProvider, Pelican7.UIGraph.IElementsControllerTransitionProgressProvider, Pelican7.UIGraph.ElementsControllerTransitionAnimationDriver, Pelican7.UIGraph.ElementsControllerTransitionProgressProvider, Pelican7.UIGraph.ElementsControllerInvokeTransitionData, Pelican7.UIGraph.ElementsGraph&gt;.BindActivationListenerToViewObjects(Pelican7.UIGraph.IGraphableTransitionViewObjectListener)</span></div>
+  
+  
+  <a id="Pelican7_UIGraph_ElementsController_FindGraphableEmbedViewObjectsInView_" data-uid="Pelican7.UIGraph.ElementsController.FindGraphableEmbedViewObjectsInView*"></a>
+  <h4 id="Pelican7_UIGraph_ElementsController_FindGraphableEmbedViewObjectsInView" data-uid="Pelican7.UIGraph.ElementsController.FindGraphableEmbedViewObjectsInView">FindGraphableEmbedViewObjectsInView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed IGraphableEmbedViewObject[] FindGraphableEmbedViewObjectsInView()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.IGraphableEmbedViewObject.html">IGraphableEmbedViewObject</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Pelican7.UIGraph.ViewController&lt;Pelican7.UIGraph.ElementsController, Pelican7.UIGraph.ElementsView, Pelican7.UIGraph.ElementsWindow, Pelican7.UIGraph.ElementsViewResource, Pelican7.UIGraph.ElementsControllerTransition, Pelican7.UIGraph.ElementsControllerTransitionContext, Pelican7.UIGraph.ElementsControllerTransitionAnimatorProvider, Pelican7.UIGraph.IElementsControllerTransitionProgressProvider, Pelican7.UIGraph.ElementsControllerTransitionAnimationDriver, Pelican7.UIGraph.ElementsControllerTransitionProgressProvider, Pelican7.UIGraph.ElementsControllerInvokeTransitionData, Pelican7.UIGraph.ElementsGraph&gt;.FindGraphableEmbedViewObjectsInView()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IAppearable.html">IAppearable</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.ITransitionContextViewController.html">ITransitionContextViewController</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IGraphableTransitionViewObjectContainer.html">IGraphableTransitionViewObjectContainer</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IGraphableTransitionInvoker.html">IGraphableTransitionInvoker</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IGraphableEmbedContainer.html">IGraphableEmbedContainer</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IGraphable.html">IGraphable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

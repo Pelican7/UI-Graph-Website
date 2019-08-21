@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ViewControllerTransitionAnimationDriver&lt;TTransitionContext, TTransitionAnimationDefaultProgressProvider&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ViewControllerTransitionAnimationDriver&lt;TTransitionContext, TTransitionAnimationDefaultProgressProvider&gt;
+   ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2">
+  
+  
+  <h1 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2" class="text-break">Class ViewControllerTransitionAnimationDriver&lt;TTransitionContext, TTransitionAnimationDefaultProgressProvider&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ViewControllerTransitionAnimationDriver&lt;TTransitionContext, TTransitionAnimationDefaultProgressProvider&gt;</span></div>
+      <div class="level2"><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver.html">CanvasControllerTransitionAnimationDriver</a></div>
+      <div class="level2"><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionAnimationDriver.html">ElementsControllerTransitionAnimationDriver</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Pelican7.UIGraph.IViewControllerTransitionDrivable-1.html">IViewControllerTransitionDrivable</a>&lt;TTransitionContext&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pelican7.UIGraph.html">Pelican7.UIGraph</a></h6>
+  <h6><strong>Assembly</strong>: UI Graph API Documentation Project.dll</h6>
+  <h5 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ViewControllerTransitionAnimationDriver&lt;TTransitionContext, TTransitionAnimationDefaultProgressProvider&gt; : IViewControllerTransitionDrivable&lt;TTransitionContext&gt; where TTransitionAnimationDefaultProgressProvider : class, IViewControllerTransitionProgressProvider&lt;TTransitionContext&gt;, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TTransitionContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TTransitionAnimationDefaultProgressProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2__ctor_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.#ctor*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2__ctor" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.#ctor">ViewControllerTransitionAnimationDriver()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewControllerTransitionAnimationDriver()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_CompletionCurve_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.CompletionCurve*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_CompletionCurve" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.CompletionCurve">CompletionCurve</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve CompletionCurve { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.AnimationCurve</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_ForceImmediateCancellation_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.ForceImmediateCancellation*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_ForceImmediateCancellation" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.ForceImmediateCancellation">ForceImmediateCancellation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceImmediateCancellation()</code></pre>
+  </div>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_ForceImmediateCompletion_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.ForceImmediateCompletion*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_ForceImmediateCompletion" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.ForceImmediateCompletion">ForceImmediateCompletion()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceImmediateCompletion()</code></pre>
+  </div>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Initialize_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Initialize*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Initialize_Pelican7_UIGraph_IViewControllerTransitionAnimationDriverResponder__0_System_Single_Pelican7_UIGraph_ViewControllerTransitionTimeUpdateMode_Pelican7_UIGraph_IViewControllerTransitionProgressProvider__0__" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Initialize(Pelican7.UIGraph.IViewControllerTransitionAnimationDriverResponder,`0,System.Single,Pelican7.UIGraph.ViewControllerTransitionTimeUpdateMode,Pelican7.UIGraph.IViewControllerTransitionProgressProvider{`0})">Initialize(IViewControllerTransitionAnimationDriverResponder, TTransitionContext, Single, ViewControllerTransitionTimeUpdateMode, IViewControllerTransitionProgressProvider&lt;TTransitionContext&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(IViewControllerTransitionAnimationDriverResponder responder, TTransitionContext context, float duration, ViewControllerTransitionTimeUpdateMode timeUpdateMode, IViewControllerTransitionProgressProvider&lt;TTransitionContext&gt; interactiveProgressProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.IViewControllerTransitionAnimationDriverResponder.html">IViewControllerTransitionAnimationDriverResponder</a></td>
+        <td><span class="parametername">responder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TTransitionContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionTimeUpdateMode.html">ViewControllerTransitionTimeUpdateMode</a></td>
+        <td><span class="parametername">timeUpdateMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.IViewControllerTransitionProgressProvider-1.html">IViewControllerTransitionProgressProvider</a>&lt;TTransitionContext&gt;</td>
+        <td><span class="parametername">interactiveProgressProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Run_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Run*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Run" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Run">Run()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Run()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__CancelTransition_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#CancelTransition*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__CancelTransition" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#CancelTransition">IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.CancelTransition()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.CancelTransition()</code></pre>
+  </div>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__CompleteTransition_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#CompleteTransition*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__CompleteTransition" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#CompleteTransition">IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.CompleteTransition()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.CompleteTransition()</code></pre>
+  </div>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__Context_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#Context*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__Context" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#Context">IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.Context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TTransitionContext IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.Context { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TTransitionContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__Direction_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#Direction*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__Direction" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#Direction">IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.Direction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ViewControllerTransitionAnimationDriverDirection IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.Direction { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionAnimationDriverDirection.html">ViewControllerTransitionAnimationDriverDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__Duration_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#Duration*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__Duration" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#Duration">IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.Duration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.Duration { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__Progress01_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#Progress01*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__Progress01" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#Progress01">IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.Progress01</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.Progress01 { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__TimeUpdateMode_" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#TimeUpdateMode*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionAnimationDriver_2_Pelican7_UIGraph_IViewControllerTransitionDrivable_TTransitionContext__TimeUpdateMode" data-uid="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver`2.Pelican7#UIGraph#IViewControllerTransitionDrivable{TTransitionContext}#TimeUpdateMode">IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.TimeUpdateMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ViewControllerTransitionTimeUpdateMode IViewControllerTransitionDrivable&lt;TTransitionContext&gt;.TimeUpdateMode { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionTimeUpdateMode.html">ViewControllerTransitionTimeUpdateMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IViewControllerTransitionDrivable-1.html">IViewControllerTransitionDrivable&lt;TContext&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

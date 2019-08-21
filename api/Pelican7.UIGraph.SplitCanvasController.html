@@ -1,0 +1,1515 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SplitCanvasController
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SplitCanvasController
+   ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pelican7.UIGraph.SplitCanvasController">
+  
+  
+  <h1 id="Pelican7_UIGraph_SplitCanvasController" data-uid="Pelican7.UIGraph.SplitCanvasController" class="text-break">Class SplitCanvasController
+  </h1>
+  <div class="markdown level0 summary"><p>The SplitCanvasController is a container view controller designed for presenting two screens alongside one other. It manages two child view controllers – <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_MainViewController">MainViewController</a> and <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a>. It offers transitions for replacing the main and secondary view controllers, as well as showing and hiding the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a>. The child view controllers fill their respective containers, <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_mainViewControllerContainer">mainViewControllerContainer</a> and <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_secondaryViewControllerContainer">secondaryViewControllerContainer</a>.
+<p>
+Replacing the main or secondary view controllers instantiates and embeds the provided view controller in the appropriate container, <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_MainViewController">MainViewController</a> and <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a>. Hiding the secondary view controller only hides it, it does not unload it. 
+</p>
+<p>
+The SplitCanvasController uses a <a class="xref" href="Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component to determine the position of its two content view controllers in each state – Secondary Visible and Secondary Hidden. Use the relevant transform objects to configure the placement of the main and secondary view controllers in each state. By default, the split controller uses a bespoke transition animation to animate the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a> visibility transition, interpolating between the <a class="xref" href="Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component&apos;s two states. 
+</p></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
+    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
+    <div class="level3"><a class="xref" href="Pelican7.UIGraph.ViewController-12.html">ViewController</a>&lt;<a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a>, <a class="xref" href="Pelican7.UIGraph.CanvasView.html">CanvasView</a>, <a class="xref" href="Pelican7.UIGraph.CanvasWindow.html">CanvasWindow</a>, <a class="xref" href="Pelican7.UIGraph.CanvasViewResource.html">CanvasViewResource</a>, <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransition.html">CanvasControllerTransition</a>, <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionContext.html">CanvasControllerTransitionContext</a>, <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider.html">CanvasControllerTransitionAnimatorProvider</a>, <a class="xref" href="Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider.html">ICanvasControllerTransitionProgressProvider</a>, <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver.html">CanvasControllerTransitionAnimationDriver</a>, <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionProgressProvider.html">CanvasControllerTransitionProgressProvider</a>, <a class="xref" href="Pelican7.UIGraph.CanvasControllerInvokeTransitionData.html">CanvasControllerInvokeTransitionData</a>, <a class="xref" href="Pelican7.UIGraph.CanvasGraph.html">CanvasGraph</a>&gt;</div>
+    <div class="level4"><a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a></div>
+    <div class="level5"><span class="xref">SplitCanvasController</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Pelican7.UIGraph.IAppearable.html">IAppearable</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.ITransitionContextViewController.html">ITransitionContextViewController</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionViewObjectContainer.html">IGraphableTransitionViewObjectContainer</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionInvoker.html">IGraphableTransitionInvoker</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IGraphableEmbedContainer.html">IGraphableEmbedContainer</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IGraphableFieldProvider.html">IGraphableFieldProvider</a></div>
+    <div><a class="xref" href="Pelican7.UIGraph.IGraphable.html">IGraphable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.CanvasController.html#Pelican7_UIGraph_CanvasController_PresentTransition">CanvasController.PresentTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.CanvasController.html#Pelican7_UIGraph_CanvasController_DismissTransition">CanvasController.DismissTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.CanvasController.html#Pelican7_UIGraph_CanvasController_PresentTransitionIdentifier">CanvasController.PresentTransitionIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.CanvasController.html#Pelican7_UIGraph_CanvasController_DismissTransitionIdentifier">CanvasController.DismissTransitionIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.CanvasController.html#Pelican7_UIGraph_CanvasController_Destroy">CanvasController.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.CanvasController.html#Pelican7_UIGraph_CanvasController_BindActivationListenerToViewObjects_Pelican7_UIGraph_IGraphableTransitionViewObjectListener_">CanvasController.BindActivationListenerToViewObjects(IGraphableTransitionViewObjectListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.CanvasController.html#Pelican7_UIGraph_CanvasController_FindGraphableEmbedViewObjectsInView">CanvasController.FindGraphableEmbedViewObjectsInView()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_title">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.title</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_opaque">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.opaque</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_transitionAnimatorProvider">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.transitionAnimatorProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_interactiveTransitionProgressProvider">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.interactiveTransitionProgressProvider</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnWillPerformChildTransition">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.OnWillPerformChildTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnDidPerformChildTransition">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.OnDidPerformChildTransition</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_View">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.View</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewIsLoaded">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ViewIsLoaded</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentedViewController">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PresentedViewController</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentingViewController">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PresentingViewController</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentedViewControllerStack">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PresentedViewControllerStack</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentTransitionIdentifier">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PresentTransitionIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_DismissTransitionIdentifier">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.DismissTransitionIdentifier</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Parent">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_RootAncestor">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.RootAncestor</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_IsPerformingTransitionBetweenChildren">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IsPerformingTransitionBetweenChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_AddChild__0_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.AddChild(CanvasController)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_RemoveFromParent">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.RemoveFromParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__10_System_Action_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.InvokeTransition(ViewControllerTransitionIdentifier, CanvasControllerInvokeTransitionData, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__0_System_Boolean_System_Action_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.InvokeTransition(ViewControllerTransitionIdentifier, CanvasController, Boolean, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransitionInteractively_Pelican7_UIGraph_ViewControllerTransitionIdentifier__0_System_Action_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.InvokeTransitionInteractively(ViewControllerTransitionIdentifier, CanvasController, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ReceiverForTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ReceiverForTransition(ViewControllerTransitionIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Present__0_System_Boolean_System_Action_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.Present(CanvasController, Boolean, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PresentInteractively__0_System_Action_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PresentInteractively(CanvasController, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Dismiss_System_Boolean_System_Action_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.Dismiss(Boolean, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_DismissInteractively_System_Action_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.DismissInteractively(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Destroy">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_CanPresentViewController__0_Pelican7_UIGraph_Error__">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.CanPresentViewController(CanvasController, Error)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_CanDismissViewController_Pelican7_UIGraph_Error__">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.CanDismissViewController(Error)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidLoad">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ViewDidLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewWillAppear">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ViewWillAppear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidAppear">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ViewDidAppear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewWillDisappear">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ViewWillDisappear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidDisappear">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ViewDidDisappear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_LoadView">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.LoadView()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Awake">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnEnable">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnDisable">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_OnDestroy">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ImplementsTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ImplementsTransition(ViewControllerTransitionIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformInvokedTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__10_System_Action_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PerformInvokedTransition(ViewControllerTransitionIdentifier, CanvasControllerInvokeTransitionData, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformChildTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__0__0_System_Boolean_System_Boolean_System_Collections_Generic_Stack__0__UnityEngine_Events_UnityAction__4__UnityEngine_Events_UnityAction__4_System_Boolean__UnityEngine_Events_UnityAction__4_System_Boolean__">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PerformChildTransition(ViewControllerTransitionIdentifier, CanvasController, CanvasController, Boolean, Boolean, Stack&lt;CanvasController&gt;, UnityAction&lt;CanvasControllerTransition&gt;, UnityAction&lt;CanvasControllerTransition, Boolean&gt;, UnityAction&lt;CanvasControllerTransition, Boolean&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_WillPerformChildTransition__4_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.WillPerformChildTransition(CanvasControllerTransition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_DidPerformChildTransition__4_System_Boolean_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.DidPerformChildTransition(CanvasControllerTransition, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_TryGetAnyChildTransition__4__">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.TryGetAnyChildTransition(CanvasControllerTransition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_TryGetChildTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__4__">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.TryGetChildTransition(ViewControllerTransitionIdentifier, CanvasControllerTransition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_FirstAncestorOfType__1">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.FirstAncestorOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IAppearable_BeginAppearanceTransition_System_Boolean_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IAppearable.BeginAppearanceTransition(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IAppearable_EndAppearanceTransition">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IAppearable.EndAppearanceTransition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_AsAppearable">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.AsAppearable</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_ITransitionContextViewController_Opaque">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ITransitionContextViewController.Opaque</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_ITransitionContextViewController_SetViewVisible_System_Boolean_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ITransitionContextViewController.SetViewVisible(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_graph">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.graph</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphable_SetGraph_System_Object_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IGraphable.SetGraph(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphable_InstantiateFromResource_Pelican7_UIGraph_IGraphable_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IGraphable.InstantiateFromResource(IGraphable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphable_GraphableTransitionIdentifiers">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IGraphable.GraphableTransitionIdentifiers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphable_PerformGraphableTransition_Pelican7_UIGraph_GraphableTransition_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IGraphable.PerformGraphableTransition(GraphableTransition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_GraphableTransitionIdentifiers">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.GraphableTransitionIdentifiers()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ShouldPerformGraphTransition_Pelican7_UIGraph_GraphTransition__0__Pelican7_UIGraph_Error__">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.ShouldPerformGraphTransition(GraphTransition&lt;CanvasController&gt;, Error)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_Pelican7_UIGraph_GraphTransition__0__">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PrepareForGraphTransition(GraphTransition&lt;CanvasController&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableTransitionViewObjectContainer_GraphableTransitionViewObjects">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IGraphableTransitionViewObjectContainer.GraphableTransitionViewObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableTransitionViewObjectContainer_BindGraphableTransitionViewObjectActivationListener_Pelican7_UIGraph_IGraphableTransitionViewObjectListener_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IGraphableTransitionViewObjectContainer.BindGraphableTransitionViewObjectActivationListener(IGraphableTransitionViewObjectListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_BindActivationListenerToViewObjects_Pelican7_UIGraph_IGraphableTransitionViewObjectListener_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.BindActivationListenerToViewObjects(IGraphableTransitionViewObjectListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformGraphTransitionWithIdentifier_System_String_System_Object_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PerformGraphTransitionWithIdentifier(String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableTransitionInvoker_BindGraphableTransitionInvokable_Pelican7_UIGraph_IGraphableTransitionInvokable_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IGraphableTransitionInvoker.BindGraphableTransitionInvokable(IGraphableTransitionInvokable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableEmbedContainer_GraphableEmbedViewObjects">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IGraphableEmbedContainer.GraphableEmbedViewObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Pelican7_UIGraph_IGraphableEmbedContainer_EmbedGraphables_System_Collections_Generic_List_Pelican7_UIGraph_GraphableEmbedData__">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.IGraphableEmbedContainer.EmbedGraphables(List&lt;GraphableEmbedData&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_FindGraphableEmbedViewObjectsInView">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.FindGraphableEmbedViewObjectsInView()</a>
+    </div>
+    <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphEmbed__0_">ViewController&lt;CanvasController, CanvasView, CanvasWindow, CanvasViewResource, CanvasControllerTransition, CanvasControllerTransitionContext, CanvasControllerTransitionAnimatorProvider, ICanvasControllerTransitionProgressProvider, CanvasControllerTransitionAnimationDriver, CanvasControllerTransitionProgressProvider, CanvasControllerInvokeTransitionData, CanvasGraph&gt;.PrepareForGraphEmbed(CanvasController)</a>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.SetDirty()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.ScriptableObject.CreateInstance&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Instantiate&lt;T&gt;(T, UnityEngine.Transform, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.Destroy(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyImmediate(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.DestroyObject(UnityEngine.Object)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindSceneObjectsOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectsOfTypeAll(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.FindObjectOfType(System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.name</span>
+    </div>
+    <div>
+      <span class="xref">UnityEngine.Object.hideFlags</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pelican7.UIGraph.html">Pelican7.UIGraph</a></h6>
+  <h6><strong>Assembly</strong>: UI Graph API Documentation Project.dll</h6>
+  <h5 id="Pelican7_UIGraph_SplitCanvasController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SplitCanvasController : CanvasController, IViewControllerAppearance, IAppearable, ITransitionContextViewController, IGraphableTransitionViewObjectContainer, IGraphableTransitionInvoker, IGraphableEmbedContainer, IGraphableFieldProvider, IGraphable</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_allowTransitionsToBeInterrupted" data-uid="Pelican7.UIGraph.SplitCanvasController.allowTransitionsToBeInterrupted">allowTransitionsToBeInterrupted</h4>
+  <div class="markdown level1 summary"><p>Allow transitions to be interrupted?  If true, invoking one of the split view controller&apos;s transitions whilst it is already in progress will cancel the current transition before starting a new transition. If false, invoking one of the split view controller&apos;s transitions whilst it is already in progress will be blocked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool allowTransitionsToBeInterrupted</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_hideSecondaryOnSetMain" data-uid="Pelican7.UIGraph.SplitCanvasController.hideSecondaryOnSetMain">hideSecondaryOnSetMain</h4>
+  <div class="markdown level1 summary"><p>Hide the secondary view controller when main is set? If enabled, the secondary view controller will be hidden if visible when a SetMain transition is invoked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool hideSecondaryOnSetMain</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_HideSecondaryViewControllerTransition" data-uid="Pelican7.UIGraph.SplitCanvasController.HideSecondaryViewControllerTransition">HideSecondaryViewControllerTransition</h4>
+  <div class="markdown level1 summary"><p>The transition identifier for the Split Canvas Controller&apos;s Hide Secondary transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ViewControllerTransitionIdentifier HideSecondaryViewControllerTransition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_mainViewControllerContainer" data-uid="Pelican7.UIGraph.SplitCanvasController.mainViewControllerContainer">mainViewControllerContainer</h4>
+  <div class="markdown level1 summary"><p>The container into which the split controller will place its <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_MainViewController">MainViewController</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform mainViewControllerContainer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_secondaryViewControllerContainer" data-uid="Pelican7.UIGraph.SplitCanvasController.secondaryViewControllerContainer">secondaryViewControllerContainer</h4>
+  <div class="markdown level1 summary"><p>The container into which the split controller will place its <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform secondaryViewControllerContainer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_secondaryViewControllerIsVisibleOnLoad" data-uid="Pelican7.UIGraph.SplitCanvasController.secondaryViewControllerIsVisibleOnLoad">secondaryViewControllerIsVisibleOnLoad</h4>
+  <div class="markdown level1 summary"><p>Is the secondary view controller visible on load? If enabled the secondary view controller will be made visible on load, otherwise it will be hidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool secondaryViewControllerIsVisibleOnLoad</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_SetMainViewControllerTransition" data-uid="Pelican7.UIGraph.SplitCanvasController.SetMainViewControllerTransition">SetMainViewControllerTransition</h4>
+  <div class="markdown level1 summary"><p>The transition identifier for the Split Canvas Controller&apos;s Set Main transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ViewControllerTransitionIdentifier SetMainViewControllerTransition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_SetSecondaryViewControllerTransition" data-uid="Pelican7.UIGraph.SplitCanvasController.SetSecondaryViewControllerTransition">SetSecondaryViewControllerTransition</h4>
+  <div class="markdown level1 summary"><p>The transition identifier for the Split Canvas Controller&apos;s Set Secondary transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ViewControllerTransitionIdentifier SetSecondaryViewControllerTransition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_ShowSecondaryViewControllerTransition" data-uid="Pelican7.UIGraph.SplitCanvasController.ShowSecondaryViewControllerTransition">ShowSecondaryViewControllerTransition</h4>
+  <div class="markdown level1 summary"><p>The transition identifier for the Split Canvas Controller&apos;s Show Secondary transition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ViewControllerTransitionIdentifier ShowSecondaryViewControllerTransition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_splitPositioning" data-uid="Pelican7.UIGraph.SplitCanvasController.splitPositioning">splitPositioning</h4>
+  <div class="markdown level1 summary"><p>The split controller&apos;s split positioning component. This component is responsible for determining the layout of the main and secondary containers in each configuration - Secondary Visible and Secondary Hidden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SplitCanvasPositioning splitPositioning</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_MainViewController_" data-uid="Pelican7.UIGraph.SplitCanvasController.MainViewController*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_MainViewController" data-uid="Pelican7.UIGraph.SplitCanvasController.MainViewController">MainViewController</h4>
+  <div class="markdown level1 summary"><p>The split controller&apos;s main view controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CanvasController MainViewController { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_SecondaryViewController_" data-uid="Pelican7.UIGraph.SplitCanvasController.SecondaryViewController*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_SecondaryViewController" data-uid="Pelican7.UIGraph.SplitCanvasController.SecondaryViewController">SecondaryViewController</h4>
+  <div class="markdown level1 summary"><p>The split controller&apos;s secondary view controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CanvasController SecondaryViewController { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_SecondaryViewControllerIsVisible_" data-uid="Pelican7.UIGraph.SplitCanvasController.SecondaryViewControllerIsVisible*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_SecondaryViewControllerIsVisible" data-uid="Pelican7.UIGraph.SplitCanvasController.SecondaryViewControllerIsVisible">SecondaryViewControllerIsVisible</h4>
+  <div class="markdown level1 summary"><p>Is the secondary view controller currently visible?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SecondaryViewControllerIsVisible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Pelican7_UIGraph_SplitCanvasController_SecondaryViewControllerIsVisible_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_ShowSecondaryViewController_System_Boolean_System_Action_">ShowSecondaryViewController(Boolean, Action)</a></div>
+      <div><a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_HideSecondaryViewController_System_Boolean_System_Action_">HideSecondaryViewController(Boolean, Action)</a></div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_CanSetMainViewController_" data-uid="Pelican7.UIGraph.SplitCanvasController.CanSetMainViewController*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_CanSetMainViewController_Pelican7_UIGraph_CanvasController_Pelican7_UIGraph_Error__" data-uid="Pelican7.UIGraph.SplitCanvasController.CanSetMainViewController(Pelican7.UIGraph.CanvasController,Pelican7.UIGraph.Error@)">CanSetMainViewController(CanvasController, out Error)</h4>
+  <div class="markdown level1 summary"><p>Can the split controller set its <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_MainViewController">MainViewController</a> to <code data-dev-comment-type="paramref" class="paramref">viewController</code>?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSetMainViewController(CanvasController viewController, out Error error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a></td>
+        <td><span class="parametername">viewController</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.Error.html">Error</a></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the split controller can set its <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_MainViewController">MainViewController</a> to <code data-dev-comment-type="paramref" class="paramref">viewController</code>. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_CanSetSecondaryViewController_" data-uid="Pelican7.UIGraph.SplitCanvasController.CanSetSecondaryViewController*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_CanSetSecondaryViewController_Pelican7_UIGraph_CanvasController_Pelican7_UIGraph_Error__" data-uid="Pelican7.UIGraph.SplitCanvasController.CanSetSecondaryViewController(Pelican7.UIGraph.CanvasController,Pelican7.UIGraph.Error@)">CanSetSecondaryViewController(CanvasController, out Error)</h4>
+  <div class="markdown level1 summary"><p>Can the split controller set its <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a> to <code data-dev-comment-type="paramref" class="paramref">viewController</code>?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanSetSecondaryViewController(CanvasController viewController, out Error error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a></td>
+        <td><span class="parametername">viewController</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.Error.html">Error</a></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the split controller can set its <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a> to <code data-dev-comment-type="paramref" class="paramref">viewController</code>. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_CanToggleSecondaryViewControllerVisibility_" data-uid="Pelican7.UIGraph.SplitCanvasController.CanToggleSecondaryViewControllerVisibility*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_CanToggleSecondaryViewControllerVisibility_System_Boolean_Pelican7_UIGraph_Error__" data-uid="Pelican7.UIGraph.SplitCanvasController.CanToggleSecondaryViewControllerVisibility(System.Boolean,Pelican7.UIGraph.Error@)">CanToggleSecondaryViewControllerVisibility(Boolean, out Error)</h4>
+  <div class="markdown level1 summary"><p>Can the split view controller toggle its <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a> visibility?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanToggleSecondaryViewControllerVisibility(bool visible, out Error error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">visible</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.Error.html">Error</a></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the split controller can toggle its <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a> visibility. False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_GraphableTransitionIdentifiers_" data-uid="Pelican7.UIGraph.SplitCanvasController.GraphableTransitionIdentifiers*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_GraphableTransitionIdentifiers" data-uid="Pelican7.UIGraph.SplitCanvasController.GraphableTransitionIdentifiers">GraphableTransitionIdentifiers()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override List&lt;GraphableTransitionIdentifier&gt; GraphableTransitionIdentifiers()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Pelican7.UIGraph.GraphableTransitionIdentifier.html">GraphableTransitionIdentifier</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Pelican7.UIGraph.ViewController&lt;Pelican7.UIGraph.CanvasController, Pelican7.UIGraph.CanvasView, Pelican7.UIGraph.CanvasWindow, Pelican7.UIGraph.CanvasViewResource, Pelican7.UIGraph.CanvasControllerTransition, Pelican7.UIGraph.CanvasControllerTransitionContext, Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider, Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver, Pelican7.UIGraph.CanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerInvokeTransitionData, Pelican7.UIGraph.CanvasGraph&gt;.GraphableTransitionIdentifiers()</span></div>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_HideSecondaryViewController_" data-uid="Pelican7.UIGraph.SplitCanvasController.HideSecondaryViewController*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_HideSecondaryViewController_System_Boolean_System_Action_" data-uid="Pelican7.UIGraph.SplitCanvasController.HideSecondaryViewController(System.Boolean,System.Action)">HideSecondaryViewController(Boolean, Action)</h4>
+  <div class="markdown level1 summary"><p>Hide the split controller&apos;s secondary view controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideSecondaryViewController(bool animated = true, Action completion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">animated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_HideSecondaryViewControllerInteractively_" data-uid="Pelican7.UIGraph.SplitCanvasController.HideSecondaryViewControllerInteractively*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_HideSecondaryViewControllerInteractively_System_Action_" data-uid="Pelican7.UIGraph.SplitCanvasController.HideSecondaryViewControllerInteractively(System.Action)">HideSecondaryViewControllerInteractively(Action)</h4>
+  <div class="markdown level1 summary"><p>Hide the split controller&apos;s secondary view controller. Prior to calling this method, you should set the view controller&apos;s <see cref="!:interactiveTransitionProgressProvider"></see> to an appropriate object. If no <see cref="!:interactiveTransitionProgressProvider"></see> has been configured, the secondary view controller will be hidden without interactivity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HideSecondaryViewControllerInteractively(Action completion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_ImplementsTransition_" data-uid="Pelican7.UIGraph.SplitCanvasController.ImplementsTransition*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_ImplementsTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier_" data-uid="Pelican7.UIGraph.SplitCanvasController.ImplementsTransition(Pelican7.UIGraph.ViewControllerTransitionIdentifier)">ImplementsTransition(ViewControllerTransitionIdentifier)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ImplementsTransition(ViewControllerTransitionIdentifier transitionIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td><span class="parametername">transitionIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Pelican7.UIGraph.ViewController&lt;Pelican7.UIGraph.CanvasController, Pelican7.UIGraph.CanvasView, Pelican7.UIGraph.CanvasWindow, Pelican7.UIGraph.CanvasViewResource, Pelican7.UIGraph.CanvasControllerTransition, Pelican7.UIGraph.CanvasControllerTransitionContext, Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider, Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver, Pelican7.UIGraph.CanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerInvokeTransitionData, Pelican7.UIGraph.CanvasGraph&gt;.ImplementsTransition(Pelican7.UIGraph.ViewControllerTransitionIdentifier)</span></div>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_PerformInvokedTransition_" data-uid="Pelican7.UIGraph.SplitCanvasController.PerformInvokedTransition*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_PerformInvokedTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier_Pelican7_UIGraph_CanvasControllerInvokeTransitionData_System_Action_" data-uid="Pelican7.UIGraph.SplitCanvasController.PerformInvokedTransition(Pelican7.UIGraph.ViewControllerTransitionIdentifier,Pelican7.UIGraph.CanvasControllerInvokeTransitionData,System.Action)">PerformInvokedTransition(ViewControllerTransitionIdentifier, CanvasControllerInvokeTransitionData, Action)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void PerformInvokedTransition(ViewControllerTransitionIdentifier transitionIdentifier, CanvasControllerInvokeTransitionData transitionData, Action completion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></td>
+        <td><span class="parametername">transitionIdentifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.CanvasControllerInvokeTransitionData.html">CanvasControllerInvokeTransitionData</a></td>
+        <td><span class="parametername">transitionData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Pelican7.UIGraph.ViewController&lt;Pelican7.UIGraph.CanvasController, Pelican7.UIGraph.CanvasView, Pelican7.UIGraph.CanvasWindow, Pelican7.UIGraph.CanvasViewResource, Pelican7.UIGraph.CanvasControllerTransition, Pelican7.UIGraph.CanvasControllerTransitionContext, Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider, Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver, Pelican7.UIGraph.CanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerInvokeTransitionData, Pelican7.UIGraph.CanvasGraph&gt;.PerformInvokedTransition(Pelican7.UIGraph.ViewControllerTransitionIdentifier, Pelican7.UIGraph.CanvasControllerInvokeTransitionData, System.Action)</span></div>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_SetMainViewController_" data-uid="Pelican7.UIGraph.SplitCanvasController.SetMainViewController*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_SetMainViewController_Pelican7_UIGraph_CanvasController_System_Boolean_System_Action_" data-uid="Pelican7.UIGraph.SplitCanvasController.SetMainViewController(Pelican7.UIGraph.CanvasController,System.Boolean,System.Action)">SetMainViewController(CanvasController, Boolean, Action)</h4>
+  <div class="markdown level1 summary"><p>Set the split controller&apos;s main view controller. <code data-dev-comment-type="paramref" class="paramref">viewController</code> will be added as a child view controller and its view placed in the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_mainViewControllerContainer">mainViewControllerContainer</a>. Use this method to configure the split controller&apos;s main view controller prior to presentation. Additionally, if the split controller&apos;s view has already been loaded when this method is called, a replacement transition will be performed, unloading the current main view controller and transitioning to the new one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMainViewController(CanvasController viewController, bool animated = false, Action completion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a></td>
+        <td><span class="parametername">viewController</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">animated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_SetSecondaryViewController_" data-uid="Pelican7.UIGraph.SplitCanvasController.SetSecondaryViewController*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_SetSecondaryViewController_Pelican7_UIGraph_CanvasController_System_Boolean_System_Action_" data-uid="Pelican7.UIGraph.SplitCanvasController.SetSecondaryViewController(Pelican7.UIGraph.CanvasController,System.Boolean,System.Action)">SetSecondaryViewController(CanvasController, Boolean, Action)</h4>
+  <div class="markdown level1 summary"><p>Set the split controller&apos;s secondary view controller. <code data-dev-comment-type="paramref" class="paramref">viewController</code> will be added as a child view controller and its view placed in the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_secondaryViewControllerContainer">secondaryViewControllerContainer</a>. Use this method to configure the split controller&apos;s secondary view controller prior to presentation. Additionally, if the split controller&apos;s view has already been loaded when this method is called, a replacement transition will be performed, unloading the current secondary view controller and transitioning to the new one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSecondaryViewController(CanvasController viewController, bool animated = false, Action completion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a></td>
+        <td><span class="parametername">viewController</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">animated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_ShouldPerformGraphTransition_" data-uid="Pelican7.UIGraph.SplitCanvasController.ShouldPerformGraphTransition*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_ShouldPerformGraphTransition_Pelican7_UIGraph_GraphTransition_Pelican7_UIGraph_CanvasController__Pelican7_UIGraph_Error__" data-uid="Pelican7.UIGraph.SplitCanvasController.ShouldPerformGraphTransition(Pelican7.UIGraph.GraphTransition{Pelican7.UIGraph.CanvasController},Pelican7.UIGraph.Error@)">ShouldPerformGraphTransition(GraphTransition&lt;CanvasController&gt;, out Error)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ShouldPerformGraphTransition(GraphTransition&lt;CanvasController&gt; graphTransition, out Error error)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.GraphTransition-1.html">GraphTransition</a>&lt;<a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a>&gt;</td>
+        <td><span class="parametername">graphTransition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.Error.html">Error</a></td>
+        <td><span class="parametername">error</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Pelican7.UIGraph.ViewController&lt;Pelican7.UIGraph.CanvasController, Pelican7.UIGraph.CanvasView, Pelican7.UIGraph.CanvasWindow, Pelican7.UIGraph.CanvasViewResource, Pelican7.UIGraph.CanvasControllerTransition, Pelican7.UIGraph.CanvasControllerTransitionContext, Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider, Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver, Pelican7.UIGraph.CanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerInvokeTransitionData, Pelican7.UIGraph.CanvasGraph&gt;.ShouldPerformGraphTransition(Pelican7.UIGraph.GraphTransition&lt;Pelican7.UIGraph.CanvasController&gt;, Pelican7.UIGraph.Error)</span></div>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_ShowSecondaryViewController_" data-uid="Pelican7.UIGraph.SplitCanvasController.ShowSecondaryViewController*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_ShowSecondaryViewController_System_Boolean_System_Action_" data-uid="Pelican7.UIGraph.SplitCanvasController.ShowSecondaryViewController(System.Boolean,System.Action)">ShowSecondaryViewController(Boolean, Action)</h4>
+  <div class="markdown level1 summary"><p>Show the split controller&apos;s secondary view controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowSecondaryViewController(bool animated = true, Action completion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">animated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_ShowSecondaryViewControllerInteractively_" data-uid="Pelican7.UIGraph.SplitCanvasController.ShowSecondaryViewControllerInteractively*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_ShowSecondaryViewControllerInteractively_System_Action_" data-uid="Pelican7.UIGraph.SplitCanvasController.ShowSecondaryViewControllerInteractively(System.Action)">ShowSecondaryViewControllerInteractively(Action)</h4>
+  <div class="markdown level1 summary"><p>Show the split controller&apos;s secondary view controller interactively. Prior to calling this method, you should set the view controller&apos;s <see cref="!:interactiveTransitionProgressProvider"></see> to an appropriate object. If no <see cref="!:interactiveTransitionProgressProvider"></see> has been configured, the secondary view controller will be shown without interactivity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowSecondaryViewControllerInteractively(Action completion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_ToggleSecondaryViewControllerVisibility_" data-uid="Pelican7.UIGraph.SplitCanvasController.ToggleSecondaryViewControllerVisibility*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_ToggleSecondaryViewControllerVisibility_System_Boolean_" data-uid="Pelican7.UIGraph.SplitCanvasController.ToggleSecondaryViewControllerVisibility(System.Boolean)">ToggleSecondaryViewControllerVisibility(Boolean)</h4>
+  <div class="markdown level1 summary"><p>A view callback for toggling the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a> visibility. This method calls <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_ToggleSecondaryViewControllerVisibility_System_Boolean_System_Action_">ToggleSecondaryViewControllerVisibility(Boolean, Action)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleSecondaryViewControllerVisibility(bool animated)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">animated</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_ToggleSecondaryViewControllerVisibility_" data-uid="Pelican7.UIGraph.SplitCanvasController.ToggleSecondaryViewControllerVisibility*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_ToggleSecondaryViewControllerVisibility_System_Boolean_System_Action_" data-uid="Pelican7.UIGraph.SplitCanvasController.ToggleSecondaryViewControllerVisibility(System.Boolean,System.Action)">ToggleSecondaryViewControllerVisibility(Boolean, Action)</h4>
+  <div class="markdown level1 summary"><p>Toggle the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a> visibility. A convenience method for calling either <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_ShowSecondaryViewController_System_Boolean_System_Action_">ShowSecondaryViewController(Boolean, Action)</a> or <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_HideSecondaryViewController_System_Boolean_System_Action_">HideSecondaryViewController(Boolean, Action)</a> depending upon that state of <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewControllerIsVisible">SecondaryViewControllerIsVisible</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleSecondaryViewControllerVisibility(bool animated = true, Action completion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">animated</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_ToggleSecondaryViewControllerVisibilityInteractively_" data-uid="Pelican7.UIGraph.SplitCanvasController.ToggleSecondaryViewControllerVisibilityInteractively*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_ToggleSecondaryViewControllerVisibilityInteractively_System_Action_" data-uid="Pelican7.UIGraph.SplitCanvasController.ToggleSecondaryViewControllerVisibilityInteractively(System.Action)">ToggleSecondaryViewControllerVisibilityInteractively(Action)</h4>
+  <div class="markdown level1 summary"><p>Toggle the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a> visibility. A convenience method for calling either <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_ShowSecondaryViewControllerInteractively_System_Action_">ShowSecondaryViewControllerInteractively(Action)</a> or <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_HideSecondaryViewControllerInteractively_System_Action_">HideSecondaryViewControllerInteractively(Action)</a> depending upon that state of <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewControllerIsVisible">SecondaryViewControllerIsVisible</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToggleSecondaryViewControllerVisibilityInteractively(Action completion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_ViewDidLoad_" data-uid="Pelican7.UIGraph.SplitCanvasController.ViewDidLoad*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_ViewDidLoad" data-uid="Pelican7.UIGraph.SplitCanvasController.ViewDidLoad">ViewDidLoad()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ViewDidLoad()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Pelican7.UIGraph.ViewController&lt;Pelican7.UIGraph.CanvasController, Pelican7.UIGraph.CanvasView, Pelican7.UIGraph.CanvasWindow, Pelican7.UIGraph.CanvasViewResource, Pelican7.UIGraph.CanvasControllerTransition, Pelican7.UIGraph.CanvasControllerTransitionContext, Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider, Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver, Pelican7.UIGraph.CanvasControllerTransitionProgressProvider, Pelican7.UIGraph.CanvasControllerInvokeTransitionData, Pelican7.UIGraph.CanvasGraph&gt;.ViewDidLoad()</span></div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_Pelican7_UIGraph_IGraphableFieldProvider_GraphableFields_" data-uid="Pelican7.UIGraph.SplitCanvasController.Pelican7#UIGraph#IGraphableFieldProvider#GraphableFields*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_Pelican7_UIGraph_IGraphableFieldProvider_GraphableFields" data-uid="Pelican7.UIGraph.SplitCanvasController.Pelican7#UIGraph#IGraphableFieldProvider#GraphableFields">IGraphableFieldProvider.GraphableFields</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GraphableField[] IGraphableFieldProvider.GraphableFields { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.GraphableField.html">GraphableField</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_SplitCanvasController_Pelican7_UIGraph_IGraphableFieldProvider_SetGraphableFieldValue_" data-uid="Pelican7.UIGraph.SplitCanvasController.Pelican7#UIGraph#IGraphableFieldProvider#SetGraphableFieldValue*"></a>
+  <h4 id="Pelican7_UIGraph_SplitCanvasController_Pelican7_UIGraph_IGraphableFieldProvider_SetGraphableFieldValue_System_String_Pelican7_UIGraph_IGraphable___" data-uid="Pelican7.UIGraph.SplitCanvasController.Pelican7#UIGraph#IGraphableFieldProvider#SetGraphableFieldValue(System.String,Pelican7.UIGraph.IGraphable[])">IGraphableFieldProvider.SetGraphableFieldValue(String, IGraphable[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void IGraphableFieldProvider.SetGraphableFieldValue(string fieldName, IGraphable[] graphables)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.IGraphable.html">IGraphable</a>[]</td>
+        <td><span class="parametername">graphables</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IAppearable.html">IAppearable</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.ITransitionContextViewController.html">ITransitionContextViewController</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IGraphableTransitionViewObjectContainer.html">IGraphableTransitionViewObjectContainer</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IGraphableTransitionInvoker.html">IGraphableTransitionInvoker</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IGraphableEmbedContainer.html">IGraphableEmbedContainer</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IGraphableFieldProvider.html">IGraphableFieldProvider</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.IGraphable.html">IGraphable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

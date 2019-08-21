@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Split Canvas Controller </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Split Canvas Controller ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="split-canvas-controller">
+<h1 id="split-canvas-controller">Split Canvas Controller</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html">SplitCanvasController</a> is a container view controller designed for presenting two screens alongside one other. It manages two child view controllers &#8211; <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_MainViewController">MainViewController</a> and <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a>. It offers transitions for replacing the main and secondary view controllers, as well as showing and hiding the <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a>. The child view controllers fill their respective containers, <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_mainViewControllerContainer">mainViewControllerContainer</a> and <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_secondaryViewControllerContainer">secondaryViewControllerContainer</a>. </p>
+<p>Replacing the main or secondary view controllers instantiates and embeds the provided view controller in the appropriate container, <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_mainViewControllerContainer">mainViewControllerContainer</a> or <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_secondaryViewControllerContainer">secondaryViewControllerContainer</a>. Hiding the secondary view controller only hides it, it does not unload it. </p>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html">SplitCanvasController</a> uses a <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component to determine the position of its two content view controllers in each state &#8211; Secondary Visible and Secondary Hidden. Use the relevant transform objects to configure the placement of the main and secondary view controllers in each state. By default, the split controller uses a bespoke transition animation to animate the <strong>SecondaryViewController visibility</strong> transition, interpolating between the <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component&#39;s two states. </p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/split-canvas-controller/split-canvas-controller-assassin.png" alt="">
+<em>The Assassin demo uses the Split Canvas Controller to present a list of categories alongside the selected category&#39;s options.</em></p>
+<p>The appearance and layout of the <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html">SplitCanvasController</a> is highly configurable. For example, the Chirp demo uses the split controller to provide a mobile-like side-bar interface that slides out. In this example, the <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component&#39;s hidden secondary view transform is positioned off-screen-left, causing it to slide out when hidden. </p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/split-canvas-controller/split-canvas-controller-chirp.png" alt="">
+<em>A &#39;mobile-like&#39; Split Canvas Controller from the Chirp demo.</em></p>
+<h2 id="creation">Creation</h2>
+<p>To create a <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html">SplitCanvasController</a> select <em>Create/UI Graph/UI Canvas/Split Canvas Controller</em> from the Unity menu. This will create an asset instance of the <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html">SplitCanvasController</a> and a view prefab.</p>
+<p>The template that UI Graph will use when creating stack canvas controllers can be changed in the package settings. </p>
+<h2 id="presentation">Presentation</h2>
+<h3 id="present-using-a-graph-recommended">Present Using A Graph (Recommended)</h3>
+<p>To present a split controller from a graph, add the split controller to the graph and configure its main and secondary view controllers by connecting the relevant fields to the desired view controllers.</p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/split-canvas-controller/split-canvas-controller-graph.png" alt="">
+<em>Configuring the split controller&#39;s main and secondary view controllers.</em></p>
+<h3 id="present-from-script">Present From Script</h3>
+<p>To present a split controller directly from script, instantiate a new split controller instance, instantiate its main and secondary view controllers, and use the <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SetMainViewController_">SetMainViewController</a> and <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SetSecondaryViewController_">SetSecondaryViewController</a> methods to pass them to the split controller.</p>
+<pre><code class="lang-csharp">public class YourCanvasController : CanvasController
+{
+    // A reference to our split canvas controller asset, configured in the inspector.
+    public SplitCanvasController splitControllerTemplate;
+
+    // References to the main and secondary canvas controllers, configured in the inspector.
+    public CanvasController mainCanvasControllerTemplate;
+    public CanvasController secondaryCanvasControllerTemplate;
+
+    private void PresentTabBarScreen()
+    {
+        // Instantiate the split controller.
+        SplitCanvasController splitController = Instantiate(splitControllerTemplate);
+
+        // Instantiate our main and secondary view controllers. (Remember that this doesn&#39;t load their views into memory at this point.)
+        CanvasController main = Instantiate(mainCanvasControllerTemplate);
+        CanvasController secondary = Instantiate(secondaryCanvasControllerTemplate);
+
+        // Configure the split controller&#39;s main and secondary view controllers.
+        splitController.SetMainViewController(main);
+        splitController.SetSecondaryViewController(secondary);
+
+        // Present the split canvas controller.
+        Present(splitController);
+    }
+}
+</code></pre><h2 id="appearance">Appearance</h2>
+<p>The split controller&#39;s layout can be adjusted in its view. </p>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component is used to determine the position of the main and secondary view controllers in each state &#8211; <strong>Secondary Visible</strong> and <strong>Secondary Hidden</strong>. Use the relevant transform objects to configure the placement of the main and secondary view controllers in each state. By default, the split controller uses a bespoke transition animation to animate the secondary view controller visibility transition, interpolating between the <a class="xref" href="../../../../api/Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component&#39;s two states. </p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

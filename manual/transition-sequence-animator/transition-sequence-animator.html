@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Transition Sequence Animator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Transition Sequence Animator ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="transition-sequence-animator">
+<h1 id="transition-sequence-animator">Transition Sequence Animator</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>Transition Sequence Animator</strong> allows you to easily create and customize view controller transition animations. </p>
+<ul>
+<li>Create a transition sequence by adding one or more animations to it, such as <a class="xref" href="../../api/Pelican7.UIGraph.ScaleCanvasControllerTransitionAnimation.html">Scale</a>, <a class="xref" href="../../api/Pelican7.UIGraph.SlideCanvasControllerTransitionAnimation.html">Slide</a>, <a class="xref" href="../../api/Pelican7.UIGraph.FadeCanvasControllerTransitionAnimation.html">Fade</a>, and <a class="xref" href="../../api/Pelican7.UIGraph.RotateCanvasControllerTransitionAnimation.html">Rotate</a>. </li>
+<li>Tweak the timing of each animation in the sequence to achieve the desired transition effect. </li>
+<li>Easily script your own animations to use with the sequence animator. </li>
+<li>All standard animations support interactivity &#8211; that is being driven manually, such as from a swipe position.</li>
+</ul>
+<p>This guide covers how to customize the transition animations between view controllers using the <strong>Transition Sequence Animator</strong>.</p>
+<h2 id="architecture">Architecture</h2>
+<p>The Transition Sequence Animator consists of the following components.</p>
+<ul>
+<li><strong>Animation(s)</strong> &#8211; An Animation is responsible for performing a single animation, such as <a class="xref" href="../../api/Pelican7.UIGraph.ScaleCanvasControllerTransitionAnimation.html">Scale</a>, <a class="xref" href="../../api/Pelican7.UIGraph.SlideCanvasControllerTransitionAnimation.html">Slide</a>, or <a class="xref" href="../../api/Pelican7.UIGraph.FadeCanvasControllerTransitionAnimation.html">Fade</a>. One or more Animations are added to a Sequence. </li>
+<li><strong>Sequence</strong> &#8211; A Sequence is a collection of Animation(s) and is responsible for animating the final transition by driving its Animations. In View Controller terms it is the <strong>animator</strong>. A Sequence is provided to the View Controller system by a Sequence Provider when an animated transition is to be performed. </li>
+<li><strong>Sequence Provider</strong> &#8211; A Sequence Provider is an object that provides Sequences to the View Controller system when an animated transition is to be performed. In View Controller terms it is the <strong>animator provider</strong>. The Sequence Provider can return different Sequences depending upon the transition type, such Present, Push, Dismiss, Pop etc. You may create a Sequence Provider to configure the transition animation of individual view controllers, or add your Sequences to the default providers to affect all view controllers. </li>
+</ul>
+<h2 id="creating-a-new-transition-sequence-ui-canvas-workflow">Creating A New Transition Sequence (UI Canvas Workflow)</h2>
+<h3 id="create-a-sequence">Create A Sequence</h3>
+<p>To create a new transition sequence for a view controller, begin by creating a new <a class="xref" href="../../api/Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimator.html">Sequence</a>. This can be done by selecting <em>Create/UI Graph/UI Canvas/Transition Sequence Animator/Sequence</em> from the menu. This sequence will hold the transition&#39;s animations.</p>
+<h3 id="create-animations">Create Animations</h3>
+<p>Next, we need to create the sequence&#39;s animations themselves. In this guide, we will create a <em>scale-and-fade</em> transition, whereby the to view controller is scaled up and faded in. Therefore, we need a <a class="xref" href="../../api/Pelican7.UIGraph.ScaleCanvasControllerTransitionAnimation.html">Scale</a> animation and a <a class="xref" href="../../api/Pelican7.UIGraph.FadeCanvasControllerTransitionAnimation.html">Fade</a> animation. To create these, select <em>Create/UI Graph/UI Canvas/Transition Sequence Animator/Scale Animation</em> and <em>Create/UI Graph/UI Canvas/Transition Sequence Animator/Fade Animation</em> from the menu.</p>
+<div class="NOTE"><h5>Note</h5><p>In a view controller transition, the <a class="xref" href="../../api/Pelican7.UIGraph.ViewControllerTransitionContext-1.html#Pelican7_UIGraph_ViewControllerTransitionContext_1_ToViewController_">ToViewController</a> refers to the view controller being transitioned to. In addition, transitions also include a <a class="xref" href="../../api/Pelican7.UIGraph.ViewControllerTransitionContext-1.html#Pelican7_UIGraph_ViewControllerTransitionContext_1_FromViewController_">FromViewController</a>, which is the view controller being transitioned from, and an <a class="xref" href="../../api/Pelican7.UIGraph.ViewControllerTransitionContext-1.html#Pelican7_UIGraph_ViewControllerTransitionContext_1_OwnerViewController_">OwnerViewController</a>, which is the view controller whom owns the transition. For example, in a navigation controller&#39;s <a class="xref" href="../../api/Pelican7.UIGraph.NavigationCanvasController.html#Pelican7_UIGraph_NavigationCanvasController_PushTransition">PushTransition</a>, the <strong>to</strong> view controller is the view controller being pushed, the <strong>from</strong> view controller is the view controller currently on screen that will be hidden by the transition, and the <strong>owner</strong> view controller is the navigation controller itself.</p>
+</div>
+<p>The animation objects can be configured in the inspector. See each animation&#39;s documentation for more details. For now, we can leave the default values.</p>
+<div class="NOTE"><h5>Note</h5><p>UI Graph includes <a class="xref" href="../../api/Pelican7.UIGraph.ScaleCanvasControllerTransitionAnimation.html">Scale</a>, <a class="xref" href="../../api/Pelican7.UIGraph.SlideCanvasControllerTransitionAnimation.html">Slide</a>, <a class="xref" href="../../api/Pelican7.UIGraph.FadeCanvasControllerTransitionAnimation.html">Fade</a>, <a class="xref" href="../../api/Pelican7.UIGraph.RotateCanvasControllerTransitionAnimation.html">Rotate</a>, <a class="xref" href="../../api/Pelican7.UIGraph.SetVisibilityCanvasControllerTransitionAnimation.html">Set-Visibility</a>, and <a class="xref" href="../../api/Pelican7.UIGraph.BringToFrontCanvasControllerTransitionAnimation.html">Bring-To-Front</a> animations by default. In addition, you may script your own custom animations to use with the sequence animator. </p>
+</div>
+<h3 id="add-animations-to-the-sequence">Add Animations to the Sequence</h3>
+<p>Now, we can add the newly created animation objects to the sequence. To do this, select the sequence object, add two regions in the inspector to hold the animations, and drop the animation objects onto the regions&#39; respective <strong>animation</strong> fields. Configure the timing of each animation by adjusting its start and end times. In the image below the sequence has been configured to perform the scale and fade animations together over the whole sequence (from 0 to 1). </p>
+<p><img src="../../images/manual/transition-sequence-animator/sequence-settings.png" alt=""></p>
+<p><em>A custom transition sequence configured with a scale animation and a fade animation, both running from start to finish (0 &#8211; 1).</em></p>
+<h3 id="provide-the-sequence-via-a-sequence-provider">Provide the Sequence via A Sequence Provider</h3>
+<p>Our custom transition sequence is now ready to use. The last step is to provide the sequence to the View Controller system for the appropriate transition, which is done via a <strong>Sequence Provider</strong>. In this guide, we will use our sequence for the canvas controller&#39;s <a class="xref" href="../../api/Pelican7.UIGraph.CanvasController.html#Pelican7_UIGraph_CanvasController_PresentTransition">PresentTransition</a>.</p>
+<h3 id="apply-to-all-view-controllers">Apply To All View Controllers</h3>
+<p>To use our custom transition sequence on all view controllers, we can use the existing <strong>Default Canvas Controller Sequence Provider</strong>. To do this, select the <strong>Default Canvas Controller Sequence Provider</strong>, located at <em>UI Graph/Project Settings (User)/Transition Settings/UICanvas/Default Canvas Controller Sequence Provider</em>, find the <strong>CanvasController.Present</strong> transition entry, and drop our transition sequence object onto its <a class="xref" href="../../api/Pelican7.UIGraph.CanvasControllerSequenceProviderAnimatorData.html#Pelican7_UIGraph_CanvasControllerSequenceProviderAnimatorData_animator">animator</a> field. The custom transition sequence will now be used by all view controllers that use the default sequence provider.</p>
+<h3 id="apply-to-select-view-controllers">Apply To Select View Controllers</h3>
+<p>To use our custom transition sequence on select view controllers, we can create a new <strong>Sequence Provider</strong>. To create a new sequence provider, select <em>Create/UI Graph/UI Canvas/Transition Sequence Animator/Sequence Provider</em> from the menu. Select the newly created provider object, add an animator to it in the inspector, select the desired transition from the list (in this case <strong>CanvasController.Present</strong>), and drop our custom sequence onto the animator field.</p>
+<p><img src="../../images/manual/transition-sequence-animator/sequence-provider.png" alt=""></p>
+<p><em>A custom sequence provider, that provides our custom transition sequence for the CanvasController.Present transition.</em></p>
+<div class="NOTE"><h5>Note</h5><p>If you plan to use your sequence with a Container View Controller, see Sequence Providers For Container View Controllers below.</p>
+</div>
+<p>Now to use this provider, select the desired view controller asset with which you wish to use the transition and drop the sequence provider asset onto its <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_transitionAnimatorProvider">transitionAnimatorProvider</a> field in the inspector. The custom transition sequence will now be used by this view controller when it is presented via <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_Present_">Present</a>. </p>
+<p><img src="../../images/manual/transition-sequence-animator/sequence-provider-vc.png" alt=""></p>
+<p><em>Using our custom sequence provider on the AlertCanvasController. When the AlertCanvasController is presented, our custom sequence provider will now be asked to provide the animator.</em></p>
+<h2 id="sequence-providers-for-container-view-controllers">Sequence Providers For Container View Controllers</h2>
+<p>A sequence provider uses the transition identifier to determine which sequence to provide. As such, any transition that a view controller invokes must have a corresponding entry in its sequence provider in order to be animated. </p>
+<p>A <strong>Container Sequence Provider</strong> allows you to specify only a subset of transitions along with a <em>fallback</em> sequence provider. The fallback provider can provide animators for any remaining transitions. This allows you to override only select transitions. For example, the <strong>Default Navigation Canvas Controller Sequence Provider</strong> provides animators for its transitions only (Push, Pop, SetRoot etc.). It then specifies the <strong>Default Canvas Controller Sequence Provider</strong> as its fallback provider, which provides animators for the Present and Dismiss transitions. </p>
+<p>To create a <strong>Container Sequence Provider</strong>, select <em>Create/UI Graph/UI Canvas/Transition Sequence Animator/Container Sequence Provider</em> from the menu. </p>
+<p>A Container Sequence Provider&#39;s fallback provider may be another container sequence provider. </p>
+<p><img src="../../images/manual/transition-sequence-animator/container-sequence-provider.png" alt=""></p>
+<p><em>The Default Navigation Canvas Controller Sequence Provider.</em></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

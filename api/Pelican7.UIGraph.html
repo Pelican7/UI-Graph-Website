@@ -1,0 +1,697 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Pelican7.UIGraph
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Pelican7.UIGraph
+   ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pelican7.UIGraph">
+  
+  <h1 id="Pelican7_UIGraph" data-uid="Pelican7.UIGraph" class="text-break">Namespace Pelican7.UIGraph
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Pelican7.UIGraph.ApplyCanvasControllerTitleToLabel.html">ApplyCanvasControllerTitleToLabel</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.BringToFrontCanvasControllerTransitionAnimation.html">BringToFrontCanvasControllerTransitionAnimation</a></h4>
+      <section><p>The BringToFrontCanvasControllerTransitionAnimation brings its <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_TargetViewController">TargetViewController</a>&apos;s view to the front of its siblings. It can be used to adjust the render order of a view controller midway through a transition sequence.
+<p>
+The <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_transitionDirection">transitionDirection</a> and <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_curve">curve</a> are ignored by this animator.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a></h4>
+      <section><p>The Canvas Controller class is the base view controller type for working with Unity&apos;s UI Canvas workflow. It manages a view built with Unity&apos;s UI Canvas and stores this view in a Prefab asset.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerInvokeTransitionData.html">CanvasControllerInvokeTransitionData</a></h4>
+      <section><p>A CanvasControllerInvokeTransitionData is used to pass transition data to the <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__10_System_Action_">InvokeTransition(ViewControllerTransitionIdentifier, TTransitionData, Action)</a> method directly.
+<p>
+You may specify your own subclass if you have custom data you wish to pass. See the <a class="xref" href="Pelican7.UIGraph.TabBarCanvasController.html">TabBarCanvasController</a> for an example of this.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerSequenceProvider.html">CanvasControllerSequenceProvider</a></h4>
+      <section><p>The CanvasControllerSequenceProvider is a specific type of <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider.html">CanvasControllerTransitionAnimatorProvider</a> for working with the Transition Sequence Animator and UI Canvas Workflow. It provides <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimator.html">CanvasControllerTransitionSequenceAnimator</a> objects to the View Controller system to determine how the transition is animated. It allows you to provide a <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimator.html">CanvasControllerTransitionSequenceAnimator</a> for a <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerSequenceProviderAnimatorData.html">CanvasControllerSequenceProviderAnimatorData</a></h4>
+      <section><p>A CanvasControllerSequenceProviderAnimatorData stores a pair of objects – a <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimator.html">CanvasControllerTransitionSequenceAnimator</a> with a <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a> GUID. This allows you to define an animator for a particular transition type. Additionally, it allows you to specify an alternative animator for when that transition is interactive.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransition.html">CanvasControllerTransition</a></h4>
+      <section><p>When a Canvas Controller transition is to be performed, UI Graph creates a transition object to describe the transition. This object is passed to methods that require it, such as <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_Pelican7_UIGraph_GraphTransition__0__">PrepareForGraphTransition(GraphTransition&lt;TViewController&gt;)</a>, providing you with the relevant transition information.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver.html">CanvasControllerTransitionAnimationDriver</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionAnimator.html">CanvasControllerTransitionAnimator</a></h4>
+      <section><p>A base class for transition animators in the UI Canvas workflow. Transition animators animate the transitions between view controllers.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider.html">CanvasControllerTransitionAnimatorProvider</a></h4>
+      <section><p>A base class for transition animator providers in the UI Canvas workflow. Transition Animator providers provide animators to the view controller system when a transition is to be performed.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionContext.html">CanvasControllerTransitionContext</a></h4>
+      <section><p>The Canvas Controller transition context provides detailed information about a view controller transition, such as the view controllers involved.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionProgressProvider.html">CanvasControllerTransitionProgressProvider</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimation.html">CanvasControllerTransitionSequenceAnimation</a></h4>
+      <section><p>The base type for animations to be used with the Transition Sequence Animator when working with the UI Canvas workflow.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimator.html">CanvasControllerTransitionSequenceAnimator</a></h4>
+      <section><p>A CanvasControllerTransitionSequenceAnimator is used with the Transition Sequence Animator when working with the UI Canvas workflow. It defines a single transition sequence, made up of a collection of regions, each containing a <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimation.html">CanvasControllerTransitionSequenceAnimation</a> object.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionSequenceRegion.html">CanvasControllerTransitionSequenceRegion</a></h4>
+      <section><p>The type for sequence regions to be used with the Transition Sequence Animator when working with the UI Canvas workflow.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasGraph.html">CanvasGraph</a></h4>
+      <section><p>A CanvasGraph is the runtime representation of a <a class="xref" href="Pelican7.UIGraph.GraphResource.html">GraphResource</a> asset, built with the UI Canvas workflow.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasGraphPresenter.html">CanvasGraphPresenter</a></h4>
+      <section><p>A CanvasGraphPresenter component is used to present a <a class="xref" href="Pelican7.UIGraph.GraphResource.html">GraphResource</a> in a <a class="xref" href="Pelican7.UIGraph.CanvasWindow.html">CanvasWindow</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasGraphPresenter.CanvasGraphPresentationEvent.html">CanvasGraphPresenter.CanvasGraphPresentationEvent</a></h4>
+      <section><p>Event type for a graph presentation event.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasNavigationBarBackButton.html">CanvasNavigationBarBackButton</a></h4>
+      <section><p>The navigation bar back button component associated with a <a class="xref" href="Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a>. The navigation controller displays a back button to easily return to the previous view controller in the stack.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasNavigationBarTitleLabel.html">CanvasNavigationBarTitleLabel</a></h4>
+      <section><p>The navigation bar title label component associated with a <a class="xref" href="Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a>. The navigation controller displays the <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_title">title</a> in its title label.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasNavigationTransitionNotifier.html">CanvasNavigationTransitionNotifier</a></h4>
+      <section><p>The CanvasNavigationTransitionNotifier component exposes events for the navigation controller&apos;s child transitions. This can be used to update scripts in the view in response to navigation controller transitions.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasNavigationTransitionNotifier.CanvasNavigationControllerDidPerformTransitionEvent.html">CanvasNavigationTransitionNotifier.CanvasNavigationControllerDidPerformTransitionEvent</a></h4>
+      <section><p>An event type for broadcasting that a <a class="xref" href="Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> did perform a child transition.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasNavigationTransitionNotifier.CanvasNavigationControllerWillPerformTransitionEvent.html">CanvasNavigationTransitionNotifier.CanvasNavigationControllerWillPerformTransitionEvent</a></h4>
+      <section><p>An event type for broadcasting that a <a class="xref" href="Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> will perform a child transition.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasTabBar.html">CanvasTabBar</a></h4>
+      <section><p>The tab bar component associated with a <a class="xref" href="Pelican7.UIGraph.TabBarCanvasController.html">TabBarCanvasController</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasTabBar.CanvasTabBarEvent.html">CanvasTabBar.CanvasTabBarEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasTabBarItem.html">CanvasTabBarItem</a></h4>
+      <section><p>The tab bar item component associated with a <a class="xref" href="Pelican7.UIGraph.CanvasTabBar.html">CanvasTabBar</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasTabBarItem.CanvasTabBarItemConfigurationEvent.html">CanvasTabBarItem.CanvasTabBarItemConfigurationEvent</a></h4>
+      <section><p>Event type for <a class="xref" href="Pelican7.UIGraph.CanvasTabBarItem.html">CanvasTabBarItem</a> configuration.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasTabBarItem.CanvasTabBarItemEvent.html">CanvasTabBarItem.CanvasTabBarItemEvent</a></h4>
+      <section><p>Event type for <a class="xref" href="Pelican7.UIGraph.CanvasTabBarItem.html">CanvasTabBarItem</a> selection.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasView.html">CanvasView</a></h4>
+      <section><p>A CanvasView is a view based upon a Unity UI Canvas. It is stored within a Prefab asset.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallback.html">CanvasViewCallback</a></h4>
+      <section><p>A canvas view callback exposes a canvas controller method, decorated with the <a class="xref" href="Pelican7.UIGraph.ViewCallbackAttribute.html">ViewCallbackAttribute</a>, to its view. You do not need to create CanvasViewCallback components in your view. One will be created automatically for every method in the corresponding view controller decorated with the <a class="xref" href="Pelican7.UIGraph.ViewCallbackAttribute.html">ViewCallbackAttribute</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackBool.html">CanvasViewCallbackBool</a></h4>
+      <section><p>A canvas view callback that exposes a method with a single bool parameter.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackFactory.html">CanvasViewCallbackFactory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackFloat.html">CanvasViewCallbackFloat</a></h4>
+      <section><p>A canvas view callback that exposes a method with a single float parameter.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackInt.html">CanvasViewCallbackInt</a></h4>
+      <section><p>A canvas view callback that exposes a method with a single int parameter.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackMultipleParameters.html">CanvasViewCallbackMultipleParameters</a></h4>
+      <section><p>A canvas view callback that exposes a method with multiple parameters.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackNoParameters.html">CanvasViewCallbackNoParameters</a></h4>
+      <section><p>A canvas view callback that exposes a method with no parameters.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackString.html">CanvasViewCallbackString</a></h4>
+      <section><p>A canvas view callback that exposes a method with a single string parameter.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackSystemObject.html">CanvasViewCallbackSystemObject</a></h4>
+      <section><p>A canvas view callback that exposes a method with a single system object parameter.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackUnityObject.html">CanvasViewCallbackUnityObject</a></h4>
+      <section><p>A canvas view callback that exposes a method with a single Unity object parameter.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewCallbackWithParameter-1.html">CanvasViewCallbackWithParameter&lt;T&gt;</a></h4>
+      <section><p>A generic base class for canvas view callbacks that expose a method with a single parameter of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewExtensions.html">CanvasViewExtensions</a></h4>
+      <section><p>Canvas view extension methods.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewOwnerBindings.html">CanvasViewOwnerBindings</a></h4>
+      <section><p>The CanvasViewOwnerBindings component stores bindings between a view controller and its view, such as <a class="xref" href="Pelican7.UIGraph.CanvasViewReference.html">CanvasViewReference</a> and <a class="xref" href="Pelican7.UIGraph.CanvasViewCallback.html">CanvasViewCallback</a> objects. The CanvasViewOwnerBindings component will automatically update its <a class="xref" href="Pelican7.UIGraph.CanvasViewOwnerBindings.html#Pelican7_UIGraph_CanvasViewOwnerBindings_viewReferences">viewReferences</a> and <a class="xref" href="Pelican7.UIGraph.CanvasViewOwnerBindings.html#Pelican7_UIGraph_CanvasViewOwnerBindings_viewCallbacks">viewCallbacks</a> to reflect its view controller&apos;s script file.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewOwnerBindings.BindingEvent.html">CanvasViewOwnerBindings.BindingEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewReference.html">CanvasViewReference</a></h4>
+      <section><p>A canvas view reference links a canvas controller field, decorated with the <a class="xref" href="Pelican7.UIGraph.ViewReferenceAttribute.html">ViewReferenceAttribute</a>, with a component in its view.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasViewResource.html">CanvasViewResource</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.CanvasWindow.html">CanvasWindow</a></h4>
+      <section><p>A CanvasWindow is a window for use with the UI Canvas workflow. Canvas Controllers place their view within a CanvasWindow upon load. It is responsible for rendering all child views (canvases).</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ContainerCanvasControllerSequenceProvider.html">ContainerCanvasControllerSequenceProvider</a></h4>
+      <section><p>The ContainerCanvasControllerSequenceProvider is a specific type of <a class="xref" href="Pelican7.UIGraph.CanvasControllerSequenceProvider.html">CanvasControllerSequenceProvider</a> for working with container view controllers. In addition to its base class functionality, it allows you to specify a fallback provider. This allows you to specify only your container&apos;s transitions and fall back to, for example, the default sequence provider.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ContainerElementsControllerSequenceProvider.html">ContainerElementsControllerSequenceProvider</a></h4>
+      <section><p>The ContainerElementsControllerSequenceProvider is a specific type of <a class="xref" href="Pelican7.UIGraph.ElementsControllerSequenceProvider.html">ElementsControllerSequenceProvider</a> for working with container view controllers. In addition to its base class functionality, it allows you to specify a fallback provider. This allows you to specify only your container&apos;s transitions and fall back to, for example, the default sequence provider.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.Edge.html">Edge</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.EdgeData.html">EdgeData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsController.html">ElementsController</a></h4>
+      <section><p>
+The Elements Controller class is the base view controller type for working with Unity&apos;s UIElements workflow. It manages a view built with Unity&apos;s UIElements system and stores this view in a pair of Uxml/Uss files.
+</p>
+<p>
+The UIElements workflow and Elements Controller are currently for internal use only.
+</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerInvokeTransitionData.html">ElementsControllerInvokeTransitionData</a></h4>
+      <section><p>An ElementsControllerInvokeTransitionData is used to pass transition data to the <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__10_System_Action_">InvokeTransition(ViewControllerTransitionIdentifier, TTransitionData, Action)</a> method directly.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerSequenceProvider.html">ElementsControllerSequenceProvider</a></h4>
+      <section><p>The ElementsControllerSequenceProvider is a specific type of <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionAnimatorProvider.html">ElementsControllerTransitionAnimatorProvider</a> for working with the Transition Sequence Animator and UI Elements Workflow. It provides <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimator.html">ElementsControllerTransitionSequenceAnimator</a> objects to the View Controller system to determine how the transition is animated. It allows you to provide an <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimator.html">ElementsControllerTransitionSequenceAnimator</a> for a <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerSequenceProviderAnimatorData.html">ElementsControllerSequenceProviderAnimatorData</a></h4>
+      <section><p>An ElementsControllerSequenceProviderAnimatorData stores a pair of objects – an <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimator.html">ElementsControllerTransitionSequenceAnimator</a> with a <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a> GUID. This allows you to define an animator for a particular transition type. Additionally, it allows you to specify an alternative animator for when that transition is interactive.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransition.html">ElementsControllerTransition</a></h4>
+      <section><p>When an Elements Controller transition is to be performed, UI Graph creates a transition object to describe the transition. This object is passed to methods that require it, such as <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_Pelican7_UIGraph_GraphTransition__0__">PrepareForGraphTransition(GraphTransition&lt;TViewController&gt;)</a>, providing you with the relevant transition information.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionAnimationDriver.html">ElementsControllerTransitionAnimationDriver</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionAnimator.html">ElementsControllerTransitionAnimator</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionAnimatorProvider.html">ElementsControllerTransitionAnimatorProvider</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionContext.html">ElementsControllerTransitionContext</a></h4>
+      <section><p>The Elements Controller transition context provides detailed information about a view controller transition, such as the view controllers involved.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionProgressProvider.html">ElementsControllerTransitionProgressProvider</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimation.html">ElementsControllerTransitionSequenceAnimation</a></h4>
+      <section><p>The base type for animations to be used with the Transition Sequence Animator when working with the UI Elements workflow.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimator.html">ElementsControllerTransitionSequenceAnimator</a></h4>
+      <section><p>An ElementsControllerTransitionSequenceAnimator is used with the Transition Sequence Animator when working with the UI Elements workflow. It defines a single transition sequence, made up of a collection of regions, each containing a <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimation.html">ElementsControllerTransitionSequenceAnimation</a> object.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionSequenceRegion.html">ElementsControllerTransitionSequenceRegion</a></h4>
+      <section><p>The type for sequence regions to be used with the Transition Sequence Animator when working with the UI Elements workflow.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsGraph.html">ElementsGraph</a></h4>
+      <section><p>An ElementsGraph is the runtime representation of a <a class="xref" href="Pelican7.UIGraph.GraphResource.html">GraphResource</a> asset, built with the UI Elements workflow.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsView.html">ElementsView</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsView.Factory.html">ElementsView.Factory</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsViewOwnerBinder.html">ElementsViewOwnerBinder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsViewOwnerBindingsEditorData.html">ElementsViewOwnerBindingsEditorData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsViewReferenceData.html">ElementsViewReferenceData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsViewResource.html">ElementsViewResource</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ElementsWindow.html">ElementsWindow</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.EmbedViewObjectEdge.html">EmbedViewObjectEdge</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.EmbedViewObjectEdgeData.html">EmbedViewObjectEdgeData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.Error.html">Error</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.FadeCanvasControllerTransitionAnimation.html">FadeCanvasControllerTransitionAnimation</a></h4>
+      <section><p>The FadeCanvasControllerTransitionAnimation performs a fade animation of its <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_TargetViewController">TargetViewController</a>.
+<p>
+Specify the <a class="xref" href="Pelican7.UIGraph.FadeCanvasControllerTransitionAnimation.html#Pelican7_UIGraph_FadeCanvasControllerTransitionAnimation_offScreenAlpha">offScreenAlpha</a> to determine the view&apos;s alpha value when the view controller is &apos;off-screen&apos; and a <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_transitionDirection">transitionDirection</a> to determine whether the animator is fading to or from this value. For example, an offScreenAlpha value of zero and a direction of TransitionOnScreen would fade in from zero to one.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.FieldEdge.html">FieldEdge</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.FieldEdgeData.html">FieldEdgeData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.Graph-1.html">Graph&lt;T&gt;</a></h4>
+      <section><p>The base graph type for runtime representations of <a class="xref" href="Pelican7.UIGraph.GraphResource.html">GraphResource</a> assets.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableButtonComponent.html">GraphableButtonComponent</a></h4>
+      <section><p>The GraphableButtonComponent exposes UnityEngine.UI.Button components to the graph editor. It defines a single trigger, &quot;On Click&quot;, that is activated upon the button being clicked.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableEmbedComponent.html">GraphableEmbedComponent</a></h4>
+      <section><p>The GraphableEmbedComponent is a component used to embed a child view controller in a container, defined in the graph editor. Its <span class="xref">Pelican7.UIGraph.GraphableEmbedComponent.displayName</span> will be configured with its game object&apos;s name.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableEmbedViewObjectPort.html">GraphableEmbedViewObjectPort</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableEmbedViewObjectPortData.html">GraphableEmbedViewObjectPortData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableField.html">GraphableField</a></h4>
+      <section><p>A graphable field object is used by a container view controller to expose a field to the graph editor.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableFieldPort.html">GraphableFieldPort</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableFieldPortData.html">GraphableFieldPortData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableReference.html">GraphableReference</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableToggleComponent.html">GraphableToggleComponent</a></h4>
+      <section><p>The GraphableToggleComponent exposes UnityEngine.UI.Toggle components to the graph editor. It defines two triggers, &quot;Switch On&quot; and &quot;Switch Off&quot;, that are appropriately activated upon the toggle&apos;s value being changed.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableTransition.html">GraphableTransition</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableTransitionIdentifier.html">GraphableTransitionIdentifier</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableTransitionViewComponent-1.html">GraphableTransitionViewComponent&lt;T&gt;</a></h4>
+      <section><p>The GraphableTransitionViewComponent is an abstract base class for graphable transition view objects – objects in the view that can trigger a graph transition. Derive from this class to create a custom graphable component, specifying the target&apos;s type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableTransitionViewComponentBase.html">GraphableTransitionViewComponentBase</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableTransitionViewObjectPort.html">GraphableTransitionViewObjectPort</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableTransitionViewObjectPortData.html">GraphableTransitionViewObjectPortData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableTransitionViewObjectTrigger.html">GraphableTransitionViewObjectTrigger</a></h4>
+      <section><p>A <a class="xref" href="Pelican7.UIGraph.GraphableTransitionViewComponent-1.html">GraphableTransitionViewComponent&lt;T&gt;</a> defines one or more GraphableTransitionViewObjectTrigger objects to expose them to the graph editor. The trigger&apos;s <span class="xref">Pelican7.UIGraph.GraphableTransitionViewObjectTrigger.displayName</span> will be displayed in the editor.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableTransitionViewObjectTriggerData.html">GraphableTransitionViewObjectTriggerData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphResource.html">GraphResource</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphTransition-1.html">GraphTransition&lt;T&gt;</a></h4>
+      <section><p>When a graph performs a transition between two of its nodes, it creates a GraphTransition object to represent it. This object is passed to <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_Pelican7_UIGraph_GraphTransition__0__">PrepareForGraphTransition(GraphTransition&lt;TViewController&gt;)</a> to provide information about the transition, such as the view controllers involved.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.LocallyUniqueGuidMonoBehaviour.html">LocallyUniqueGuidMonoBehaviour</a></h4>
+      <section><p>A component that will maintain a unique identifier within its scene.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ManualTransitionEdge.html">ManualTransitionEdge</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ManualTransitionEdgeData.html">ManualTransitionEdgeData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.MenuItemPriority.html">MenuItemPriority</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.MethodInfoExtensions.html">MethodInfoExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a></h4>
+      <section><p>A NavigationCanvasController is a specific type of <a class="xref" href="Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a>, designed to provide a user-interface for hierarchical navigation. Like a stack controller, it manages a stack of child view controllers. Each child view controller fills the <a class="xref" href="Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a> transform and is placed in stack order, making the top-most view controller on the stack visible.
+<p>
+The NavigationCanvasController offers transitions for pushing and popping view controllers on and off its stack. Pushing a view controller onto the stack instantiates its view, embeds it within the navigation controller&apos;s <a class="xref" href="Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a>, and if necessary animates it on-screen. Inversely, popping a view controller off the stack animates it off-screen if necessary, and subsequently destroys it. 
+</p>
+<p>
+In addition, the NavigationCanvasController shows a navigation bar, which includes a title label and back button. Pressing the back button pops a view controller off the stack. By default, a navigation controller animates child view controllers sideways to reflect moving through levels of a hierarchy. 
+</p>
+<p>
+Use a NavigationCanvasController to provide a hierarchical interface scheme.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.Node.html">Node</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.NodeData.html">NodeData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ObjectAttributeCollector.html">ObjectAttributeCollector</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.RectTransformExtensions.html">RectTransformExtensions</a></h4>
+      <section><p>RectTransform extension methods.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.RotateCanvasControllerTransitionAnimation.html">RotateCanvasControllerTransitionAnimation</a></h4>
+      <section><p>The RotateCanvasControllerTransitionAnimation performs a rotation animation of its <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_TargetViewController">TargetViewController</a>.
+<p>
+Specify the <a class="xref" href="Pelican7.UIGraph.RotateCanvasControllerTransitionAnimation.html#Pelican7_UIGraph_RotateCanvasControllerTransitionAnimation_startRotationEulerAngles">startRotationEulerAngles</a> and <a class="xref" href="Pelican7.UIGraph.RotateCanvasControllerTransitionAnimation.html#Pelican7_UIGraph_RotateCanvasControllerTransitionAnimation_endRotationEulerAngles">endRotationEulerAngles</a> to determine the view&apos;s start and end rotations. For example, a startRotationEulerAngles value of {0, 0, 0} and an endRotationEulerAngles of {0, 180, 0} would flip the view 180° around the Y axis.
+</p>
+<p>
+The <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_transitionDirection">transitionDirection</a> is ignored by this animator.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ScaleCanvasControllerTransitionAnimation.html">ScaleCanvasControllerTransitionAnimation</a></h4>
+      <section><p>The ScaleCanvasControllerTransitionAnimation performs a scale animation of its <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_TargetViewController">TargetViewController</a>.
+<p>
+Specify the <a class="xref" href="Pelican7.UIGraph.ScaleCanvasControllerTransitionAnimation.html#Pelican7_UIGraph_ScaleCanvasControllerTransitionAnimation_offScreenScale">offScreenScale</a> to determine the view&apos;s scale value when the view controller is &apos;off-screen&apos; and a <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_transitionDirection">transitionDirection</a> to determine whether the animator is scaling to or from this value. For example, an offScreenScale value of Vector2.zero and a direction of TransitionOnScreen would scale up from Vector2.zero to Vector2.one.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ScaleElementsControllerTransitionAnimation.html">ScaleElementsControllerTransitionAnimation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SceneExtensions.html">SceneExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SceneTransitionCanvasController.html">SceneTransitionCanvasController</a></h4>
+      <section><p>Use a scene transition canvas controller to perform a transition from one scene to another.
+<p>
+ Upon presentation, a scene transition canvas controller moves the current UI window to a standalone scene and ensures it renders on top of any subsequently loaded UI windows. It then unloads the current scene, loads the scene specified in <a class="xref" href="Pelican7.UIGraph.SceneTransitionCanvasController.html#Pelican7_UIGraph_SceneTransitionCanvasController_sceneNameToLoad">sceneNameToLoad</a>, and dismisses the window from which it was presented.
+</p>
+<p>
+The scene transition canvas controller should be derived from by an existing canvas controller. You are responsible for configuring the <a class="xref" href="Pelican7.UIGraph.SceneTransitionCanvasController.html#Pelican7_UIGraph_SceneTransitionCanvasController_sceneNameToLoad">sceneNameToLoad</a>, which can be done statically in the inspector or dynamically upon instantiation, such as in <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_Pelican7_UIGraph_GraphTransition__0__">PrepareForGraphTransition(GraphTransition&lt;TViewController&gt;)</a>.
+</p>
+<p>
+You may override the <a class="xref" href="Pelican7.UIGraph.SceneTransitionCanvasController.html#Pelican7_UIGraph_SceneTransitionCanvasController_PrepareSceneForUnload_UnityEngine_SceneManagement_Scene_">PrepareSceneForUnload(Scene)</a> and <a class="xref" href="Pelican7.UIGraph.SceneTransitionCanvasController.html#Pelican7_UIGraph_SceneTransitionCanvasController_PrepareLoadedScene_UnityEngine_SceneManagement_Scene_">PrepareLoadedScene(Scene)</a> methods to perform any additional unloading/loading requirements.
+</p>
+<p>
+Ensure that any scene name specified has been added to Unity&apos;s &apos;Scenes In Build&apos; in the Build Settings.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SerializedMethodInfo.html">SerializedMethodInfo</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SetVisibilityCanvasControllerTransitionAnimation.html">SetVisibilityCanvasControllerTransitionAnimation</a></h4>
+      <section><p>The SetVisibilityCanvasControllerTransitionAnimation sets its <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_TargetViewController">TargetViewController</a>&apos;s visibility, as specified by the <a class="xref" href="Pelican7.UIGraph.SetVisibilityCanvasControllerTransitionAnimation.html#Pelican7_UIGraph_SetVisibilityCanvasControllerTransitionAnimation_visible">visible</a> field. It can be used to set the visibility of a view controller midway through a transition sequence.
+<p>
+The <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_transitionDirection">transitionDirection</a> and <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_curve">curve</a> are ignored by this animator.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SlideCanvasControllerTransitionAnimation.html">SlideCanvasControllerTransitionAnimation</a></h4>
+      <section><p>The SlideCanvasControllerTransitionAnimation performs a slide animation of its <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_TargetViewController">TargetViewController</a>.
+<p>
+The slide animation requires an off-screen position to be slid to/from. This off-screen position is determined by the <a class="xref" href="Pelican7.UIGraph.SlideCanvasControllerTransitionAnimation.html#Pelican7_UIGraph_SlideCanvasControllerTransitionAnimation_offScreenAngularDirection">offScreenAngularDirection</a> and the <a class="xref" href="Pelican7.UIGraph.SlideCanvasControllerTransitionAnimation.html#Pelican7_UIGraph_SlideCanvasControllerTransitionAnimation_offScreenScalar">offScreenScalar</a>. The angular direction value specifies the direction from the center moving clockwise through 360°. For example, 0° points to the top, 90° points right, 180° points down, and 270° points left. The scalar value determines how far along this direction the off-screen position is. A value of 1 specifies that the off-screen position will be placed exactly off-screen (i.e. the rects will be touching). Values less than one interpolate between the center and this point.
+</p>
+<p>
+Specify a <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_transitionDirection">transitionDirection</a> to determine whether the animator is sliding to or from the center. For example, an offScreenAngularDirection of 90°, an offScreenScalar value of one, and a direction of TransitionOnScreen would slide the view controller from fully off-screen right to the center.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SlideElementsControllerTransitionAnimation.html">SlideElementsControllerTransitionAnimation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html">SplitCanvasController</a></h4>
+      <section><p>The SplitCanvasController is a container view controller designed for presenting two screens alongside one other. It manages two child view controllers – <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_MainViewController">MainViewController</a> and <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a>. It offers transitions for replacing the main and secondary view controllers, as well as showing and hiding the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a>. The child view controllers fill their respective containers, <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_mainViewControllerContainer">mainViewControllerContainer</a> and <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_secondaryViewControllerContainer">secondaryViewControllerContainer</a>.
+<p>
+Replacing the main or secondary view controllers instantiates and embeds the provided view controller in the appropriate container, <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_MainViewController">MainViewController</a> and <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a>. Hiding the secondary view controller only hides it, it does not unload it. 
+</p>
+<p>
+The SplitCanvasController uses a <a class="xref" href="Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component to determine the position of its two content view controllers in each state – Secondary Visible and Secondary Hidden. Use the relevant transform objects to configure the placement of the main and secondary view controllers in each state. By default, the split controller uses a bespoke transition animation to animate the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_SecondaryViewController">SecondaryViewController</a> visibility transition, interpolating between the <a class="xref" href="Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component&apos;s two states. 
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a></h4>
+      <section><p>The split canvas positioning component associated with the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html">SplitCanvasController</a>. This component is used to determine the layout of the <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_mainViewControllerContainer">mainViewControllerContainer</a> and <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html#Pelican7_UIGraph_SplitCanvasController_secondaryViewControllerContainer">secondaryViewControllerContainer</a> in the two states – Secondary Visible and Secondary Hidden.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SplitCanvasPositioning.Layout.html">SplitCanvasPositioning.Layout</a></h4>
+      <section><p>A <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html">SplitCanvasController</a> layout configuration.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.SplitCanvasPositioningTransitionAnimation.html">SplitCanvasPositioningTransitionAnimation</a></h4>
+      <section><p>The SplitCanvasPositioningTransitionAnimation is a specialist animation for updating a <a class="xref" href="Pelican7.UIGraph.SplitCanvasPositioning.html">SplitCanvasPositioning</a> component. It is designed to be used with a <a class="xref" href="Pelican7.UIGraph.SplitCanvasController.html">SplitCanvasController</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a></h4>
+      <section><p>The StackCanvasController is a container view controller designed for stacking screens on top of each other. It manages a stack of child view controllers and offers transitions for pushing and popping view controllers on and off its stack. Each child view controller fills the <a class="xref" href="Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a> transform and is placed in stack order, making the top-most view controller on the stack visible.
+<p>
+The StackCanvasController offers transitions for pushing and popping view controllers on and off its stack. Pushing a view controller onto the stack instantiates its view, embeds it within the stack controller&apos;s <a class="xref" href="Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a>, and if necessary animates it on-screen. Inversely, popping a view controller off the stack animates it off-screen if necessary, and subsequently destroys it. 
+</p>
+<p>
+Pushing a view controller onto a full-screen StackCanvasController would have the same architectural user-experience as presenting that view controller (albeit possibly with a different transition animation). Where the StackCanvasController becomes particularly useful is in presenting view controllers that are not full-screen. This allows you to create presentation stacks within a view.
+</p>
+<p>
+See <a class="xref" href="Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> for a specific type of StackCanvasController designed to provide a user-interface for hierarchical navigation.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TabBarCanvasController.html">TabBarCanvasController</a></h4>
+      <section><p>The TabBarCanvasController is a container view controller designed for switching between content screens with a tab bar interface. It manages a list of content view controllers and offers transitions, in addition to a tab bar interface, for switching between the currently selected/visible view controller.
+<p>
+By default, the TabBarCanvasController instantiates its tab bar items upon load depending upon its list of content view controllers. You may provide a custom tab bar item prefab to be used. Additionally, tab bar items can be predefined or instantiated manually from script.
+</p>
+<p>
+The first time a content view controller is shown, it is instantiated and embedded within the <a class="xref" href="Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_viewControllersContainer">viewControllersContainer</a> transform. Content view controllers are not unloaded until the tab bar itself is unloaded. 
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TabBarCanvasController.SetSelectedIndexInvokeTransitionData.html">TabBarCanvasController.SetSelectedIndexInvokeTransitionData</a></h4>
+      <section><p>A custom transition data type for use with the <a class="xref" href="Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_SetSelectedIndexTransition">SetSelectedIndexTransition</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TabBarCanvasController.SetViewControllersInvokeTransitionData.html">TabBarCanvasController.SetViewControllersInvokeTransitionData</a></h4>
+      <section><p>A custom transition data type for use with the <a class="xref" href="Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_SetSelectedViewControllerTransition">SetSelectedViewControllerTransition</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TemplateContainerExtensions.html">TemplateContainerExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TransitionEdge.html">TransitionEdge</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TransitionEdgeData.html">TransitionEdgeData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html">TransitionSequenceAnimation&lt;TViewController, TContext&gt;</a></h4>
+      <section><p>The abstract base type for animations to be used with the Transition Sequence Animator.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimator-2.html">TransitionSequenceAnimator&lt;TRegion, TContext&gt;</a></h4>
+      <section><p>The abstract base type for sequences (animators) to be used with the Transition Sequence Animator.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TransitionSequenceRegion-2.html">TransitionSequenceRegion&lt;TAnimation, TContext&gt;</a></h4>
+      <section><p>The abstract base type for sequence regions to be used with the Transition Sequence Animator.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TransitionViewObjectEdge.html">TransitionViewObjectEdge</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TransitionViewObjectEdgeData.html">TransitionViewObjectEdgeData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.UIGraphPackageVersion.html">UIGraphPackageVersion</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ValueChangeDirection.html">ValueChangeDirection</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewCallbackAttribute.html">ViewCallbackAttribute</a></h4>
+      <section><p>A ViewCallbackAttribute is used to expose a view controller method to its view.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewCallbackAttributeCollector.html">ViewCallbackAttributeCollector</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewController-12.html">ViewController&lt;TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph&gt;</a></h4>
+      <section><p>
+A view controller manages a single view of content in your user-interface. It manages the life-cycle of its view and is responsible for instantiating and destroying its view as required, such as upon presentation or dismissal.
+</p>
+<p>
+Do not create instances of this class directly. Instead, use one of the concrete base classes, <a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a> or <a class="xref" href="Pelican7.UIGraph.ElementsController.html">ElementsController</a>, depending on the workflow you are using.
+</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewController-12.DidPerformChildTransitionEvent.html">ViewController&lt;TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph&gt;.DidPerformChildTransitionEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewController-12.WillPerformChildTransitionEvent.html">ViewController&lt;TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph&gt;.WillPerformChildTransitionEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerInvokeTransitionData-1.html">ViewControllerInvokeTransitionData&lt;TViewController&gt;</a></h4>
+      <section><p>A ViewControllerInvokeTransitionData is used to pass transition data to <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier__10_System_Action_">InvokeTransition(ViewControllerTransitionIdentifier, TTransitionData, Action)</a>.
+<p>
+You should not use this class directly. Instead use one of its concrete subclasses, <a class="xref" href="Pelican7.UIGraph.CanvasControllerInvokeTransitionData.html">CanvasControllerInvokeTransitionData</a> or <a class="xref" href="Pelican7.UIGraph.ElementsControllerInvokeTransitionData.html">ElementsControllerInvokeTransitionData</a>, depending upon the workflow you are using.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerNode.html">ViewControllerNode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerNodeData.html">ViewControllerNodeData</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransition-7.html">ViewControllerTransition&lt;TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider&gt;</a></h4>
+      <section><p>When a view controller transition is to be performed, UI Graph creates a transition object to describe the transition. This object is passed to methods that require it, such as <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_Pelican7_UIGraph_GraphTransition__0__">PrepareForGraphTransition(GraphTransition&lt;TViewController&gt;)</a>, providing you with the relevant transition information. <p>You will never interface directly with an instance of this class. Instead you will be given a concrete subclass, <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransition.html">CanvasControllerTransition</a> or <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransition.html">ElementsControllerTransition</a>, depending upon the workflow you are using.</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransition-7.ViewControllerTransitionBeganEvent.html">ViewControllerTransition&lt;TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider&gt;.ViewControllerTransitionBeganEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransition-7.ViewControllerTransitionFinishedEvent.html">ViewControllerTransition&lt;TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider&gt;.ViewControllerTransitionFinishedEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransition-7.ViewControllerTransitionProgressEvent.html">ViewControllerTransition&lt;TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider&gt;.ViewControllerTransitionProgressEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionAnimationDriver-2.html">ViewControllerTransitionAnimationDriver&lt;TTransitionContext, TTransitionAnimationDefaultProgressProvider&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionAnimationDriverDirectionExtensions.html">ViewControllerTransitionAnimationDriverDirectionExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionContext-1.html">ViewControllerTransitionContext&lt;TViewController&gt;</a></h4>
+      <section><p>The view controller transition context provides detailed information about a view controller transition, such as the view controllers involved.
+<p>
+You will never use an instance of this class directly. Instead you will be given a concrete subclass, <a class="xref" href="Pelican7.UIGraph.CanvasControllerTransitionContext.html">CanvasControllerTransitionContext</a> or <a class="xref" href="Pelican7.UIGraph.ElementsControllerTransitionContext.html">ElementsControllerTransitionContext</a>, depending upon the workflow you are using.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.html">ViewControllerTransitionIdentifier</a></h4>
+      <section><p>A transition identifier is used to identify a view controller transition. Generally, you create public, static ViewControllerTransitionIdentifier fields in your container view controller for each of its custom transitions. This identifier can then be used to identify the transition from any script, as well as exposed to the Graphing and Transition Sequence Animator systems.
+<p>
+You must specify a globally unique identifier for your transition identifier, which usually follows the format &apos;TypeName.TransitionName&apos;, such as CanvasController.Present.
+</p>
+<p>
+You must specify a <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html">ViewControllerTransitionIdentifier.TransitionType</a> for your transition identifier, which informs the graphing system how to treat your transition. The options are <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html#Pelican7_UIGraph_ViewControllerTransitionIdentifier_TransitionType_Presentation">Presentation</a>, <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html#Pelican7_UIGraph_ViewControllerTransitionIdentifier_TransitionType_Dismissal">Dismissal</a>, and <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html#Pelican7_UIGraph_ViewControllerTransitionIdentifier_TransitionType_Replacement">Replacement</a>.
+</p>
+<p>
+You may optionally specify a display name for your transition identifier. This will be displayed in the editor by both the Graphing and Transition Sequence Animator systems when exposing the transition identifier.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifierExtensions.html">ViewControllerTransitionIdentifierExtensions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewReference.html">ViewReference</a></h4>
+      <section><p>A view reference links a view controller field, decorated with the <a class="xref" href="Pelican7.UIGraph.ViewReferenceAttribute.html">ViewReferenceAttribute</a>, with a view object.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewReferenceAttribute.html">ViewReferenceAttribute</a></h4>
+      <section><p>A ViewReferenceAttribute is used to link a view controller field to an object in its view.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewReferenceAttributeCollector.html">ViewReferenceAttributeCollector</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewResource-2.html">ViewResource&lt;TView, TWindow&gt;</a></h4>
+      <section></section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Pelican7.UIGraph.GraphableEmbedData.html">GraphableEmbedData</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Pelican7.UIGraph.IAppearable.html">IAppearable</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider.html">ICanvasControllerTransitionProgressProvider</a></h4>
+      <section><p>The ICanvasControllerTransitionProgressProvider interface is used when performing an interactive transition. Implement the ICanvasControllerTransitionProgressProvider interface to manually drive the transition yourself, such as from a input swipe&apos;s position. Supply your progress provider object to UI Graph via the view controller&apos;s <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_interactiveTransitionProgressProvider">interactiveTransitionProgressProvider</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IElementsControllerTransitionProgressProvider.html">IElementsControllerTransitionProgressProvider</a></h4>
+      <section><p>The IElementsControllerTransitionProgressProvider interface is used when performing an interactive transition. Implement the IElementsControllerTransitionProgressProvider interface to manually drive the transition yourself, such as from a input swipe&apos;s position. Supply your progress provider object to UI Graph via the view controller&apos;s <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_interactiveTransitionProgressProvider">interactiveTransitionProgressProvider</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphable.html">IGraphable</a></h4>
+      <section><p>An IGraphable represents a resource that can be used in a graph, such as a <a class="xref" href="Pelican7.UIGraph.CanvasController.html">CanvasController</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphableEmbedContainer.html">IGraphableEmbedContainer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphableEmbedViewObject.html">IGraphableEmbedViewObject</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphableFieldProvider.html">IGraphableFieldProvider</a></h4>
+      <section><p>Container view controllers implement the IGraphableFieldProvider interface to expose fields to the graph editor. When the implementing view controller is added to a graph, it will expose ports for each of its graphable fields, as defined by this interface.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionInvokable.html">IGraphableTransitionInvokable</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionInvoker.html">IGraphableTransitionInvoker</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionViewObject.html">IGraphableTransitionViewObject</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionViewObjectContainer.html">IGraphableTransitionViewObjectContainer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphableTransitionViewObjectListener.html">IGraphableTransitionViewObjectListener</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IGraphableViewObject.html">IGraphableViewObject</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ISequencable-1.html">ISequencable&lt;TTransitionContext&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ITabBarCanvasControllerItemProvider.html">ITabBarCanvasControllerItemProvider</a></h4>
+      <section><p>Use an ITabBarCanvasControllerItemProvider to manually instantiate a tab bar controller&apos;s items from script. Set the <a class="xref" href="Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_itemProvider">itemProvider</a> to your implementation and the tab bar will ask your provider for a new tab bar item when it is loaded.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ITransform.html">ITransform</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ITransitionContext.html">ITransitionContext</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ITransitionContextViewController.html">ITransitionContextViewController</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IView-2.html">IView&lt;TView, TWindow&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IViewBindable.html">IViewBindable</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IViewControllerTransitionAnimationDriverResponder.html">IViewControllerTransitionAnimationDriverResponder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IViewControllerTransitionAnimator-1.html">IViewControllerTransitionAnimator&lt;TTransitionContext&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IViewControllerTransitionAnimatorProvider-1.html">IViewControllerTransitionAnimatorProvider&lt;TTransitionContext&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IViewControllerTransitionDrivable-1.html">IViewControllerTransitionDrivable&lt;TContext&gt;</a></h4>
+      <section><p>A transition drivable is used to drive a transition&apos;s progress, such as when implementing an interactive transition.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IViewControllerTransitionProgressProvider-1.html">IViewControllerTransitionProgressProvider&lt;TContext&gt;</a></h4>
+      <section><p>The IViewControllerTransitionProgressProvider interface is used when performing an interactive transition and supplied to UI Graph via the view controller&apos;s <a class="xref" href="Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_interactiveTransitionProgressProvider">interactiveTransitionProgressProvider</a>.
+<p>
+You do not use this class directly, instead use its concrete subclass, <a class="xref" href="Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider.html">ICanvasControllerTransitionProgressProvider</a> or <a class="xref" href="Pelican7.UIGraph.IElementsControllerTransitionProgressProvider.html">IElementsControllerTransitionProgressProvider</a>, depending on the workflow you are using.
+</p></p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.IViewResource.html">IViewResource</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Pelican7.UIGraph.EdgeData.EdgeType.html">EdgeData.EdgeType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.Error.Severity.html">Error.Severity</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.Direction.html">TransitionSequenceAnimation&lt;TViewController, TContext&gt;.Direction</a></h4>
+      <section><p>The animation&apos;s direction. This is used by animators to determine the start and end values of their animations.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.ViewControllerIdentifier.html">TransitionSequenceAnimation&lt;TViewController, TContext&gt;.ViewControllerIdentifier</a></h4>
+      <section><p>An animation&apos;s view controller identifier. Used to populate the <a class="xref" href="Pelican7.UIGraph.TransitionSequenceAnimation-2.html#Pelican7_UIGraph_TransitionSequenceAnimation_2_TargetViewController">TargetViewController</a>.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ValueChangeDirection.ChangeDirection.html">ValueChangeDirection.ChangeDirection</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionAnimationDriverDirection.html">ViewControllerTransitionAnimationDriverDirection</a></h4>
+      <section><p>The direction of the transition driver.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html">ViewControllerTransitionIdentifier.TransitionType</a></h4>
+      <section><p>The type of transition identifier.</p>
+</section>
+      <h4><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionTimeUpdateMode.html">ViewControllerTransitionTimeUpdateMode</a></h4>
+      <section><p>The transition&apos;s time update mode.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Graphs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Graphs ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="graphs">
+<h1 id="graphs">Graphs</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Graphs enable you to build the flow of your user-interface in a visual, node-based editor. Create a graph to represent a single user-interface flow. Add view controllers to the graph and make connections between them to describe the transitions and relationships of your user-interface.</p>
+<p><img src="../../images/manual/graphs/graph-chirp.png" alt="">
+<em>The Chirp demo&#39;s user-interface is constructed using a graph.</em></p>
+<h2 id="creation">Creation</h2>
+<p>To create a graph, select <em>Create/UI Graph/Graph</em> from the Unity menu. This will create a new graph asset at the selected location.</p>
+<h2 id="graph-editor">Graph Editor</h2>
+<p>Double-click a graph asset to open it in the <strong>Graph Editor</strong> window.</p>
+<p>To pan the editor window, hold the middle-mouse button and drag or hold the ALT key and drag. </p>
+<p>Scroll to zoom the editor window.</p>
+<h2 id="adding-view-controllers">Adding View Controllers</h2>
+<p>To add a view controller to the graph, simply drag the view controller&#39;s asset file onto the editor window. Alternatively, right-click inside the editor window and select <em>Add View Controller</em>. This will create a view controller node, which represents an instance of the view controller in the graph.</p>
+<div class="NOTE"><h5>Note</h5><p>A graph may contain many instances, or nodes, of the same view controller.</p>
+</div>
+<h3 id="initial-view-controller">Initial View Controller</h3>
+<p>The first view controller that is added to a graph will automatically become the graph&#39;s initial view controller. This is the view controller that will be presented first and is shown by a white arrow on the left of the node. </p>
+<p><img src="../../images/manual/graphs/graph-initial.png" alt="">
+<em>The graph&#39;s initial view controller is shown by a white arrow on the left of the node.</em></p>
+<p>The initial view controller can be changed by right-clicking on any view controller node and selecting <strong>Make Initial</strong> from the menu.</p>
+<h2 id="graphable-view-objects">Graphable View Objects</h2>
+<p>Objects in a view controller&#39;s view can be made to be <em>graphable</em>. When a view object is <em>graphable</em> it is exposed in the graph editor, allowing connections to be made from it. For more information on graphable view objects, see the workflow-specific section below.</p>
+<h3 id="ui-canvas-workflow">UI Canvas Workflow</h3>
+<p>In order to make a view object graphable, the relevant graphable component must be added to it. For example, a standard Unity UI Button can be made graphable by adding a <a class="xref" href="../../api/Pelican7.UIGraph.GraphableButtonComponent.html">GraphableButtonComponent</a> to it. This will expose a single <strong>On Click</strong> port in the editor. </p>
+<p><img src="../../images/manual/graphs/graph-graphable-button.png" alt="">
+<em>This view controller&#39;s view contains two buttons � &#39;Home Button&#39; and &#39;Profile Button&#39; � each with a GraphableButtonComponent, which exposes them in the graph editor.</em></p>
+<p>By default, UI Graph provides graphable components for the following types.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Graphable Transition Components</strong></th>
+<th>---</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://docs.unity3d.com/Manual/script-Button.html">UnityEngine.UI.Button</a></td>
+<td><a class="xref" href="../../api/Pelican7.UIGraph.GraphableButtonComponent.html">GraphableButtonComponent</a></td>
+</tr>
+<tr>
+<td><a href="https://docs.unity3d.com/Manual/script-Toggle.html">UnityEngine.UI.Toggle</a></td>
+<td><a class="xref" href="../../api/Pelican7.UIGraph.GraphableToggleComponent.html">GraphableToggleComponent</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Graphable Embed Components</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://docs.unity3d.com/Manual/class-RectTransform.html">UnityEngine.RectTransform</a></td>
+</tr>
+</tbody>
+</table>
+<p>To save time, UI Graph can add the relevant graphable components to all known types in a view for you. To do so, right-click on the view controller node and select <strong>Make All View Elements Graphable</strong>. This will search its view for all known <strong>Graphable Transition Components</strong> listed above and add the relevant graphable component. </p>
+<div class="NOTE"><h5>Note</h5><p>Only <strong>Graphable Transition Components</strong> will be added via the above method.</p>
+</div>
+<p>Custom graphable components can be created for any additional components not listed above in order to expose them in the graph editor. For example, the Chirp demo uses a custom graphable component to expose its <strong>List View</strong> to the graph editor, offering a single <strong>On Item Selected</strong> port. See <a class="xref" href="ui-canvas/custom-graphable-view-components.html">Custom Graphable View Components</a> for more detail.</p>
+<h4 id="embeds">Embeds</h4>
+<p>As listed above, UI Graph offers a third default graphable component, the <a class="xref" href="../../api/Pelican7.UIGraph.GraphableEmbedComponent.html">GraphableEmbedComponent</a>. This component can be added to any game object with a <code>RectTransform</code> in your view controller&#39;s view to expose it to the editor. The <a class="xref" href="../../api/Pelican7.UIGraph.GraphableEmbedComponent.html">GraphableEmbedComponent</a> is used to embed a view controller as a child of the owning view controller, placing the child&#39;s view inside the component&#39;s <code>RectTransform</code>. This allows you to embed child view controllers within a view controller without scripting a custom Container View Controller. </p>
+<p>For example, the Assassin demo embeds a stack controller in the main menu screen using a <a class="xref" href="../../api/Pelican7.UIGraph.GraphableEmbedComponent.html">GraphableEmbedComponent</a>.</p>
+<p><img src="../../images/manual/graphs/graph-embed.png" alt="">
+<em>The main menu embeds a stack view controller using a <a class="xref" href="../../api/Pelican7.UIGraph.GraphableEmbedComponent.html">GraphableEmbedComponent</a>. A <a class="xref" href="../../api/Pelican7.UIGraph.GraphableEmbedComponent.html">GraphableEmbedComponent</a> was placed on the &quot;User Profile Stack Container&quot; game object in the main menu&#39;s view to expose it to the graph editor.</em></p>
+<h2 id="graphable-fields">Graphable Fields</h2>
+<p>Container View Controllers may expose <em>graphable</em> fields, allowing them to be configured in the graph editor. Upon instantiation from the graph, a view controller&#39;s graphable fields will be initialized with the relevant view controllers configured in the graph editor. </p>
+<p>The standard container view controllers all expose fields to the graph editor. For example, a navigation controller exposes its root view controller to the editor, allowing it to be configured from the graph. </p>
+<p><img src="../../images/manual/graphs/graph-field.png" alt="">
+<em>A navigation controller exposes its root view controller field in the graph editor.</em></p>
+<h2 id="connecting-view-controllers">Connecting View Controllers</h2>
+<p>Nodes can be connected to one another using the aforementioned <a class="xref" href="graphs.html#graphable-view-objects">View Objects</a> and <a class="xref" href="graphs.html#graphable-fields">Fields</a>, as well as via <a class="xref" href="graphs.html#manual-transitions">Manual Transitions</a>. This is how the flow and structure of your user-interface is modelled, determining the transitions and relationships between your view controllers. </p>
+<p>To connect an exposed port to a view controller, click and drag from the port&#39;s connector to the desired view controller node.</p>
+<p><img src="../../images/manual/graphs/graph-connect.png" alt="">
+<em>Connect a port by clicking and dragging from the port&#39;s connector to the desired view controller node.</em></p>
+<p>When connecting <strong>Transition View Objects</strong>, such as UI Buttons, a list of available view controller transitions will be offered upon connection. This list is automatically constructed and filtered by UI Graph to include only relevant and legal transitions. </p>
+<p>When connecting two unconnected nodes, the source view controller as well as its parent hierarchy will be queried for transitions. This is synonymous with the runtime functionality of <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_InvokeTransition_">InvokeTransition</a>, which allows child view controllers to invoke transitions in their parent view controllers. For example, in the graph below a tab bar has a child navigation controller, which in turn has a child view controller, <strong>HomeCanvasController</strong>. </p>
+<p><img src="../../images/manual/graphs/graph-transitions-1.png" alt=""></p>
+<p>Upon connecting <strong>HomeCanvasController</strong> to the unconnected <strong>SettingsCanvasController</strong>, UI Graph will offer transitions from the source nodes&#39; full parent hierarchy, like so:</p>
+<p><img src="../../images/manual/graphs/graph-transitions-2.png" alt=""></p>
+<p>This allows the HomeCanvasController to perform a <strong>Present</strong> (View Controller), <strong>Push</strong> (Navigation Controller), or <strong>SetSelected</strong> (Tab Bar Controller) transition to the settings view controller. </p>
+<p>Once a view object port is connected, the selected transition will be displayed along with its current settings, as shown below.</p>
+<p><img src="../../images/manual/graphs/graph-connected.png" alt="">
+<em>The HomeCanvasController will invoke a Push transition in its parent navigation controller to push the SettingsCanvasController on-screen when its Settings Button is pressed.</em></p>
+<p>Connecting in the reverse direction, from Settings to Home, will offer the appropriate dismissal transition, in this case a <em>PopTo</em> transition.</p>
+<p><img src="../../images/manual/graphs/graph-connected-2-ways.png" alt="">
+<em>The SettingsCanvasController will invoke a **PopTo</em>* transition in its parent navigation controller when the manual &#39;PopToHome&#39; transition is invoked.*</p>
+<div class="NOTE"><h5>Note</h5><p>The navigation controller provides a back button by default, which will pop to the previous view controller when pressed. This means you only need to create <strong>PopTo</strong> transitions where the back button won&#39;t suffice. </p>
+</div>
+<h2 id="presenting-a-graph">Presenting A Graph</h2>
+<p>To present a graph, open the <strong>Options</strong> menu in the top-right of the graph editor window and select <strong>Add Graph To Current Scene</strong>. This will create a UI window in your current scene, as well as a graph presenter component, which will perform the necessary steps of instantiating the graph&#39;s initial view controller and making it the window&#39;s root view controller. Hit play and your graph will be presented in the window.</p>
+<h2 id="manual-transitions">Manual Transitions</h2>
+<p>Manual transitions allow you to create a transition between two view controllers without the presence of a view object. This is useful if you want to invoke a transition from a non-view source, such as a network event or key press.</p>
+<div class="NOTE"><h5>Note</h5><p>You could also create a <a class="xref" href="ui-canvas/custom-graphable-view-components.html">custom graphable component</a> to expose a view object port for either of these scenarios instead of using a manual transition, if you wish.</p>
+</div>
+<p>To invoke a manual transition, first give it an identifier by entering a value in the transition&#39;s <strong>User Identifier</strong> field. Then from your canvas controller, invoke the transition with <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformGraphTransitionWithIdentifier_">PerformGraphTransitionWithIdentifier</a> when appropriate. For example, below we perform the <em>&#39;Dismiss Login&#39;</em> transition upon a successful login.</p>
+<pre><code class="lang-csharp">public class HomeCanvasController : CanvasController
+{
+    public void OnLoginCompletedSuccessfully()
+    {
+        PerformGraphTransitionWithIdentifier(&quot;Dismiss Login&quot;, this);
+    }
+}
+</code></pre><div class="NOTE"><h5>Note</h5><p>Any transition can be given a user identifier, meaning view object transitions can also be invoked from code in this way too. </p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ViewControllerTransitionIdentifier
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ViewControllerTransitionIdentifier
+   ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier">
+  
+  
+  <h1 id="Pelican7_UIGraph_ViewControllerTransitionIdentifier" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier" class="text-break">Class ViewControllerTransitionIdentifier
+  </h1>
+  <div class="markdown level0 summary"><p>A transition identifier is used to identify a view controller transition. Generally, you create public, static ViewControllerTransitionIdentifier fields in your container view controller for each of its custom transitions. This identifier can then be used to identify the transition from any script, as well as exposed to the Graphing and Transition Sequence Animator systems.
+<p>
+You must specify a globally unique identifier for your transition identifier, which usually follows the format &apos;TypeName.TransitionName&apos;, such as CanvasController.Present.
+</p>
+<p>
+You must specify a <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html">ViewControllerTransitionIdentifier.TransitionType</a> for your transition identifier, which informs the graphing system how to treat your transition. The options are <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html#Pelican7_UIGraph_ViewControllerTransitionIdentifier_TransitionType_Presentation">Presentation</a>, <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html#Pelican7_UIGraph_ViewControllerTransitionIdentifier_TransitionType_Dismissal">Dismissal</a>, and <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html#Pelican7_UIGraph_ViewControllerTransitionIdentifier_TransitionType_Replacement">Replacement</a>.
+</p>
+<p>
+You may optionally specify a display name for your transition identifier. This will be displayed in the editor by both the Graphing and Transition Sequence Animator systems when exposing the transition identifier.
+</p></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ViewControllerTransitionIdentifier</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Pelican7.UIGraph.html">Pelican7.UIGraph</a></h6>
+  <h6><strong>Assembly</strong>: UI Graph API Documentation Project.dll</h6>
+  <h5 id="Pelican7_UIGraph_ViewControllerTransitionIdentifier_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ViewControllerTransitionIdentifier</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionIdentifier__ctor_" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier.#ctor*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionIdentifier__ctor_System_String_Pelican7_UIGraph_ViewControllerTransitionIdentifier_TransitionType_System_String_" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier.#ctor(System.String,Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType,System.String)">ViewControllerTransitionIdentifier(String, ViewControllerTransitionIdentifier.TransitionType, String)</h4>
+  <div class="markdown level1 summary"><p>Create a new view controller transition identifier. Generally, you create public, static ViewControllerTransitionIdentifier fields in your container view controller for each of its custom transitions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewControllerTransitionIdentifier(string guid, ViewControllerTransitionIdentifier.TransitionType type, string displayName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">guid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html">ViewControllerTransitionIdentifier.TransitionType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">displayName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionIdentifier_DisplayName_" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier.DisplayName*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionIdentifier_DisplayName" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier.DisplayName">DisplayName</h4>
+  <div class="markdown level1 summary"><p>The transition identifier&apos;s display name. Used in the editor by the Graphing and Transition Sequence Animator systems.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DisplayName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionIdentifier_Guid_" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier.Guid*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionIdentifier_Guid" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier.Guid">Guid</h4>
+  <div class="markdown level1 summary"><p>The transition identifier&apos;s globally unique identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Guid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Pelican7_UIGraph_ViewControllerTransitionIdentifier_Type_" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier.Type*"></a>
+  <h4 id="Pelican7_UIGraph_ViewControllerTransitionIdentifier_Type" data-uid="Pelican7.UIGraph.ViewControllerTransitionIdentifier.Type">Type</h4>
+  <div class="markdown level1 summary"><p>The transition identifier&apos;s type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ViewControllerTransitionIdentifier.TransitionType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html">ViewControllerTransitionIdentifier.TransitionType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifierExtensions.html#Pelican7_UIGraph_ViewControllerTransitionIdentifierExtensions_IsDownstreamContainmentTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier_">ViewControllerTransitionIdentifierExtensions.IsDownstreamContainmentTransition(ViewControllerTransitionIdentifier)</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifierExtensions.html#Pelican7_UIGraph_ViewControllerTransitionIdentifierExtensions_IsContainmentTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier_">ViewControllerTransitionIdentifierExtensions.IsContainmentTransition(ViewControllerTransitionIdentifier)</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifierExtensions.html#Pelican7_UIGraph_ViewControllerTransitionIdentifierExtensions_IsNotContainmentTransition_Pelican7_UIGraph_ViewControllerTransitionIdentifier_">ViewControllerTransitionIdentifierExtensions.IsNotContainmentTransition(ViewControllerTransitionIdentifier)</a>
+  </div>
+  <div>
+      <a class="xref" href="Pelican7.UIGraph.ViewControllerTransitionIdentifierExtensions.html#Pelican7_UIGraph_ViewControllerTransitionIdentifierExtensions_GetTransitionEdgeType_Pelican7_UIGraph_ViewControllerTransitionIdentifier_">ViewControllerTransitionIdentifierExtensions.GetTransitionEdgeType(ViewControllerTransitionIdentifier)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

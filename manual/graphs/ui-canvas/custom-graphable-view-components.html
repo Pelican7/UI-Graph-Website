@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Custom Graphable View Components </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Custom Graphable View Components ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="custom-graphable-view-components">
+<h1 id="custom-graphable-view-components">Custom Graphable View Components</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>Objects in a view controller&#39;s view can be made to be graphable. When a view object is graphable it is exposed in the graph editor, allowing connections to be made from it.</p>
+<p>By default UI Graph supports making <a href="https://docs.unity3d.com/Manual/script-Button.html">UnityEngine.UI.Button</a> and <a href="https://docs.unity3d.com/Manual/script-Toggle.html">UnityEngine.UI.Toggle</a> components graphable by adding a <a class="xref" href="../../../api/Pelican7.UIGraph.GraphableButtonComponent.html">GraphableButtonComponent</a> or a <a class="xref" href="../../../api/Pelican7.UIGraph.GraphableToggleComponent.html">GraphableToggleComponent</a> to them respectively. Custom components can be written to expose additional view object types to graphing. This is done by creating a <a class="xref" href="../../../api/Pelican7.UIGraph.GraphableTransitionViewComponent-1.html">GraphableTransitionViewComponent&lt;T&gt;</a>. </p>
+<p>For example, the Chirp demo has a <code>ListView</code> component that dynamically instantiates a list of items. Each item in the list can be selected. A <a class="xref" href="../../../api/Pelican7.UIGraph.GraphableTransitionViewComponent-1.html">GraphableTransitionViewComponent&lt;T&gt;</a> subclass was created for the list view to expose an <strong>On Item Selected</strong> port in the graph editor. This allows the list view to be configured to perform a transition upon item selection.</p>
+<p><img src="../../../images/manual/graphs/ui-canvas/custom-graphable-view-components/list-view-port.png" alt="">
+<em>The list view exposes an On Item Selected port in the graph editor.</em></p>
+<h2 id="creation">Creation</h2>
+<p>To make a custom view component graphable, a graphable transition component is created for it. Graphable transition components define triggers, such as <strong>&quot;On Click&quot;</strong> or <strong>&quot;Switch Off&quot;</strong>. These triggers are exposed to the graph editor. It is the graphable transition component&#39;s responsibility to activate its triggers as appropriate. Activating a trigger will cause the associated graph transition to be performed. For example, the <a class="xref" href="../../../api/Pelican7.UIGraph.GraphableButtonComponent.html">GraphableButtonComponent</a> exposes a single trigger, <strong>&quot;On Click&quot;</strong>. When the button is clicked it activates its <strong>&quot;On Click&quot;</strong> trigger.</p>
+<p>To create a graphable transition component, follow the steps below.</p>
+<h3 id="create-a-graphabletransitionviewcomponent-subclass">Create A GraphableTransitionViewComponent Subclass</h3>
+<p>Begin by creating a <a class="xref" href="../../../api/Pelican7.UIGraph.GraphableTransitionViewComponent-1.html">GraphableTransitionViewComponent&lt;T&gt;</a> subclass. Use the class&#39;s generic argument to supply the type of your target &#8211; the type of the component you wish to make graphable.</p>
+<pre><code class="lang-csharp">public class GraphableButtonComponent : GraphableTransitionViewComponent&lt;UnityEngine.UI.Button&gt;
+{
+}
+</code></pre><h3 id="create-triggers">Create Triggers</h3>
+<p>Next, we need to specify the component&#39;s triggers. These are the ports that will be exposed in the graph editor. It is recommended to define these in the <code>Reset</code> method, which will be called on creation in the editor only.</p>
+<pre><code class="lang-csharp">public class GraphableButtonComponent : GraphableTransitionViewComponent&lt;UnityEngine.UI.Button&gt;
+{
+    protected override void Reset()
+    {
+        base.Reset();
+
+        // Provide a single trigger for when the button is clicked.
+        triggers = new GraphableTransitionViewObjectTrigger[]
+        {
+            new GraphableTransitionViewObjectTrigger(&quot;On Click&quot;)
+        };
+    }
+}
+</code></pre><h3 id="bind-to-target">Bind To Target</h3>
+<p>Next, we need to implement the <a class="xref" href="../../../api/Pelican7.UIGraph.GraphableTransitionViewComponent-1.html#Pelican7_UIGraph_GraphableTransitionViewComponent_1_BindToTarget_">BindToTarget</a> method. This method will be called by UI Graph when the view is instantiated from a Graph. In it, you are responsible for binding to the target object and subsequently activating the relevant trigger at the appropriate time.</p>
+<pre><code class="lang-csharp">public class GraphableButtonComponent : GraphableTransitionViewComponent&lt;UnityEngine.UI.Button&gt;
+{
+    protected override void BindToTarget()
+    {
+        // Bind port activation to the button&#39;s onClick callback.
+        target.onClick.AddListener(() =&gt;
+        {
+            Activate(triggers[0]);
+        });
+    }
+
+    protected override void Reset()
+    {
+        base.Reset();
+
+        // Provide a single trigger for when the button is clicked.
+        triggers = new GraphableTransitionViewObjectTrigger[]
+        {
+            new GraphableTransitionViewObjectTrigger(&quot;On Click&quot;)
+        };
+    }
+}
+</code></pre><h3 id="add-to-view">Add To View</h3>
+<p>Finally, add the newly created graphable transition component to the relevant game object in your view. It will automatically configure its target and display name. </p>
+<p><img src="../../../images/manual/graphs/ui-canvas/custom-graphable-view-components/graphable-button-component.png" alt="">
+<em>A Graphable Button Component has been added to the view object.</em></p>
+<p>The component will now be exposed in the graph editor.</p>
+<p><img src="../../../images/manual/graphs/ui-canvas/custom-graphable-view-components/on-click-exposed.png" alt="">
+<em>The button is exposed to the graph editor.</em></p>
+<h2 id="example">Example</h2>
+<p>To illustrate, shown below is the code from the Chirp demo, which exposes an <strong>On Item Selected</strong> port in the graph editor for the <code>ListView</code> component.</p>
+<pre><code class="lang-csharp">public class GraphableListViewComponent : GraphableTransitionViewComponent&lt;ListView&gt;
+{
+    protected override void BindToTarget()
+    {
+        // Bind port activation to the list view&#39;s selection callback.
+        target.OnListViewSelectedItemAtIndex.AddListener(OnListViewSelectedItemAtIndex);
+    }
+
+    protected override void Reset()
+    {
+        base.Reset();
+
+        // Provide a single trigger for when a list item is selected.
+        triggers = new GraphableTransitionViewObjectTrigger[]
+        {
+            new GraphableTransitionViewObjectTrigger(&quot;On Item Selected&quot;)
+        };
+    }
+
+    private void OnListViewSelectedItemAtIndex(ListView listView, ListViewItem listViewItem, int index)
+    {
+        // Activate the trigger when the list view is selected.
+        Activate(triggers[0]);
+    }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

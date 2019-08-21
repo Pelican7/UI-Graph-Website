@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Stack Canvas Controller </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Stack Canvas Controller ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="stack-canvas-controller">
+<h1 id="stack-canvas-controller">Stack Canvas Controller</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a> is a container view controller designed for stacking screens on top of each other. It manages a stack of child view controllers and offers transitions for pushing and popping view controllers on and off its stack. Each child view controller fills the <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a> transform and is placed in stack order, making the top-most view controller on the stack visible. </p>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a> offers transitions for pushing and popping view controllers on and off its stack. Pushing a view controller onto the stack instantiates its view, embeds it within the stack controller&#39;s <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a>, and if necessary animates it on-screen. Inversely, popping a view controller off the stack animates it off-screen if necessary, and subsequently destroys it. </p>
+<p>Pushing a view controller onto a full-screen <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a> would have the same architectural user-experience as presenting that view controller (albeit possibly with a different transition animation). Where the <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a> becomes particularly useful is in presenting view controllers that are not full-screen. This allows you to create presentation stacks within a view. For example, the Assassin demo embeds a <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a> within its view and uses its <strong>Push</strong> and <strong>Pop</strong> transitions to present and dismiss the Friends List popover.</p>
+<p><img src="../../../../images/manual/view-controllers/container-view-controllers.png" alt="">
+<em>The Friends List on the right is contained within a Stack Canvas Controller. It is pushed onto the stack when the user profile is selected and popped off the stack when the close button is pressed.</em></p>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> is a specific type of <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a> designed to provide a user-interface for hierarchical navigation. See the <a class="xref" href="navigation-canvas-controller.html">Navigation Canvas Controller</a> section for more detail. </p>
+<h2 id="creation">Creation</h2>
+<p>To create a <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a> select <em>Create/UI Graph/UI Canvas/Stack Canvas Controller</em> from the Unity menu. This will create an asset instance of the <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a> and a view prefab.</p>
+<p>The template that UI Graph will use when creating stack canvas controllers can be changed in the package settings. </p>
+<h2 id="presentation">Presentation</h2>
+<h3 id="present-using-a-graph-recommended">Present Using A Graph (Recommended)</h3>
+<p>To present a stack controller from a graph, add the stack controller to the graph and, optionally, configure its root view controller by connecting the <strong>Root View Controller</strong> field to the desired view controller. </p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/stack-canvas-controller/stack-canvas-controller-graph.png" alt="">
+<em>Configuring the stack controller&#39;s root view controller to be the UserProfileCanvasController.</em></p>
+<h3 id="present-from-script">Present From Script</h3>
+<p>To present a stack controller directly from script, instantiate a new stack controller instance and present it. Optionally, instantiate its root view controller and use <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_SetRoot_">SetRoot</a> to configure its root view controller.</p>
+<pre><code class="lang-csharp">public class YourCanvasController : CanvasController
+{
+    // A reference to our stack canvas controller asset, configured in the inspector.
+    public StackCanvasController stackControllerTemplate;
+
+    // A reference to the root canvas controller asset, configured in the inspector.
+    public CanvasController rootCanvasControllerTemplate;
+
+    private void PresentStackController()
+    {
+        // Instantiate the navigation controller.
+        StackCanvasController stackController = Instantiate(stackControllerTemplate);
+
+        // Optionally, instantiate the root view controller. (Remember that this doesn&#39;t load its view into memory at this point.)
+        CanvasController rootViewController = Instantiate(rootCanvasControllerTemplate);
+
+        // Optionally, set the stack controller&#39;s root view controller.
+        stackController.SetRoot(rootViewController);
+
+        // Present the stack controller.
+        Present(stackController);
+    }
+}
+</code></pre><h2 id="appearance">Appearance</h2>
+<p>The stack controller&#39;s layout can be adjusted in its view. </p>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a> transform determines where the stack controller will place its child view controllers. </p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

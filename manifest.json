@@ -1,0 +1,3314 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Pelican 7/Projects/UI Graph/UI Graph API Documentation/UI Graph API Documentation Project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Ty+MntZ2ClaZvMrUTofr9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/appLogo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/appLogo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/home/asset-store-btn.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/home/asset-store-btn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/home/ui-graph-banner.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/home/ui-graph-banner.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-chirp.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-chirp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-connect.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-connect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-connected-2-ways.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-connected-2-ways.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-connected.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-connected.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-embed.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-embed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-field.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-graphable-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-graphable-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-initial.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-initial.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-transitions-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-transitions-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/graph-transitions-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/graph-transitions-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/ui-canvas/custom-graphable-view-components/graphable-button-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/ui-canvas/custom-graphable-view-components/graphable-button-component.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/ui-canvas/custom-graphable-view-components/list-view-port.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/ui-canvas/custom-graphable-view-components/list-view-port.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/graphs/ui-canvas/custom-graphable-view-components/on-click-exposed.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/graphs/ui-canvas/custom-graphable-view-components/on-click-exposed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-CreateCC.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-CreateCC.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-CreateTBC.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-CreateTBC.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-CreateYellow.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-CreateYellow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-CreatedCC.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-CreatedCC.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-Final.mp4",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-Final.mp4"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-GraphAddToScene.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-GraphAddToScene.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-GraphAdded.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-GraphAdded.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-GraphComplete.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-GraphComplete.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-GraphConnect.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-GraphConnect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-GraphConnected.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-GraphConnected.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-GraphConnecting.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-GraphConnecting.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-GraphExpose.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-GraphExpose.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-GraphExposed.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-GraphExposed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-GraphInScene.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-GraphInScene.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-LayoutBlue.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-LayoutBlue.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-LayoutOrange.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-LayoutOrange.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-PlayBlue.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-PlayBlue.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-PlayOrange.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-PlayOrange.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-TBCPlay1.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-TBCPlay1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-TBCPlay2.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-TBCPlay2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/guides/quick-start/QS-TBCPlay3.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/guides/quick-start/QS-TBCPlay3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/transition-sequence-animator/container-sequence-provider.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/transition-sequence-animator/container-sequence-provider.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/transition-sequence-animator/sequence-provider-vc.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/transition-sequence-animator/sequence-provider-vc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/transition-sequence-animator/sequence-provider.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/transition-sequence-animator/sequence-provider.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/transition-sequence-animator/sequence-settings.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/transition-sequence-animator/sequence-settings.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/canvas-controller-asset-reference.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/canvas-controller-asset-reference.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/canvas-controller-asset-structure.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/canvas-controller-asset-structure.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/canvas-controller-view.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/canvas-controller-view.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/navigation-canvas-controller/navigation-canvas-controller-configure.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/navigation-canvas-controller/navigation-canvas-controller-configure.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/navigation-canvas-controller/navigation-canvas-controller-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/navigation-canvas-controller/navigation-canvas-controller-example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/split-canvas-controller/split-canvas-controller-assassin.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/split-canvas-controller/split-canvas-controller-assassin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/split-canvas-controller/split-canvas-controller-chirp.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/split-canvas-controller/split-canvas-controller-chirp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/split-canvas-controller/split-canvas-controller-graph.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/split-canvas-controller/split-canvas-controller-graph.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/stack-canvas-controller/stack-canvas-controller-graph.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/stack-canvas-controller/stack-canvas-controller-graph.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-assassin.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-assassin.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-chirp.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-chirp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-graph.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-graph.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-layout.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-layout.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/view-callback.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/view-callback.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/canvas-controllers/view-reference.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/canvas-controllers/view-reference.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/container-view-controllers.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/container-view-controllers.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/manual/view-controllers/elements-controllers/elements-controller-asset-structure.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "images/manual/view-controllers/elements-controllers/elements-controller-asset-structure.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "H08wk/M2WYEEi331MrRj+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/graphs/graphs.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphs/graphs.html",
+          "hash": "kFgn61wk/KNfKWAE4ETkZw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/graphs/ui-canvas/custom-graphable-view-components.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/graphs/ui-canvas/custom-graphable-view-components.html",
+          "hash": "NjNKTBwE3DytQxFZQAwpuA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/guides/quick-start.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/guides/quick-start.html",
+          "hash": "HZZdG4eI3mimE459CK+XTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/index.html",
+          "hash": "qmL3iXPzb2oUAku6Ch0VYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "KiWhGFcvbX7B6LmKTIMzEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/transition-sequence-animator/transition-sequence-animator.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/transition-sequence-animator/transition-sequence-animator.html",
+          "hash": "k0GAbcV6jQ5v74xEn6Lv0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/view-controllers/ui-canvas/canvas-controllers.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/view-controllers/ui-canvas/canvas-controllers.html",
+          "hash": "TMeVxyh41uFrb2U2T5pu6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/view-controllers/ui-canvas/standard-containers/navigation-canvas-controller.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/view-controllers/ui-canvas/standard-containers/navigation-canvas-controller.html",
+          "hash": "Nr66mNMqGTEieBc4VwjGMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/view-controllers/ui-canvas/standard-containers/split-canvas-controller.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/view-controllers/ui-canvas/standard-containers/split-canvas-controller.html",
+          "hash": "ydD5ZAlvM3wzDcofvWUxCQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/view-controllers/ui-canvas/standard-containers/stack-canvas-controller.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/view-controllers/ui-canvas/standard-containers/stack-canvas-controller.html",
+          "hash": "73ggQ6x9swm5I3yJdvJ1fw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/view-controllers/ui-canvas/standard-containers/tab-bar-canvas-controller.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/view-controllers/ui-canvas/standard-containers/tab-bar-canvas-controller.html",
+          "hash": "BJ7Sih1SRlSth+e582dC8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/view-controllers/ui-elements/elements-controllers.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/view-controllers/ui-elements/elements-controllers.html",
+          "hash": "nSdKfg1k11aL6pXN98Cp7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/view-controllers/view-controllers.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/view-controllers/view-controllers.html",
+          "hash": "mo7Q1zV1SuACfxF2AR/bkw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ApplyCanvasControllerTitleToLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ApplyCanvasControllerTitleToLabel.html",
+          "hash": "nLzdNolJciigvKws+5kXxg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.BringToFrontCanvasControllerTransitionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.BringToFrontCanvasControllerTransitionAnimation.html",
+          "hash": "Xbi/1WA+TDHl2giGo7ssTA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasController.html",
+          "hash": "Hb5VI3XCRk5EolxkYbuNuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerInvokeTransitionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerInvokeTransitionData.html",
+          "hash": "86Rgvl9iMSY0kh/mskMSbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerSequenceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerSequenceProvider.html",
+          "hash": "y7CQ8TlWex67UmB5Bv28Vw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerSequenceProviderAnimatorData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerSequenceProviderAnimatorData.html",
+          "hash": "zNgnBeZO6Zew7SCJK0aspQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerTransition.html",
+          "hash": "VRBFf0rqCShS3WZ5zJm2hg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerTransitionAnimationDriver.html",
+          "hash": "iepIM2imylE74IcOQzUlBQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerTransitionAnimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerTransitionAnimator.html",
+          "hash": "UVmFOWnQr74CWnRKN6Uhpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider.html",
+          "hash": "3Ny7CeC+s25NO0dv3hxisw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerTransitionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerTransitionContext.html",
+          "hash": "q8Uz901VhqS7CQW2/iJYYw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerTransitionProgressProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerTransitionProgressProvider.html",
+          "hash": "FqaQwvpaM+NCPQPVBxWpTg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimation.html",
+          "hash": "mdybTbeF43kQFQz/0amjzw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerTransitionSequenceAnimator.html",
+          "hash": "a0Jsz1v3UQ54q76QqRWFQg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasControllerTransitionSequenceRegion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasControllerTransitionSequenceRegion.html",
+          "hash": "rERiBRTg9rbl15OrXXFklQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasGraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasGraph.html",
+          "hash": "N+KTlhUaE7NCKmxZU0OdCw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasGraphPresenter.CanvasGraphPresentationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasGraphPresenter.CanvasGraphPresentationEvent.html",
+          "hash": "inx2D6HnRy3rty63bUQjRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasGraphPresenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasGraphPresenter.html",
+          "hash": "AV547MxR91tCqCjF1d2vWw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasNavigationBarBackButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasNavigationBarBackButton.html",
+          "hash": "iro80s64Lb+Kwria4k4v8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasNavigationBarTitleLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasNavigationBarTitleLabel.html",
+          "hash": "As/giGys88qOsscdqAaFbA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasNavigationTransitionNotifier.CanvasNavigationControllerDidPerformTransitionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasNavigationTransitionNotifier.CanvasNavigationControllerDidPerformTransitionEvent.html",
+          "hash": "7qKFUCERiWGPkBJq4ZHQfw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasNavigationTransitionNotifier.CanvasNavigationControllerWillPerformTransitionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasNavigationTransitionNotifier.CanvasNavigationControllerWillPerformTransitionEvent.html",
+          "hash": "lTJFtpziuBPLWBz9ngvkYQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasNavigationTransitionNotifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasNavigationTransitionNotifier.html",
+          "hash": "O3GRSB0On/yo63xMK3KHbQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasTabBar.CanvasTabBarEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasTabBar.CanvasTabBarEvent.html",
+          "hash": "vgJOCczYnz6gwRExuKqLkg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasTabBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasTabBar.html",
+          "hash": "/yh/JUqCRDr1Jt5xc5rL+g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasTabBarItem.CanvasTabBarItemConfigurationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasTabBarItem.CanvasTabBarItemConfigurationEvent.html",
+          "hash": "9Q3Y1pxOqMGwaZrT/sjJRQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasTabBarItem.CanvasTabBarItemEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasTabBarItem.CanvasTabBarItemEvent.html",
+          "hash": "NvVXEVKXl2NrjiERsyH9sA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasTabBarItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasTabBarItem.html",
+          "hash": "oQL494BF1vo3q0+wzzAgBw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasView.html",
+          "hash": "Gk5DdeKLk+hdSClpuZAd3w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallback.html",
+          "hash": "g6odoe+CUAWfdMZiHeTDvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackBool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackBool.html",
+          "hash": "mDliuzgK0ComjtYsLV8MhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackFactory.html",
+          "hash": "DDklhE8S0Hk7gBgVQwMjCQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackFloat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackFloat.html",
+          "hash": "JItWMShBlbI4a2SgBpuDNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackInt.html",
+          "hash": "mw0uTyBGPFmyN07asSzd+Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackMultipleParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackMultipleParameters.html",
+          "hash": "IuenOU6PzhxA7OnNNCb9pw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackNoParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackNoParameters.html",
+          "hash": "5q6CdDr6figahOPEEfJrGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackString.html",
+          "hash": "dHMPlSLXUkmLlf919u165g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackSystemObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackSystemObject.html",
+          "hash": "ZA8Ij4lcsYyVsx6Z7DwnyA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackUnityObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackUnityObject.html",
+          "hash": "uO4qbgro/rruXJeKeeHJfQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewCallbackWithParameter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewCallbackWithParameter-1.html",
+          "hash": "+4vSQWIYqNlqhVKZ+L5/iw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewExtensions.html",
+          "hash": "7QzHCBKK2ATpc6Z3nWf/iQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewOwnerBindings.BindingEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewOwnerBindings.BindingEvent.html",
+          "hash": "XoG99QSqm7qUQ4eTrTvnnw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewOwnerBindings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewOwnerBindings.html",
+          "hash": "OcCJbKMtKahuAZ+DwI5YCw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewReference.html",
+          "hash": "jJMuhdf5oXrDLgwCl9CGJg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasViewResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasViewResource.html",
+          "hash": "wyVQYgEykeTBzfEDQ3Q0Xw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.CanvasWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.CanvasWindow.html",
+          "hash": "LpypBMrZJg1ledoJntz94w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ContainerCanvasControllerSequenceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ContainerCanvasControllerSequenceProvider.html",
+          "hash": "1iUIKa7Njg4NXM0ocuEl/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ContainerElementsControllerSequenceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ContainerElementsControllerSequenceProvider.html",
+          "hash": "DWbtn0IUSNpMf8sZOVesKQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.Edge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.Edge.html",
+          "hash": "SAFP79s11cVap91lLRQiDA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.EdgeData.EdgeType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.EdgeData.EdgeType.html",
+          "hash": "LsCob7s20zAw+MlRN0v4hA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.EdgeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.EdgeData.html",
+          "hash": "pnj0YN71hqPbL3BL/IeYKg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsController.html",
+          "hash": "jAc0HSoy3N6GeAJPbIioRA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerInvokeTransitionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerInvokeTransitionData.html",
+          "hash": "fNkR5Fm29xs5/aDiDCvhLA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerSequenceProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerSequenceProvider.html",
+          "hash": "Q0cu+vFJj7cMCfKX2ONv6g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerSequenceProviderAnimatorData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerSequenceProviderAnimatorData.html",
+          "hash": "vi2knqhuKr+U/eC63XGrOA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerTransition.html",
+          "hash": "jMEl7PCQKvP+5Vte5ibK8Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerTransitionAnimationDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerTransitionAnimationDriver.html",
+          "hash": "2Z9KILARumpiKHXdzwVEuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerTransitionAnimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerTransitionAnimator.html",
+          "hash": "9CBgIJyGSPcm7N8at2XZeA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerTransitionAnimatorProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerTransitionAnimatorProvider.html",
+          "hash": "nkS9MyOYKihXUWnkYQORJw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerTransitionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerTransitionContext.html",
+          "hash": "khCn+7AJj8rqa70TMUKsnw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerTransitionProgressProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerTransitionProgressProvider.html",
+          "hash": "MJ4lrRBVHUI06Bh+jZFLsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimation.html",
+          "hash": "THKsKuod47BoxBMtWyedYA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerTransitionSequenceAnimator.html",
+          "hash": "9Dm3r6pRQ8McLEtzmyUKeQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsControllerTransitionSequenceRegion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsControllerTransitionSequenceRegion.html",
+          "hash": "r+uW1v6xNNsiAGsO9fDcWQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsGraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsGraph.html",
+          "hash": "v03Zo+nNncsagegdhxSx7g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsView.Factory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsView.Factory.html",
+          "hash": "QOvRvs6migf497SZRdFojg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsView.html",
+          "hash": "mDBKDXWDDaW9a43Y6ViKPQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsViewOwnerBinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsViewOwnerBinder.html",
+          "hash": "k+0am2pL1E/3NGYVD+/Zig=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsViewOwnerBindingsEditorData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsViewOwnerBindingsEditorData.html",
+          "hash": "kRphFT4ZpaiMTEZ85cYUFw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsViewReferenceData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsViewReferenceData.html",
+          "hash": "JGhi/nyx6kM14k1TEaEBnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsViewResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsViewResource.html",
+          "hash": "KdQr/ihTNAoLiShz/0vKNQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ElementsWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ElementsWindow.html",
+          "hash": "SZxpEIdqNmSVw2AIjyvyPg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.EmbedViewObjectEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.EmbedViewObjectEdge.html",
+          "hash": "CQ1LQXI6Fq1nmeugrrJuwg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.EmbedViewObjectEdgeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.EmbedViewObjectEdgeData.html",
+          "hash": "SAePkZtfkAaBJh58bDjF5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.Error.Severity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.Error.Severity.html",
+          "hash": "36Aj15m2Jiyx/jY94EiIXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.Error.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.Error.html",
+          "hash": "xdPgbqUcjK7gBpZ6tA6ODg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.FadeCanvasControllerTransitionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.FadeCanvasControllerTransitionAnimation.html",
+          "hash": "oBzQePBwOu7nav4JxEIKDw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.FieldEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.FieldEdge.html",
+          "hash": "uDoTad1QCQl+9+HyVuiFfw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.FieldEdgeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.FieldEdgeData.html",
+          "hash": "xm8GPeQcc51D4KCCY5oSWg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.Graph-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.Graph-1.html",
+          "hash": "ar9ZW/JBnOCS6ltzZ+DYTw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphResource.html",
+          "hash": "tQjNdPSGebxkc/GDGnGRyw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphTransition-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphTransition-1.html",
+          "hash": "OYT+5jEBvMudl8jvyUEYRw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableButtonComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableButtonComponent.html",
+          "hash": "oa1qLm6mV6yRcEOn11j38g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableEmbedComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableEmbedComponent.html",
+          "hash": "JL/xQ6mU1GLjxp/X3i1wZg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableEmbedData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableEmbedData.html",
+          "hash": "X5zIloUv0wT7D9JvUU0UwQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableEmbedViewObjectPort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableEmbedViewObjectPort.html",
+          "hash": "6ROXxoQwlcgb0hSFMRqO4g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableEmbedViewObjectPortData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableEmbedViewObjectPortData.html",
+          "hash": "v5sat41xm11BlwVzrDLqQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableField.html",
+          "hash": "PBpL7D2Y7PVNOIwqiN9s+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableFieldPort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableFieldPort.html",
+          "hash": "5ILpuR4HiufYv1qvuAgEug=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableFieldPortData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableFieldPortData.html",
+          "hash": "b9edBpydMQqJD9+z5DRxAA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableReference.html",
+          "hash": "dcR7n4Q6LpPQ1pptA0GYhQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableToggleComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableToggleComponent.html",
+          "hash": "rcxPOscKUKVQVnN9NA7SdQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableTransition.html",
+          "hash": "GlJ1dpXiidJwSHsu12t+jA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableTransitionIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableTransitionIdentifier.html",
+          "hash": "fHh1JsA3bnGCp3KNn41XDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableTransitionViewComponent-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableTransitionViewComponent-1.html",
+          "hash": "xHWBIvPYKBvND7Z4rqHOdw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableTransitionViewComponentBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableTransitionViewComponentBase.html",
+          "hash": "Be1xuOIeucq1wz0Pi27Tww=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableTransitionViewObjectPort.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableTransitionViewObjectPort.html",
+          "hash": "QMX7p9Bi5J+AlJuOuPXxTQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableTransitionViewObjectPortData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableTransitionViewObjectPortData.html",
+          "hash": "WGgLs7mIdjN3lWfpNeCl6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableTransitionViewObjectTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableTransitionViewObjectTrigger.html",
+          "hash": "8FQNZpnrtODKQObkVbxR9g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.GraphableTransitionViewObjectTriggerData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.GraphableTransitionViewObjectTriggerData.html",
+          "hash": "ushEH2Zw5mxeGlxKr+gdtA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IAppearable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IAppearable.html",
+          "hash": "vsd9wTUZ/nddbDZ/d9dK9A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ICanvasControllerTransitionProgressProvider.html",
+          "hash": "EocuR9zM4FoG/t5s6EoNdA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IElementsControllerTransitionProgressProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IElementsControllerTransitionProgressProvider.html",
+          "hash": "HHXdW2KyDqnMh/lQKWamEA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphable.html",
+          "hash": "R9+PeBSJt4Ol2SrSUB1s1g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphableEmbedContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphableEmbedContainer.html",
+          "hash": "15dWP8zIFU43WjmgxdddlA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphableEmbedViewObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphableEmbedViewObject.html",
+          "hash": "jZEA6z52jSolUOvTf/5DLw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphableFieldProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphableFieldProvider.html",
+          "hash": "DGMFmRCUnQnFHpJEYsoQEg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphableTransitionInvokable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphableTransitionInvokable.html",
+          "hash": "O7+bMkRL0exGIzB2n6F5wQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphableTransitionInvoker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphableTransitionInvoker.html",
+          "hash": "fwAjgM2JEDoCBXXP4W+rzA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphableTransitionViewObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphableTransitionViewObject.html",
+          "hash": "Ub0VnEhgXuwR/3uSPocU4A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphableTransitionViewObjectContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphableTransitionViewObjectContainer.html",
+          "hash": "G7o43RwpusDQ8kPXStgsMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphableTransitionViewObjectListener.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphableTransitionViewObjectListener.html",
+          "hash": "CUd0d2RjivH5letqkSYadQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IGraphableViewObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IGraphableViewObject.html",
+          "hash": "wETlgTPHfZpkVYkMpLtR5g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ISequencable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ISequencable-1.html",
+          "hash": "zZlYJynwl4WTpNNdxViB6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ITabBarCanvasControllerItemProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ITabBarCanvasControllerItemProvider.html",
+          "hash": "y4v2zAgjXaqIQRI1mx7liw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ITransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ITransform.html",
+          "hash": "NmxqztVbIrrh7kyn3zasMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ITransitionContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ITransitionContext.html",
+          "hash": "YwP9ejkA2/h4EjqiHb1L9g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ITransitionContextViewController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ITransitionContextViewController.html",
+          "hash": "NDYJbqq/nJ+1PVlRy6HqTw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IView-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IView-2.html",
+          "hash": "Ym90vtpwgyXvzxLyrcG5Kg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IViewBindable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IViewBindable.html",
+          "hash": "BDVPYoyweQjtlzp+7vrqOw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IViewControllerTransitionAnimationDriverResponder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IViewControllerTransitionAnimationDriverResponder.html",
+          "hash": "7xrrcgF4mMybEXKp5vDcag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IViewControllerTransitionAnimator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IViewControllerTransitionAnimator-1.html",
+          "hash": "qEkXbHrO5EZ4lAyRlxDehQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IViewControllerTransitionAnimatorProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IViewControllerTransitionAnimatorProvider-1.html",
+          "hash": "jg2q75Cik+gNuEtOsY99bw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IViewControllerTransitionDrivable-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IViewControllerTransitionDrivable-1.html",
+          "hash": "DCO4et//db4ImRdyrcruuQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IViewControllerTransitionProgressProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IViewControllerTransitionProgressProvider-1.html",
+          "hash": "atoOpe8tL/+saqZB+Vzbwg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.IViewResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.IViewResource.html",
+          "hash": "HYw9DYK6dkqfYrc2u8WpVA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.LocallyUniqueGuidMonoBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.LocallyUniqueGuidMonoBehaviour.html",
+          "hash": "DIl0Fc5H8kuSEVldfTWjDA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ManualTransitionEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ManualTransitionEdge.html",
+          "hash": "PeAoXh0Dhu6Voi7+8gYfhQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ManualTransitionEdgeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ManualTransitionEdgeData.html",
+          "hash": "YNK6JZEg/4B205Tvwd9EvQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.MenuItemPriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.MenuItemPriority.html",
+          "hash": "KMdgvagEMoEuCZ1nL8idKQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.MethodInfoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.MethodInfoExtensions.html",
+          "hash": "P0k7VT1CVoG73MDL6GfZGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.NavigationCanvasController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.NavigationCanvasController.html",
+          "hash": "1iUnAefrny9g7wEt9piABw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.Node.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.Node.html",
+          "hash": "Maz58gXCAcrAjsfqRheKfA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.NodeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.NodeData.html",
+          "hash": "FagVBDZYH5n0yZ3SYXBrUA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ObjectAttributeCollector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ObjectAttributeCollector.html",
+          "hash": "5g+lTa+bqdLTsxTo+0JMeg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.RectTransformExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.RectTransformExtensions.html",
+          "hash": "WL6atft3lUbiMKko+hd/BA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.RotateCanvasControllerTransitionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.RotateCanvasControllerTransitionAnimation.html",
+          "hash": "hDTFTSU60qgIt1MAT0UYMA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ScaleCanvasControllerTransitionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ScaleCanvasControllerTransitionAnimation.html",
+          "hash": "TeWqFz30wuwJSurdh4Z7/Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ScaleElementsControllerTransitionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ScaleElementsControllerTransitionAnimation.html",
+          "hash": "1DX0Jz2O3Q+TgJeQf7Fazw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SceneExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SceneExtensions.html",
+          "hash": "zf32YRpHTOtdodo3ydYK5w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SceneTransitionCanvasController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SceneTransitionCanvasController.html",
+          "hash": "bp08jvyOjyIYC2qeh2u0dA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SerializedMethodInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SerializedMethodInfo.html",
+          "hash": "tCbQJ52pn881X4yXXBHgSQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SetVisibilityCanvasControllerTransitionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SetVisibilityCanvasControllerTransitionAnimation.html",
+          "hash": "4odtDyDROu+m/hagG8/Peg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SlideCanvasControllerTransitionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SlideCanvasControllerTransitionAnimation.html",
+          "hash": "CcZKUa4gygAGHFEp/9oLmw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SlideElementsControllerTransitionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SlideElementsControllerTransitionAnimation.html",
+          "hash": "6d3Z0BgczXnfVqfRXJKVnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SplitCanvasController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SplitCanvasController.html",
+          "hash": "LwfhZEC8LdYC7QLq31dYCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SplitCanvasPositioning.Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SplitCanvasPositioning.Layout.html",
+          "hash": "H6CzIXc7lK21tkI7GZHM3g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SplitCanvasPositioning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SplitCanvasPositioning.html",
+          "hash": "y4B+37Zc0yc3BCznsGeIBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.SplitCanvasPositioningTransitionAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.SplitCanvasPositioningTransitionAnimation.html",
+          "hash": "rr3EoZb+WsahMvYVMkCiGg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.StackCanvasController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.StackCanvasController.html",
+          "hash": "Q35+qHfDaMdYdIQL95KYGA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TabBarCanvasController.SetSelectedIndexInvokeTransitionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TabBarCanvasController.SetSelectedIndexInvokeTransitionData.html",
+          "hash": "qNZFFYWDnKIp6TM9alevcw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TabBarCanvasController.SetViewControllersInvokeTransitionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TabBarCanvasController.SetViewControllersInvokeTransitionData.html",
+          "hash": "6GxoF+g6CIqS8YDd87jB6Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TabBarCanvasController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TabBarCanvasController.html",
+          "hash": "WhybKqWh4lBCOwBwEEeDCA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TemplateContainerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TemplateContainerExtensions.html",
+          "hash": "5C0PqLlJrzIoTsQEYKcIvA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TransitionEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TransitionEdge.html",
+          "hash": "hbRrnARG+plPuSMdEDZC3Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TransitionEdgeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TransitionEdgeData.html",
+          "hash": "AgUx0Shl2ejuiD7RuxrboQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TransitionSequenceAnimation-2.Direction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TransitionSequenceAnimation-2.Direction.html",
+          "hash": "n3shzosRp1mzRHiOwqZWfg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TransitionSequenceAnimation-2.ViewControllerIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TransitionSequenceAnimation-2.ViewControllerIdentifier.html",
+          "hash": "VMmgDubJQKYLgmXoWVQAcg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TransitionSequenceAnimation-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TransitionSequenceAnimation-2.html",
+          "hash": "GxyFLhkea8Wjb/wJXnOfXw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TransitionSequenceAnimator-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TransitionSequenceAnimator-2.html",
+          "hash": "+p2hMjYmTiN/LHCML6C1sg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TransitionSequenceRegion-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TransitionSequenceRegion-2.html",
+          "hash": "/JSZutNpVHiI3lQeTnMi7w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TransitionViewObjectEdge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TransitionViewObjectEdge.html",
+          "hash": "To+IXmK+CbLcyuc1SzeLHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.TransitionViewObjectEdgeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.TransitionViewObjectEdgeData.html",
+          "hash": "TNMJplqNjS+ZTKquxkoNhA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.UIGraphPackageVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.UIGraphPackageVersion.html",
+          "hash": "hvI6s5O1kBoGIUFeWzqDQw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ValueChangeDirection.ChangeDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ValueChangeDirection.ChangeDirection.html",
+          "hash": "YKCXP4vsJi6ZYEg3R78CgA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ValueChangeDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ValueChangeDirection.html",
+          "hash": "JhZmtfL9odIW7B+a/yZ0Pg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewCallbackAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewCallbackAttribute.html",
+          "hash": "ze4h/py23ryMW7VtVGoc2A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewCallbackAttributeCollector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewCallbackAttributeCollector.html",
+          "hash": "YvC4iZeiDl0F4AGFvfpSaQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewController-12.DidPerformChildTransitionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewController-12.DidPerformChildTransitionEvent.html",
+          "hash": "QzkJgZbr1N8cQoxu02Uc9Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewController-12.WillPerformChildTransitionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewController-12.WillPerformChildTransitionEvent.html",
+          "hash": "wgwDtLY+0lNOMyzZvepzvg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewController-12.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewController-12.html",
+          "hash": "j8YQ8jyqIGJNiR5tindVGQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerInvokeTransitionData-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerInvokeTransitionData-1.html",
+          "hash": "efaesrW+9WfHwuY6Ydqh6w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerNode.html",
+          "hash": "ArlmsIOj6Dq82/IroS84Kg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerNodeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerNodeData.html",
+          "hash": "94tmF3IxhMUbGvjk/Si1uQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransition-7.ViewControllerTransitionBeganEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransition-7.ViewControllerTransitionBeganEvent.html",
+          "hash": "VS1T1ywGtWItKZVLaebEnQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransition-7.ViewControllerTransitionFinishedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransition-7.ViewControllerTransitionFinishedEvent.html",
+          "hash": "k7J6oVyR/cW30v2yqXqjEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransition-7.ViewControllerTransitionProgressEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransition-7.ViewControllerTransitionProgressEvent.html",
+          "hash": "zAjkgdubxpK+UPuBGA+OEA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransition-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransition-7.html",
+          "hash": "qBdNwmt8ziczIHDszmR0cg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransitionAnimationDriver-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransitionAnimationDriver-2.html",
+          "hash": "tkZNt4g8q3PLeR0KLjNDsA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransitionAnimationDriverDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransitionAnimationDriverDirection.html",
+          "hash": "WYCO9+t+tEIfL/X+FQSLkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransitionAnimationDriverDirectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransitionAnimationDriverDirectionExtensions.html",
+          "hash": "qJ7bLdt37L4s6F45tXz4dQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransitionContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransitionContext-1.html",
+          "hash": "1RUSwmseNePbVraEDk7Y+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransitionIdentifier.TransitionType.html",
+          "hash": "fELPhyWCdFiJCELdZeS7Mg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransitionIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransitionIdentifier.html",
+          "hash": "jWRSIWCeccmaxAdgk22tDw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransitionIdentifierExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransitionIdentifierExtensions.html",
+          "hash": "YI6XPxDKwwVHRXlkQb4fCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewControllerTransitionTimeUpdateMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewControllerTransitionTimeUpdateMode.html",
+          "hash": "8MDD6vlguGdwq4cHunxA0w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewReference.html",
+          "hash": "iw4aODH5cWStZToowu4InQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewReferenceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewReferenceAttribute.html",
+          "hash": "9XJDqcDhkARcMo4L5hJyow=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewReferenceAttributeCollector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewReferenceAttributeCollector.html",
+          "hash": "3fC1fEF8nbKfKnmOQ2e83g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.ViewResource-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.ViewResource-2.html",
+          "hash": "yzM/JvjLV8G5pGvHV3cdMg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Pelican7.UIGraph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pelican7.UIGraph.html",
+          "hash": "Sp6fZyLqgxPmCcO2lD0/5g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Te8PaUrDAA0E09oleomIog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "ayySmisQD0luI9eJJODerQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "versions/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "versions/index.html",
+          "hash": "XVTvndSVCulx5v74AuC7og=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "versions/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "versions/toc.html",
+          "hash": "aWWBAqMJGBEFb/jy/EP4DQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "versions/version-1.0.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "versions/version-1.0.0.html",
+          "hash": "9csyGZCeAFdAd7f8GMMKlw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "versions/version-1.1.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "versions/version-1.1.0.html",
+          "hash": "6J4hifiTsUNU+pRoRRC0pA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "versions/version-1.1.1.md",
+      "output": {
+        ".html": {
+          "relative_path": "versions/version-1.1.1.html",
+          "hash": "Dyv6nHR7xlk4/J5P39Y+0Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "versions/version-1.1.2.md",
+      "output": {
+        ".html": {
+          "relative_path": "versions/version-1.1.2.html",
+          "hash": "poLt9yoiDQAfcCkZw4p2Bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "versions/version-1.1.3.md",
+      "output": {
+        ".html": {
+          "relative_path": "versions/version-1.1.3.html",
+          "hash": "cSUF5Ua7QWQvjUYHol3pkQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "versions/version-1.1.4.md",
+      "output": {
+        ".html": {
+          "relative_path": "versions/version-1.1.4.html",
+          "hash": "/pHoUiei2KbxwiYw/gYXgg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "versions/version-2.0.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "versions/version-2.0.0.html",
+          "hash": "b0C1f6iWQI3nOR7jxgFx0Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 22,
+          "skipped_file_count": 22
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 191,
+          "skipped_file_count": 191
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

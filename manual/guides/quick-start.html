@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quick Start </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Quick Start ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="quick-start">
+<h1 id="quick-start">Quick Start</h1>
+
+<p>This Quick Start guide will quickly introduce you to the key concepts and workflows of UI Graph. </p>
+<p>We will first create a simple user-interface consisting of two screens that can be transitioned between. We will then add a <a class="xref" href="../view-controllers/ui-canvas/standard-containers/tab-bar-canvas-controller.html">Tab Bar Canvas Controller</a> and a third screen to demonstrate a <a class="xref" href="../view-controllers/view-controllers.html#container-view-controllers">Container View Controller</a>, as shown in the video below. All of this will be done without writing a line of code.</p>
+<center>
+    <video src="../../images/manual/guides/quick-start/QS-Final.mp4" type="video/mp4" width="100%" controls=""></video>
+</center>
+
+<h2 id="installation">Installation</h2>
+<p>Upon successfully importing the UI Graph package to your project, you will see the following message in the console.</p>
+<blockquote><p>Default UI Graph assets have been generated for your project and can be found in the folder &#39;Assets\UI Graph\Project Settings (User)&#39;. </p>
+</blockquote>
+<div class="NOTE"><h5>Note</h5><p>By default, the standard <a class="xref" href="../view-controllers/ui-canvas/standard-containers/tab-bar-canvas-controller.html">Tab Bar Canvas Controller</a> and <a class="xref" href="../view-controllers/ui-canvas/standard-containers/navigation-canvas-controller.html">Navigation Canvas Controller</a> container view controllers use Unity&#39;s Text Mesh Pro package to render text. If this is not already installed in your project, install it via the Unity Package Manager. If you are using an alternative text rendering system, you are not required to install Text Mesh Pro and can modify the relevant view controllers to use your text system, if necessary.</p>
+</div>
+<h2 id="create-a-simple-user-interface">Create A Simple User-Interface</h2>
+<h3 id="introduction">Introduction</h3>
+<p>The core building block of UI Graph is the <a class="xref" href="../view-controllers/view-controllers.html">View Controller</a>. A view controller manages a single view of content in your user-interface. This view can be a whole screen or a smaller section of a screen. 
+We will be using a specific type of view controller for working with Unity&#39;s UI Canvas, called a <a class="xref" href="../view-controllers/ui-canvas/canvas-controllers.html">Canvas Controller</a>. This is known in UI Graph as the UI Canvas workflow.</p>
+<h3 id="create-the-canvas-controllers">Create The Canvas Controllers</h3>
+<p>To begin, let&#39;s create a simple user-interface consisting of two screens - a blue screen and an orange screen. Create two canvas controllers, one for each screen, by selecting <em>Create/UI Graph/UI Canvas/Canvas Controller</em> from the menu.</p>
+<p><img src="../../images/manual/guides/quick-start/QS-CreateCC.png" alt=""></p>
+<p>Once completed you&#39;ll have two canvas controllers in your project, as below.</p>
+<p><img src="../../images/manual/guides/quick-start/QS-CreatedCC.PNG" alt=""></p>
+<p>A canvas controller consists of three assets in the Project inspector - the canvas controller asset itself, a script, and a view prefab. Open the blue canvas controller&#39;s view prefab to begin editing it. This will open the view in Prefab Mode and allow you to add your screen&#39;s UI components. Below we have added a background image, a title label, and a button, which will be used to present the orange canvas controller when pressed.</p>
+<p><img src="../../images/manual/guides/quick-start/QS-LayoutBlue.PNG" alt=""></p>
+<p>Do a similar thing for the orange canvas controller, this time adding a button to be used for dismissal.</p>
+<p><img src="../../images/manual/guides/quick-start/QS-LayoutOrange.PNG" alt=""></p>
+<p>That completes the creation of our canvas controllers. The next step is to create a <strong>Graph</strong> to represent the flow of our interface.</p>
+<h3 id="create-the-graph">Create The Graph</h3>
+<p>Graphs enable you to build the flow of your user-interface in a visual, node-based editor. We will use a graph to construct the flow of our two screens. To create a graph, select <em>Create/UI Graph/Graph</em> from the Unity menu. This will create a new graph asset at the selected location. </p>
+<p>Double-click the newly created graph to open it in the graph editor. To add our view controllers to the graph, first drag the blue canvas controller asset (not the script or the view prefab) onto the graph editor. Do the same for the orange canvas controller and your graph will now contain both canvas controllers. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-GraphAdded.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>Notice that the BlueCanvasController node has an arrow on the left pointing towards it. This signifies that it is the graph&#39;s <a class="xref" href="../graphs/graphs.html#initial-view-controller">initial view controller</a>. If you added the OrangeCanvasController first, simply right-click on the BlueCanvasController node in the graph editor and select <strong>Make Initial</strong>.</p>
+</div>
+<p>We want to create transitions between our canvas controllers using the buttons that we placed in their views. When the blue screen&#39;s &quot;Show Orange&quot; button is pressed, we would like to present the orange screen. And when the orange screen&#39;s &quot;Done&quot; button is pressed, we would like to dismiss it. Therefore, we need to expose these buttons to the graph editor. This can be achieved by right-clicking on each view controller node in the editor and selecting <strong>Make All View Elements Graphable</strong>. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-GraphExpose.png" alt=""></p>
+<p>When completed, each view&#39;s buttons will be visible in the graph editor, as shown below. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-GraphExposed.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>The <strong>Make All View Elements Graphable</strong> option searches the view for all known graphable types and adds the relevant graphable components to them. You may add these components manually in the view, as well as create your own to expose your own custom types in the graph editor. See <a class="xref" href="../graphs/graphs.html">Graphs</a> for more information.</p>
+</div>
+<p>We can now connect our canvas controllers. <strong>Click and drag</strong> from the <strong>On Click</strong> port of the BlueCanvasController&#39;s <strong>Show Orange Button</strong> to the OrangeCanvasController. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-GraphConnect.png" alt=""></p>
+<p>This will present you with a list of all the transitions available between these view controllers, which in this case is a single entry - <em>Present --&gt; Orange Canvas Controller</em>. Select this option to create a presentation transition from this button to the OrangeCanvasController. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-GraphConnecting.png" alt=""></p>
+<p>Perform a similar process to connect the <strong>On Click</strong> port of the OrangeCanvasController&#39;s <strong>Done Button</strong> to the BlueCanvasController. This time you will be offered the <em>Dismiss To --&gt; Blue Canvas Controller</em> transition. Select it to create a dismissal transition from this button back to the BlueCanvasController. This will give you a graph as shown below. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-GraphConnected.png" alt=""></p>
+<p>The graph is now complete. The final step is to present our graph.</p>
+<h3 id="present-the-graph">Present The Graph</h3>
+<p>Canvas controllers are presented within a <a class="xref" href="../../api/Pelican7.UIGraph.CanvasWindow.html">CanvasWindow</a> component, which is placed within the scene. To present a graph, its initial view controller is instantiated and added to a window.</p>
+<p>To present our graph, select the <em>Options</em> menu in the top-right of the graph editor and choose <em>Add Graph To Current Scene</em>. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-GraphAddToScene.png" alt=""></p>
+<p>This will add the required components to the scene for us, including a <a class="xref" href="../../api/Pelican7.UIGraph.CanvasWindow.html">CanvasWindow</a>. By default, the <a class="xref" href="../../api/Pelican7.UIGraph.CanvasGraphPresenter.html">CanvasGraphPresenter</a> component will present the graph upon Awake. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-GraphInScene.png" alt=""></p>
+<p>Hit <em>Play</em> in the Unity editor to see our user-interface in action. Selecting <em>SHOW THE ORANGE SCREEN</em> will present the orange screen. Selecting <em>DONE</em> will dismiss back to the blue screen. The transitions will be animated using the default animators. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-PlayBlue.png" alt=""></p>
+<p><img src="../../images/manual/guides/quick-start/QS-PlayOrange.png" alt=""></p>
+<h3 id="add-a-tab-bar-container-optional">Add A Tab Bar Container (Optional)</h3>
+<h4 id="introduction-1">Introduction</h4>
+<p>As mentioned earlier, view controllers can also represent a smaller section of a screen. This is because view controllers can embed child view controllers, enabling composite screens consisting of several view controllers&#39; views to be created. A view controller that embeds, or contains, child view controllers is referred to as a <a class="xref" href="../view-controllers/view-controllers.html#container-view-controllers">Container View Controller</a>. UI Graph offers several standard Container View Controllers designed to provide common user-interface layouts. One such container is the <a class="xref" href="../view-controllers/ui-canvas/standard-containers/tab-bar-canvas-controller.html">Tab Bar Canvas Controller</a>. </p>
+<p>The <a class="xref" href="../view-controllers/ui-canvas/standard-containers/tab-bar-canvas-controller.html">Tab Bar Canvas Controller</a> is a container view controller designed for switching between content screens with a tab bar interface. It manages a list of content view controllers and offers transitions, in addition to a tab bar interface, for switching between the currently selected/visible view controller. </p>
+<h4 id="create-the-canvas-controllers-1">Create The Canvas Controllers</h4>
+<p>We will add our blue canvas controller and a new, yellow canvas controller to a tab bar controller. This will embed our blue and yellow screens in a parent tab bar controller and allow us to switch between them using its tab bar interface. Additionally, the Blue --&gt; Orange presentation that we created previously will be maintained. </p>
+<p>Begin by creating a third, yellow canvas controller in the same way that we created the blue and orange screens previously. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-CreateYellow.png" alt=""></p>
+<p>Next, create a new <a class="xref" href="../view-controllers/ui-canvas/standard-containers/tab-bar-canvas-controller.html">Tab Bar Canvas Controller</a> by selecting <em>Create/UI Graph/UI Canvas/Tab Bar Canvas Controller</em> from the Unity menu. This will create an asset instance of the Tab Bar Canvas Controller and a view prefab at the selected location. The tab bar controller&#39;s view can be edited like any other canvas controller by opening its view prefab. For now, we have simply increased the height of the tab bar slightly for demonstration purposes. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-CreateTBC.png" alt=""></p>
+<h4 id="add-to-graph">Add To Graph</h4>
+<p>Add both the tab bar and yellow canvas controllers to the graph by dragging them onto the graph editor. Now, we want to make the tab bar controller our graph&#39;s initial view controller and add the blue and yellow canvas controllers to the tab bar&#39;s list of view controllers. To do this, right-click on the TabBarCanvasController node and select <em>Make Initial</em>. Then, connect the <em>View Controllers</em> port of the TabBarCanvasController node to the BlueCanvasController and YellowCanvasController nodes. This will add them to the tab bar controller&#39;s list of View Controllers. This will give you a graph configured as shown below. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-GraphComplete.png" alt=""></p>
+<p>Hit <em>Play</em> in the Unity editor to see our modified user-interface in action. Selecting a tab bar item switches between the blue and yellow canvas controllers. Notice that these canvas controllers are embedded within the parent tab bar controller. Selecting <em>SHOW THE ORANGE SCREEN</em> will still present the orange screen. Notice that this is presented on top of the whole tab bar controller. Selecting <em>DONE</em> will dismiss back to the blue screen as before. The transitions will be animated using the default animators. </p>
+<p><img src="../../images/manual/guides/quick-start/QS-TBCPlay1.png" alt=""></p>
+<p><img src="../../images/manual/guides/quick-start/QS-TBCPlay2.png" alt=""></p>
+<p><img src="../../images/manual/guides/quick-start/QS-TBCPlay3.png" alt=""></p>
+<p>That completes the Quick Start guide. You may wish to explore the package&#39;s demo projects for further reference and examples.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,323 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Canvas Controllers </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Canvas Controllers ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="canvas-controllers">
+<h1 id="canvas-controllers">Canvas Controllers</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>A Canvas Controller is a view controller based upon Unity&#39;s <a href="https://docs.unity3d.com/Manual/UICanvas.html">UI Canvas</a> component. It manages a <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasView.html">CanvasView</a> &#8211; a view contained in a <a href="https://docs.unity3d.com/Manual/UICanvas.html">UI Canvas</a> &#8211; and stores this view in a <strong>Prefab</strong> asset. When working with Unity&#39;s UI Canvas system, all view controllers are derived from the <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasController.html">CanvasController</a> class. </p>
+<h2 id="creation">Creation</h2>
+<p>To create a new canvas controller, select <em>Create/UI Graph/UI Canvas/Canvas Controller</em> from the menu. Enter a name and a directory for your new canvas controller when prompted. </p>
+<p>A canvas controller consists of a script with a corresponding <strong>Scriptable Object</strong> instance, as well as its Canvas View contained within a <strong>Prefab</strong> asset. These three assets will now exist at the specified location. </p>
+<p><img src="../../../images/manual/view-controllers/canvas-controllers/canvas-controller-asset-structure.PNG" alt="">
+<em>Canvas Controller asset structure.</em></p>
+<h2 id="canvas-view">Canvas View</h2>
+<p>A canvas controller manages a <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasView.html">CanvasView</a>, which is stored in a <strong>Prefab</strong> asset named <code>#NameOfCanvasController - View</code>. To edit the canvas controller&#39;s view, open the canvas view prefab to enter Prefab Mode. </p>
+<p>Your screen&#39;s UI content is placed inside this prefab. See below for an example of a simple screen from the Assassin demo.</p>
+<p><img src="../../../images/manual/view-controllers/canvas-controllers/canvas-controller-view.PNG" alt="">
+<em>The AlertCanvasController from the Assassin demo.</em></p>
+<p>The root game object contains the <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasView.html">CanvasView</a> component, as well as <code>Canvas</code>, <code>Canvas Group</code>, and <code>Graphic Raycaster</code> components. The <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasView.html">CanvasView</a>, <code>Canvas</code>, and <code>Canvas Group</code> components are required and should not be removed. The <code>Graphic Raycaster</code> may be removed or disabled if no input is required on the view. </p>
+<p>The <code>Canvas</code> component has a default <strong>Render Mode</strong> of <strong>Screen Space - Overlay</strong>. However, this is not the render mode that will be used at runtime and can be ignored.</p>
+<div class="NOTE"><h5>Note</h5><p>When a canvas controller is presented, its view is contained within a parent <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasWindow.html">CanvasWindow</a>, making it a sub-canvas. It is this window that provides the root canvas and as such it is the window&#39;s canvas whom will provide the render mode. See the <a class="xref" href="canvas-controllers.html#canvas-window">Canvas Window</a> section for more detail. </p>
+</div>
+<p>By default, a Canvas View prefab is a <a href="https://docs.unity3d.com/Manual/PrefabVariants.html">Prefab Variant</a> of the <strong>Canvas View (Standard)</strong> prefab. The base prefab that UI Graph will use when creating canvas controllers can be changed in the package settings. This allows you to modify the default view of newly created canvas controllers. </p>
+<div class="NOTE"><h5>Note</h5><p>The <strong>Canvas View Owner Bindings</strong> object in the prefab is for <a class="xref" href="canvas-controllers.html#view-bindings">View Bindings</a>, which are covered below. UI content shouldn&#39;t be added underneath this object. </p>
+</div>
+<h2 id="scripting">Scripting</h2>
+<p>The canvas controller&#39;s script file is where you can perform any custom scripting and logic related to your view controller. </p>
+<p>The <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasController.html">CanvasController</a> class offers various override-able methods that allow you to perform actions when certain view life-cycle events happen. </p>
+<p>For example, the <a class="xref" href="../../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidLoad_">ViewDidLoad</a> method can be overridden to perform any additional setup after the view controller has instantiated its view. The Friends List canvas controller in the Assassin Demo overrides the <a class="xref" href="../../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidLoad_">ViewDidLoad</a> method to layout its list of friends.</p>
+<pre><code class="lang-csharp">public class FriendsListCanvasController : CanvasController
+{
+    [ViewReference] public ListView listView;
+
+    protected override void ViewDidLoad()
+    {
+        base.ViewDidLoad();
+        listView.DataSource = this;
+        listView.ReloadData();
+    }
+}
+</code></pre><p>As a canvas controller is a <strong>Scriptable Object</strong>, any public instance variables will be exposed in the asset&#39;s inspector. This can be used to hold references to other assets. For example, the Friends List canvas controller in the Assassin Demo holds a reference to a data model object containing friends. </p>
+<p><img src="../../../images/manual/view-controllers/canvas-controllers/canvas-controller-asset-reference.png" alt=""></p>
+<div class="NOTE"><h5>Note</h5><p>References to view objects � objects within the canvas view prefab � can be made using a <a class="xref" href="canvas-controllers.html#view-references">View Reference</a>. Similarly, calling a method on the canvas controller from the view, such as from a <code>UI.Button</code>, can be achieved using a <a class="xref" href="canvas-controllers.html#view-callbacks">View Callback</a>.</p>
+</div>
+<div class="TIP"><h5>Tip</h5><p>Attach UI components, scripts, and behaviours to the Game Objects in the prefab, just as you normally would with Unity UI. This helps to keep the canvas controller lightweight and focused upon its primary responsibility of managing its view. When required, use <a class="xref" href="canvas-controllers.html#view-bindings">View Bindings</a> to communicate between the canvas controller and the objects in its view.</p>
+</div>
+<h2 id="view-bindings">View Bindings</h2>
+<p>UI Graph offers a view bindings system for communicating between a canvas controller script and the objects in its view. This allows your canvas controller script to reference components within its view prefab, as well as to call methods declared in your canvas controller script from components in the view. These two systems are called <a class="xref" href="canvas-controllers.html#view-references">View References</a> and <a class="xref" href="canvas-controllers.html#view-callbacks">View Callbacks</a> respectively. </p>
+<p>When a canvas controller instantiates its view prefab, the view is bound to its owning canvas controller. This binding process binds the view references and callbacks to the canvas controller whom loaded it � its owner. This occurs before the canvas controller&#39;s <a class="xref" href="../../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidLoad_">ViewDidLoad</a> method is invoked, making it safe to use view references in <a class="xref" href="../../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidLoad_">ViewDidLoad</a>. </p>
+<h3 id="view-references">View References</h3>
+<p>A view reference allows your canvas controller to reference a component within its view using a simple field. This is useful if you want to, for example, configure a component in <a class="xref" href="../../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidLoad_">ViewDidLoad</a> or perhaps restart an animation in <a class="xref" href="../../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidAppear_">ViewDidAppear</a>. </p>
+<p>To create a view reference, declare a field on your canvas controller and decorate it with the <code>[ViewReference]</code> attribute.</p>
+<pre><code class="lang-csharp">public class FriendsListCanvasController : CanvasController
+{
+    [ViewReference]
+    public TextMeshProUGUI label;
+
+    protected override void ViewDidLoad()
+    {
+        base.ViewDidLoad();
+
+        // Set the label&#39;s text to the canvas controller&#39;s title.
+        label.text = title;
+    }
+}
+</code></pre><p>This field will now be exposed by the view&#39;s <strong>Canvas View Owner Bindings</strong> component. Open the canvas controller&#39;s view prefab and select the <strong>Canvas View Owner Bindings</strong> game object to see the exposed field in the inspector. The relevant label in your view can now be dragged onto the exposed field, just as all Unity references are made. </p>
+<p><img src="../../../images/manual/view-controllers/canvas-controllers/view-reference.png" alt=""></p>
+<p>This field will now be populated with the value set in the inspector upon instantiation. </p>
+<h3 id="view-callbacks">View Callbacks</h3>
+<p>A view callback allows you to invoke a method declared in your canvas controller script from a component in the view. This is used when you want to call a method on your canvas controller from, for example, a button press. </p>
+<p>To expose a method in you canvas controller to its view, decorate it with the <code>[ViewCallback]</code> attribute. </p>
+<pre><code class="lang-csharp">public class FriendsListCanvasController : CanvasController
+{
+    [ViewCallback]
+    public void RefreshList()
+    {
+        // ...
+    }
+}
+</code></pre><p>A view callback object for the exposed method will now be added to the view, located underneath the <strong>Canvas View Owner Bindings</strong> object. Open the canvas controller&#39;s view prefab, locate the <strong>Canvas View Owner Bindings</strong> game object, and view its child objects to see the view callback. </p>
+<p>A view callback is invoked by calling its <code>Invoke()</code> method. For example, to invoke the above <code>RefreshList()</code> view callback from a button&#39;s <strong>On Click</strong> event, drag the view callback onto the <strong>On Click</strong> event&#39;s target object and select <code>Invoke()</code> from the <code>CanvasViewCallback�</code> script. </p>
+<p><img src="../../../images/manual/view-controllers/canvas-controllers/view-callback.png" alt="">
+<em>Invoking A View Callback From A Button</em></p>
+<p>This method will now be invoked when the button is pressed. </p>
+<h3 id="on-bound-to-owner-event">On Bound To Owner Event</h3>
+<p>The <strong>Canvas View Owner Bindings</strong> component includes an <strong>On Bound To Owner</strong> event. This event is invoked when the view is bound to its owning canvas controller, as detailed above. </p>
+<p>This event can also be used to configure any view components upon load. For example, the following component configures a label&#39;s text with the canvas controller&#39;s title. The <code>ConfigureWithCanvasController</code> method can be added to the <strong>On Bound To Owner</strong> event in the inspector and the label will be configured upon load. </p>
+<pre><code class="lang-csharp">public class ApplyCanvasControllerTitleToLabel : MonoBehaviour
+{
+    public TextMeshProUGUI label;
+
+    public void ConfigureWithCanvasController(CanvasController canvasController)
+    {
+        label.text = canvasController.title;
+    }
+}
+</code></pre><div class="NOTE"><h5>Note</h5><p>The above functionality could have been achieved with a <a class="xref" href="canvas-controllers.html#view-references">View Reference</a> in the canvas controller to the label. It&#39;s a matter of personal preference how you choose to structure your code here. Using this event where appropriate can help to keep the canvas controller lightweight and focused upon its primary responsibility of managing its view (and not all the UI components within it). </p>
+</div>
+<h2 id="canvas-window">Canvas Window</h2>
+<p>Canvas controllers are presented within a <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasWindow.html">CanvasWindow</a>. A canvas window contains a single user-interface flow. When a canvas controller is presented, its view will be instantiated and added to the window. Inversely, when it is dismissed it will be removed from the window and destroyed. A canvas window exists in the scene you wish to present it in. </p>
+<h3 id="setup">Setup</h3>
+<p>The recommended way to create user-interface flows is using <a class="xref" href="../../graphs/graphs.html">Graphs</a>. To create a new canvas window when using graphs, select <em>Add Graph To Current Scene</em> from the graph&#39;s dropdown menu. This will automatically create a new <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasWindow.html">CanvasWindow</a> in the current scene along with a <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasGraphPresenter.html">CanvasGraphPresenter</a> configured with the current graph.</p>
+<p>However, you may also use the View Controller system directly without using graphs. In this case, you must configure the window yourself. Firstly, create a new canvas window in the current scene by selecting <em>GameObject/UI/Canvas Window (UI Graph)</em> from the menu. To configure the window, create a script to set its root view controller and present it. </p>
+<pre><code class="lang-csharp">using Pelican7.UIGraph;
+using UnityEngine;
+
+public class ConfigureWindow : MonoBehaviour
+{
+    // A reference to the window, configured in the inspector.
+    public CanvasWindow window;
+
+    // A reference to the initial canvas controller of our user-interface, configured in the inspector.
+    public CanvasController mainMenuCanvasController;
+
+    private void Awake()
+    {
+        // Instantiate the initial canvas controller.
+        CanvasController rootCanvasController = Instantiate(mainMenuCanvasController);
+
+        // Set the window&#39;s root view controller to our instantiated canvas controller.
+        window.RootViewController = rootCanvasController;
+
+        // Presenting the window presents its root view controller.
+        window.Present();
+    }
+}
+</code></pre><p>Here we present the window in the <code>Awake</code> method with no animation. This ensures the view is on-screen immediately. When our <code>mainMenuCanvasController</code> subsequently performs a transition, such as <code>Present</code>, it&#39;s view will be instantiated and added to the window.</p>
+<div class="NOTE"><h5>Note</h5><p>The template prefab that UI Graph will use when creating a new canvas window can be changed in the package settings. </p>
+</div>
+<h3 id="configure">Configure</h3>
+<p>All subsequently presented <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasView.html">CanvasViews</a> will be embedded within this parent <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasWindow.html">CanvasWindow</a>. As such, their <code>Canvas</code> components will inherit the canvas window&#39;s properties. Two particular properties of note here are: </p>
+<ul>
+<li><strong>Render Mode</strong> &#8211; Changing the render mode of the window&#39;s canvas will affect all subsequently presented canvas views. For example, to create a World Space user-interface, change the canvas&#39; <strong>Render Mode</strong> to <strong>World Space</strong> and replace the camera with the scene&#39;s main camera. See the World-Space Scene from the Assassin Demo for an example of this. </li>
+<li><strong>Canvas Scaler</strong> &#8211; The default canvas window includes a <code>Canvas Scaler</code> component, which can be used to control your interface&#39;s scaling and resizing. </li>
+</ul>
+<p>Additionally, the canvas window includes the camera that renders the user-interface, so any camera properties can also be changed here. </p>
+<h3 id="dismissal">Dismissal</h3>
+<p>A window can be dismissed using its <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasWindow.html#Pelican7_UIGraph_CanvasWindow_Dismiss_">Dismiss</a> method. This will dismiss the window&#39;s root view controller (which dismisses all of its presented view controllers) and destroy the window itself upon completion. This can be useful when using multiple windows, such as in a scene transition. </p>
+<h2 id="transition-animation">Transition Animation</h2>
+<p>The recommended way to animate transitions between canvas controllers is to use the <a class="xref" href="../../transition-sequence-animator/transition-sequence-animator.html">Transition Sequence Animator</a>. This allows you to create animation sequences without coding, as well as to script your own animations for use with the system. See the <a class="xref" href="../../transition-sequence-animator/transition-sequence-animator.html">Transition Sequence Animator</a> section for more detail. </p>
+<h3 id="custom-transition-animations">Custom Transition Animations</h3>
+<p>Alternatively, you are not required to use the <a class="xref" href="../../transition-sequence-animator/transition-sequence-animator.html">Transition Sequence Animator</a> system and may script your own transition animations yourself. To do this, you are required to create two components: </p>
+<ol>
+<li>An animator, which will execute the animation. </li>
+<li>An animator provider, which will provide the animator to UI Graph. </li>
+</ol>
+<p>You then set your view controller&#39;s <a class="xref" href="../../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_transitionAnimatorProvider">transitionAnimatorProvider</a> to your animator provider, which will supply your animator to UI Graph when a transition is performed. Separating the responsibilities in this way allows the provider to return different animators depending upon the transition being performed. </p>
+<p>To do this, firstly create subclasses of the <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasControllerTransitionAnimator.html">CanvasControllerTransitionAnimator</a> and <a class="xref" href="../../../api/Pelican7.UIGraph.CanvasControllerTransitionAnimatorProvider.html">CanvasControllerTransitionAnimatorProvider</a> classes. These classes derive from <code>ScriptableObject</code> and implement the required interfaces as abstract override-able methods. Using <strong>Scriptable Object</strong> assets will allow you to use the Unity Inspector to edit their properties, as well as to easily drop it onto the view controller&#39;s <a class="xref" href="../../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_transitionAnimatorProvider">transitionAnimatorProvider</a> field (although it is not required). </p>
+<pre><code class="lang-csharp">[CreateAssetMenu]
+public class MyAnimator : CanvasControllerTransitionAnimator
+{
+
+}
+
+[CreateAssetMenu]
+public class MyAnimatorProvider : CanvasControllerTransitionAnimatorProvider
+{
+
+}
+</code></pre><div class="NOTE"><h5>Note</h5><p>Including <code>[CreateAssetMenu]</code> allows instances of the animators/provider to be created in the Unity menu. </p>
+</div>
+<p>Next, implement your transition animation in the animator class. For example, a simple scale animation could look something like this: </p>
+<pre><code class="lang-csharp">[CreateAssetMenu]
+public class MyAnimator : CanvasControllerTransitionAnimator
+{
+    public float duration;
+    public ViewControllerTransitionTimeUpdateMode updateMode;
+
+    private Transform targetTransform;
+
+    public override float TransitionDuration(CanvasControllerTransitionContext context)
+    {
+        // Return duration set in the inspector.
+        return duration;
+    }
+
+    public override ViewControllerTransitionTimeUpdateMode TransitionTimeUpdateMode(CanvasControllerTransitionContext context)
+    {
+        // Return update mode set in the inspector.
+        return updateMode;
+    }
+
+    public override void ConfigureTransitionAnimation(CanvasControllerTransitionContext context)
+    {
+        // Configure your animation.
+
+        // Set our target transform as the ToViewController&#39;s view.
+        targetTransform = context.ToViewController.View.transform;
+    }
+
+    public override void UpdateTransitionAnimation(CanvasControllerTransitionContext context, float progress01)
+    {
+        // Perform your animation with progress01.
+
+        // Scale from zero to one.
+        targetTransform.localScale = Vector3.LerpUnclamped(Vector3.zero, Vector3.one, progress01);
+    }
+
+    public override void OnTransitionFinished(CanvasControllerTransitionContext context, bool completed)
+    {
+        base.OnTransitionFinished(context, completed);
+
+        // An opportunity to do any clean up necessary. For example:
+        // - Destroy any views instantiated by the animator.
+        // - Reset any state changed by the animator if completed == false.
+        // etc.
+    }
+}
+</code></pre><p>Now we want to provide this animator in our transition provider.</p>
+<pre><code class="lang-csharp">[CreateAssetMenu]
+public class MyAnimatorProvider : CanvasControllerTransitionAnimatorProvider
+{
+    public CanvasControllerTransitionAnimator animator;
+
+    public override IViewControllerTransitionAnimator&lt;CanvasControllerTransitionContext&gt; AnimatorForTransition(CanvasControllerTransitionContext context)
+    {
+        return animator;
+    }
+}
+</code></pre><p>Finally, create an instance of each using the Unity Create menu, configure their properties, and drop the provider onto the relevant view controller&#39;s <a class="xref" href="../../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_transitionAnimatorProvider">transitionAnimatorProvider</a> field. When this view controller performs a transition, it will now use the custom provider and animator. </p>
+<div class="NOTE"><h5>Note</h5><p>When a view controller is presented, it is the presented view controller that provides the animator. Similarly, when a view controller is dismissed it is the view controller being dismissed which provides the animator. For containment transitions, animators are provided by the view controller performing the transition &#8211; the container itself. </p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tab Bar Canvas Controller </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tab Bar Canvas Controller ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="tab-bar-canvas-controller">
+<h1 id="tab-bar-canvas-controller">Tab Bar Canvas Controller</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html">TabBarCanvasController</a> is a container view controller designed for switching between content screens with a tab bar interface. It manages a list of content view controllers and offers transitions, in addition to a tab bar interface, for switching between the currently selected/visible view controller. </p>
+<p>By default, the <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html">TabBarCanvasController</a> instantiates its tab bar items upon load depending upon its list of content view controllers. You may provide a <a class="xref" href="tab-bar-canvas-controller.html#tab-bar-items">custom tab bar item prefab</a> to be used. Additionally, tab bar items can be <a class="xref" href="tab-bar-canvas-controller.html#predefined-tab-bar-items">predefined</a> or <a class="xref" href="tab-bar-canvas-controller.html#tab-bar-item-provider">instantiated manually from script</a>. </p>
+<p>The first time a content view controller is shown, it is instantiated and embedded within the <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_viewControllersContainer">viewControllersContainer</a> transform. Content view controllers are not unloaded until the tab bar itself is unloaded. </p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-assassin.png" alt="">
+<em>A Tab Bar Canvas Controller with two items &#8211; &quot;Home&quot; and &quot;Options&quot; &#8211; from the Assassin demo.</em></p>
+<p>The appearance and layout of the <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html">TabBarCanvasController</a> is highly configurable. For example, the Chirp demo uses the <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html">TabBarCanvasController</a> to provide a mobile-like tab bar interface. </p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-chirp.png" alt="">
+<em>A &#39;mobile-like&#39; Tab Bar Canvas Controller from the Chirp demo.</em></p>
+<h2 id="creation">Creation</h2>
+<p>To create a <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html">TabBarCanvasController</a> select <em>Create/UI Graph/UI Canvas/Tab Bar Canvas Controller</em> from the Unity menu. This will create an asset instance of the <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html">TabBarCanvasController</a> and a view prefab. </p>
+<p>The template that UI Graph will use when creating tab bar canvas controllers can be changed in the package settings.</p>
+<h2 id="presentation">Presentation</h2>
+<h3 id="present-using-a-graph-recommended">Present Using A Graph (Recommended)</h3>
+<p>To present a tab bar controller from a graph, add the tab bar controller to the graph and configure its list of content view controllers by connecting the <strong>View Controllers</strong> field to the desired view controllers. </p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-graph.PNG" alt="">
+<em>Configuring the Tab Bar Canvas Controller&#39;s content view controllers.</em></p>
+<h3 id="present-from-script">Present From Script</h3>
+<p>To present a tab bar controller directly from script, instantiate a new tab bar controller instance, instantiate each of its content view controllers, and use <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_SetViewControllers_">SetViewControllers</a> to configure its list of view controllers.</p>
+<pre><code class="lang-csharp">public class YourCanvasController : CanvasController
+{
+    // A reference to our tab bar canvas controller asset, configured in the inspector.
+    public TabBarCanvasController tabBarControllerTemplate;
+
+    // References to each canvas controller we want to add to the tab bar, configured in the inspector.
+    public CanvasController firstCanvasControllerTemplate;
+    public CanvasController secondCanvasControllerTemplate;
+    public CanvasController thirdCanvasControllerTemplate;
+
+    private void PresentTabBarScreen()
+    {
+        // Instantiate the tab bar controller.
+        TabBarCanvasController tabBarController = Instantiate(tabBarControllerTemplate);
+
+        // Instantiate our content view controllers. (Remember that this doesn&#39;t load their views into memory at this point.)
+        CanvasController first = Instantiate(firstCanvasControllerTemplate);
+        CanvasController second = Instantiate(secondCanvasControllerTemplate);
+        CanvasController third = Instantiate(thirdCanvasControllerTemplate);
+
+        // Configure the tab bar controller&#39;s list of view controllers.
+        tabBarController.SetViewControllers(new CanvasController[]
+        {
+            first,
+            second,
+            third
+        });
+
+        // Present the tab bar canvas controller.
+        Present(tabBarController);
+    }
+}
+</code></pre><h2 id="appearance">Appearance</h2>
+<p>The tab bar controller&#39;s layout can be adjusted in its view. </p>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_viewControllersContainer">viewControllersContainer</a> transform determines where the tab bar controller will place its content view controllers. </p>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_tabBar">tabBar&#39;s</a> layout can be heavily modified. For example, the nested tab bar from the Assassin demo positions its items on the left-hand side, from top-to-bottom, and places its <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_viewControllersContainer">viewControllersContainer</a> to the right of this. </p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/tab-bar-canvas-controller/tab-bar-canvas-controller-layout.png" alt="">
+<em>A Tab Bar Canvas Controller with its items positioned on the left-hand side from top-to-bottom.</em></p>
+<h3 id="tab-bar-items">Tab Bar Items</h3>
+<p>To customize the appearance of the tab bar items you may supply your own tab bar item prefab.</p>
+<p>The tab bar item prefab only requires a <a class="xref" href="../../../../api/Pelican7.UIGraph.CanvasTabBarItem.html">CanvasTabBarItem</a> component. Your prefab should invoke the component&#39;s <a class="xref" href="../../../../api/Pelican7.UIGraph.CanvasTabBarItem.html#Pelican7_UIGraph_CanvasTabBarItem_InvokeOnClicked_">InvokeOnClicked</a> method to select the item, such as on a button press. You may duplicate, or create a prefab variant of, the <strong>Canvas Tab Bar Item (Standard)</strong> for a starting point where this is already configured for you.</p>
+<p>To use a custom item prefab, select the <strong>Tab Bar</strong> object in the view controller&#39;s view and drop your item prefab onto the <a class="xref" href="../../../../api/Pelican7.UIGraph.CanvasTabBar.html#Pelican7_UIGraph_CanvasTabBar_tabBarItemTemplate">tabBarItemTemplate</a> field. This prefab will now be used when the tab bar controller instantiates its items. </p>
+<h3 id="predefined-tab-bar-items">Predefined Tab Bar Items</h3>
+<p>By default a tab bar controller will instantiate tab bar items for each of its view controllers upon load. However, it will not instantiate a tab bar item if one is already present in the view. This means that you can predefine tab bar items by placing them in the view at build time. This is useful in scenarios such as if you require a different prefab for a single tab bar item.</p>
+<p>To predefine a tab bar item, first place the tab bar item prefab in the view, usually under the <strong>Tab Bar Items</strong> object. Next, set the item&#39;s <a class="xref" href="../../../../api/Pelican7.UIGraph.CanvasTabBarItem.html#Pelican7_UIGraph_CanvasTabBarItem_index">index</a> field to the index of the relevant view controller in the tab bar&#39;s <strong>View Controller</strong> list. Lastly, add the item to the tab bar&#39;s <a class="xref" href="../../../../api/Pelican7.UIGraph.CanvasTabBar.html#Pelican7_UIGraph_CanvasTabBar_tabBarItems">tabBarItems</a> list by dragging it in the inspector. The tab bar controller will no longer instantiate an item for the view controller at this index upon load. </p>
+<h3 id="tab-bar-item-provider">Tab Bar Item Provider</h3>
+<p>The final method for providing tab bar items is to use the <strong>Tab Bar Canvas Controller&#39;s</strong> <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_itemProvider">itemProvider</a> field. This approach is useful for scenarios in which you have many item prefab types and wish to determine the prefab to use from script at runtime. </p>
+<p>Create a class that implements the <a class="xref" href="../../../../api/Pelican7.UIGraph.ITabBarCanvasControllerItemProvider.html">ITabBarCanvasControllerItemProvider</a> interface and set it as the tab bar controller&#39;s <a class="xref" href="../../../../api/Pelican7.UIGraph.TabBarCanvasController.html#Pelican7_UIGraph_TabBarCanvasController_itemProvider">itemProvider</a>. Instantiate and return the item prefabs depending upon your custom logic.</p>
+<pre><code class="lang-csharp">public class MyTabBarItemProvider : ITabBarCanvasControllerItemProvider
+{
+    CanvasTabBarItem ITabBarCanvasControllerItemProvider.TabBarItemForViewControllerAtIndex(CanvasTabBar tabBar, CanvasController viewController, int index)
+    {
+        // Instantiate and return item prefabs...
+    }
+}
+</code></pre><div class="NOTE"><h5>Note</h5><p>If your <a class="xref" href="../../../../api/Pelican7.UIGraph.ITabBarCanvasControllerItemProvider.html">ITabBarCanvasControllerItemProvider</a> returns null, an item will be instantiated using the tab bar&#39;s <a class="xref" href="../../../../api/Pelican7.UIGraph.CanvasTabBar.html#Pelican7_UIGraph_CanvasTabBar_tabBarItemTemplate">tabBarItemTemplate</a>.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>

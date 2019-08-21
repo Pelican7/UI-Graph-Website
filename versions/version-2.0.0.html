@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Version 2.0.0 </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Version 2.0.0 ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="version-2.0.0">
+<h1 id="version-200">Version 2.0.0</h1>
+
+<p>Welcome to UI Graph - a menu system for Unity. UI Graph supersedes the Canvas Flow package.</p>
+<h2 id="release-date">Release Date</h2>
+<p>Released on August 27th 2019.</p>
+<h2 id="whats-new">What&#39;s New</h2>
+<ul>
+<li><p><strong>New Architecture</strong></p>
+<ul>
+<li>Canvas Controllers have been decoupled from their canvas. They now consist of a <code>Scriptable Object</code> and a <code>Prefab</code>. This is architecturally similar with a Controller and its View in the <em>Model-View-Controller</em> paradigm. This decoupling allows Canvas Controller instances to be passed as references without loading their canvas into memory. This facilitates features detailed below, such as Container View Controllers. </li>
+<li>Canvas Controllers now store their <code>Canvas</code> in a <code>Prefab</code>, rather than a <code>Scene</code>. This makes editing easier with Unity&#39;s new <strong>Prefab Workflows</strong>, as well as giving more performant and reliable loading/instantiation (doesn&#39;t require an <code>AsyncOperation</code>).</li>
+</ul>
+</li>
+<li><p><strong>Container View Controllers</strong></p>
+<ul>
+<li>Build complex multi-screen layouts using view controller containment (nesting). </li>
+<li>Four standard containers are provided - <strong>Tab Bar</strong>, <strong>Stack</strong>, <strong>Navigation</strong>, and <strong>Split</strong> - which are heavily customizable. A wealth of user-interfaces can be created using combinations of the standard container view controllers. </li>
+<li>Easily embed child view controllers by using Graphs (see below). </li>
+<li>Script your own custom container view controllers and even make them <em>graphable</em>, just like the standard containers, so all team members can use them in <strong>Graphs</strong> without coding. </li>
+</ul>
+</li>
+<li><p><strong>Graphs</strong></p>
+<ul>
+<li>Storyboards have become <strong>Graphs</strong>, and the Storyboard Editor (now the Graph Editor) has been entirely rebuilt in Unity&#39;s new UIElements framework. </li>
+<li>Graphs now support Container View Controller transitions in addition to the <code>Present</code> &amp; <code>Dismiss</code> transitions, as well as embedding child view controllers. </li>
+</ul>
+</li>
+<li><p><strong>Transition Sequence Animator</strong></p>
+<ul>
+<li>Create transition animation sequences without coding using the new transition animation system. </li>
+<li>Create a transition sequence by adding one or more animations to it, such as <strong>Scale</strong>, <strong>Slide</strong>, <strong>Fade</strong>, and <strong>Rotate</strong>. Tweak the timing of each animation in the sequence to achieve the desired transition effect. </li>
+<li>Easily script your own animations to use with the sequence animator. </li>
+</ul>
+</li>
+<li><p><strong>Other Highlights</strong></p>
+<ul>
+<li><strong>Interactive Transitions</strong> - Support for interactive and cancelable transitions that feel at home on mobile devices. </li>
+<li><strong>Full Source Code</strong> - UI Graph ships with full source code and no DLLs. The package includes Assembly Definition files, so your script compile times in the Editor won&#39;t be unnecessarily affected. </li>
+<li><strong>Two Demo Projects</strong> - UI Graph includes two demo projects to provide further reference and example usage. The Assassin demo is a desktop/console style menu interface, featuring many of the standard container view controllers. Whilst the Chirp demo provides a common mobile app user-interface, also featuring many of the standard container view controllers and complete with interactive transitions.</li>
+</ul>
+</li>
+</ul>
+<h2 id="compatibility">Compatibility</h2>
+<p>UI Graph is compatible with Unity Personal, Plus and Pro. Unity 2019.1 or newer is required.</p>
+<h2 id="existing-users">Existing Users</h2>
+<p>Please note that UI Graph is a separate package from Canvas Flow and as such, existing projects using Canvas Flow will need to be migrated manually to UI Graph. UI Graph and Canvas Flow may co-exist in the same project, allowing you to gradually move parts of an existing project over to UI Graph, if you wish.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

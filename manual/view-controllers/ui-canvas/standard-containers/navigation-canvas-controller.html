@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Navigation Canvas Controller </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Navigation Canvas Controller ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../../../images/favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="navigation-canvas-controller">
+<h1 id="navigation-canvas-controller">Navigation Canvas Controller</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>A <a class="xref" href="../../../../api/Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> is a specific type of <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html">StackCanvasController</a>, designed to provide a user-interface for hierarchical navigation. Like a stack controller, it manages a stack of child view controllers. Each child view controller fills the <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a> transform and is placed in stack order, making the top-most view controller on the stack visible. </p>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> offers transitions for pushing and popping view controllers on and off its stack. Pushing a view controller onto the stack instantiates its view, embeds it within the navigation controller&#39;s <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a>, and if necessary animates it on-screen. Inversely, popping a view controller off the stack animates it off-screen if necessary, and subsequently destroys it. </p>
+<p>In addition, the <a class="xref" href="../../../../api/Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> shows a navigation bar, which includes a title label and back button. Pressing the back button pops a view controller off the stack. By default, a navigation controller animates child view controllers sideways to reflect moving through levels of a hierarchy. </p>
+<p>Use a <a class="xref" href="../../../../api/Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> to provide a hierarchical interface scheme. For example, the Chirp demo shown below displays a list of items contained within a navigation controller. Tapping an item pushes the item detail view controller onto the navigation controller&#39;s stack. Tapping the back button pops the item detail screen off the stack and returns the user to the list of items. </p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/navigation-canvas-controller/navigation-canvas-controller-example.png" alt="">
+<em>Left: The list view controller contained with a navigation controller. The list view controller is the navigation&#39;s controller&#39;s root view controller. Right: Tapping an item in the list pushes the item detail view controller onto the navigation controller&#39;s stack. The navigation bar&#39;s title is updated accordingly and its back button becomes visible.</em></p>
+<h2 id="creation">Creation</h2>
+<p>To create a <a class="xref" href="../../../../api/Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> select <em>Create/UI Graph/UI Canvas/Navigation Canvas Controller</em> from the Unity menu. This will create an asset instance of the <a class="xref" href="../../../../api/Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> and a view prefab.</p>
+<p>The template that UI Graph will use when creating navigation canvas controllers can be changed in the package settings. </p>
+<h2 id="presentation">Presentation</h2>
+<h3 id="present-using-a-graph-recommended">Present Using A Graph (Recommended)</h3>
+<p>To present a navigation controller from a graph, add the navigation controller to the graph and configure its root view controller by connecting the <strong>Root View Controller</strong> field to the desired view controller. </p>
+<p><img src="../../../../images/manual/view-controllers/canvas-controllers/navigation-canvas-controller/navigation-canvas-controller-configure.png" alt="">
+<em>Configuring the navigation controller&#39;s root view controller to be the ListCanvasController.</em></p>
+<h3 id="present-from-script">Present From Script</h3>
+<p>To present a navigation controller directly from script, instantiate a new navigation controller instance, instantiate its root view controller, and use <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_SetRoot_">SetRoot</a> to configure its root view controller. </p>
+<pre><code class="lang-csharp">public class YourCanvasController : CanvasController
+{
+    // A reference to our navigation canvas controller asset, configured in the inspector.
+    public NavigationCanvasController navigationControllerTemplate;
+
+    // A reference to the root canvas controller asset, configured in the inspector.
+    public CanvasController rootCanvasControllerTemplate;
+
+    private void PresentNavigationController()
+    {
+        // Instantiate the navigation controller.
+        NavigationCanvasController navigationController = Instantiate(navigationControllerTemplate);
+
+        // Instantiate the root view controller. (Remember that this doesn&#39;t load its view into memory at this point.)
+        CanvasController rootViewController = Instantiate(rootCanvasControllerTemplate);
+
+        // Set the navigation controller&#39;s root view controller.
+        navigationController.SetRoot(rootViewController);
+
+        // Present the navigation controller.
+        Present(navigationController);
+    }
+}
+</code></pre><h2 id="appearance">Appearance</h2>
+<p>The navigation controller&#39;s layout can be adjusted in its view. </p>
+<p>The <a class="xref" href="../../../../api/Pelican7.UIGraph.StackCanvasController.html#Pelican7_UIGraph_StackCanvasController_viewControllersContainer">viewControllersContainer</a> transform determines where the navigation controller will place its child view controllers. </p>
+<p>The navigation bar can be modified, replaced, or removed entirely. The <a class="xref" href="../../../../api/Pelican7.UIGraph.NavigationCanvasController.html">NavigationCanvasController</a> has no dependency to its navigation bar; this is achieved by using the <strong>Canvas Navigation Transition Notifier</strong> object in the view to synchronize the bar components&#39; updates to the navigation controller&#39;s transitions. You may wish to use a similar pattern when modifying the view.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+  </body>
+</html>
