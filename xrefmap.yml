@@ -19,6 +19,9 @@ references:
 - uid: navigation-canvas-controller
   name: Navigation Canvas Controller
   href: manual/view-controllers/ui-canvas/standard-containers/navigation-canvas-controller.html
+- uid: passing-data
+  name: Passing Data Between View Controllers
+  href: manual/guides/passing-data.html
 - uid: Pelican7.UIGraph
   name: Pelican7.UIGraph
   href: api/Pelican7.UIGraph.html

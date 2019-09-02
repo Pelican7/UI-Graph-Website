@@ -129,7 +129,6 @@
   <h5 id="Pelican7_UIGraph_ViewControllerTransition_7_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class ViewControllerTransition&lt;TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider&gt; : IViewControllerTransitionAnimationDriverResponder where TTransition : ViewControllerTransition&lt;TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider&gt; where TTransitionContext : ITransitionContext where TTransitionAnimatorProvider : class, IViewControllerTransitionAnimatorProvider&lt;TTransitionContext&gt; where TTransitionProgressProvider : class, IViewControllerTransitionProgressProvider&lt;TTransitionContext&gt; where TTransitionAnimationDriver : ViewControllerTransitionAnimationDriver&lt;TTransitionContext, TTransitionAnimationDefaultProgressProvider&gt;, new()
-
     where TTransitionAnimationDefaultProgressProvider : class, IViewControllerTransitionProgressProvider&lt;TTransitionContext&gt;, new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>

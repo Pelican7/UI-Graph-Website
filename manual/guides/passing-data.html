@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+  
+  	<!-- Google Analytics -->
+  	<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  		ga('create', 'UA-57773606-5', 'auto');
+  		ga('send', 'pageview');
+  	</script>
+  	<!-- End Google Analytics -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Passing Data Between View Controllers </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Passing Data Between View Controllers ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/appLogo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="passing-data">
+<h1 id="passing-data-between-view-controllers">Passing Data Between View Controllers</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>When presenting a view controller, it is a common requirement to pass data to it prior to presentation. For example, the Chirp demo shown below displays a list of items. When any item is tapped, the item detail view controller is presented with the selected item. The item detail view controller therefore must be configured with the selected item before it is presented.</p>
+<center>
+    <video src="../../images/manual/guides/passing-data/passing-data-example.MOV" type="video/mp4" width="100%" height="320px" controls=""></video>
+</center>
+
+<h2 id="prepare-for-graph-transition">Prepare For Graph Transition</h2>
+<p>To facilitate this, any view controller can override its <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_">PrepareForGraphTransition</a> method. This method is invoked by UI Graph on the presenting view controller &#8211; the one whom initiated the presentation &#8211; prior to the transition beginning. This gives you an opportunity to configure the newly instantiated view controller before it is presented. Conversely, during a dismissal transition this method will be called on the view controller being dismissed.</p>
+<p>In the code snippet below, the list view controller overrides its <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_">PrepareForGraphTransition</a> method to pass the list&#39;s selected item to the item detail view controller. The method is passed a <a class="xref" href="../../api/Pelican7.UIGraph.GraphTransition-1.html">GraphTransition&lt;T&gt;</a> object, which can be queried for information about the transition, such as the view controllers involved. In this case, we check that we are transitioning to the item detail screen by checking the <strong>To</strong> view controller.</p>
+<pre><code class="lang-csharp">public class ListCanvasController : CanvasController
+{
+    [ViewReference] public ListView listView;
+    public ListDataModel dataModel;
+
+    protected override void PrepareForGraphTransition(GraphTransition&lt;CanvasController&gt; transition)
+    {
+        base.PrepareForGraphTransition(transition);
+
+        // Pass the selected data item to the item detail canvas controller.
+        if (transition.ToViewController is ItemDetailCanvasController itemDetailCanvasController)
+        {
+            int selectedIndex = listView.SelectedIndex;
+            ListDataItem selectedDataItem = dataModel[selectedIndex];
+            itemDetailCanvasController.InitializeWithItem(selectedDataItem);
+        }
+    }
+}
+</code></pre><div class="NOTE"><h5>Note</h5><p>When passing data in the opposite direction during a dismissal, you may want to consider using an alternative pattern. Whilst you could override <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphTransition_">PrepareForGraphTransition</a> in your view controller being dismissed and pass data back to the presenting view controller, this creates a tight coupling between your view controllers, which may not be desirable. Instead, perhaps use an event or interface that the presenter can subscribe to in the above method to be notified of changes. This increases the reusability of the view controller if, for example, another view controller were to present it.</p>
+</div>
+<h2 id="prepare-for-graph-embed">Prepare For Graph Embed</h2>
+<p>Additionally, view controllers that are embedded via a <a class="xref" href="../graphs/graphs.html#embeds">graph embed</a> can be configured similarly using the <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PrepareForGraphEmbed_">PrepareForGraphEmbed</a> method. This method is invoked by UI Graph on the parent view controller prior to the relevant view controller being embedded as a child. This gives you an opportunity to configure the newly instantiated view controller before it is embedded.</p>
+<pre><code class="lang-csharp">public class MainMenuCanvasController : CanvasController
+{
+    protected override void PrepareForGraphEmbed(CanvasController viewControllerToBeEmbedded)
+    {
+        base.PrepareForGraphEmbed(viewControllerToBeEmbedded);
+        // Pass data to viewControllerToBeEmbedded...
+    }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>&copy; 2019 Pelican 7 LTD. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
