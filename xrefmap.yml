@@ -10829,6 +10829,9 @@ references:
 - uid: version-2.0.2
   name: Version 2.0.2
   href: versions/version-2.0.2.html
+- uid: version-2.0.3
+  name: Version 2.0.3
+  href: versions/version-2.0.3.html
 - uid: version-history
   name: Version History
   href: versions/index.html
