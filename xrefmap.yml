@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: canvas-controller-reference-from-mono-behaviour
+  name: Referencing A Canvas Controller From Its View Components
+  href: manual/guides/canvas-controller-reference-from-mono-behaviour.html
 - uid: canvas-controllers
   name: Canvas Controllers
   href: manual/view-controllers/ui-canvas/canvas-controllers.html

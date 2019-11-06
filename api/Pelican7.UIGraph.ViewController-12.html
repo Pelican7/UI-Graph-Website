@@ -234,13 +234,9 @@ Do not create instances of this class directly. Instead, use one of the concrete
   <h5 id="Pelican7_UIGraph_ViewController_12_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class ViewController&lt;TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph&gt; : ScriptableObject, IViewControllerAppearance, IAppearable, ITransitionContextViewController, IGraphableTransitionViewObjectContainer, IGraphableTransitionInvoker, IGraphableEmbedContainer, IGraphable where TViewController : ViewController&lt;TViewController, TView, TWindow, TViewResource, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider, TTransitionData, TGraph&gt; where TView : IView&lt;TView, TWindow&gt; where TWindow : TView where TViewResource : ViewResource&lt;TView, TWindow&gt; where TTransition : ViewControllerTransition&lt;TViewController, TTransition, TTransitionContext, TTransitionAnimatorProvider, TTransitionProgressProvider, TTransitionAnimationDriver, TTransitionAnimationDefaultProgressProvider&gt;, new()
-
     where TTransitionContext : ViewControllerTransitionContext&lt;TViewController&gt; where TTransitionAnimatorProvider : class, IViewControllerTransitionAnimatorProvider&lt;TTransitionContext&gt; where TTransitionProgressProvider : class, IViewControllerTransitionProgressProvider&lt;TTransitionContext&gt; where TTransitionAnimationDriver : ViewControllerTransitionAnimationDriver&lt;TTransitionContext, TTransitionAnimationDefaultProgressProvider&gt;, new()
-
     where TTransitionAnimationDefaultProgressProvider : class, IViewControllerTransitionProgressProvider&lt;TTransitionContext&gt;, new()
-
     where TTransitionData : ViewControllerInvokeTransitionData&lt;TViewController&gt;, new()
-
     where TGraph : class</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
@@ -1076,7 +1072,6 @@ If this method is called on a child view controller, it will automatically be fo
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">protected T FirstAncestorOfType&lt;T&gt;()
-
     where T : TViewController</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
