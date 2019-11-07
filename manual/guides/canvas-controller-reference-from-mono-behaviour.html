@@ -82,52 +82,60 @@
             <article class="content wrap" id="_content" data-uid="canvas-controller-reference-from-mono-behaviour">
 <h1 id="referencing-a-canvas-controller-from-its-view-components">Referencing A Canvas Controller From Its View Components</h1>
 
-<p>It is sometimes required that scripts within a canvas controller&#39;s view prefab obtain a reference to their owning canvas controller. For example, we might want to poll the <code>Input</code> system for a particular key press every frame and trigger a <a class="xref" href="../graphs/graphs.html#manual-transitions">manual transition</a> on the canvas controller when the relevant key is pressed. Perhaps something like this:</p>
-<pre><code class="lang-csharp">public KeyCode key;
+<p>It is sometimes required that scripts within a canvas controller&#39;s view prefab obtain a reference to their owning canvas controller. For example, we might want to trigger a <a class="xref" href="../graphs/graphs.html#manual-transitions">manual transition</a> on the canvas controller after a time delay. Perhaps something like this:</p>
+<pre><code class="lang-csharp">public float delay;
 public string transitionIdentifier;
+
+private float elapsedTime;
 
 private void Update()
 {
-    // Check every frame if the specified key has been pressed.
-    if (Input.GetKeyDown(key))
+    // Wait for the required time.
+    elapsedTime += Time.deltaTime;
+    if (elapsedTime &gt;= delay)
     {
-        // Perform the transition when the appropriate key is pressed.
+        // Perform the transition when the required time has elapsed.
         PerformGraphTransitionWithIdentifier(transitionIdentifier, this);
     }
 }
 </code></pre><p>However, if you were to add this code to a <a class="xref" href="../../api/Pelican7.UIGraph.CanvasController.html">CanvasController</a> script, you would find that the <code>Update</code> method is never called. This is because canvas controllers are <a href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html">ScriptableObjects</a>, not <a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.html">MonoBehaviours</a>, and they therefore do not have an <code>Update</code> method as <code>MonoBehaviour</code> does.</p>
-<p>The solution then, is to place the above code in a <code>MonoBehaviour</code> script, <code>PerformTransitionOnKeyPress</code>, and add it to a game object in our canvas controller&#39;s view prefab.</p>
-<pre><code class="lang-csharp">public class PerformTransitionOnKeyPress : MonoBehaviour
+<p>The solution then, is to place the above code in a <code>MonoBehaviour</code> script, <code>PerformTransitionAfterDelay</code>, and add it to a game object in our canvas controller&#39;s view prefab.</p>
+<pre><code class="lang-csharp">public class PerformTransitionAfterDelay : MonoBehaviour
 {
-    public KeyCode key;
+    public float delay;
     public string transitionIdentifier;
+
+    private float elapsedTime;
 
     private void Update()
     {
-        // Check every frame if the specified key has been pressed.
-        if (Input.GetKeyDown(key))
+        // Wait for the required time.
+        elapsedTime += Time.deltaTime;
+        if (elapsedTime &gt;= delay)
         {
-            // Perform the transition when the appropriate key is pressed.
-            PerformGraphTransitionWithIdentifier(transitionIdentifier, this); // Error.
+            // Perform the transition when the required time has elapsed.
+            PerformGraphTransitionWithIdentifier(transitionIdentifier, this); // &lt;-- Error
+            enabled = false;
         }
     }
 }
 </code></pre><p>This, however, poses a second problem - the call to <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformGraphTransitionWithIdentifier_">PerformGraphTransitionWithIdentifier</a>. <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformGraphTransitionWithIdentifier_">PerformGraphTransitionWithIdentifier</a> is a method on the <a class="xref" href="../../api/Pelican7.UIGraph.CanvasController.html">CanvasController</a> class, and now that we are no longer within our <a class="xref" href="../../api/Pelican7.UIGraph.CanvasController.html">CanvasController</a> script, we need to obtain a reference to the canvas controller in order to invoke <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformGraphTransitionWithIdentifier_">PerformGraphTransitionWithIdentifier</a> on it.</p>
 <h2 id="canvas-view-owner-bindings">Canvas View Owner Bindings</h2>
-<p>Any script within a canvas controller&#39;s view prefab can obtain a reference to the owning canvas controller by using the <strong>Canvas View Owner Bindings</strong> object - specifically its <a class="xref" href="../view-controllers/ui-canvas/canvas-controllers.html#on-bound-to-owner-event">On Bound To Owner</a> event.</p>
+<p>Any script within a canvas controller&#39;s view prefab can obtain a reference to the owning canvas controller by using the <strong>Canvas View Owner Bindings</strong> object available in the view hierarchy - specifically its <a class="xref" href="../view-controllers/ui-canvas/canvas-controllers.html#on-bound-to-owner-event">On Bound To Owner</a> event.</p>
 <p>When a canvas controller instantiates its view prefab, the view is bound to its owning canvas controller. This binding process binds the view references and callbacks to the canvas controller whom loaded it - its owner. Upon completion this process invokes the <code>OnBoundToOwner</code> event, passing the owning canvas controller to allow any components in the view (view objects) to also bind accordingly.</p>
 <div class="NOTE"><h5>Note</h5><p>This binding process occurs before the canvas controller&#39;s <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_ViewDidLoad_">ViewDidLoad</a> method is invoked, and before any <code>MonoBehaviours</code> have their <code>Start</code> method called.</p>
 </div>
 <h2 id="on-bound-to-owner">On Bound To Owner</h2>
-<p>Looking at the <strong>Canvas View Owner Bindings</strong>&#39; <a class="xref" href="../../api/Pelican7.UIGraph.CanvasViewOwnerBindings.html#Pelican7_UIGraph_CanvasViewOwnerBindings_OnBoundToOwner">OnBoundToOwner</a> event definition, we can see that the event passes a single <a class="xref" href="../../api/Pelican7.UIGraph.CanvasController.html">CanvasController</a> argument - the owner. We can therefore add a public method to our <code>MonoBehaviour</code> script, called <code>Configure</code>, that takes a single <a class="xref" href="../../api/Pelican7.UIGraph.CanvasController.html">CanvasController</a> argument. In this method we will store the owning canvas controller, allowing us to later call <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformGraphTransitionWithIdentifier_">PerformGraphTransitionWithIdentifier</a> on it, when the relevant key is pressed.</p>
-<pre><code class="lang-csharp">public class PerformTransitionOnKeyPress : MonoBehaviour
+<p>Looking at the <strong>Canvas View Owner Bindings</strong>&#39; <a class="xref" href="../../api/Pelican7.UIGraph.CanvasViewOwnerBindings.html#Pelican7_UIGraph_CanvasViewOwnerBindings_OnBoundToOwner">OnBoundToOwner</a> event definition, we can see that the event passes a single <a class="xref" href="../../api/Pelican7.UIGraph.CanvasController.html">CanvasController</a> argument - the owner. We can therefore add a public method to our <code>MonoBehaviour</code> script, called <code>Configure</code>, that takes a single <a class="xref" href="../../api/Pelican7.UIGraph.CanvasController.html">CanvasController</a> argument. In this method we will store the owning canvas controller, allowing us to later call <a class="xref" href="../../api/Pelican7.UIGraph.ViewController-12.html#Pelican7_UIGraph_ViewController_12_PerformGraphTransitionWithIdentifier_">PerformGraphTransitionWithIdentifier</a> on it, once the required time has elapsed.</p>
+<pre><code class="lang-csharp">public class PerformTransitionAfterDelay : MonoBehaviour
 {
-    // Specify the key to listen for in the inspector.
-    public KeyCode key;
+    // Specify the amount of time to wait in the inspector.
+    public float delay;
     // Specify the transition identifier to invoke in the inspector.
     public string transitionIdentifier;
 
     private CanvasController canvasController;
+    private float elapsedTime;
 
     // Add this method to the Canvas View Owner Bindings&#39; On Bound To Owner event.
     public void Configure(CanvasController canvasController)
@@ -137,19 +145,21 @@ private void Update()
 
     private void Update()
     {
-        // Check every frame if the specified key has been pressed.
-        if (Input.GetKeyDown(key))
+        // Wait for the required time.
+        elapsedTime += Time.deltaTime;
+        if (elapsedTime &gt;= delay)
         {
-            // Perform the transition when the appropriate key is pressed.
+            // Perform the transition when the required time has elapsed.
             canvasController.PerformGraphTransitionWithIdentifier(transitionIdentifier, this);
+            enabled = false;
         }
     }
 }
 </code></pre><p>Now all that is left is to connect our script to the <a class="xref" href="../../api/Pelican7.UIGraph.CanvasViewOwnerBindings.html#Pelican7_UIGraph_CanvasViewOwnerBindings_OnBoundToOwner">OnBoundToOwner</a> event in the inspector.</p>
 <p><img src="../../images/manual/guides/canvas-controller-reference-from-mono-behaviour/cc-ref-connect.png" alt=""></p>
 <h2 id="conclusion">Conclusion</h2>
-<p>And that&#39;s it. Our <code>PerformTransitionOnKeyPress</code> <code>MonoBehaviour</code>, which is placed in the canvas controller&#39;s view prefab, will now be configured with the owning canvas controller upon load. When the specified key is pressed, the identified transition will be triggered on the owning canvas controller.</p>
-<p>This technique can be used for much more than just key presses. You could create a <code>MonoBehaviour</code> to listen to game events or accelerometer changes, to name a few ideas. The key insight is the use of the <strong>Canvas View Owner Bindings</strong>&#39; <em>On Bound To Owner</em> event for obtaining a reference to the owning canvas controller in view scripts.</p>
+<p>And that&#39;s it. Our <code>PerformTransitionAfterDelay</code> <code>MonoBehaviour</code>, which is placed in the canvas controller&#39;s view prefab, will now be configured with the owning canvas controller upon load. After the specified time has elapsed, the identified transition will be triggered on the owning canvas controller.</p>
+<p>This technique can be used for much more than just triggering a transition after a time delay. You could create a <code>MonoBehaviour</code> to listen to game events or accelerometer changes, to name a few ideas. The key insight is the use of the <strong>Canvas View Owner Bindings</strong>&#39; <em>On Bound To Owner</em> event for obtaining a reference to the owning canvas controller in view scripts.</p>
 </article>
           </div>
           
